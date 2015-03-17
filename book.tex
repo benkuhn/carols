@@ -1,0 +1,121 @@
+\documentclass[twoside,10pt,openany,statementpaper]{memoir}
+\title{Christmas Carols}
+\author{Ben Kuhn}
+\date{December 25, 2012}
+\usepackage{graphicx}
+\usepackage{pdfpages}
+% We can compile either in booklet or in handout mode. curmode.tex
+% should be a symlink to one of those
+\input{modes/curmode.tex}
+\usepackage[explicit]{titlesec}
+\usepackage{makeidx}
+\source{\magstep0}{5.5in}{8.5in}
+\target{\magstep0}{11in}{8.5in}
+\setpdftargetpages
+\makeindex
+
+\setulmarginsandblock{1.65cm}{1.65cm}{*}
+\setlrmarginsandblock{1cm}{1cm}{*}
+\checkandfixthelayout
+
+\begin{document}
+
+\maketitle
+\clearpage
+
+\newcommand{\song}[2]{
+\index{#1}
+\includepdf[pagecommand=\thispagestyle{plain}]{build/#2}
+%\begin{figure}[ht]
+%\includegraphics[width=\textwidth]{#2}
+%\end{figure}
+}
+
+\song{Angel Gabriel, The}{angel_gabriel.pdf}
+
+\song{Angels We Have Heard}{angels_we_have_heard.pdf}
+
+\song{Boar's Head Carol, The}{boars_head.pdf}
+
+\index{Star in the East}
+\song{Brightest and Best}{brightest.pdf}
+
+\index{Lully, Lullay}
+\song{Coventry Carol}{coventry.pdf}
+
+\song{Deck the Hall}{deck.pdf}
+
+\song{First No\"el, The}{first_noel.pdf}
+
+\song{Gaudete}{gaudete.pdf}
+
+\index{Wassail, Wassail}
+\song{Gloucestershire Wassail}{gloucestershire.pdf}
+
+\song{God Rest Ye Merry, Gentlemen}{god_rest.pdf}
+
+\song{Good Christian Men, Rejoice}{good_christian.pdf}
+
+\song{Good King Wenceslas}{good_king.pdf}
+
+\song{Hark the Herald Angels Sing}{hark.pdf}
+
+\song{Holly and the Ivy, The}{holly.pdf}
+
+\song{In Dulci Jubilo}{in_dulci.pdf}
+
+\song{In the Bleak Midwinter}{in_the_bleak.pdf}
+
+\song{It Came Upon the Midnight Clear}{it_came.pdf}
+
+\song{Joy To the World}{joy.pdf}
+
+\song{Lo, How a Rose E'er Blooming}{lo.pdf}
+
+\song{Masters in This Hall}{masters.pdf}
+
+\song{No\"el Nouvelet}{noel_nouvelet.pdf}
+
+\song{Noi de la Mare, El}{noi_de_la_mare.pdf}
+
+\song{O Come All Ye Faithful}{o_come_all.pdf}
+
+\song{O Come, O Come, Emmanuel}{o_come_o_come.pdf}
+
+\song{O Little Town of Bethlehem!Forest Green}{o_little_town_2.pdf}
+
+\song{O Little Town of Bethlehem!Redner}{o_little_town.pdf}
+
+\song{Silent Night}{silent_night.pdf}
+
+\index{Here We Come a-Wassailing}
+\song{Wassail Song}{wassail_song.pdf}
+
+\song{Watchman, Tell Us of the Night}{watchman.pdf}
+
+\song{We Three Kings of Orient Are}{we_three_kings.pdf}
+
+\song{We Wish You a Merry Christmas}{we_wish.pdf}
+
+\index{Greensleeves}
+\song{What Child is This}{what_child.pdf}
+
+\clearpage
+\printindex
+% \clearpage
+% 
+% COMING SOON:
+% \begin{itemize}
+% \item Sussex Mummers' Carol (Revels songbook, +descant)
+% \item Somerset Wassail
+% \item Heir of all the Waiting Ages
+% \item People, Look East
+% \item Away in a Manger (old version)
+% \item Carol of the Birds
+% \item Joseph est bien marie
+% \item While Shepherds Watched their Flocks by Night (shapenote)
+% \item Noel Nouvelet (from Friends Hymnal)
+% \item Descants for Angels we have Heard and O Come All Ye Faithful
+% \end{itemize}
+
+\end{document}

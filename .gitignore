@@ -1,0 +1,9 @@
+*.pdf
+*.midi
+book.aux
+book.toc
+book.ilg
+book.ind
+book.log
+book.idx
+modes/curmode.tex
