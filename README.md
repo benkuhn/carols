@@ -1,3 +1,11 @@
+Here's the problem with existing books of Christmas carols:
+
+- They don't all the carols I like.
+- They take up space with carols I don't like.
+- They pick bad arrangements.
+- They pick bad lyrics.
+- It's expensive to buy enough copies to have a good caroling party.
+
 This is a book of four-part Christmas carols that I compiled from
 various different sources, primarily:
 
