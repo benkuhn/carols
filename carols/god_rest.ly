@@ -31,7 +31,7 @@ global = {
 
 sop = \context Voice = "sop"    {
   \voiceOne
-  \relative {
+  \relative c' {
     \slurDotted
     e4 |
     e b' b a |
@@ -68,7 +68,7 @@ sop = \context Voice = "sop"    {
 
 alto=\context Voice = "alto"   {
   \voiceTwo 
-  \relative {
+  \relative c' {
     e4 |
     e g fis dis |
     \slurDotted e( d) c b |
@@ -100,7 +100,7 @@ alto=\context Voice = "alto"   {
 
 tenor = \context Voice = "tenor"   {
   \voiceOne
-  \relative {
+  \relative c' {
     e,4 |
     g e fis b |
     \slurDotted b( b) g g |
@@ -133,7 +133,7 @@ tenor = \context Voice = "tenor"   {
 
 bass = \context Voice = "bass"   {
   \voiceTwo
-  \relative {
+  \relative c' {
     e,4 |
     e e dis b |
     \slurDotted e( b) c g |
