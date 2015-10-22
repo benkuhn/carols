@@ -13,7 +13,8 @@ for FILE in carols/*.ly; do
         continue
     fi
     INFILE=carols/$BASE.ly
-    OUTFILE=build/$BASE.pdf
+    OUTFILE_LY=build/$BASE
+    OUTFILE=$OUTFILE_LY.pdf
     # Check whether file needs to be rebuilt; it may be cached. If it
     # is cached, we continue.
     if [ -f $OUTFILE ]; then
@@ -26,8 +27,7 @@ for FILE in carols/*.ly; do
             continue
         fi
     fi
-    echo lilypond $INFILE -o $OUTFILE
-    lilypond -drelative-includes -o $OUTFILE $INFILE
+    lilypond -drelative-includes -o $OUTFILE_LY $INFILE
 done
 
 # Always compile the main file in handout mode first to produce the index right
