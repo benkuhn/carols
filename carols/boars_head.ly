@@ -63,15 +63,17 @@ altoWords = {
     The boar’s _ head _ in hand bear I "" Be -- decked with bays and rose -- ma -- ry;
     \set associatedVoice = "basses"
     And I pray you my mas -- ters mer -- ry be;
-    \markup\italic Quot _ \markup\italic es -- \markup\italic tis _ \markup\italic in \markup\italic con -- \markup\italic vi -- \markup\italic vi -- \markup\italic o.
+    \lyricItal Quot _ es -- tis _ in con -- vi -- vi -- o. \lyricNormal
   }
   \lyricmode {
     \unset ignoreMelismata
-    \markup\italic Ca -- \markup\italic put \markup\italic a -- \markup\italic pri \markup\italic de -- \markup\italic fe -- \markup\italic ro
+    \lyricItal
+    Ca -- put a -- pri de -- fe -- ro
     \set associatedVoice = "tenors"
-    \markup\italic Red -- \markup\italic dens
+    Red -- dens
     \set associatedVoice = "basses"
-    \markup\italic lau -- \markup\italic des \markup\italic Do -- \markup\italic mi -- \markup\italic no.
+    lau -- des Do -- mi -- no.
+    \lyricNormal
   }
 }
 altoWordsII = {
@@ -82,7 +84,7 @@ altoWordsII = {
     \set associatedVoice = "basses"
     Which is thus be -- _ decked with_a gay gar -- land,
     Let _ us
-    \markup\italic ser -- _ \markup\italic vi -- \markup\italic re \markup\italic can -- \markup\italic ti -- \markup\italic co.
+    \lyricItal ser -- _ vi -- re can -- ti -- co. \lyricNormal
   }
 }
 altoWordsIII = \lyricmode {
@@ -92,7 +94,7 @@ altoWordsIII = \lyricmode {
   "" In hon -- or of the King of bliss,
   \set associatedVoice = "basses"
   Which _ on this __ _ day to_be serv -- ed is,
-  \markup\italic In _ \markup\italic Re -- \markup\italic gi -- _ \markup\italic nen -- \markup\italic si \markup\italic a -- \markup\italic tri -- \markup\italic o.
+  \lyricItal In _ Re -- gi -- _ nen -- si a -- tri -- o. \lyricNormal
 }
 altoWordsIV = \lyricmode {
 }
