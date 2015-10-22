@@ -26,7 +26,8 @@ for FILE in carols/*.ly; do
             continue
         fi
     fi
-    lilypond $INFILE -o $OUTFILE
+    echo lilypond $INFILE -o $OUTFILE
+    lilypond -drelative-includes -o $OUTFILE $INFILE
 done
 
 # Always compile the main file in handout mode first to produce the index right
