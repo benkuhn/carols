@@ -30,7 +30,7 @@ global= {
 
 sop = \context Voice = "sop"    {
   \voiceOne
-  \relative {
+  \relative c' {
 	e4 cis'2 gis4 b( a) fis e2 fis4 e2
 	e4 fis( gis) a a( b) cis b2. ~ b2
 	e,4 cis'2 gis4 b( a) fis e2 fis4 e2
@@ -43,7 +43,7 @@ sop = \context Voice = "sop"    {
 
 alto=\context Voice = "alto"   {
   \voiceTwo
-  \relative {
+  \relative c' {
 	cis4 cis2 cis4 d2 d4 cis2 d4 cis2 
 	cis4 d2 d4 dis2 dis4 e2. ~ e2
 	d4 cis2 cis4 d2 d4 cis2 d4 cis2 
@@ -56,7 +56,7 @@ alto=\context Voice = "alto"   {
 
 tenor = \context Voice = "tenor"   {
   \voiceOne
-  \relative {
+  \relative c' {
 	e,4 e2 eis4 fis2 gis4 a2 e4 e2
 	a4 a2 a4  a2 a4 gis2. ~ gis2
 	a4 e2 eis4 fis2 gis4 a2 e4 e2
@@ -69,7 +69,7 @@ tenor = \context Voice = "tenor"   {
 
 bass = \context Voice = "bass"   {
   \voiceTwo
-  \relative {
+  \relative c' {
 	a,4 a2 a4 a2 a4 a2 gis4 a2
 	a4 d( e) fis fis2 b,4 e2. ~ e2
 	e4 a,2 a4 a2 a4 a2 gis4 a2
