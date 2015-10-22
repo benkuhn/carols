@@ -53,7 +53,7 @@ sop = \context Voice = "sop"    {
 
 alto=\context Voice = "alto"   {
   \voiceTwo 
-  \relative {
+  \relative c' {
   ees4 ees f ees |
   ees f bes,2 |
   des4 ees des des |
@@ -79,7 +79,7 @@ alto=\context Voice = "alto"   {
 
 tenor = \context Voice = "tenor"   {
   \voiceOne
-  \relative {
+  \relative c' {
   c4 c c bes |
   c des g,2 |
   aes4 aes aes bes |
@@ -104,7 +104,7 @@ tenor = \context Voice = "tenor"   {
 
 bass = \context Voice = "bass"   {
   \voiceTwo
-  \relative {
+  \relative c' {
   aes4 aes f g |
   aes des, ees2 |
   des4 c des4 bes4 |
