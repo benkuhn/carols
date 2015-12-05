@@ -35,6 +35,7 @@ if [ -f modes/curmode.tex ]; then
     rm modes/curmode.tex
 fi
 ln modes/handout.tex modes/curmode.tex
+makeindex book.idx
 pdflatex book.tex
 
 if [ $MODE == "booklet" ]; then
