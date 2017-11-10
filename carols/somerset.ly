@@ -23,7 +23,7 @@ sopMusic = \transpose c f { \relative c' {
   g( c) a f | g2 e4 e | d c e( d) | c1 |
 }}
 sopWords = \lyricmode {
-  
+
 }
 
 altoMusic = \transpose c f { \relative c' {
@@ -34,7 +34,7 @@ altoMusic = \transpose c f { \relative c' {
   c2 c4 c | b2 b4 b | a2 b | a f4 f |
 
   e2 a | g f4 f | e2 g | a g4 a |
-  c2 c4 c | b2 b4 b | a2 b | g1 |
+  c2 c4 c | b2 g4 g | a2 b | g1 |
 }}
 altoWords = \lyricmode {
   \set stanza = #"1."
@@ -72,7 +72,7 @@ tenorMusic = \transpose c f { \relative c {
   e g f a | g2 g4 g | f2 f | e d4 d |
 
   e2 f | b, d4 d | c2 b4 c | c2 c4 c |
-  c2 c4 c | e2 e4 e | f f f2 | e1 |
+  c2 c4 c | d2 g4 g | f f f2 | e1 |
 }}
 tenorWords = \lyricmode {
 
