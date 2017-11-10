@@ -7,6 +7,12 @@ if [ "$MODE" != "handout" ] && [ "$MODE" != "booklet" ]; then
     exit 1
 fi
 
+# Make sure 'build' directory exists
+if [ ! -d ./build ]; then
+  echo "Creating './build' directory."
+  mkdir build
+fi
+
 for FILE in carols/*.ly; do
     BASE=$(basename $FILE .ly)
     if [ "$BASE" == "header" ]; then
