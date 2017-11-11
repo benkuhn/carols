@@ -1,4 +1,4 @@
-#!/bin/bash
+#!/bin/bash -eu
 
 MODE=$1
 
