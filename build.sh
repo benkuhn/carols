@@ -24,7 +24,7 @@ for FILE in carols/*.ly; do
     # Check whether file needs to be rebuilt; it may be cached. If it
     # is cached, we continue.
     if [ -f $OUTFILE ]; then
-        LATEST=$(ls -1c $INFILE $OUTFILE | head -n 1)
+        LATEST=$(ls -1t $INFILE $OUTFILE | head -n 1)
         if [ "$LATEST" == $OUTFILE ]; then
             echo $FILE up-to-date
             continue
