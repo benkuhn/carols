@@ -8,11 +8,9 @@
 % We can compile either in booklet or in handout mode. curmode.tex
 % should be a symlink to one of those
 \usepackage[explicit]{titlesec}
-\usepackage{makeidx}
 \source{\magstep0}{5.5in}{8.5in}
 \target{\magstep0}{11in}{8.5in}
 \setpdftargetpages
-\makeindex
 
 \setulmarginsandblock{1.65cm}{1.65cm}{*}
 \setlrmarginsandblock{1cm}{1cm}{*}
@@ -22,14 +20,30 @@
 
 \maketitle
 \clearpage
+\tableofcontents
+\clearpage
 
 \newcommand{\song}[2]{
 \index{#1}
+\invisiblesection{#1}
 \includepdf[pagecommand=\thispagestyle{plain}]{build/#2}
-%\begin{figure}[ht]
-%\includegraphics[width=\textwidth]{#2}
-%\end{figure}
+% \begin{figure}[ht]
+% \includegraphics[width=\textwidth]{#2}
+% \end{figure}
 }
+
+% Ignore chapter numbering in order for section numbering to be reasonable
+\renewcommand{\thesection}{\arabic{section}}
+
+\pagestyle{empty}
+
+% Use sections so that we can easily generate a TOC... but make them invisible
+% to keep things pretty.
+\newcommand\invisiblesection[1]{%
+  \refstepcounter{section}%
+  \addcontentsline{toc}{section}{#1}%
+  \sectionmark{#1}
+ }
 
 \song{Angel Gabriel, The}{angel_gabriel}
 
@@ -38,6 +52,7 @@
 \song{Boar's Head Carol, The}{boars_head}
 
 \index{Star in the East}
+\addcontentsline{toc}{section}{Star in the East}
 \song{Brightest and Best}{brightest}
 
 \index{Lully, Lullay}
@@ -107,6 +122,7 @@
 
 \clearpage
 \printindex
+
 % \clearpage
 %
 % COMING SOON:
