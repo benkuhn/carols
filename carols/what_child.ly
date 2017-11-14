@@ -9,6 +9,7 @@
   meter = "Greensleeves 8.7.8.7 with Refrain"
   %instrument = "SATB Choral"
   copyright = "Public Domain"
+  see_also = "Greensleeves"
 }
 
 \include "header.ly"
@@ -21,20 +22,20 @@ global = {
 }
 
 verseI= \lyricmode {
-  \set stanza = "1."	
+  \set stanza = "1."
   What Child is this, Who, laid to rest,
   On Ma -- ry's lap is sleep -- ing?
   Whom an -- gels greet with an -- thems sweet,
   While shep -- herds watch are keep -- ing?
                                 %refrain
-  This, this is Christ the King, 
+  This, this is Christ the King,
   Whom shep -- herds guard and an -- gels sing;
   Haste, haste to bring Him laud
   The Babe, the Son of Ma -- ry.
 }
 
 verseII= \lyricmode {
-  \set stanza = "2."	
+  \set stanza = "2."
   Why lies He in such mean e -- state
   Where ox and ass are feed -- ing?
   Good Chris -- tian, fear: for sin -- ners here
@@ -42,7 +43,7 @@ verseII= \lyricmode {
 }
 
 verseIII= \lyricmode {
-  \set stanza = "3."	
+  \set stanza = "3."
   So bring Him in -- cense, gold, and myrrh,
   Come pea -- sant, king, to own Him;
   The King of kings sal -- va -- tion brings,
@@ -143,13 +144,13 @@ bass = \context Voice = "bass" {
 
 \score {
   \context ChoirStaff <<
-    \unset ChoirStaff.melismaBusyProperties 
+    \unset ChoirStaff.melismaBusyProperties
     \context Staff ="upper"  { \clef "G" <<
       \global
       \sop
       \alto
     >>}
-    
+
     \lyricsto "sop" \context Lyrics = "stanza-1" {
       \set stanza = "1."
       \verseI }

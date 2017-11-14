@@ -1,0 +1,2 @@
+ordered-set==2.0.2
+PyLaTeX==1.2.1

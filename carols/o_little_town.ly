@@ -14,6 +14,7 @@
   maintainer = "Gordon Gilbert"
   maintainerEmail = "gord@angel.eicat.ca"
   lastupdated = "2011/Dec/12"
+  toc_as = "O Little Town of Bethlehem (Lewis H. Redner)"
 }
 
 \version "2.14.2"
@@ -35,20 +36,20 @@ sop = \context Voice = "sop"    {
   fis'4 e' fis' g' a' b'2.
   b'4 b' b' ais' b' d'' c'' e'
   e'' d'' g' b'4. a'8 g'2. \bar "|."
-  
+
 }
 
 alto=\context Voice = "alto"   {
   \voiceTwo
   d'4 d' d' cis' d' f' e' c'
   e' d' d' d' d' d'2.
-  d'4 d' g' gis' gis' a' e' c' 
+  d'4 d' g' gis' gis' a' e' c'
   e' d' d' fis' fis' g'2.
   g'4 g' g' fis' e' dis'2 dis'4
   dis' e' fis' g' e' fis'2.
-  g'4 d' d' cis' d' e' e' c' 
+  g'4 d' d' cis' d' e' e' c'
   e'8 fis' g'4 cis' d'4. c'8 b2.
-}	
+}
 
 tenor = \context Voice = "tenor"   {
   \voiceOne
@@ -74,7 +75,7 @@ bass = \context Voice = "bass"   {
   c d e d4. d8 g,2.
 }
 accomp=\chordmode {
-  
+
 }
 
 
@@ -123,23 +124,23 @@ stanzad = \lyricmode {
   Our Lord Em -- man -- u -- el.
 }
 stanzae = \lyricmode {
-  
+
 }
 stanzaf = \lyricmode {
-  
+
 }
 
 \score {
   \transpose g f
   \context ChoirStaff <<
     \context ChordNames \accomp
-    \unset ChoirStaff.melismaBusyProperties 
+    \unset ChoirStaff.melismaBusyProperties
     \context Staff ="upper"  { \clef "G" <<
       \global
       \sop
       \alto
     >>}
-    
+
     \lyricsto "sop" \context Lyrics = "stanza-1" {
       \set stanza = "1."
       \stanzaa }
