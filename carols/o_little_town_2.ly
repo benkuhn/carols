@@ -6,6 +6,7 @@
 	poet = "Bishop Phillips Brooks, 1868"
 	date=""
 	title = "O Little Town of Bethlehem"
+	toc_as = "O Little Town of Bethlehem (Forest Green)"
 	metre = "Forest Green 8.6.8.6.7.6.8.6."
 	meter = \metre
 	copyright = "Public Domain"
@@ -39,7 +40,7 @@ sop = \context Voice = "sop"    {
 	d'4 g' b' a' g' d'2.
 	d'4 g' g' g' a' b'8( a') b'( c'') d''4
 	b'4 c'' b'8( g') a'4 a' g'2. \bar "|."
-	
+
 }
 
 alto=\context Voice = "alto"   {
@@ -52,8 +53,8 @@ alto=\context Voice = "alto"   {
 	d'4 d' d' c' b8( c') d'2.
 	d'4 d' e' d' e'8( fis') g'4 g' fis'
 	e' e' g' g' fis' g'2.
-}	
-	
+}
+
 tenor = \context Voice = "tenor"   {
 	\voiceOne
 	a4 b c' d' c' d' g a
@@ -65,7 +66,7 @@ tenor = \context Voice = "tenor"   {
 	g8( a) b4 c' d' c' d' g a
 	g4 c' d'8( b) d'4 d'8( c') b2.
 }
-	
+
 bass = \context Voice = "bass"   {
 	\voiceTwo
 	fis4 g c' b a g e d
@@ -78,7 +79,7 @@ bass = \context Voice = "bass"   {
 	e a, b,8( e) d4 d g2.
 }
 accomp=\chordmode {
- 
+
 }
 
 
@@ -127,22 +128,22 @@ stanzad = \lyricmode {
 	Our Lord Em -- man -- u -- el.
 }
 stanzae = \lyricmode {
-	
+
 }
 stanzaf = \lyricmode {
-	
+
 }
 
 \score {	\transpose g f
 	   \context ChoirStaff <<
 	       \context ChordNames \accomp
-		 \unset ChoirStaff.melismaBusyProperties 
+		 \unset ChoirStaff.melismaBusyProperties
 		\context Staff ="upper"  { \clef "G" <<
 			\global
 			\sop
 			\alto
 		>>}
-       		
+
 		\lyricsto "sop" \context Lyrics = "stanza-1" {
 			\set stanza = "1."
 				\stanzaa }

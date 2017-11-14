@@ -7,5 +7,9 @@ book.ind
 book.log
 book.idx
 book.out
+book.fls
+book.fdb_latexmk
 modes/curmode.tex
 todo
+__pycache__
+test.*

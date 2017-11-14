@@ -5,7 +5,9 @@
   poet = "18th Century English"
   composer = "18th Century English"
   %arranger = \markup\oldStyleNum"Arranged by BHB"
+  see_also = "Wassail, Wassail"
 }
+
 global = {
   \preamble
   \key g \major
@@ -14,30 +16,30 @@ global = {
 }
 
 sopMusic = \relative c' {
-  \tempo"Allegro" 
+  \tempo"Allegro"
   \partial 4 d4 |
   \slurDotted g4( g) g |
   g( a) b |
   c b a |
   \slurSolid b( d) d4 |
-  
+
   c4 a a |
   \slurDotted a( b) c |
   \slurSolid b8[ a] g[ a] b4 |
   a2 c4 |
-  
+
   b8[ a] g[ a] b[ c] |
   d2 \slurDotted d8\noBeam( c) |
   b4 g b |
   a2 g8\noBeam a |
-  
+
   b2 a8\noBeam b |
   c2 b4 |
   a g fis |
   g2 \bar "|."
 }
 sopWords = \lyricmode {
-  
+
 }
 
 altoMusic = \relative c' {
@@ -46,17 +48,17 @@ altoMusic = \relative c' {
   d( fis) g|
   g g fis |
   g2 g4 |
-  
+
   a4 fis fis |
   fis( d) fis |
   \slurSolid g8[ fis] e[ fis] g4 |
   fis2 fis4 |
-  
+
   g8[ fis] e[ fis] g4 |
   fis2 \slurDotted fis8\noBeam( fis) |
   g4 g g |
   fis2 e8\noBeam fis |
-  
+
   g2 fis8\noBeam g |
   g2 g4 |
   fis d4. c8 |
@@ -70,8 +72,8 @@ altoWords = \lyricmode {
   Our bowl _ it __ _ is __ _ made of the white ma -- ple tree,
   With the was -- sail -- ing bowl we’ll drink un -- to thee.
   \unset ignoreMelismata
-  
-  
+
+
   \set stanza = #"  4."
 }
 altoWordsII = {
@@ -91,8 +93,8 @@ altoWordsIII = \lyricmode {
   Pray God send our mas -- ter a good _ Christ -- _ mas pie,
   A good _ Christ -- _ mas _ pie that _ may we all see,
   With the was -- sail -- ing bowl we’ll drink un -- to thee.
-  
-  
+
+
   \set stanza = #"  6."
   \set ignoreMelismata = ##t
 }
@@ -128,18 +130,18 @@ tenorMusic = \relative c' {
   b( c) d |
   e d c |
   \slurSolid d( b) b4 |
-  
+
   \slurDotted
   e4 d c |
   d( g,) a |
   g e' d |
   d2 d4 |
-  
+
   g, e' d8[ c] |
   d2 a8\noBeam( a) |
   g8[ d'] b4 d |
   d2 b8\noBeam d |
-  
+
   g,2 d'8\noBeam g, |
   e'2 d4 |
   c b a |
@@ -155,17 +157,17 @@ bassMusic = \relative c {
   g'( d) g |
   c, g' d |
   g2 g4 |
-  
+
   a4 d, d |
   d( g) d |
   g b g |
   d2 d4 |
-  
+
   g4 b g8[ e] |
   d2 \slurDotted d8\noBeam( d) |
   g4 g g |
   d2 e8\noBeam d |
-  
+
   g2 d8 g |
   c,2 g'4 |
   d d d |
