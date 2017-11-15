@@ -225,7 +225,9 @@ class Document(pylatex.Document):
 
         fmtstr = '\\song{{{}}}{{{}}}' # ...I'm sorry.
 
-        # TODO: sort carols by title (as will appear in ToC)
+        # TODO: sort by toc_entry (note that we need to ignore things that
+        # start w/ punct. e.g. "'twas")
+        # carols.sort(key=lambda c: c.toc_entry)
         for c in carols:
             # c.build_if_needed()
 
@@ -250,7 +252,8 @@ if __name__ == '__main__':
     carol_book = Document.make_carol_book(ly_dir, build_dir, mode=args.mode)
 
     # TODO: actually support handout vs. booklet
-    # TODO: create index if hasn't been done yet
-    # TODO: gen 2x if toc is wrong (i.e. check output for "numbers may have changed")?
-        # or does pylatex take care of this?
-    carol_book.generate_pdf('test', clean_tex=False)
+
+    # NOTE: By using compiler 'latexmk', we ensure that we'll run LaTeX multiple
+    # times if needed to make sure index/ToC are up to date.
+    carol_book.generate_pdf('test', clean=False, clean_tex=False, silent=False,
+        compiler='latexmk')
