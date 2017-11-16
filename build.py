@@ -14,8 +14,15 @@ import utils
 HANDOUT = 'handout'
 BOOKLET = 'booklet'
 MODES = [HANDOUT, BOOKLET]
-HANDOUT_PKG = Package('booklet', options=['noprint', '1to1'])
-BOOKLET_PKG = Package('booklet', options=['print', '1to1'])
+MODE_INVOCATION_MAGIC_KEY = 'ITS_THE_MODE!!!'
+
+HANDOUT_DOC_CLASS = Command('documentclass',
+    arguments='memoir', options=['twoside', '10pt', 'openany', 'letterpaper'])
+HANDOUT_PKG = NoEscape('\\usepackage[noprint,1to1]{{booklet}} %{}'.
+    format(MODE_INVOCATION_MAGIC_KEY))
+BOOKLET_DOC_CLASS = Command('documentclass',
+    arguments='memoir', options=['twoside', '10pt', 'openany', 'statementpaper'])
+BOOKLET_PKG = NoEscape(r'\usepackage[print,1to1]{booklet}')
 
 # .ly "header" keys
 TITLE = 'title'
@@ -50,9 +57,9 @@ def argument_parser():
     return parser
 
 
-def validate_dirs(args):
-    ly_dir = args.ly_dir
-    build_dir = args.build_dir
+def validate_dirs(user_args):
+    ly_dir = user_args.ly_dir
+    build_dir = user_args.build_dir
 
     if not os.path.isdir(ly_dir):
         print('Could not find specified "ly_dir": "{}". Creating...'.
@@ -143,8 +150,6 @@ class Document(pylatex.Document):
 
         doc = cls(
             src_dir, dest_dir, mode,
-            documentclass='memoir',
-            document_options=['twoside','10pt','openany','statementpaper']
         )
 
         doc.set_up()
@@ -156,26 +161,29 @@ class Document(pylatex.Document):
     def set_up(self):
         """Add packages, set preliminary settings for this doc."""
         # Add packages
-        self.preamble.append(Package('hyperref'))
         self.preamble.append(Package('titlesec'))
         self.preamble.append(Package('pdfpages'))
         self.preamble.append(Package('graphicx'))
         self.preamble.append(Package('makeidx'))
 
+        if self.mode == HANDOUT:
+            # Presumably we don't care about clickable links in booklet mode, only
+            # bother with 'hyperref' (i.e. clickable index/ToC) in HANDOUT mode.
+            self.preamble.append(Package('hyperref'))
+
         self.preamble.append(NoEscape(r'\makeindex'))
 
-        # TODO: support 'mode'
-        # We can compile either in booklet or in handout mode. curmode.tex
-        # should be a symlink to one of those
-        # self.preamble.append(NoEscape(r'\input{modes/curmode.tex}'))
+        # Even if user specified BOOKLET mode, build first in HANDOUT mode to
+        # get page numbers for index/ToC right.
+        self.preamble.append(HANDOUT_PKG)
 
-        # self.preamble.append(NoEscape(r'\source{\magstep0}{5.5in}{8.5in}'))
-        # self.preamble.append(NoEscape(r'\target{\magstep0}{11in}{8.5in}'))
-        # self.preamble.append(NoEscape(r'\setpdftargetpages'))
+        self.preamble.append(NoEscape(r'\source{\magstep0}{5.5in}{8.5in}'))
+        self.preamble.append(NoEscape(r'\target{\magstep0}{11in}{8.5in}'))
+        self.preamble.append(NoEscape(r'\setpdftargetpages'))
 
-        # self.preamble.append(NoEscape(r'\setulmarginsandblock{1.65cm}{1.65cm}{*}'))
-        # self.preamble.append(NoEscape(r'\setlrmarginsandblock{1cm}{1cm}{*}'))
-        # self.preamble.append(NoEscape(r'\checkandfixthelayout'))
+        self.preamble.append(NoEscape(r'\setulmarginsandblock{1.65cm}{1.65cm}{*}'))
+        self.preamble.append(NoEscape(r'\setlrmarginsandblock{1cm}{1cm}{*}'))
+        self.preamble.append(NoEscape(r'\checkandfixthelayout'))
 
         ### Custom commands
 
@@ -203,8 +211,6 @@ class Document(pylatex.Document):
         self.preamble.append(Command('author', 'compiled by Maia McCormick'))
         self.preamble.append(Command('date', NoEscape(r'\today')))
 
-        ### Adding this stuff to the doc...
-
         # Ignore page numbers until we get to the actual body
         # self.append(NoEscape(r'\pagenumbering{gobble}'))
 
@@ -215,6 +221,30 @@ class Document(pylatex.Document):
 
         # Okay, show page numbers again
         # self.append(NoEscape(r'\pagenumbering{arabic}'))
+
+    def set_booklet_mode(self, magic_key=MODE_INVOCATION_MAGIC_KEY):
+        """
+        Hack: for booklet mode, we need to build first in handout mode, and thus
+        need to swap out the package invocation for 'handout' with that for
+        'booklet'. So: find the line of the preamble where we set HANDOUT mode
+        (identified by a distinct comment string (MAGIC_KEY) at the end) and
+        replace it with the invocation for BOOKLET mode.
+        """
+        index = -1
+        for i, line in enumerate(self.preamble):
+            # import pdb; pdb.set_trace()
+            # We know the line we're looking for is of type: NoEscape
+            if isinstance(line, NoEscape):
+                if magic_key in line:
+                    index = i
+                    break
+
+        if index == -1:
+            raise Exception('Couldn\'t find current mode invocation to replace.')
+
+        # Replace current mode invocation with invocation for BOOKLET
+        self.preamble[index] = BOOKLET_PKG
+
 
     def populate(self):
         ly_files = utils.ly_files_to_compile(self.src_dir)
@@ -251,9 +281,16 @@ if __name__ == '__main__':
 
     carol_book = Document.make_carol_book(ly_dir, build_dir, mode=args.mode)
 
-    # TODO: actually support handout vs. booklet
+    # NOTE: by default, pyLaTeX will compile the doc multiple times if needed to
+    # make sure index/ToC are up to date.
+    carol_book.documentclass = HANDOUT_DOC_CLASS
+    carol_book.generate_pdf('test', clean=False, clean_tex=False, silent=False)
 
-    # NOTE: By using compiler 'latexmk', we ensure that we'll run LaTeX multiple
-    # times if needed to make sure index/ToC are up to date.
-    carol_book.generate_pdf('test', clean=False, clean_tex=False, silent=False,
-        compiler='latexmk')
+    if carol_book.mode == BOOKLET:
+        # Now that we've built the book once in HANDOUT mode to get the
+        # index/ToC right, build for real in BOOKLET mode.
+        carol_book.documentclass = BOOKLET_DOC_CLASS
+        carol_book.set_booklet_mode()
+        carol_book.generate_pdf('test', clean=False, clean_tex=False, silent=False,
+            compiler='pdflatex')
+
