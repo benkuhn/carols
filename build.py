@@ -148,9 +148,7 @@ class Document(pylatex.Document):
             raise ValueError("'mode' must be one of {} (user provided: {})".
                 format(MODES, mode))
 
-        doc = cls(
-            src_dir, dest_dir, mode,
-        )
+        doc = cls(src_dir, dest_dir, mode)
 
         doc.set_up()
         doc.populate()
@@ -184,6 +182,8 @@ class Document(pylatex.Document):
         self.preamble.append(NoEscape(r'\setulmarginsandblock{1.65cm}{1.65cm}{*}'))
         self.preamble.append(NoEscape(r'\setlrmarginsandblock{1cm}{1cm}{*}'))
         self.preamble.append(NoEscape(r'\checkandfixthelayout'))
+
+        self.preamble.append(NoEscape(r'\makeindex'))
 
         ### Custom commands
 
@@ -293,4 +293,3 @@ if __name__ == '__main__':
         carol_book.set_booklet_mode()
         carol_book.generate_pdf('test', clean=False, clean_tex=False, silent=False,
             compiler='pdflatex')
-
