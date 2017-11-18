@@ -191,8 +191,8 @@ class Document(pylatex.Document):
         # invisible to keep things pretty.
         invis_section = UnsafeCommand('newcommand', '\invisiblesection', options=1,
                                       extra_arguments=r'\refstepcounter{section}'
-                                                      r'\addcontentsline{toc}{section}{#1}'
                                                       r'\sectionmark{#1}'
+                                                      r'\addcontentsline{toc}{section}{#1}'
                                      )
         self.append(invis_section)
 
@@ -212,7 +212,7 @@ class Document(pylatex.Document):
         self.preamble.append(Command('date', NoEscape(r'\today')))
 
         # Ignore page numbers until we get to the actual body
-        # self.append(NoEscape(r'\pagenumbering{gobble}'))
+        self.append(NoEscape(r'\pagenumbering{gobble}'))
 
         self.append(NoEscape(r'\maketitle'))
         self.append(NoEscape(r'\clearpage'))
@@ -220,7 +220,7 @@ class Document(pylatex.Document):
         self.append(NoEscape(r'\clearpage'))
 
         # Okay, show page numbers again
-        # self.append(NoEscape(r'\pagenumbering{arabic}'))
+        self.append(NoEscape(r'\pagenumbering{arabic}'))
 
     def set_booklet_mode(self, magic_key=MODE_INVOCATION_MAGIC_KEY):
         """
