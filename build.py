@@ -54,6 +54,18 @@ def argument_parser():
         help='directory to build carol pdfs into'
     )
 
+    parser.add_argument(
+        '--force_build',
+        action='store_true',
+        help='build all .ly files, even if a current .pdf file exists'
+    )
+
+    parser.add_argument(
+        '--silent',
+        action='store_true',
+        help='supress lilypond and LaTeX output'
+    )
+
     return parser
 
 
@@ -91,14 +103,15 @@ class CarolInfo():
         see_also = headers.get(SEE_ALSO)
 
         filename_base = os.path.splitext(os.path.basename(ly_filepath))[0]
-        pdf_filepath = os.path.join(pdf_dir, filename_base) + '.pdf'
+        pdf_base = os.path.join(pdf_dir, filename_base)
 
-        return cls(ly_filepath, pdf_filepath, toc_entry, see_also)
+        return cls(ly_filepath, pdf_base, toc_entry, see_also)
 
-    def __init__(self, ly_filepath: str, pdf_filepath: str,
+    def __init__(self, ly_filepath: str, pdf_base: str,
                  toc_entry: str=None, see_also: str=None):
         self.ly_filepath = ly_filepath
-        self.pdf_filepath = pdf_filepath
+        self.pdf_base = pdf_base # pdf path without file extension
+        self.pdf_filepath = '{}.pdf'.format(pdf_base)
 
         if toc_entry:
             self.toc_entry = utils.clean_title(toc_entry)
@@ -108,14 +121,12 @@ class CarolInfo():
 
         self.see_also = see_also
 
-    def build_if_needed(force_build=False):
-        # TODO! (https://pypi.python.org/pypi/python-ly)
+    def build_if_needed(self, force_build=False, silent=False):
+        # if os.isfile(c.pdf) & modified_after(c.pdf, c.ly) & !force_build
+        # print('{} is latest version, no action needed'.format(c.pdf))
+        # else
 
-        # If pdf doesn't exist, build .ly file into .pdf. If pdf exists:
-        # compare file age of .ly and .pdf. If .ly touched more recently, we
-        # need to rebuild it. (If force_build flag is set, we always rebuild
-        # the .ly file.)
-        pass
+        utils.compile_ly(self.ly_filepath, self.pdf_base, silent=silent)
 
 
 class Document(pylatex.Document):
@@ -143,7 +154,8 @@ class Document(pylatex.Document):
         super().__init__(*args, **kwargs)
 
     @classmethod
-    def make_carol_book(cls, src_dir: str, dest_dir: str, mode: str='handout'):
+    def make_carol_book(cls, src_dir: str, dest_dir: str, mode: str='handout',
+        force_build=False, silent=False):
         if mode not in MODES:
             raise ValueError("'mode' must be one of {} (user provided: {})".
                 format(MODES, mode))
@@ -151,7 +163,7 @@ class Document(pylatex.Document):
         doc = cls(src_dir, dest_dir, mode)
 
         doc.set_up()
-        doc.populate()
+        doc.populate(force_build=force_build, silent=silent)
         doc.end_matter()
 
         return doc
@@ -246,7 +258,7 @@ class Document(pylatex.Document):
         self.preamble[index] = BOOKLET_PKG
 
 
-    def populate(self):
+    def populate(self, force_build=False, silent=False):
         ly_files = utils.ly_files_to_compile(self.src_dir)
 
         carols = []
@@ -259,7 +271,7 @@ class Document(pylatex.Document):
         # start w/ punct. e.g. "'twas")
         # carols.sort(key=lambda c: c.toc_entry)
         for c in carols:
-            # c.build_if_needed()
+            c.build_if_needed(force_build=force_build, silent=silent)
 
             # TODO: alphabetize all tocs and see_alsos.
 
@@ -279,17 +291,18 @@ if __name__ == '__main__':
     args = parser.parse_args()
     ly_dir, build_dir = validate_dirs(args)
 
-    carol_book = Document.make_carol_book(ly_dir, build_dir, mode=args.mode)
+    carol_book = Document.make_carol_book(ly_dir, build_dir, mode=args.mode,
+        force_build=args.force_build, silent=args.silent)
 
     # NOTE: by default, pyLaTeX will compile the doc multiple times if needed to
     # make sure index/ToC are up to date.
     carol_book.documentclass = HANDOUT_DOC_CLASS
-    carol_book.generate_pdf('test', clean=False, clean_tex=False, silent=False)
+    carol_book.generate_pdf('test', clean=False, clean_tex=False, silent=args.silent)
 
     if carol_book.mode == BOOKLET:
         # Now that we've built the book once in HANDOUT mode to get the
         # index/ToC right, build for real in BOOKLET mode.
         carol_book.documentclass = BOOKLET_DOC_CLASS
         carol_book.set_booklet_mode()
-        carol_book.generate_pdf('test', clean=False, clean_tex=False, silent=False,
+        carol_book.generate_pdf('test', clean=False, clean_tex=False, silent=args.silent,
             compiler='pdflatex')

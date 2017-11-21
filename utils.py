@@ -1,6 +1,10 @@
 import os
 import os.path
 import re
+import subprocess
+
+class LilypondException(Exception):
+    pass
 
 HEADER_REGEXP = re.compile('\\\\header\s*{\s*(.*?)}', re.DOTALL)
 EQUALS_REGEXP = re.compile('\s*=\s*')
@@ -54,6 +58,28 @@ def headers_block_to_dict(headers_block: str):
             print('Error spliting header line: {}'.format(hline))
 
     return headers
+
+def compile_ly(src_file: str, dest_file: str, silent=False):
+    # note: dest_file should NOT have an extension (.pdf is added automatically in compilation)
+    print('Compiling {} --> {}.pdf'.format(src_file, dest_file))
+
+    res = subprocess.run(['lilypond', '-drelative-includes', '-o', dest_file, src_file],
+        stdout=subprocess.PIPE, stderr=subprocess.PIPE)
+
+    stdout = res.stdout.decode("utf-8")
+    stderr = res.stderr.decode("utf-8")
+
+    if res.returncode == 1:
+        # Something went wrong
+        raise LilypondException('Failed to compile lilypond file \'{}\' with stderr:\n{}'.
+            format(src_file, stderr))
+
+    # Yay, success!
+    if not silent:
+        # Lilypond seems to only output to stderr, even for success...
+        # We'll print stdout too just in case, though.
+        print(stdout)
+        print(stderr)
 
 
 def clean_title(title):
