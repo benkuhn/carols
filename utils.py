@@ -82,6 +82,10 @@ def compile_ly(src_file: str, dest_file: str, silent=False):
         print(stderr)
 
 
+def file_modified_time(filepath):
+    return os.path.getmtime(filepath)
+
+
 def clean_title(title):
     """If title starts with an article ('The', 'A', 'An'), put it at the end instead."""
     try:

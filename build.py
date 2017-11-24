@@ -55,6 +55,13 @@ def argument_parser():
     )
 
     parser.add_argument(
+        '--output_file',
+        type=str,
+        default='book',
+        help='name of the file to write output to (<output_file>.pdf)'
+    )
+
+    parser.add_argument(
         '--force_build',
         action='store_true',
         help='build all .ly files, even if a current .pdf file exists'
@@ -117,15 +124,22 @@ class CarolInfo():
             self.toc_entry = utils.clean_title(toc_entry)
         else:
             # If we didn't get an explicit ToC entry, just use the name of the pdf :-/
-            self.toc_entry = pdf_filepath
+            self.toc_entry = self.pdf_filepath
 
         self.see_also = see_also
 
     def build_if_needed(self, force_build=False, silent=False):
-        # if os.isfile(c.pdf) & modified_after(c.pdf, c.ly) & !force_build
-        # print('{} is latest version, no action needed'.format(c.pdf))
-        # else
+        # target pdf already exists
+        if os.path.isfile(self.pdf_filepath):
+            # lilypond file hasn't been modified since target pdf was last
+            # touched, so the pdf is current
+            if utils.file_modified_time(self.pdf_filepath) > utils.file_modified_time(self.ly_filepath):
+                if not force_build:
+                    print('"{}" up to date, no compilation necessary.'.format(self.pdf_filepath))
+                    return
 
+        # If we make it down here, either we're in force_build mode or pdf isn't
+        # current: compile the ly file into the target pdf
         utils.compile_ly(self.ly_filepath, self.pdf_base, silent=silent)
 
 
@@ -273,8 +287,6 @@ class Document(pylatex.Document):
         for c in carols:
             c.build_if_needed(force_build=force_build, silent=silent)
 
-            # TODO: alphabetize all tocs and see_alsos.
-
             # For now, add the song to the doc with a single ToC entry; if
             # there's a see_also, we'll index by that as well.
             if c.see_also:
@@ -296,13 +308,18 @@ if __name__ == '__main__':
 
     # NOTE: by default, pyLaTeX will compile the doc multiple times if needed to
     # make sure index/ToC are up to date.
+    print('Compiling carols into LaTeX doc...')
     carol_book.documentclass = HANDOUT_DOC_CLASS
-    carol_book.generate_pdf('test', clean=False, clean_tex=False, silent=args.silent)
+    carol_book.generate_pdf(args.output_file, clean=False, clean_tex=False, silent=args.silent)
 
     if carol_book.mode == BOOKLET:
         # Now that we've built the book once in HANDOUT mode to get the
         # index/ToC right, build for real in BOOKLET mode.
+        print('Re-compiling LaTeX doc in "booklet" mode...')
         carol_book.documentclass = BOOKLET_DOC_CLASS
         carol_book.set_booklet_mode()
-        carol_book.generate_pdf('test', clean=False, clean_tex=False, silent=args.silent,
+        carol_book.generate_pdf(args.output_file, clean=False, clean_tex=False, silent=args.silent,
             compiler='pdflatex')
+
+    print('Carol book successfully written to {}.pdf'.format(args.output_file))
+
