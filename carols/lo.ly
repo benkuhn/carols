@@ -43,13 +43,13 @@ alto=\context Voice = "alto"   {
   \voiceTwo
   \relative c' {
 	a'2 a4 f f f e2 d d
-	c4 c d4. a8( c2) c
+	c4 c d4.( a8 c4) c c2
 	a'2 a4 f f f e2 d d
-	c4 c d4. a8( c2) c
+	c4 c d4.( a8 c4) c c2
 	s4 f d c c b c8( d e4) s
 	e4 g f f f e2 d d
-	f4 d( e) f( g) c, c1
-  }}	
+	f4 d e( f g) c, c1
+  }}
 
 tenor = \context Voice = "tenor"   {
   \voiceOne
@@ -72,10 +72,10 @@ bass = \context Voice = "bass"   {
 	f'4 e d2 c f
 	s4 f g a f g c,2 s4
 	c4 e f bes, f' c2 d g,
-	a4 bes c2 c f,1
+	a4 bes c2 c <<f1 f,>>
   }}
 accomp=\chordmode {
-  
+
 }
 stanzaa = \lyricmode {
   Lo, how a Rose e'er bloom -- img
@@ -83,7 +83,7 @@ stanzaa = \lyricmode {
   Of Jes -- se's lin -- eage com -- ing
   As men of old have sung.
   It came a flow' -- ret bright,
-  A -- mid the cold of win -- ter, 
+  A -- mid the cold of win -- ter,
   When half -- spent was  the night.
 }
 
@@ -104,27 +104,27 @@ stanzac = \lyricmode {
   True man, yet ve -- ry God,
   From sin and death he saves us,
   And light -- ens ev' -- ry load.
-}	
+}
 stanzad = \lyricmode {
-  
-}	
+
+}
 stanzae = \lyricmode {
-  
+
 }
 stanzaf = \lyricmode {
-  
+
 }
 
 \score {	%\transpose d c
   \context ChoirStaff <<
     \context ChordNames \accomp
-    \unset ChoirStaff.melismaBusyProperties 
+    \unset ChoirStaff.melismaBusyProperties
     \context Staff ="upper"  { \clef "G" <<
       \global
       \sop
       \alto
     >>}
-    
+
     \lyricsto "sop" \context Lyrics = "stanza-1" {
       \set stanza = "1."
       \stanzaa }
@@ -134,7 +134,7 @@ stanzaf = \lyricmode {
     \lyricsto "sop" \context Lyrics = "stanza-3" {
       \set stanza = "3."
       \stanzac }
-    
+
     \context Staff = "lower"  { \clef "F"<<
       \global
       \tenor
@@ -149,8 +149,8 @@ stanzaf = \lyricmode {
       chordChanges = ##t
     }
     \context {
-      \Staff 
-      \remove Time_signature_engraver 
-    } 
+      \Staff
+      \remove Time_signature_engraver
+    }
   }
 }

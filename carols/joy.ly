@@ -31,7 +31,7 @@ sop = \context Voice = "sop"    {
   \voiceOne
   d''4 cis''8. b'16 a'4. g'8 fis'4 e' d'4.
   a'8 b'4. b'8 cis''4. cis''8 d''4.
-  d''8 d''( cis'') b'( a') a'8.( g'16 fis'8) 
+  d''8 d''( cis'') b'( a') a'8.( g'16 fis'8)
   d'' d''( cis'') b'( a') a'8.( g'16 fis'8)
   fis' fis' fis' fis' fis'16( g') a'4.
   g'16( fis') e'8 e' e' e'16( fis') g'4.
@@ -42,12 +42,12 @@ alto=\context Voice = "alto"   {
   \voiceTwo
   d'4 d'8. d'16 d'4. e'8 d'4 cis' d'4.
   a'8 g'4. g'8 g'4. g'8 fis'4.
-  fis'8 fis' a' g' fis' fis'8. e'16 d'8 
-  fis'8 fis' a' g' fis' fis'8. e'16 d'8 
+  fis'8 fis' a' g' fis' fis'8. e'16 d'8
+  fis'8 fis' a' g' fis' fis'8. e'16 d'8
   d' d' d' d' d'16 e' fis'4.
   e'16 d' cis'8 cis' cis' cis'16 d' e'4.
   d'16 cis' d'8 fis'4 g'8 fis'8. e'16 d'8 e' d'4 cis' d'2
-}	
+}
 
 tenor = \context Voice = "tenor"   {
   \voiceOne
@@ -68,7 +68,7 @@ bass = \context Voice = "bass"   {
 }
 
 accomp=\chordmode {
-  
+
 }
 
 

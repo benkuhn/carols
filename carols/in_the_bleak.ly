@@ -27,126 +27,165 @@ global= {
   \key f \major
 }
 
-sop = \context Voice = "sop"    {
+sop = \context Voice = "sop" \relative c''   {
   \voiceOne
-  \slurDashed
-  a'4.( bes'8) c''4 a' g'2 f'2
-  g'4.( a'8) g'4 d' g'1
-  a'4. bes'8 c''4 a' g'2 f'2
-  g'4 a' g'4. f'8 f'1
-  bes'4. a'8 bes'4 c'' d''( d'') a'2
-  c''4( a') g'( f') e'1
-  a'4. bes'8 c''4 a' g'2 f'2
-  g'4( a') g'4.( f'8) f'1 \bar "|."
+  \slurDotted
+  a4.( bes8) c4 a |
+  g2 f |
+  g4.( a8) g4 d |
+  g1 | \break
+
+  a4. bes8 c4 a |
+  g4.( g8) f2 |
+  g4( a) g4. f8 |
+  f2. f4 |
+
+  bes4. a8 bes4( c) |
+  d( d) a( a) |
+  c( a) g( f) |
+  e2. a4 |
+
+  a4.( bes8) c4 a |
+  g2 f |
+  \slurSolid
+  g4( a) g4.( f8) |
+  f1 \bar "|."
 }
 
-alto=\context Voice = "alto"   {
+alto=\context Voice = "alto" \relative c'  {
   \voiceTwo
-  \slurDashed
-  f'4.( f'8) f'4 c' d'2 d'2
-  d'4. d'8 d'4 c' bes1
-  c'4. f'8 f'4 c' d'2 d'2
-  f'4 f' e'4. f'8 f'1
-  f'4. f'8 f'4 ees' d'( d') f'2
-  f'4( e') d'( d') c'1
-  c'4. f'8 f'4 c' d'2 d'2
-  f'4( f') e'4. f'8 f'1
-}	
+  \slurDotted f4.( f8) f4 c |
+  d2 d |
+  d4.( d8) d4 c |
+  bes1 |
 
-tenor = \context Voice = "tenor"   {
-  \voiceOne
-  \slurDashed
-  c'4.( c'8) c'4 f a2 a2
-  g4. d8 d4 f \slurSolid f2( e2) \slurDashed
-  f4. c'8 c'4 f a2 a2
-  d'4 d' bes4. a8 a1
-  bes4. c'8 bes4 a bes( bes) a2
-  f4( c') bes( a) g1
-  f4. c'8 c'4 f a2 a2
-  d'4( d') bes4.( a8) a1
+  c4. f8 f4 c |
+  d4.( d8) d2 |
+  f4( f) e4. f8 |
+  f2. f4 |
+
+  f4. f8 f4( ees4) |
+  d( d) f( f) |
+  f( e) d( d) |
+  c2. c4 |
+
+  c4.( f8) f4 c |
+  d2 d |
+  \slurSolid
+  f2 e4.( f8) |
+  f1 \bar "|."
 }
 
-bass = \context Voice = "bass"   {
+tenor = \context Voice = "tenor" \relative c' {
+  \voiceOne
+  \slurDotted c4.( c8) c4 f, |
+  a2 a |
+  g4.( d8) d4 f |
+  \slurSolid f2( e) |
+
+  \slurDotted f4. c'8 c4 f, |
+  a4.( a8) a2 |
+  d4( d) bes4. a8 |
+  a2. a4 |
+
+  bes4. c8 bes4( a) |
+  bes( bes) a( a) |
+  f( c') bes( a) |
+  g2. f4 |
+
+  f4.( c'8) c4 f, |
+  a2 a |
+  \slurSolid
+  d2 bes4.( a8) |
+  a1 \bar "|."
+}
+
+bass = \context Voice = "bass" \relative c {
   \voiceTwo
-  \slurDashed
-  f4.( g8) a4 f d2 d2
-  bes,4. c8 bes,4 a, \slurSolid g,2( c2) \slurDashed
-  f4. g8 a4 f d2 d2
-  bes,4 bes, c4. f8 f1
-  d4. f8 d4 c bes,( bes,) d2
-  a,4( a,) bes,( bes,) c1
-  f4. g8 a4 f d2 d2
-  bes,4( bes,) c4. f8 f1
+  \slurDotted f4.( g8) a4 f |
+  d2 d |
+  bes4.( c8) bes4 a |
+  \slurSolid g2( c) |
+
+  \slurDotted f4.( g8) a4 f |
+  d4. d8 d2 |
+  bes4( bes) c4. f8 |
+  f2. f4 |
+
+  d4. f8 d4( c) |
+  bes( bes) d d |
+  a( a) bes( bes) |
+  c2. f4 |
+
+  f4.( g8) a4 f |
+  d2 d |
+  \slurSolid
+  bes2 c4.( f8) |
+  f1 \bar "|."
 }
 accomp=\chordmode {
-  
+
 }
 
 
 
 stanzaa = \lyricmode {
   \set ignoreMelismata = ##t
-  In the bleak mid -- win -- ter
-  Fros -- ty wind made moan,
-  Earth stood hard as i -- ron,
-  Wa -- ter like a stone;
-  Snow had fal -- len, snow on snow,
-  \unset ignoreMelismata
-  Snow on snow,
-  In the bleak mid -- win -- ter
+  In the bleak mid -- win -- ter,
+  fros -- ty wind made moan,
+  Earth stood hard as i -- _ ron,
+  wa -- ter like a stone, ""
+  Snow had fal -- len, snow on snow, ""
+  snow __ _ on __ _ snow, ""
+  In the bleak mid -- win -- ter,
+  \set ignoreMelismata = ##f
   Long a -- go.
 }
 
 stanzab = \lyricmode {
   \set ignoreMelismata = ##t
-  Christ a home -- less strang -- er,
-  So the gos -- pels say,
-  Cra -- dled in a man -- ger
-  And a bed of hay;
-  \unset ignoreMelismata
-  In the bleak mid -- win -- ter
-  \set ignoreMelismata = ##t
-  Sta -- ble -- place suf -- ficed
-  \unset ignoreMelismata
-  Ma -- ry and her ba -- by,
+  Hea -- ven can -- not hold Him
+  Nor __ _ earth sus -- tain;
+  Heav’n and earth shall flee a -- way
+  When He comes to reign; ""
+  In the bleak mid -- win -- _ ter a sta -- ble place suf -- ficed
+  The Lord __ _ God Al -- migh -- ty,
+  \set ignoreMelismata = ##f
   Je -- sus Christ.
 }
 stanzac = \lyricmode {
   \set ignoreMelismata = ##t
-  Once more child and moth -- er
-  Weave their mag -- ic spell,
-  Touch -- ing hearts with won -- der
-  Words can nev -- er tell.
-  \unset ignoreMelismata
-  In the bleak mid -- win -- ter,
-  \set ignoreMelismata = ##t
-  In this world of pain,
-  Where our hearts are o -- pen
-  Love is born a -- gain.
-}	
+  An -- gels and arch -- an -- gels May have ga -- thered there
+  Cher -- u -- bim and Ser -- a -- phim
+  Throng -- _ ed the air
+  But on -- ly His __ _ mo -- _ ther ""
+  In her maid -- en bliss ""
+  Wor -- shipped the Be -- lov -- ed
+  \set ignoreMelismata = ##f
+  with a kiss.
+}
 stanzad = \lyricmode {
-  What can I give him,
-  Poor as I am?
   \set ignoreMelismata = ##t
-  If I were a shep -- herd
-  I would bring a lamb,
-  \unset ignoreMelismata
-  If I were a wise man
-  \set ignoreMelismata = ##t
-  I would do my part,
-  Yet what can I give him?
-  I can give my heart.
+  What __ _ can I give Him,
+  Poor __ _ as I am?
+  If I were a shep -- _ herd
+  I would bring a lamb; ""
+  If I were a wise __ _ man ""
+  I would do my part;
+  Yet what I can I give Him
+  \set ignoreMelismata = ##f
+  Give my heart.
 }
 
 \score {
   \context ChoirStaff <<
-    \unset ChoirStaff.melismaBusyProperties 
+    \unset ChoirStaff.melismaBusyProperties
     \context Staff ="upper"  { \clef "G" <<
       \global
       \sop
       \alto
     >>}
-    
+
     \lyricsto "sop" \context Lyrics = "stanza-1" {
       \set stanza = "1."
       \stanzaa }

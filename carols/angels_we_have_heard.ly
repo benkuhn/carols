@@ -32,12 +32,12 @@ sopMusic = \relative c'' {
     g4 a b c |
   }
   \alternative {
-    { b2 a \bar ":|" }
-    { b2( a2) | g1 \bar "|." }
+    { b2 a | }
+    { b2( a2) | g1 | }
   }
 }
 sopWords = \lyricmode {
-  
+
 }
 
 altoMusic = \relative c'' {
@@ -95,17 +95,17 @@ altoWordsIV = \lyricmode {
 tenorMusic = \relative c' {
   d4 d d d |
   c d d2 |
-  d4 c d b |
+  d4 d d d |
   d4. c8 b2 |
-  
+
   d4 d d d |
   c d d2 |
-  d4 c d b |
+  d4 d d d |
   d4. c8 b2 |
-  
+
   b2( e~ |
   e d~ |
-  d c |
+  d c4. b8 |
   a4) g fis2 |
   g4 d' d e |
   d2 d2 |
@@ -120,19 +120,19 @@ bassMusic = \relative c' {
   a d, g2 |
   g4 d g b |
   d d, g2 |
-  
+
   g4 g b b |
   e, fis g2 |
-  g4 d g b,8 c |
+  g4 d e b8 c |
   d4 d g2 |
-  
+
   g2( e4 g |
   a2 d,4 fis |
   g2 c,4 e |
   fis) e d( c) |
   b d g c, |
   d2 d |
-  
+
   d1 | g1 |
 }
 bassWords = \lyricmode {
