@@ -34,7 +34,7 @@ sop = \context Voice = "sop"    {
   aes'2 g'4 f' \slurDashed g'( aes') \slurSolid bes' c'' g'2( f'4.) ees'8 ees'1
   ees''2 des''4 c'' des''2 c'' bes'4 c'' aes' bes' g'4.( f'8) ees'4
   ^ \markup{ \large \italic Refrain }
-  aes'4 aes' g' aes' bes' aes'2 ees'4 
+  aes'4 aes' g' aes' bes' aes'2 ees'4
   c'' c'' bes' c'' des'' c''2 bes'4
   c'' des'' c'' bes' aes' g'2 aes'4( des'')
   c''2( bes'4.) aes'8 aes'2. \bar "|."
@@ -45,17 +45,17 @@ alto=\context Voice = "alto"   {
   ees'4 ees'2 ees'4 ees' ees'2 ees' ees'4 ees' ees' f' ees'2 ees'4 c'
   c'( d') ees' d' \slurDashed ees'4( ees') \slurSolid ees' ees' ees'2 d'4. ees'8 ees'1
   ees'2 f'8 g' aes'4 aes'( g') aes'2 ees'4 ees' f' f' ees'2 ees'4
-  ees'4 ees'1 ~ ees'2. ees'4 ees' ees' ees' ees' ees'2 ees'4 aes' g' 
-  aes' ees' f'8 d' ees'2 ees'4( f') ees'2 ~ ees'4. c'8 c'2. 
-  
-}	
+  ees'4 ees'1 ~ ees'2. ees'4 ees' ees' ees' ees' ees'2 ees'4 aes' g'
+  aes' ees' ees'8 d' ees'2 ees'4( f') ees'2 ~ ees'4. c'8 c'2.
+
+}
 
 tenor = \context Voice = "tenor"   {
   \voiceOne
   c'4 c'2 c'4 c' des'2 bes aes4 bes aes aes aes2 g4 aes
   aes2 bes4 bes \slurDashed bes( aes) \slurSolid g ees bes2( aes4.) g8 g1
-  c'2 des'4 ees' des'2 ees' ees'4 aes c' des' bes4.( aes8) g4 
-  c' c' bes c' des' c'2. aes4 aes g aes bes aes2 g4
+  c'2 des'4 ees' ees'2 ees' ees'4 aes c' des' bes4.( aes8) g4
+  c' c' bes c' des' c'2 c'4 aes aes g aes bes aes2 g4
   ees' ees' ees' bes bes bes2 aes aes( g4.) aes8 aes2.
 }
 
@@ -69,7 +69,7 @@ bass = \context Voice = "bass"   {
 }
 
 accomp=\chordmode {
-  
+
 }
 
 
@@ -78,14 +78,14 @@ stanzaa = \lyricmode {
   O come, all ye faith -- ful, Joy -- ful and tri -- um -- phant,
   O come ye, O come ye to Beth -- le -- hem;
   Come and be -- hold Him Born the King of An -- gels:
-  
+
   O come, let us a -- dore Him,
   O come, let us a -- dore Him,
   O come, let us a -- dore Him, Christ the Lord!
 }
 
 stanzab = \lyricmode {
-  _ God of _ God, _ Light _ of _ Light, _ _ 
+  _ God of _ God, _ Light _ of _ Light, _ _
   Lo, He ab -- hors not the Vir -- gin's womb;
   Ve -- ry _  God, Be -- got -- ten, not cre -- a -- ted;
 }
@@ -135,13 +135,13 @@ latin = \lyricmode {
   \transpose aes g
   \context ChoirStaff <<
     \context ChordNames \accomp
-    \unset ChoirStaff.melismaBusyProperties 
+    \unset ChoirStaff.melismaBusyProperties
     \context Staff ="upper"  { \clef "G" <<
       \global
       \sop
       \alto
     >>}
-    
+
     \lyricsto "sop" \context Lyrics = "stanza-l" {
       \set stanza = "Latin."
       \latin }

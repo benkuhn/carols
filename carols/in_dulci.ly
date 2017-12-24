@@ -19,45 +19,47 @@ sopMusic = \relative c' {
   f2 f4 a2 bes4 |
   c2( d4 c2) c4 |
   f,2 f4 a2 bes4 |
-  c2( d4 c2) b4\rest |
+  c2( d4 c2.) |
+
   c2 d4 c2 bes4 |
-  
-  a2( g4) f2 f4 |
+  a2. f2 f4 |
   g2 g4 a2 g4 |
   f2( g4 a2) a4 |
+
   c2 d4 c2 bes4 |
-  a2( g4) f2 f4 |
-  
+  a2. f2 f4 |
   g2 g4 a2 g4 |
-  f2( g4 a2) b4\rest |
+  f2( g4 a2.) |
+
   d,2 d4 e2 e4 |
-  f2.( c'2) b4\rest |
+  f2.( c'2.) |
   a2 a4 g2 g4 |
   \partial 4*5 f2. b2\rest \bar "|."
 }
 sopWords = \lyricmode {
-  
+
 }
 
 altoMusic = \relative c' {
   c4 |
-  d2 c4 f[ e] d |
+  d2 c4 f4. e8 d4 |
   c2( f4 e2) f4 |
-  d2 c4 f[ e] d |
+  d2 c4 f4. e8 d4 |
   c2( f4 e2) s4 |
+
   f2 f4 e2 g4 |
-  
-  f2( e4) f2 f4 |
+  c,2. d2 f4 |
   f2 f4 e2 e4 |
   f2.~ f2 f4 |
+
   f2 f4 e2 g4 |
-  f2( e4) f2 d4 |
-  
-  f2 f4 e2 e4 |
-  f2( e4 f2) s4 |
-  a,2 a4 d2 cis4 |
-  d2.( e2) s4 |
-  c2 f4 f2 e4 |
+  c,2. f2 f4 |
+  f2 f4 f2 e4 |
+  f1. |
+
+  d2 d4 d2 cis4 |
+  d2.( e) |
+  f2 f4 f2 e4
   f2. s2 \bar "|."
 }
 altoWords = \lyricmode {
@@ -89,7 +91,7 @@ altoWordsIII = \lyricmode {
   \markup\italic Per \markup\italic nos -- \markup\italic tra \markup\italic cri -- \markup\italic mi -- \markup\italic na; __
   But Thou for us hast gain -- ed
   \markup\italic Cœ -- \markup\italic lo -- \markup\italic rum \markup\italic gau -- \markup\italic di -- \markup\italic a. __
-  O that we were there! O that we were there! 
+  O that we were there! O that we were there!
 }
 altoWordsIV = \lyricmode {
   \set stanza = #"4. "
@@ -108,19 +110,20 @@ tenorMusic = \relative c' {
   a2( bes4 g2) a4 |
   bes2 a4 c2 bes4 |
   a2( bes4 g2) s4 |
-  c2 bes4 g2 c4 |
-  
-  c2. a2 a4 |
+
+  c2 bes4 g2 e4 |
+  f2. a2 a4 |
   d2 d4 c2 bes4 |
   a2( bes4 c2) c4 |
-  c2 bes4 g2 c4 |
-  c2. a2 a4 |
-  
-  d2 d4 c[ d] bes |
-  a2( c4)~ c2 s4 |
-  a2 a4 g2 a4 |
-  a2( bes4 g2) s4 |
-  f2 a4 d2 c4 |
+
+  c2 bes4 g2 e4 |
+  f2. a2 a4 |
+  d2 d4 c4.( d8) bes4 |
+  a2( bes4)~ c2. |
+
+  a2 a4 g2 g4 |
+  a2( bes4 g2.) |
+  f2 bes4 d2 c4 |
   a2. s2 \bar "|."
 }
 tenorWords = \lyricmode {
@@ -132,21 +135,22 @@ bassMusic = \relative c {
   f2 f4 f2 f4 |
   f2.~ f2 f4 |
   f2 f4 f2 f4 |
-  f2.( c2) d4\rest |
-  a2 bes4 c2 e4 |
-  
-  f2( c4) d2 d4 |
+  f2.( c2.) |
+
+  a2 bes4 c2 c4 |
+  f2. d2 d4 |
   bes2 bes4 c2 c4 |
   f2.~ f2 f4 |
-  a,2 bes4 c2 e4 |
-  f2( c4) d2 d4 |
-  
+
+  a,2 bes4 c2 c4 |
+  f2. d2 d4 |
   bes2 bes4 c2 c4 |
-  d2( c4 f2) d4\rest |
-  f2 f4 e2 a,4 |
-  d2.( c2) d4\rest |
+  f1. |
+
+  f2 f4 e2 e4 |
+  d2.( c2.) |
   f2 d4 bes2 c4 |
-  f2. d2\rest \bar "|."
+  <<f2. f,>> d'2\rest \bar "|."
 
 }
 bassWords = \lyricmode {

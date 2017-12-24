@@ -33,17 +33,17 @@ sop = \context Voice = "sop"    {
     aes aes ees2 |
     f4 ees f g |
     aes2 aes |
-    
+
     aes4 aes aes bes |
     aes aes ees2 |
     f4 ees f g |
     aes2 aes |
-    
+
     ees'4 des c bes |
     c bes aes2 |
     f4 ees f g |
     aes2 aes |
-    
+
     ees4 ees f g |
     aes aes bes2 |
     ees4 des c bes |
@@ -52,30 +52,30 @@ sop = \context Voice = "sop"    {
   }}
 
 alto=\context Voice = "alto"   {
-  \voiceTwo 
+  \voiceTwo
   \relative c' {
   ees4 ees f ees |
   ees f bes,2 |
   des4 ees des des |
-  c2 c |
-  
+  ees2 ees |
+
   ees4 ees f f |
   ees f bes,2 |
   des4 ees des des |
   ees2 ees |
-  
+
   aes4 aes aes g |
   aes g f2 |
   aes,4 ees' des des |
   ees2 ees |
-  
+
   ees4 ees des des |
   c c ees2 |
   ees4 aes g g |
   aes2( f) |
   ees1 \bar "|."
-	
-  }}	
+
+  }}
 
 tenor = \context Voice = "tenor"   {
   \voiceOne
@@ -89,12 +89,12 @@ tenor = \context Voice = "tenor"   {
   c des g,2 |
   aes4 aes aes bes |
   c2 c |
-  
+
   ees4 f ees ees |
   ees ees c2 |
   des4 aes aes bes |
   ees,2 ees |
-  
+
   aes4 aes aes bes |
   aes aes g2 |
   aes4 f' ees ees |
@@ -109,17 +109,17 @@ bass = \context Voice = "bass"   {
   aes des, ees2 |
   des4 c des4 bes4 |
   aes2 aes |
-  
+
   aes'4 aes f g |
   aes des, ees2 |
   des4 c des4 bes4 |
   aes2 aes |
-  
-  c4 des aes' ees |
+
+  c4 des ees ees |
   c ees f2 |
   des4 c des bes |
   aes2 aes |
-  
+
   c4 c des bes |
   f' f ees2 |
   c4 des ees ees |
@@ -128,7 +128,7 @@ bass = \context Voice = "bass"   {
   }}
 
 accomp=\chordmode {
-  
+
 }
 
 
@@ -177,7 +177,7 @@ stanzad = \lyricmode {
   Freeze thy blood less cold -- ly.”
 }
 stanzae = \lyricmode {
-  In his mas -- ter's steps he trod, 
+  In his mas -- ter's steps he trod,
   Where the snow lay din -- ted;
   Heat was in the ve -- ry sod
   Which the saint had prin -- ted.
@@ -188,19 +188,19 @@ stanzae = \lyricmode {
 }
 
 stanzaf = \lyricmode {
-  
+
 }
 
 \score {
   \context ChoirStaff <<
     \context ChordNames \accomp
-    \unset ChoirStaff.melismaBusyProperties 
+    \unset ChoirStaff.melismaBusyProperties
     \context Staff ="upper"  { \clef "G" <<
       \global
       \sop
       \alto
     >>}
-    
+
     \lyricsto "sop" \context Lyrics = "stanza-1" {
       \set stanza = "1."
       \stanzaa }

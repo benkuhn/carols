@@ -45,9 +45,9 @@ sop = \context Voice = "sop"    {
 alto=\context Voice = "alto"   {
 	\voiceTwo
 	d'4 d' e' d' e'8( fis') g'4 g' fis'
-	d' d' g' g' fis' g'2.
+	e' e' g' g' fis' g'2.
 	d'4 d' e' d' e'8( fis') g'4 g' fis'
-	d' d' g' g' fis' g'2.
+	e' e' g' g' fis' g'2.
 	g'4 fis'4. e'8 fis'4 d' d' g' fis'
 	d'4 d' d' c' b8( c') d'2.
 	d'4 d' e' d' e'8( fis') g'4 g' fis'
