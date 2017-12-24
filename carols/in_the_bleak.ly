@@ -43,7 +43,7 @@ sop = \context Voice = "sop" \relative c''   {
   bes4. a8 bes4( c) |
   d( d) a( a) |
   c( a) g( f) |
-  e2. a4 |
+  e2. \parenthesize a4 |
 
   a4.( bes8) c4 a |
   g2 f |
@@ -67,7 +67,7 @@ alto=\context Voice = "alto" \relative c'  {
   f4. f8 f4( ees4) |
   d( d) f( f) |
   f( e) d( d) |
-  c2. c4 |
+  c2. \parenthesize c4 |
 
   c4.( f8) f4 c |
   d2 d |
@@ -91,7 +91,7 @@ tenor = \context Voice = "tenor" \relative c' {
   bes4. c8 bes4( a) |
   bes( bes) a( a) |
   f( c') bes( a) |
-  g2. f4 |
+  g2. \parenthesize f4 |
 
   f4.( c'8) c4 f, |
   a2 a |
@@ -115,7 +115,7 @@ bass = \context Voice = "bass" \relative c {
   d4. f8 d4( c) |
   bes( bes) d d |
   a( a) bes( bes) |
-  c2. f4 |
+  c2. \parenthesize f4 |
 
   f4.( g8) a4 f |
   d2 d |
