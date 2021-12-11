@@ -7,3 +7,5 @@ book.ind
 book.log
 book.idx
 modes/curmode.tex
+book.fdb_latexmk
+book.fls
