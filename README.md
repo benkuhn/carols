@@ -33,6 +33,10 @@ have changed and rebuilding the book. It needs to be run in the
 project root and takes one argument, `handout` or `booklet`, according
 to which output you want. It dumps the final product in `./book.pdf`.
 
+If the index doesn't appear the first time you build it, run
+`build.sh` again.
+
 ## Dependencies
 
-You should have Lilypond and a LaTeX distribution installed.
+The build script relies on Docker to procure a working Lilypond
+installation. Sigh, but such is life in 2021.

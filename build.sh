@@ -2,6 +2,8 @@
 
 MODE=$1
 
+DOCKER="docker run -v `pwd`:`pwd` -w `pwd` lilypond"
+
 if [ "$MODE" != "handout" ] && [ "$MODE" != "booklet" ]; then
     echo "Usage: ./build.sh [handout|booklet]"
     exit 1
@@ -33,7 +35,7 @@ for FILE in carols/*.ly; do
             continue
         fi
     fi
-    lilypond -drelative-includes -o $OUTFILE_LY $INFILE
+    $DOCKER lilypond -drelative-includes -o $OUTFILE_LY $INFILE
 done
 
 # Always compile the main file in handout mode first to produce the index right
@@ -41,11 +43,11 @@ if [ -f modes/curmode.tex ]; then
     rm modes/curmode.tex
 fi
 ln modes/handout.tex modes/curmode.tex
-makeindex book.idx
-pdflatex book.tex
+$DOCKER makeindex book.idx
+$DOCKER pdflatex book.tex
 
 if [ $MODE == "booklet" ]; then
     rm modes/curmode.tex
     ln modes/booklet.tex modes/curmode.tex
-    pdflatex book.tex
+    $DOCKER pdflatex book.tex
 fi
