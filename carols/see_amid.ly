@@ -1,5 +1,7 @@
 
 \version "2.18.2"
+\include "header.ly"
+
 % automatically converted by musicxml2ly from see_amid.mxl
 % source: https://www.cpdl.org/wiki/index.php/See_amid_the_winter%27s_snow_(John_Goss)
 
@@ -9,16 +11,13 @@
   composer = "Sir John Goss"
   poet = "Edward Caswall"
   date = "1871"
-  title = "See Amid the Winter Snow"
+  title = "See Amid the Winter's Snow"
   %metre = "Adeste Fideles"
   %meter = \metre
-  copyright = "Public Domain"
   style = "Hymn"
   mutopiacomposer = \composer
   mutopiapoet=\poet
 }
-
-#(set-global-staff-size 16)
 
 \layout {
     \context { \Score
@@ -30,16 +29,16 @@ PartPOneVoiceOne =  \relative g' {
     g4. a8 g4 fis4 | % 2
     e4. d8 d2 | % 3
     g4 a4 c4 b4 | % 4
-    b4. a8 a2 | % 5
+    b4. a8 a2 \break | % 5
     g4. a8 g4 fis4 | % 6
     e4. d8 d2 | % 7
     g4 a4 b4 c4 | % 8
-    a4. g8 g2 \bar "||"
+    a4. g8 g2 \bar "||" \break
     | % 9
     d'4. d8 c4 b4 | \barNumberCheck #10
     a4 g4 fis2 | % 11
     d'4. d8 c4 b4 | % 12
-    a4 g4 fis2 | % 13
+    a4 g4 fis2 \break | % 13
     g4. a8 g4 fis4 | % 14
     e4. d8 d2 | % 15
     d'4. b8 g4 c4 | % 16
@@ -151,7 +150,7 @@ PartPTwoVoiceTwo =  \relative g, {
 % The score definition
 \score {
     <<
-        \new StaffGroup <<
+        \new ChoirStaff <<
             \new Staff <<
                 \set Staff.instrumentName = " "
                 \set Staff.shortInstrumentName = " "
@@ -172,9 +171,7 @@ PartPTwoVoiceTwo =  \relative g, {
                     \context Voice = "PartPTwoVoiceTwo" { \voiceTwo \PartPTwoVoiceTwo }
                     >>
                 >>
-
             >>
-
         >>
     \layout {}
     % To create MIDI output, uncomment the following line:
