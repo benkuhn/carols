@@ -43,6 +43,7 @@ if [ -f modes/curmode.tex ]; then
     rm modes/curmode.tex
 fi
 ln modes/handout.tex modes/curmode.tex
+$DOCKER pdflatex book.tex
 $DOCKER makeindex book.idx
 $DOCKER pdflatex book.tex
 
@@ -51,3 +52,5 @@ if [ $MODE == "booklet" ]; then
     ln modes/booklet.tex modes/curmode.tex
     $DOCKER pdflatex book.tex
 fi
+
+mv book.pdf $MODE.pdf
