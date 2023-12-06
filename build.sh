@@ -9,6 +9,12 @@ if [ "$MODE" != "handout" ] && [ "$MODE" != "booklet" ]; then
     exit 1
 fi
 
+# check that the docker image tagged `lilypond` exists
+if [ -z "`docker images -q lilypond`" ]; then
+    echo "Docker image 'lilypond' not found. Building..."
+    docker build lilypond_docker -t lilypond:latest
+fi
+
 # Make sure 'build' directory exists
 if [ ! -d ./build ]; then
   echo "Creating './build' directory."
