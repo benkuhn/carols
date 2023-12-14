@@ -1,3 +1,7 @@
+## Ben's book of carols
+
+### ([download here](https://github.com/benkuhn/carols/releases/latest))
+
 Here's the problem with existing books of Christmas carols:
 
 - They don't have all the carols I like.
