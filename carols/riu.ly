@@ -307,7 +307,7 @@ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _ _
 Es -- te que~es na -- ci -- do
 es _ el gran mo -- \mt #1 nar-ca,
 Cris -- to pa -- tri -- ar -- ca
-de car -- _ ne ves -- \mt #1 ti-do;
+de car -- ne ves -- ti -- do;
 ha -- nos re -- di -- mi -- do
 con se ha -- cer chi -- \mt #1 qui-to
 aun -- que~e -- ra~in -- fi -- ni -- to,

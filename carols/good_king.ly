@@ -134,7 +134,7 @@ accomp=\chordmode {
 
 
 stanzaa = \lyricmode {
-  Good King Wen -- ces -- lass looked out
+  Good King Wen -- ces -- las looked out
   On the feast of Ste -- phen,
   When the snow lay round a -- bout,
   Deep and crisp and e -- ven;

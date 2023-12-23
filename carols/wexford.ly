@@ -169,7 +169,7 @@ tenorMusic = \relative c {
   g |
   g c b( a4) c8 |
   
-  d8 a f4. g8 |
+  d8 a f?4. g8 |
   \times 2/3 {g[ a] bes} bes[ a] bes[ c] |
   a c a4 r8 d, |
   
