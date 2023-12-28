@@ -2,7 +2,7 @@
 
 MODE=$1
 
-DOCKER="docker run -v `pwd`:`pwd` -w `pwd` lilypond"
+DOCKER="docker buildx run -v `pwd`:`pwd` -w `pwd` lilypond"
 
 if [ "$MODE" != "handout" ] && [ "$MODE" != "booklet" ]; then
     echo "Usage: ./build.sh [handout|booklet]"
