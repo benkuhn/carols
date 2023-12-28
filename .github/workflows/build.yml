@@ -17,5 +17,6 @@ jobs:
         tags: benkuhn/lilypond:latest
         cache-from: type=gha
         cache-to: type=gha,mode=max
+        load: true
     - name: Run Script in Docker Container
       run: ./build.sh handout
