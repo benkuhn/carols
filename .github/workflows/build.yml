@@ -14,7 +14,7 @@ jobs:
         context: .
         file: lilypond_docker/Dockerfile
         push: false
-        tags: benkuhn/lilypond:latest
+        tags: lilypond
         cache-from: type=gha
         cache-to: type=gha,mode=max
         load: true
