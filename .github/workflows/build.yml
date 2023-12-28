@@ -5,7 +5,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
     - name: Checkout Repository
-      uses: actions/checkout@v2
+      uses: actions/checkout@v4
     - name: Set up Docker Buildx
       uses: docker/setup-buildx-action@v3
     - name: Build and push
@@ -20,12 +20,13 @@ jobs:
         load: true
     - name: Compile handout
       run: ./build.sh handout
-    - name: Compile booklet
-      run: ./build.sh booklet
-    - name: Archive PDFs
+    - name: Archive handout
       uses: actions/upload-artifact@v3
       with:
-        name: pdfs
-        path: |
-          booklet.pdf
-          handout.pdf
+        path: handout.pdf
+    - name: Compile booklet
+      run: ./build.sh booklet
+    - name: Archive booklet
+      uses: actions/upload-artifact@v3
+      with:
+        path: booklet.pdf
