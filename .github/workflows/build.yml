@@ -23,10 +23,12 @@ jobs:
     - name: Archive handout
       uses: actions/upload-artifact@v3
       with:
+        name: handout
         path: handout.pdf
     - name: Compile booklet
       run: ./build.sh booklet
     - name: Archive booklet
       uses: actions/upload-artifact@v3
       with:
+        name: booklet
         path: booklet.pdf
