@@ -8,9 +8,14 @@ jobs:
       uses: actions/checkout@v2
     - name: Set up Docker Buildx
       uses: docker/setup-buildx-action@v3
-    - name: Build docker image
-      run: |
-        docker buildx build lilypond_docker -t lilypond \
-          --cache-from type=gha --cache-to type=gha,mode=max
+    - name: Build and push
+      uses: docker/build-push-action@v5
+      with:
+        context: .
+        file: lilypond_docker/Dockerfile
+        push: false
+        tags: lilypond
+        cache-from: type=gha
+        cache-to: type=gha,mode=max
     - name: Run Script in Docker Container
       run: ./build.sh handout
