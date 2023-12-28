@@ -1,7 +1,12 @@
 name: GitHub Actions Demo
 on: [push]
 jobs:
-  test:
+  build-and-run:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "🎉 The job was automatically triggered by a ${{ github.event_name }} event."
+    - name: Checkout Repository
+      uses: actions/checkout@v2
+    - name: Build Docker Image
+      run: docker build . -t lilypond
+    - name: Run Script in Docker Container
+      run: ./build.sh
