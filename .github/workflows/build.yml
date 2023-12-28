@@ -18,5 +18,14 @@ jobs:
         cache-from: type=gha
         cache-to: type=gha,mode=max
         load: true
-    - name: Run Script in Docker Container
+    - name: Compile handout
       run: ./build.sh handout
+    - name: Compile booklet
+      run: ./build.sh booklet
+    - name: Archive PDFs
+      uses: actions/upload-artifact@v3
+      with:
+        name: pdfs
+        path: |
+          booklet.pdf
+          handout.pdf
