@@ -13,7 +13,7 @@ jobs:
       with:
         context: lilypond_docker
         push: false
-        tags: lilypond
+        tags: lilypond:latest
         cache-from: type=gha
         cache-to: type=gha,mode=max
     - name: Run Script in Docker Container
