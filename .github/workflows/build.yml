@@ -9,4 +9,4 @@ jobs:
     - name: Build Docker Image
       run: docker build lilypond_docker -t lilypond
     - name: Run Script in Docker Container
-      run: ./build.sh
+      run: ./build.sh handout
