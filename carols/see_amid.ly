@@ -51,7 +51,7 @@ PartPOneVoiceOneLyricsOne =  \lyricmode { "See," a -- mid the win --
     "Hail," thou e -- ver -- bless -- "èd" "morn!" "Hail," re -- demp --
     "tion's" hap -- py "dawn!" Sing through all Je -- ru -- sa -- "lem:"
     "“Christ" is born in Beth -- le -- "hem!”" }
-PartPOneVoiceOneLyricsThree =  \lyricmode { "\"Say," ye ho -- ly shep --
+PartPOneVoiceOneLyricsThree =  \lyricmode { "\"Say," ye low -- ly shep --
     "herds," "say," what your joy -- ful news to -- "day;" where -- fore
     have ye left your sheep on the lone -- ly moun -- tain "steep?\""
     \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4

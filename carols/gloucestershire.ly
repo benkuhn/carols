@@ -107,7 +107,7 @@ verses = \markup { \fill-line {
   \line { \bold "5." Come butler, come fill us a bowl of the best, }
   \line { Then we hope that your soul in heaven may rest, }
   \line { But if you do draw us a bowl of the small, }
-  \line { Then down shall go but ler, bowl and all. }
+  \line { Then down shall go butler, bowl and all. }
   }
   \column {
   \line { \bold "6." Then here’s to the maid in the lily white smock, }
