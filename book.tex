@@ -1,7 +1,7 @@
 \input{modes/curmode.tex}
 \title{Christmas Carols}
 \author{compiled by Ben Kuhn}
-\date{December 15, 2022}
+\date{December 29, 2023}
 \usepackage{graphicx}
 \usepackage{pdfpages}
 % We can compile either in booklet or in handout mode. curmode.tex
@@ -24,7 +24,7 @@
 
 \newcommand{\song}[2]{
 \index{#1}
-\includepdf[pagecommand=\thispagestyle{plain}]{build/#2}
+\includepdf[pagecommand=\thispagestyle{plain},pages=-]{build/#2}
 %\begin{figure}[ht]
 %\includegraphics[width=\textwidth]{#2}
 %\end{figure}
