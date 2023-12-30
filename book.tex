@@ -1,8 +1,9 @@
 \input{modes/curmode.tex}
-\title{Christmas Carols}
+\title{\Huge Christmas Carols}
 \author{compiled by Ben Kuhn}
 \date{December 29, 2023}
 \usepackage{graphicx}
+\graphicspath{ {images/} }
 \usepackage{pdfpages}
 % We can compile either in booklet or in handout mode. curmode.tex
 % should be a symlink to one of those
@@ -20,6 +21,12 @@
 \begin{document}
 
 \maketitle
+% cover image
+\begin{figure}[h]
+\vspace{1.5cm}
+\includegraphics[width=\textwidth]{cover}
+\centering
+\end{figure}
 \clearpage
 
 \newcommand{\song}[2]{
