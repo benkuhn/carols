@@ -21,14 +21,14 @@ jobs:
     - name: Compile handout
       run: ./build.sh handout
     - name: Archive handout
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: handout
         path: handout.pdf
     - name: Compile booklet
       run: ./build.sh booklet
     - name: Archive booklet
-      uses: actions/upload-artifact@v3
+      uses: actions/upload-artifact@v4
       with:
         name: booklet
         path: booklet.pdf
