@@ -47,14 +47,19 @@ altoWords = \lyricmode {
   For it's your was -- sail, and it's our was -- sail,
   And it's joy be to you and a jol -- ly was -- sail!
 }
-altoWordsII = {
+altoWordsII =  \lyricmode {
   \set stanza = "2."
-  \lyricmode {
-  }
+  Oh ma -- ster and mi -- ssus, are you all with -- in?
+  Pray o -- pen the door _ and let us come in!
+  O ma -- ster and mi -- ssus a -- \set ignoreMelismata = ##t sit -- ting by the fire,
+  Pray _ think on us poor trav -- elers, a trav -- eling in the mire. \unset ignoreMelismata
 }
 altoWordsIII = \lyricmode {
   \set stanza = #"3."
-  \set stanza = #"  6."
+  Oh where is the maid with the \set ignoreMelismata = ##t sil -- ver \unset ignoreMelismata head -- ed pin
+  To o -- pen the door _ and let us come in?
+  Oh ma -- ster and mi -- ssus, it is our de -- sire:
+  A good loaf and cheese and a toast \set ignoreMelismata = ##t by the \unset ignoreMelismata fire.
 }
 
 verses = \markup { \fill-line {
