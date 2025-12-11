@@ -1,146 +1,156 @@
-
-\version "2.18.2"
-% automatically converted by musicxml2ly from /input/Halsway Carol.xml
+\version "2.14.2"
+\include "header.ly"
 
 \header {
-    poet = "Iain Frisk"
-    encodingsoftware = "Noteflight version 0.4"
-    encodingdate = "2025-12-10"
-    composer = "Nigel Eaton
-arr. Ben Kuhn"
-    title = "Halsway Carol"
-    }
+  title = "Halsway Carol"
+  poet = "Iain Frisk"
+  composer = "Nigel Eaton"
+  arranger = "Ben Kuhn"
+}
 
-#(set-global-staff-size 6.02250000379)
-\paper {
-    paper-width = 21.59\cm
-    paper-height = 27.94\cm
-    top-margin = 2.05\cm
-    bottom-margin = 1.69\cm
-    left-margin = 1.26\cm
-    right-margin = 1.2\cm
-    between-system-space = 1.96\cm
-    page-top-space = 3.09\cm
-    }
-\layout {
-    \context { \Score
-        autoBeaming = ##f
-        }
-    }
-PartPOneVoiceOne =  \relative a' {
-    \clef "treble" \key d \major \numericTimeSignature\time 4/4 | % 1
-    \tempo 4=80 \tempo 4=80 | % 1
-    a4 g8 [ fis8 ] e8 [ d8 ] e8 [ fis8 ] | % 2
-    b4 a4 e4 fis8 [ g8 ] | % 3
-    b4. a8 g8 [ fis8 ] e8 [ d8 ] | % 4
-    g4 fis4 e2 | % 5
-    a4 g8 [ fis8 ] e8 [ d8 ] e8 [ fis8 ] | % 6
-    g4 fis4 e2 | % 7
-    d4 e8 [ fis8 ] g8 [ fis8 ] e8 [ d8 ] | % 8
-    fis4 e4 d4. d'8 | % 9
-    cis8 [ d8 ] a4. d8 cis8 [ d8 ] | \barNumberCheck #10
-    g,4 g8 [ a8 ] fis2 | % 11
-    e4 fis8 [ g8 ] a8 [ g8 ] fis8 [ e8 ] | % 12
-    g4 fis4 e4. d'8 | % 13
-    cis8 [ d8 ] a4 a8 [ b8 ] cis8 [ d8 ] | % 14
-    g,4 g8 [ a8 ] fis4. fis8 | % 15
-    e4 fis8 [ g8 ] a8 [ g8 ] fis8 [ e8 ] | % 16
-    fis4 e4 d2 \bar "|."
-    }
+global = {
+  \preamble
+  \key d \major
+  \time 4/4
+  \autoBeamOff
+}
 
-PartPOneVoiceThree =  \relative d' {
-    \clef "bass" \key d \major \numericTimeSignature\time 4/4 | % 1
-    \tempo 4=80 \tempo 4=80 d4 b8 [ a8 ] g8 [ fis8 ] g8 [ a8 ] d4 d4 a4
-    a8 [ b8 ] d4. d8 b8 [ a8 ] g8 [ fis8 ] e4 a4 a2 fis4 b8 [ a8 ] a8 [
-    fis8 ] b8 [ b8 ] b4 a4 a4 ( g4 ) fis4 g8 [ a8 ] b8 [ a8 ] g8 [ e8 ]
-    a4 a8 [ g8 ] fis4. a8 a8 [ a8 ] fis4. a8 a8 [ a8 ] b4 e,4 a2 a4 a8 [
-    g8 ] fis8 [ g8 ] a8 [ b8 ] b4 a4 a4. a8 a8 [ a8 ] fis4 fis8 [ fis8 ]
-    a8 [ a8 ] b4 cis8 [ cis8 ] cis4 ( b8 ) b8 a4 a8 [ b8 ] fis8 [ fis8 ]
-    d8 [ d8 ] a'4 a8 [ g8 ] fis2 \bar "|."
-    }
+sopMusic = \relative a' {
+  a4 g8[ fis] e[ d] e[ fis] |
+  b4 a e fis8[ g] |
+  b4. a8 g[ fis] e[ d] |
+  g4 fis e2 |
+  a4 g8[ fis] e[ d] e[ fis] |
+  g4 fis e2 |
+  d4 e8[ fis] g[ fis] e[ d] |
+  fis4 e d4. d'8 |
+  cis8[ d] a4. d8 cis[ d] |
+  g,4 g8[ a] fis2 |
+  e4 fis8[ g] a[ g] fis[ e] |
+  g4 fis e4. d'8 |
+  cis8[ d] a4 a8[ b] cis[ d] |
+  g,4 g8[ a] fis4. fis8 |
+  e4 fis8[ g] a[ g] fis[ e] |
+  fis4 e d2 \bar "|."
+}
+sopWords = \lyricmode {
+}
 
-PartPOneVoiceTwo =  \relative fis' {
-    \clef "treble" \key d \major \numericTimeSignature\time 4/4 | % 1
-    \tempo 4=80 \tempo 4=80 | % 1
-    fis4 d8 [ d8 ] b8 [ a8 ] b8 [ d8 ] | % 2
-    g4 fis4 cis4 d8 [ d8 ] | % 3
-    g4. fis8 d8 [ d8 ] b8 [ a8 ] | % 4
-    d4 d4 d4 ( cis4 ) | % 5
-    d4 d8 [ d8 ] cis8 [ b8 ] d8 [ d8 ] | % 6
-    d4 d4 cis2 | % 7
-    b4 d8 [ d8 ] d8 [ d8 ] d8 [ b8 ] | % 8
-    d4 cis4 a4. fis'8 | % 9
-    e8 [ fis8 ] d4. fis8 e8 [ fis8 ] | \barNumberCheck #10
-    d4 cis4 e4 ( d4 ) | % 11
-    cis4 d8 [ e8 ] fis8 [ e8 ] d8 [ d8 ] | % 12
-    d4 d4 d4 ( cis8 ) fis8 | % 13
-    e8 [ fis8 ] cis4 d8 [ d8 ] e8 [ d8 ] | % 14
-    d4 e8 [ e8 ] d4. d8 | % 15
-    cis4 d8 [ d8 ] cis8 [ cis8 ] b8 [ b8 ] | % 16
-    d4 cis4 a2 \bar "|."
-    }
+altoMusic = \relative fis' {
+  fis4 d8[ d] b[ a] b[ d] |
+  g4 fis cis d8[ d] |
+  g4. fis8 d[ d] b[ a] |
+  d4 d d( cis) |
+  d4 d8[ d] cis[ b] d[ d] |
+  d4 d cis2 |
+  b4 d8[ d] d[ d] d[ b] |
+  d4 cis a4. fis'8 |
+  e8[ fis] d4. fis8 e[ fis] |
+  d4 cis e( d) |
+  cis4 d8[ e] fis[ e] d[ d] |
+  d4 d d( cis8) fis |
+  e8[ fis] cis4 d8[ d] e[ d] |
+  d4 e8[ e] d4. d8 |
+  cis4 d8[ d] cis[ cis] b[ b] |
+  d4 cis a2 \bar "|."
+}
+altoWords = \lyricmode {
+  \set stanza = #"1."
+  Lo for ti -- of long night moon,
+  Let sun -- rise call bout morn -- ing soon,
+  Short is bid -- of fad -- ing light,
+  Sing for com -- of long -- est night.
+  A win -- day, the sum -- grass turned hay,
+  Frost in fi -- 'til dawn of May,
+  A sum -- light nev -- shone clear or bright,
+  so dance in shad -- of win -- ter's night.
+}
+altoWordsII = \lyricmode {
+  \set stanza = #"2."
+  North wind __ tell what need to know
+  When stars are shin -- on mid -- night snow,
+  All of branch -- will turned to white,
+}
+altoWordsIII = \lyricmode {
+  \set stanza = #"3."
+  Lo for tid -- of long night moon,
+  May har -- vest last til spring -- time bloom,
+  Home is com -- at win -- ter's height,
+}
+altoWordsIV = \lyricmode {
+  \set stanza = #"4."
+  All of col -- of sun -- rise sky
+  Shine light up -- on as day goes by,
+  Sun set -- shad -- fad -- out of sight,
+}
+altoWordsV = \lyricmode {
+}
+altoWordsVI = \lyricmode {
+}
 
-PartPOneVoiceTwoLyricsOne =  \lyricmode { Lo for ti -- of long night
-    "moon," Let sun -- rise call bout morn -- ing "soon," Short is bid
-    -- of fad -- ing "light," Sing for com -- of long -- est "night." A
-    win -- "day," the sum -- grass turned "hay," Frost in fi -- "'til"
-    dawn of "May," A sum -- light nev -- shone clear or "bright," so
-    dance in shad -- of win -- "ter's" "night." }
-PartPOneVoiceTwoLyricsTwo =  \lyricmode { North "wind " __ tell what
-    need to know When stars are shin -- on mid -- night "snow," All of
-    branch -- will turned to "white," \skip4 \skip4 \skip4 \skip4 \skip4
-    \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4
-    \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4
-    \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4
-    \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 }
-PartPOneVoiceTwoLyricsThree =  \lyricmode { Lo for tid -- of long night
-    "moon," May har vest last til spring -- time "bloom," Home is com --
-    at win -- "ter's" "height," \skip4 \skip4 \skip4 \skip4 \skip4
-    \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4
-    \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4
-    \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4
-    \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 }
-PartPOneVoiceTwoLyricsFour =  \lyricmode { All of col -- of sun -- rise
-    sky Shine light up -- on as day goes "by," Sun set -- shad -- fad --
-    out of "sight," \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4
-    \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4
-    \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4
-    \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4
-    \skip4 \skip4 \skip4 \skip4 }
-PartPOneVoiceFour =  \relative d {
-    \clef "bass" \key d \major \numericTimeSignature\time 4/4 | % 1
-    \tempo 4=80 \tempo 4=80 d4 d8 [ d8 ] d8 [ d8 ] d8 [ d8 ] d4 d4 a4 d8
-    [ d8 ] g,4. d'8 d8 [ d8 ] d8 [ d8 ] g,4 d'4 a2 b4 b8 [ b8 ] fis8 [
-    fis8 ] b8 [ b8 ] g4 d'4 a2 b4 b8 [ b8 ] g8 [ a8 ] b8 [ g8 ] a4 a4 d4.
-    d8 e8 [ d8 ] d4. d8 e8 [ d8 ] g,4 a4 d2 a4 d8 [ d8 ] d8 [ d8 ] d8 [
-    d8 ] g,4 d'4 a4. d8 e8 [ d8 ] fis8 [ e8 ] d8 [ b8 ] a8 [ fis8 ] g4 a8
-    [ a8 ] b4. b8 a4 a8 [ g8 ] fis8 [ fis8 ] b8 [ g8 ] a4 a4 d2 \bar
-    "|."
-    }
+tenorMusic = \relative d' {
+  d4 b8[ a] g[ fis] g[ a] |
+  d4 d a a8[ b] |
+  d4. d8 b[ a] g[ fis] |
+  e4 a a2 |
+  fis4 b8[ a] a[ fis] b[ b] |
+  b4 a a( g) |
+  fis4 g8[ a] b[ a] g[ e] |
+  a4 a8[ g] fis4. a8 |
+  a8[ a] fis4. a8 a[ a] |
+  b4 e, a2 |
+  a4 a8[ g] fis[ g] a[ b] |
+  b4 a a4. a8 |
+  a8[ a] fis4 fis8[ fis] a[ a] |
+  b4 cis8[ cis] cis4( b8) b |
+  a4 a8[ b] fis[ fis] d[ d] |
+  a'4 a8[ g] fis2 \bar "|."
+}
+tenorWords = \lyricmode {
+}
 
+bassMusic = \relative d {
+  d4 d8[ d] d[ d] d[ d] |
+  d4 d a d8[ d] |
+  g,4. d'8 d[ d] d[ d] |
+  g,4 d' a2 |
+  b4 b8[ b] fis[ fis] b[ b] |
+  g4 d' a2 |
+  b4 b8[ b] g[ a] b[ g] |
+  a4 a d4. d8 |
+  e8[ d] d4. d8 e[ d] |
+  g,4 a d2 |
+  a4 d8[ d] d[ d] d[ d] |
+  g,4 d' a4. d8 |
+  e8[ d] fis8[ e] d[ b] a[ fis] |
+  g4 a8[ a] b4. b8 |
+  a4 a8[ g] fis[ fis] b[ g] |
+  a4 a d2 \bar "|."
+}
+bassWords = \lyricmode {
+}
 
-% The score definition
 \score {
-    <<
-        \new PianoStaff <<
-            \set PianoStaff.instrumentName = "Piano"
-            \set PianoStaff.shortInstrumentName = "Pno."
-            \context Staff = "1" << 
-                \context Voice = "PartPOneVoiceOne" { \voiceOne \PartPOneVoiceOne }
-                \context Voice = "PartPOneVoiceTwo" { \voiceTwo \PartPOneVoiceTwo }
-                \new Lyrics \lyricsto "PartPOneVoiceTwo" \PartPOneVoiceTwoLyricsOne
-                \new Lyrics \lyricsto "PartPOneVoiceTwo" \PartPOneVoiceTwoLyricsTwo
-                \new Lyrics \lyricsto "PartPOneVoiceTwo" \PartPOneVoiceTwoLyricsThree
-                \new Lyrics \lyricsto "PartPOneVoiceTwo" \PartPOneVoiceTwoLyricsFour
-                >> \context Staff = "2" <<
-                \context Voice = "PartPOneVoiceThree" { \voiceOne \PartPOneVoiceThree }
-                \context Voice = "PartPOneVoiceFour" { \voiceTwo \PartPOneVoiceFour }
-                >>
-            >>
-        
-        >>
-    \layout {}
-    % To create MIDI output, uncomment the following line:
-    %  \midi {}
-    }
-
+  <<
+   \new ChoirStaff <<
+    \new Staff = women <<
+      \new Voice = "sopranos" { \voiceOne << \global \sopMusic >> }
+      \new Voice = "altos" { \voiceTwo << \global \altoMusic >> }
+    >>
+    \new Lyrics \with { alignAboveContext = #"women" } \lyricsto "sopranos" \sopWords
+    \new Lyrics = "altosVI"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsVI
+    \new Lyrics = "altosV"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsV
+    \new Lyrics = "altosIV"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsIV
+    \new Lyrics = "altosIII"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsIII
+    \new Lyrics = "altosII"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsII
+    \new Lyrics = "altos"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWords
+   \new Staff = men <<
+      \clef bass
+      \new Voice = "tenors" { \voiceOne << \global \tenorMusic >> }
+      \new Voice = "basses" { \voiceTwo << \global \bassMusic >> }
+    >>
+    \new Lyrics \with { alignAboveContext = #"men" } \lyricsto "tenors" \tenorWords
+    \new Lyrics \with { alignBelowContext = #"men" } \lyricsto "basses" \bassWords
+  >>
+  >>
+}
