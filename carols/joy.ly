@@ -30,7 +30,7 @@ global= {
 sop = \context Voice = "sop"    {
   \voiceOne
   d''4 cis''8. b'16 a'4. g'8 fis'4 e' d'4.
-  a'8 b'4. b'8 cis''4. cis''8 d''4.
+  a'8 b'4. b'8 cis''4. cis''8 d''4._"(watch out it's short!)"
   d''8 d''( cis'') b'( a') a'8.( g'16 fis'8)
   d'' d''( cis'') b'( a') a'8.( g'16 fis'8)
   fis' fis' fis' fis' fis'16( g') a'4.
