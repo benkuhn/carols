@@ -4,7 +4,7 @@
   title = "El Noi de la Mare"
   poet = "Traditional"
   composer = "Catalan Melody"
-  arranger = "Arr. Ed."
+  arranger = "Ben Kuhn"
 }
 global = {
   \preamble

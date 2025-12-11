@@ -4,7 +4,7 @@
   title = "Somerset Wassail"
   poet = "18th Century English"
   composer = "18th Century English"
-  arranger = "Arr. Ed."
+  arranger = "Ben Kuhn"
 }
 global = {
   \preamble
