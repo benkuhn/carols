@@ -71,21 +71,18 @@ altoWordsII = \lyricmode {
   North wind _ tell us what we need to know
   When the stars are shin -- ing on the mid -- night snow,
   All of the branch -- es will be turned to white,
-  Sing for the com -- ing of the long -- est night.
 }
 altoWordsIII = \lyricmode {
   \set stanza = #"3."
   Lo for the tid -- ing of the long night moon,
   May the har -- vest last un -- til the spring -- time bloom,
   Home is our com -- fort at the win -- ter's height,
-  Sing for the com -- ing of the long -- est night.
 }
 altoWordsIV = \lyricmode {
   \set stanza = #"4."
   All of the col -- ours of the sun -- rise sky
   Shine a light up -- on us, as the day goes by,
   Sun -- set -- ting sha -- dows fad -- ing out of sight,
-  Sing for the com -- ing of the long -- est night.
 }
 altoWordsV = \lyricmode {
 }
