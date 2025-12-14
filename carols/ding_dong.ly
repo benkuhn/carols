@@ -6,7 +6,7 @@
   poet = "George Ratcliffe Woodward (1848–1934)"
   composer = "16th century French melody"
   arranger = "Arranged by Charles Wood (1866–1926)"
-  tagline = "From 'The Cambridge Carol Book', 1924"
+  % tagline = "From 'The Cambridge Carol Book', 1924"
 }
 
 global = {
