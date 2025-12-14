@@ -19,7 +19,7 @@ sopMusic = \relative c' {
   \slurDotted g4( g) g |
   g( a) b |
   c b a |
-  \slurSolid b( d) d4 |
+  \slurSolid b8( d4.) d4 |
   
   c4 a a |
   \slurDotted a( b) c |
@@ -127,7 +127,7 @@ tenorMusic = \relative c' {
   \slurDotted b( b) c |
   b( c) d |
   e d c |
-  \slurSolid d( b) b4 |
+  \slurSolid d8( b4.) b4 |
   
   \slurDotted
   e4 d c |
