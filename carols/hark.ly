@@ -4,7 +4,7 @@
   composer = "Felix Mendelssohn, 1840"
   poet = "Rev. Charles Wesley"
   date=""
-  title = "Hark the Herald Angels Sing"
+  title = "Hark! The Herald Angels Sing"
   metre = "Mendelssohn 7.7.7.7.D. with refrain"
   meter = \metre
   style = "Hymn"
