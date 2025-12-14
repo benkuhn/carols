@@ -125,13 +125,13 @@ stanzaf = \lyricmode {
       \alto
     >>}
 
-    \lyricsto "sop" \context Lyrics = "stanza-1" {
+    \lyricsto "alto" \context Lyrics = "stanza-1" {
       \set stanza = "1."
       \stanzaa }
-    \lyricsto "sop" \context Lyrics = "stanza-2" {
+    \lyricsto "alto" \context Lyrics = "stanza-2" {
       \set stanza = "2."
       \stanzab }
-    \lyricsto "sop" \context Lyrics = "stanza-3" {
+    \lyricsto "alto" \context Lyrics = "stanza-3" {
       \set stanza = "3."
       \stanzac }
 
