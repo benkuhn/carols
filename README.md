@@ -28,7 +28,8 @@ nice title page, index, etc.), `book.tex`.
 The book can be compiled in two modes: "handout" (meant to be printed
 one- or two-sided and stapled in the upper-left corner), and "booklet"
 (two pages per side of a sheet of paper; meant to be printed
-double-sided and stapled down the middle).
+double-sided and stapled down the middle; when printing, remember to
+select to flip on the **short edge**).
 
 ## Compiling
 
