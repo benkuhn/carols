@@ -20,7 +20,9 @@
 
 \begin{document}
 
+%%% title page
 \maketitle
+\thispagestyle{empty} % needs to be after \maketitle
 % cover image
 \begin{figure}[h]
 \vspace{1.5cm}
@@ -28,9 +30,12 @@
 \centering
 \end{figure}
 \clearpage
+
+%%% index
 {\small\printindex}
 \clearpage
 
+%%% songs
 \newcommand{\song}[2]{
 \index{#1}
 \includepdf[pagecommand=\thispagestyle{plain},pages=-]{build/#2}
