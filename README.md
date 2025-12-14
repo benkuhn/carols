@@ -16,8 +16,9 @@ various different sources, primarily:
 - *Worship in Song*, the Quaker hymnal (which I learned a number of
   these from)
 - The *Oxford Book of Carols*
-- There's one carol that I arranged myself (El Noi de la Mare),
-  because I couldn't find any other good arrangements.
+- There's three carols I arranged myself (El Noi de la Mare, Halsway
+  Carol and Somerset Wassail), because I couldn't find any other good
+  arrangements.
 
 ## Project structure
 
