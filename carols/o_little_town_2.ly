@@ -35,7 +35,7 @@ sop = \context Voice = "sop"    {
 	b' c'' b'8( g') a'4 a' g'2.
 	d'4 g' g' g' a' b'8( a') b'( c'') d''4
 	b' c'' b'8( g') a'4 a' g'2.
-	g'8( b') d''4. e''8 d''( c'') b'( a') g'( a') b'( c'') d''4
+	g'8( b') d''4. e''8 d''( c'') b'( a') g'( a' b' c'') d''4
 	d'4 g' b' a' g' d'2.
 	d'4 g' g' g' a' b'8( a') b'( c'') d''4
 	b'4 c'' b'8( g') a'4 a' g'2. \bar "|."
@@ -48,7 +48,7 @@ alto=\context Voice = "alto"   {
 	e' e' g' g' fis' g'2.
 	d'4 d' e' d' e'8( fis') g'4 g' fis'
 	e' e' g' g' fis' g'2.
-	g'4 fis'4. e'8 fis'4 d' d' g' fis'
+	g'4 fis'4. e'8 fis'4 d' d'( g') fis'
 	d'4 d' d' c' b8( c') d'2.
 	d'4 d' e' d' e'8( fis') g'4 g' fis'
 	e' e' g' g' fis' g'2.
@@ -60,7 +60,7 @@ tenor = \context Voice = "tenor"   {
 	g c' d' e' d'8( c') b2.
 	a4 b c' d' c' d' g a
 	g c' d' e' d'8( c') b2.
-	b4 b4. g8 d'4 d'8( c') b4 g a
+	b4 b4. g8 d'4 d'8( c') b4( g) a
 	fis4 g g e8( fis) g4 fis2.
 	g8( a) b4 c' d' c' d' g a
 	g4 c' d'8( b) d'4 d'8( c') b2.
@@ -72,7 +72,7 @@ bass = \context Voice = "bass"   {
 	e a, b, c d g2.
 	fis4 g c' b a g e d
 	e a, b, c d g2.
-	e4 b,4. c8 d4 e8( fis) g4 e d
+	e4 b,4. c8 d4 e8( fis) g4( e) d
 	d8( c) b,4 g, c e d2.
 	e8( fis) g4 c' b a g e d
 	e a, b,8( e) d4 d g2.
@@ -88,18 +88,18 @@ stanzaa = \lyricmode {
 	How still we see thee lie;
 	A -- bove thy deep and dream -- less sleep
 	The si -- lent stars go by:
-	Yet in thy dark streets shin \skip4 -eth
+	Yet in thy dark streets shin -- eth
 	The e -- ver -- las -- ting Light;
 	The hopes and fears of all the years
 	Are met in thee to -- night.
 }
 
 stanzab = \lyricmode {
-	For Christ is born of Ma \skip4  -ry;
+	For Christ is born of Ma -- \skip4 ry;
 	And ga -- thered all a -- bove,
 	While mor -- tals sleep, the an -- gels keep
 	Their watch of won -- dering love.
-	O mor -- ning stars, to -- ge \skip4 -ther
+	O mor -- ning stars, to -- ge -- ther
 	Pro -- claim the ho -- ly birth,
 	An prai -- ses sing to God the King,
 	And peace to men on earth!
@@ -110,7 +110,7 @@ stanzac = \lyricmode {
 	The won -- drous gift is giv'n!
 	So God im -- parts to hu -- man hearts
 	The bles -- sings of His heaven:
-	No ear may hear His com \skip4 -ing;
+	No ear may hear His com -- ing;
 	But in this world of sin,
 	Where meek souls will re -- ceive Him, still
 	The dear Christ en -- ters in.
@@ -121,7 +121,7 @@ stanzad = \lyricmode {
 	Des -- cend to us we pray;
 	Cast out our sin, and en -- ter in;
 	Be born in us to -- day.
-	We hear the heaven -- ly an \skip4 -gels
+	We hear the heaven -- ly an -- gels
 	The great glad ti -- dings tell:
 	O come to us, a -- bide with us,
 	Our Lord Em -- man -- u -- el.
