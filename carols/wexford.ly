@@ -1,4 +1,4 @@
-\version "2.14.2"
+\version "2.24.0"
 \include "header.ly"
 \header {
   title = "The Wexford Carol"
@@ -30,7 +30,7 @@ sopMusic = \relative c' {
   g8 f' d( c4) a8 |
   
   bes c bes4. d16[ c] |
-  \times 2/3 {bes8[ a] g} g( d4) e8 |
+  \tuplet 3/2 {bes8[ a] g} g( d4) e8 |
   f g f4 \bar"" b8\rest d, |
   
   g8 g16[ fis] g4. a8 |
@@ -113,7 +113,7 @@ verses = \markup { \fill-line{
   \line { Was safe deliver’d of a child; }
   \line { According unto Heav’n’s decree, }
   \line { Man’s sweet salvation for to be. }
-  \vspace #0.1
+  \combine \null \vspace #0.1
   \line { \bold "5." With thankful heart and joyful mind, }
   \line { The shepherds went the  babe to find, }
   \line { And as God’s angels had foretold, }
@@ -133,7 +133,7 @@ verses = \markup { \fill-line{
   \line { “To Bethlehem. Be not afraid }
   \line { For there you’ll find this happy morn }
   \line { A princely babe sweet Jesus born.” }
-  \vspace #0.1
+  \combine \null \vspace #0.1
   \line { \bold "6." See how the Lord of Heav’n and earth, }
   \line { Show’d Himself lowly in His birth; }
   \line { A sweet example for mankind, }
@@ -170,7 +170,7 @@ tenorMusic = \relative c {
   g c b( a4) c8 |
   
   d8 a f?4. g8 |
-  \times 2/3 {g[ a] bes} bes[ a] bes[ c] |
+  \tuplet 3/2 {g[ a] bes} bes[ a] bes[ c] |
   a c a4 r8 d, |
   
   g a b8.[ c16 d8] d |

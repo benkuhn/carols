@@ -1,4 +1,4 @@
-﻿\version "2.14.2"
+﻿\version "2.24.0"
 \include "header.ly"
 \header {
   title = "Watchman, Tell Us of the Night"
@@ -191,8 +191,8 @@ pianoLH = \relative c' {
   \layout {
     \context {
       \Score
-      \override SpacingSpanner #'base-shortest-duration = #(ly:make-moment 1 4)
-      \override SpacingSpanner #'common-shortest-duration = #(ly:make-moment 1 4)
+      \override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/4)
+      \override SpacingSpanner.common-shortest-duration = #(ly:make-moment 1/4)
     }
   }
 }

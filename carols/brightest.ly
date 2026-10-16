@@ -17,9 +17,13 @@
   lastupdated = "2012/Dec/24"
 }
 
-\version "2.14.2"
+\version "2.24.0"
 
 \include "header.ly"
+
+% LilyPond 2.24 spaces lyrics more tightly than 2.18 did, which squashed
+% this onto fewer lines; widen the gaps between words to restore the layout
+\layout { \context { \Lyrics \override LyricSpace.minimum-distance = #0.7 } }
 
 global= {
   \preamble
@@ -134,10 +138,10 @@ stanzaf = \lyricmode {
       \sop
     >>}
 
-    \lyricsto "sop" \context Lyrics = "stanza-1" {
+    \context Lyrics = "stanza-1" \lyricsto "sop" {
       \set stanza = "1."
       \stanzaa }
-    \lyricsto "sop" \context Lyrics = "stanza-2" {
+    \context Lyrics = "stanza-2" \lyricsto "sop" {
       \set stanza = "2."
       \stanzab }
     
@@ -146,10 +150,10 @@ stanzaf = \lyricmode {
       \alto
     >>}
 
-    \lyricsto "sop" \context Lyrics = "stanza-3" {
+    \context Lyrics = "stanza-3" \lyricsto "sop" {
       \set stanza = "3."
       \stanzac }
-    \lyricsto "sop" \context Lyrics = "stanza-4" {
+    \context Lyrics = "stanza-4" \lyricsto "sop" {
       \set stanza = "4."
       \stanzad }
     
@@ -163,7 +167,7 @@ stanzaf = \lyricmode {
     indent = 0.0\pt
     \context {
       \ChordNames
-      \override ChordName  #'style = #'american
+      \override ChordName.style = #'american
       chordChanges = ##t
     }
   }

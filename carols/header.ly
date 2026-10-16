@@ -1,3 +1,4 @@
+\version "2.24.0"
 \header {
   tagline = ""
   copyright = ""
@@ -20,10 +21,10 @@ preamble = {
 }
 
 lyricItal = {
-  \override Lyrics.LyricText #'font-shape = #'italic
+  \override Lyrics.LyricText.font-shape = #'italic
 }
 
 lyricNormal = {
-  \revert Lyrics.LyricText #'font-shape
-  \revert Lyrics.LyricText #'font-series
+  \revert Lyrics.LyricText.font-shape
+  \revert Lyrics.LyricText.font-series
 }

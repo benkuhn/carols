@@ -1,5 +1,5 @@
 % Created on Tue Dec 01 22:21:31 EST 2009
-\version "2.14.2"
+\version "2.24.0"
 
 \header {
   title = "What Child is This?"
@@ -150,13 +150,13 @@ bass = \context Voice = "bass" {
       \alto
     >>}
     
-    \lyricsto "sop" \context Lyrics = "stanza-1" {
+    \context Lyrics = "stanza-1" \lyricsto "sop" {
       \set stanza = "1."
       \verseI }
-    \lyricsto "sop" \context Lyrics = "stanza-2" {
+    \context Lyrics = "stanza-2" \lyricsto "sop" {
       \set stanza = "2."
       \verseII }
-    \lyricsto "sop" \context Lyrics = "stanza-3" {
+    \context Lyrics = "stanza-3" \lyricsto "sop" {
       \set stanza = "3."
       \verseIII }
     \context Staff = "lower"  { \clef "F"<<

@@ -17,7 +17,7 @@
   lastupdated = "2011/Dec/12"
 }
 
-\version "2.14.2"
+\version "2.24.0"
 
 \include "header.ly"
 
@@ -125,13 +125,13 @@ stanzaf = \lyricmode {
       \alto
     >>}
 
-    \lyricsto "alto" \context Lyrics = "stanza-1" {
+    \context Lyrics = "stanza-1" \lyricsto "alto" {
       \set stanza = "1."
       \stanzaa }
-    \lyricsto "alto" \context Lyrics = "stanza-2" {
+    \context Lyrics = "stanza-2" \lyricsto "alto" {
       \set stanza = "2."
       \stanzab }
-    \lyricsto "alto" \context Lyrics = "stanza-3" {
+    \context Lyrics = "stanza-3" \lyricsto "alto" {
       \set stanza = "3."
       \stanzac }
 
@@ -145,7 +145,7 @@ stanzaf = \lyricmode {
     indent = 0.0\pt
     \context {
       \ChordNames
-      \override ChordName  #'style = #'american
+      \override ChordName.style = #'american
       chordChanges = ##t
     }
     \context {

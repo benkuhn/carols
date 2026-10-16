@@ -1,5 +1,5 @@
 % Created on Tue Nov 24 23:05:52 EST 2009
-\version "2.15.19"
+\version "2.24.0"
 
 \header {
 	title = "'Twas in the Moon of Wintertime"
@@ -73,7 +73,7 @@ staffSoprano = \new Staff  {
 	\set Staff.midiInstrument="choir aahs"
 	\key a \minor
 	\clef treble
-	\relative { 	
+	\relative c' { 	
 		\context Voice = "melodySop" {
 			\dynamicUp		
  \partial 8 r8 r2 r r r8 r4
@@ -94,8 +94,8 @@ staffSoprano = \new Staff  {
 	g8 f e4
 	a4 g8 e
 	a r8 a8 b
-	\time 3/4   \override Staff.TimeSignature #'stencil = ##f c( d) e4 b 
-	\time 4/8   \override Staff.TimeSignature #'stencil = ##f a4. r8 }
+	\time 3/4   \override Staff.TimeSignature.stencil = ##f c( d) e4 b 
+	\time 4/8   \override Staff.TimeSignature.stencil = ##f a4. r8 }
 	\alternative {
 	{r4 r8 e8
 	a b c d}
@@ -115,7 +115,7 @@ staffPiano = \new PianoStaff {
 		\context Staff = "RH" {  % Right hand 
 			\clef treble
 			\key a \minor
-			\relative  {
+			\relative c'  {
 	\partial 8 r8 r4 r8 e'8
 	a b c <e, b' e>
 	<a e' a>4 <b d g(> <a) e' a>4. r8 
@@ -135,8 +135,8 @@ staffPiano = \new PianoStaff {
 	<< {g'8( f e4)} \\ {c2} >>
 	<c a'>4( <b g'>) 
 	<< {e'4.^\markup \italic \small "poco rall. e cresc." d8}  \\ {c8 b a4} >>
-	\override Staff.TimeSignature #'stencil = ##f <g c>8 <f a d> << {<g e'>2} \\ {c4 b} >>
-	\override Staff.TimeSignature #'stencil = ##f a8 <e b'>_\markup \italic \small "a tempo" <a c> <b e> 
+	\override Staff.TimeSignature.stencil = ##f <g c>8 <f a d> << {<g e'>2} \\ {c4 b} >>
+	\override Staff.TimeSignature.stencil = ##f a8 <e b'>_\markup \italic \small "a tempo" <a c> <b e> 
 	<c a'> <b e> <c a'> <e b'>
 	<a c> r8 r f,
 	<c' a'>( <e b'> <a c> <b e>
@@ -147,7 +147,7 @@ staffPiano = \new PianoStaff {
 		\context Staff = "LH" {  % Left hand 			
 			\clef bass
 			\key a \minor
-			\relative  {
+			\relative c'  {
 	\partial 8 e8\p
 	a b c e
 	c b a e 
@@ -169,8 +169,8 @@ staffPiano = \new PianoStaff {
 	<< {e'8 f g4} \\ {c,2} >>
 	<a e'>2
 	a'8 g f4
-	\override Staff.TimeSignature #'stencil = ##f e8 d c4 e
-	\override Staff.TimeSignature #'stencil = ##f <a e'>2 ~
+	\override Staff.TimeSignature.stencil = ##f e8 d c4 e
+	\override Staff.TimeSignature.stencil = ##f <a e'>2 ~
 	<a e'>8 r8 r e8(
 	a b c d)
 	<a e'>2\repeatTie 

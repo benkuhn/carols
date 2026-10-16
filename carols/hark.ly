@@ -15,7 +15,7 @@
   lastupdated = "2012/Dec/23"
 }
 
-\version "2.11.23"
+\version "2.24.0"
 
 \include "header.ly"
 
@@ -142,13 +142,13 @@ stanzaf = \lyricmode {
       \alto
     >>}
     
-    \lyricsto "sop" \context Lyrics = "stanza-1" {
+    \context Lyrics = "stanza-1" \lyricsto "sop" {
       \set stanza = "1."
       \stanzaa }
-    \lyricsto "sop" \context Lyrics = "stanza-2" {
+    \context Lyrics = "stanza-2" \lyricsto "sop" {
       \set stanza = "2."
       \stanzab }
-    \lyricsto "sop" \context Lyrics = "stanza-3" {
+    \context Lyrics = "stanza-3" \lyricsto "sop" {
       \set stanza = "3."
       \stanzac }
     \context Staff = "lower"  { \clef "F"<<
