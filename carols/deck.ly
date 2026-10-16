@@ -1,5 +1,9 @@
 \version "2.24.0"
 \include "header.ly"
+
+% LilyPond 2.24 spaces lyrics more tightly than 2.18 did, which squashed
+% this onto fewer lines; widen the gaps between words to restore the layout
+\layout { \context { \Lyrics \override LyricSpace.minimum-distance = #0.7 } }
 \header {
   title = "Deck the Hall"
   poet = "Traditional"

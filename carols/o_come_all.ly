@@ -20,6 +20,10 @@
 
 \include "header.ly"
 
+% LilyPond 2.24 spaces lyrics more tightly than 2.18 did, which squashed
+% this onto fewer lines; widen the gaps between words to restore the layout
+\layout { \context { \Lyrics \override LyricSpace.minimum-distance = #0.7 } }
+
 global= {
   \preamble
   \time 4/4
