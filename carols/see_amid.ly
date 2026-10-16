@@ -1,20 +1,13 @@
-
 \version "2.24.0"
+
 \include "header.ly"
 
-% automatically converted by musicxml2ly from see_amid.mxl
-% source: https://www.cpdl.org/wiki/index.php/See_amid_the_winter%27s_snow_(John_Goss)
+% Source: https://www.cpdl.org/wiki/index.php/See_amid_the_winter%27s_snow_(John_Goss)
 
 \header {
-  filename = "see_amid.ly"
-  enteredby = "Andrew Sims"
   composer = "Sir John Goss"
   poet = "Edward Caswall"
-  date = "1871"
   title = "See Amid the Winter's Snow"
-  %metre = "Adeste Fideles"
-  %meter = \metre
-  style = "Hymn"
   mutopiacomposer = \composer
   mutopiapoet=\poet
 }
@@ -60,7 +53,7 @@ PartPOneVoiceOneLyricsThree =  \lyricmode { "\"Say," ye low -- ly shep --
     \skip4 }
 PartPOneVoiceOneLyricsFive =  \lyricmode { Sa -- cred in -- "fant," all
     di -- "vine," what a ten -- der love was "thine," thus to come from
-    high -- est bliss down to such as world as "this!" \skip4 \skip4
+    high -- est bliss down to such a world as "this!" \skip4 \skip4
     \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4
     \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4
     \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 }
@@ -97,7 +90,7 @@ PartPOneVoiceTwoLyricsFour =  \lyricmode { "\"As" we watched at dead of
     \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4
     \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4
     \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 }
-PartPOneVoiceTwoLyricsSix =  \lyricmode { " Teach," o teach "us," ho --
+PartPOneVoiceTwoLyricsSix =  \lyricmode { "Teach," o teach "us," ho --
     ly "child," by thy face so meek and "mild," teach us to re -- sem --
     ble thee in thy sweet hu -- mi -- li -- "ty." \skip4 \skip4 \skip4
     \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4
@@ -146,8 +139,6 @@ PartPTwoVoiceTwo =  \relative g, {
     d4 d4 g,2 \bar "|."
     }
 
-
-% The score definition
 \score {
     <<
         \new ChoirStaff <<
@@ -173,8 +164,4 @@ PartPTwoVoiceTwo =  \relative g, {
                 >>
             >>
         >>
-    \layout {}
-    % To create MIDI output, uncomment the following line:
-    %  \midi {}
     }
-

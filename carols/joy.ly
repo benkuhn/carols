@@ -1,28 +1,18 @@
+\version "2.24.0"
+
 \header {
-  filename = "joy.ly"
-  enteredby = "Gordon Gilbert and Ben Kuhn"
   composer = "attributed to G. F. Handel"
   arranger = "Lowell Mason, 1830"
   poet = "Rev Isaac Watts, 1719"
-  date ="1830"
-  title = "Joy To The World"
-  metre = "Antioch C.M. with Refrain"
-  meter = \metre
-  copyright = "Public Domain"
-  style = "Hymn"
+  title = "Joy to the World"
+  meter = "Antioch C.M. with Refrain"
   mutopiacomposer = \composer
   mutopiapoet=\poet
-  maintainer = "Gordon Gilbert"
-  maintainerEmail = "gord@angel.eicat.ca"
-  lastupdated = "2012/Dec/23"
 }
-
-\version "2.24.0"
 
 \include "header.ly"
 
 global= {
-  \preamble
   \time 2/4
   \key d \major
 }
@@ -67,12 +57,6 @@ bass = \context Voice = "bass"   {
   a,8 a, a, a, a, d4. d8 d4. g,8 a,4 a, d2
 }
 
-accomp=\chordmode {
-
-}
-
-
-
 stanzaa = \lyricmode {
   Joy to the world! The Lord is come:
   Let earth re -- ceive her King,
@@ -113,7 +97,6 @@ stanzabmen = \lyricmode {
   Re -- peat the sound -- ing joy.
 }
 
-
 stanzac = \lyricmode {
   No more let sin and sor -- row grow,
   Nor thorns in -- fest the ground:
@@ -137,24 +120,15 @@ stanzadmen = \lyricmode {
   And won -- ders of His love,
   And won -- ders of His love.
 }
-stanzae = \lyricmode {
-  
-}
-
-stanzaf = \lyricmode {
-  
-}
 
 \score {
   \context ChoirStaff <<
-    \context ChordNames \accomp
-    \unset ChoirStaff.melismaBusyProperties 
     \context Staff ="upper"  { \clef "G" <<
       \global
       \sop
       \alto
     >>}
-    
+
     \context Lyrics = "stanza-1" \lyricsto "sop" {
       \set stanza = "1."
       \stanzaa }
@@ -164,12 +138,6 @@ stanzaf = \lyricmode {
     \context Lyrics = "stanza-3" \lyricsto "sop" {
       \set stanza = "3."
       \stanzad }
-                                %	\context Lyrics = "stanza-5" \lyricsto "sop" {
-                                %		\set stanza = "5."
-                                %			\stanzae }
-                                %	\context Lyrics = "stanza-6" \lyricsto "sop" {
-                                %		\set stanza = "6."
-                                %			\stanzaf }
     \context Staff = "lower"  { \clef "F"<<
       \global
       \tenor
@@ -185,12 +153,4 @@ stanzaf = \lyricmode {
       \stanzadmen
     }
   >>
-  \layout{
-    indent = 0.0\pt
-    \context {
-      \ChordNames
-      \override ChordName.style = #'american
-      chordChanges = ##t
-    }
-  }
 }

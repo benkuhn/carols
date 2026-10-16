@@ -1,25 +1,17 @@
+\version "2.24.0"
+
 \header {
-  filename = "sherburne.ly"
-  enteredby = "Ben Kuhn"
   composer = "Daniel Read, 1783"
   arranger = ""
   poet = "Nahum Tate, 1700"
-  date ="1830"
   title = "Sherburne"
-  copyright = "Public Domain"
-  style = "Hymn"
   mutopiacomposer = \composer
   mutopiapoet=\poet
-  maintainer = "Ben Kuhn"
-  lastupdated = "2015/Dec/05"
 }
-
-\version "2.24.0"
 
 \include "header.ly"
 
 global= {
-  \preamble
   \time 4/4
   \key d \major
 }
@@ -54,7 +46,7 @@ alto=\context Voice = "alto"   {
       { fis1 ~ | fis1 }
     }
   }
-}	
+}
 
 tenor = \context Voice = "tenor"   {
   \sacredHarpHeads
@@ -80,8 +72,8 @@ tenor = \context Voice = "tenor"   {
 bass = \context Voice = "bass"   {
   \sacredHarpHeads
   \relative c {
-    
-    d2 d4 d | g g g d | b2. b4 | fis' fis e d | a2. 
+
+    d2 d4 d | g g g d | b2. b4 | fis' fis e d | a2.
     \repeat volta 2 {
       a4 |
       d d fis d | b b b a | d1 ~ | d2. fis4 | b, b b d | e1 ~ | e2. e4 | a a a2 |
@@ -94,19 +86,13 @@ bass = \context Voice = "bass"   {
   }
 }
 
-accomp=\chordmode {
-  
-}
-
-
-
 stanzaa = \lyricmode {
   While shep -- herds watch'd their flocks by night
   All seat -- ed on the ground,
 }
 filler = \lyricmode {
   % ugh can't figure out how to skip multiple measures
-  "" "" "" "" "" "" "" "" "" "" "" "" "" "" 
+  "" "" "" "" "" "" "" "" "" "" "" "" "" ""
 }
 stanzab = \lyricmode {
   All glo -- ry be to God on high, And to the earth be peace
@@ -159,8 +145,6 @@ tenorb = {
 
 \score {
   \context ChoirStaff <<
-    \context ChordNames \accomp
-    \unset ChoirStaff.melismaBusyProperties 
     \context Staff ="sopStaff"  { \clef "G" <<
       \global
       \sop
@@ -174,7 +158,7 @@ tenorb = {
       \filler
       \sopb
     }
-    
+
     \context Staff ="altoStaff"  { \clef "G" <<
       \global
       \alto
@@ -214,14 +198,6 @@ tenorb = {
       \filler
       \bassb
     }
-    
+
   >>
-  \layout{
-    indent = 0.0\pt
-    \context {
-      \ChordNames
-      \override ChordName.style = #'american
-      chordChanges = ##t
-    }
-  }
 }

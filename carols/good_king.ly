@@ -1,27 +1,16 @@
+\version "2.24.0"
+
 \header {
-  filename = "GoodKingWenceslas.ly"
-  enteredby = "Gordon Gilbert"
-  composer = "Melody from Piae Cantones, 1582"
+  composer = "Melody from Piae Cantiones, 1582"
   poet = "J. M. Neale"
-  date=""
   title = "Good King Wenceslas"
-  metre = ""
-  meter = \metre
-  copyright = "Public Domain"
-  style = "Hymn"
   mutopiacomposer = \composer
   mutopiapoet=\poet
-  maintainer = "Gordon Gilbert"
-  maintainerEmail = "gord@angel.eicat.ca"
-  lastupdated = "2011/Dec/13"
 }
-
-\version "2.24.0"
 
 \include "header.ly"
 
 global= {
-  \preamble
   \time 4/4
   \key aes \major
 }
@@ -127,12 +116,6 @@ bass = \context Voice = "bass"   {
   aes'1 \bar "|."
   }}
 
-accomp=\chordmode {
-
-}
-
-
-
 stanzaa = \lyricmode {
   Good King Wen -- ces -- las looked out
   On the feast of Ste -- phen,
@@ -187,14 +170,8 @@ stanzae = \lyricmode {
   Shall your -- selves find bless -- ing.
 }
 
-stanzaf = \lyricmode {
-
-}
-
 \score {
   \context ChoirStaff <<
-    \context ChordNames \accomp
-    \unset ChoirStaff.melismaBusyProperties
     \context Staff ="upper"  { \clef "G" <<
       \global
       \sop
@@ -216,9 +193,6 @@ stanzaf = \lyricmode {
     \context Lyrics = "stanza-5" \lyricsto "sop" {
       \set stanza = "5."
       \stanzae }
-                                %	\context Lyrics = "stanza-6" \lyricsto "sop" {
-                                %		\set stanza = "6."
-                                %			\stanzaf }
     \context Staff = "lower"  { \clef "F"<<
       \global
       \tenor
@@ -226,4 +200,3 @@ stanzaf = \lyricmode {
     >>}
   >>
 }
-

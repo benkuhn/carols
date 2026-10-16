@@ -6,18 +6,17 @@
 % this onto fewer lines; widen the gaps between words to restore the layout
 \layout { \context { \Lyrics \override LyricSpace.minimum-distance = #0.7 } }
 
-global= {
-  \preamble
+global = {
   \key a \minor
+  \numericTimeSignature
 }
 
 cantusMusicChorus = \relative a' {
   \time 5/4
-  a4^\markup{\bold Chorus} a g a8 b c4 
-  \override Staff.TimeSignature.style = #'numbered
+  a4^\markup{\bold Chorus} a g a8 b c4
   \time 4/4
-  c8 b4 a8 g4 g | 
-  g a b4. a8 
+  c8 b4 a8 g4 g |
+  g a b4. a8
   \time 5/4
   g4 a8 b4 a8 g4 a
   \bar ":|."
@@ -25,30 +24,27 @@ cantusMusicChorus = \relative a' {
 
 altusMusicChorus = \relative c' {
   \time 5/4
-  e4 e e f8 g g4 
-  \override Staff.TimeSignature.style = #'numbered
+  e4 e e f8 g g4
   \time 4/4
-  g8 g4 a8 e4 e | e e g4. a8 
+  g8 g4 a8 e4 e | e e g4. a8
   \time 5/4
-  e4 d8 d4 g8 d4 e 
+  e4 d8 d4 g8 d4 e
   \bar ":|."
 }
 
 tenorMusicChorus = \relative c' {
   \time 5/4
-  c4 c b c8 d e4 
-  \override Staff.TimeSignature.style = #'numbered
+  c4 c b c8 d e4
   \time 4/4
-  e8 d4 c8 b4 b | b c d4. c8 
+  e8 d4 c8 b4 b | b c d4. c8
   \time 5/4
-  b4 c8 d4 c8 b4 c 
+  b4 c8 d4 c8 b4 c
   \bar ":|."
 }
 
 bassusMusicChorus = \relative c {
   \time 5/4
   a4 a e' e8 d c4
-  \override Staff.TimeSignature.style = #'numbered
   \time 4/4
   a8 d4 d8 e4 e | e c g4. g8
   \time 5/4
@@ -57,7 +53,6 @@ bassusMusicChorus = \relative c {
 }
 
 altusMusicVerse = \relative a' {
-  \override Staff.TimeSignature.style = #'numbered
   \time 4/4
   a8^\markup{Solo} a g a c b a4 | a8 f e f d4 d |
   d8 d f d f g a4 | c8 a b c a4 a
@@ -65,7 +60,6 @@ altusMusicVerse = \relative a' {
 }
 
 bassusMusicVerse = \relative c {
-  \override Staff.TimeSignature.style = #'numbered
   \time 4/4
   a8^\markup{Solo} e' e d c b a4 | b8 c b a g4 e |
   a8 c b c d b g4 | c8 a g b a4 a
@@ -104,22 +98,21 @@ wordsVerseD = \lyricmode {
 
   \header{
     title = "Gaudete"
-    tagline = "" 
   }
 
   \score {
     <<
       \context ChoirStaff <<
-	\context Staff = treble <<
-	  \context Voice = cantus { \voiceOne << \global \cantusMusicChorus >> }
-	  \context Voice = altus { \voiceTwo << \global \altusMusicChorus >> }
-	>>
-	\context Lyrics = chorusLyrics { s1 }
-	\context Staff = bass <<
-	  \clef bass
-	  \context Voice = tenor { \voiceOne << \global \tenorMusicChorus >> }
-	  \context Voice = bassus { \voiceTwo << \global \bassusMusicChorus >> }
-	>>
+  \context Staff = treble <<
+    \context Voice = cantus { \voiceOne << \global \cantusMusicChorus >> }
+    \context Voice = altus { \voiceTwo << \global \altusMusicChorus >> }
+  >>
+  \context Lyrics = chorusLyrics { s1 }
+  \context Staff = bass <<
+    \clef bass
+    \context Voice = tenor { \voiceOne << \global \tenorMusicChorus >> }
+    \context Voice = bassus { \voiceTwo << \global \bassusMusicChorus >> }
+  >>
 
       >>
 
@@ -127,16 +120,12 @@ wordsVerseD = \lyricmode {
 
     >>
 
-    \layout {
-      indent = 0\mm
-      betweensystemspace = 5\mm
-    }
   }
 
   \score {
     <<
       \context Staff = verseAltusStaff <<
-	\context Voice = verseAltus { << \global \altusMusicVerse >> }
+  \context Voice = verseAltus { << \global \altusMusicVerse >> }
       >>
       \context Lyrics = verseLyricsA { s1 }
       \context Lyrics = verseLyricsC { s1 }
@@ -144,27 +133,18 @@ wordsVerseD = \lyricmode {
       \context Lyrics = verseLyricsC \lyricsto "verseAltus" \wordsVerseC
     >>
 
-    \layout {
-      indent = 0\mm
-      betweensystemspace = 5\mm
-    }
   }
 
   \score {
-    << 
+    <<
       \context Staff = verseBassusStaff <<
-	\clef bass
-	\context Voice = verseBassus { << \global \bassusMusicVerse >> }
+  \clef bass
+  \context Voice = verseBassus { << \global \bassusMusicVerse >> }
       >>
       \context Lyrics = verseLyricsB { s1 }
       \context Lyrics = verseLyricsD { s1 }
       \context Lyrics = verseLyricsB \lyricsto "verseBassus" \wordsVerseB
       \context Lyrics = verseLyricsD \lyricsto "verseBassus" \wordsVerseD
     >>
-    \layout {
-      indent = 0\mm
-      betweensystemspace = 5\mm
-    }
   }
 }
-

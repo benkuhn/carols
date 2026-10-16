@@ -1,23 +1,14 @@
+\version "2.24.0"
+
 \header {
-  filename = "lo.ly"
-  enteredby = "Gordon Gilbert and Ben Kuhn"
   composer = "14th cent. German Melody"
   arranger = "Michael Praetorius, 1571-1621"
   poet = "St. Germanus, 634-734, tr. Theodore Baker"
-  date=""
   title = "Lo, How a Rose E'er Blooming"
-  metre = "Es Ist Ein Ros' Entsprungen"
-  meter = \metre
-  copyright = "Public Domain"
-  style = "Hymn"
+  meter = "Es Ist Ein Ros' Entsprungen"
   mutopiacomposer = \composer
   mutopiapoet=\poet
-  maintainer = "Gordon Gilbert"
-  maintainerEmail = "gord@angel.eicat.ca"
-  lastupdated = "2011/Dec/12"
 }
-
-\version "2.24.0"
 
 \include "header.ly"
 
@@ -29,7 +20,7 @@ global= {
 sop = \context Voice = "sop"    {
   \voiceOne
   \relative c' {
-	c'2 c4 c d c c2 a |
+  c'2 c4 c d c c2 a |
     bes a4 g2 f e4 f2 |
     c'2 c4 c d c c2 a |
     bes a4 g2 f e4 f2 |
@@ -42,43 +33,40 @@ sop = \context Voice = "sop"    {
 alto=\context Voice = "alto"   {
   \voiceTwo
   \relative c' {
-	a'2 a4 f f f e2 d d
-	c4 c d4.( a8 c4) c c2
-	a'2 a4 f f f e2 d d
-	c4 c d4.( a8 c4) c c2
-	s4 f d c c b c8( d e4) s
-	e4 g f f f e2 d d
-	f4 d e( f g) c, c1
+  a'2 a4 f f f e2 d d
+  c4 c d4.( a8 c4) c c2
+  a'2 a4 f f f e2 d d
+  c4 c d4.( a8 c4) c c2
+  s4 f d c c b c8( d e4) s
+  e4 g f f f e2 d d
+  f4 d e( f g) c, c1
   }}
 
 tenor = \context Voice = "tenor"   {
   \voiceOne
   \relative c' {
-	c2 c4 a bes a g2 f f
-	a4 c bes( a2) g4 a2
-	c2 c4 a bes a g2 f f
-	a4 c bes( a2) g4 a2
-	d,4 \rest c'4 bes a a g g2 d4 \rest
-	g4 g a bes a g2 fis g
-	c4 bes a2 g a1
+  c2 c4 a bes a g2 f f
+  a4 c bes( a2) g4 a2
+  c2 c4 a bes a g2 f f
+  a4 c bes( a2) g4 a2
+  d,4 \rest c'4 bes a a g g2 d4 \rest
+  g4 g a bes a g2 fis g
+  c4 bes a2 g a1
   }}
 
 bass = \context Voice = "bass"   {
   \voiceTwo
   \relative c' {
-	f,2 f4 f bes f c2 d bes
-	f'4 e d2 c f
-	f2 f4 f bes f c2 d bes
-	f'4 e d2 c f
-	s4 f g a f g c,2 s4
-	c4 e f bes, f' c2 d g,
-	a4 bes c2 c <<f1 f,>>
+  f,2 f4 f bes f c2 d bes
+  f'4 e d2 c f
+  f2 f4 f bes f c2 d bes
+  f'4 e d2 c f
+  s4 f g a f g c,2 s4
+  c4 e f bes, f' c2 d g,
+  a4 bes c2 c <<f1 f,>>
   }}
-accomp=\chordmode {
-
-}
 stanzaa = \lyricmode {
-  Lo, how a Rose e'er bloom -- img
+  Lo, how a Rose e'er bloom -- ing
   From ten -- der stem hath sprung!
   Of Jes -- se's lin -- eage com -- ing
   As men of old have sung.
@@ -105,20 +93,9 @@ stanzac = \lyricmode {
   From sin and death he saves us,
   And light -- ens ev' -- ry load.
 }
-stanzad = \lyricmode {
 
-}
-stanzae = \lyricmode {
-
-}
-stanzaf = \lyricmode {
-
-}
-
-\score {	%\transpose d c
+\score {  %\transpose d c
   \context ChoirStaff <<
-    \context ChordNames \accomp
-    \unset ChoirStaff.melismaBusyProperties
     \context Staff ="upper"  { \clef "G" <<
       \global
       \sop
@@ -142,12 +119,6 @@ stanzaf = \lyricmode {
     >>}
   >>
   \layout {
-    indent = 0.0\pt
-    \context {
-      \ChordNames
-      \override ChordName.style = #'american
-      chordChanges = ##t
-    }
     \context {
       \Staff
       \remove Time_signature_engraver

@@ -1,14 +1,10 @@
+\version "2.24.0"
+
 \header {
   title = "Adam Lay Ybounden"
   composer = "Boris Ord"
   poet = "Anon. 15th cen."
-  enteredby = "Maia McCormick"
-  maintainer = "Maia McCormick"
-  maintainerEmail = "maia.mcc@gmail.com"
-  lastupdated = "2019/Dec/10"
 }
-
-\version "2.24.0"
 
 \include "header.ly"
 
@@ -21,7 +17,6 @@
 }
 
 global= {
-  \preamble
   \time 3/4
   \key b \minor
   \set Timing.beamExceptions = #'()
@@ -102,7 +97,6 @@ bass = \context Voice = "bass" \relative c' {
 
 }
 
-
 wordsCenter = \lyricmode {
   A -- dam lay y -- boun -- den,
   Bound -- en in a bond;
@@ -149,14 +143,13 @@ wordsBottom = \lyricmode {
 
 \score {
   \context ChoirStaff <<
-    \unset ChoirStaff.melismaBusyProperties
     \context Staff ="upper"  { \clef "G" <<
       \global
       \sop
       \alto
     >>}
 
-	\context Lyrics = "top" \with { alignAboveContext = "upper" } \lyricsto "sop" {
+  \context Lyrics = "top" \with { alignAboveContext = "upper" } \lyricsto "sop" {
       \wordsTop }
 
     \context Staff = "lower"  { \clef "F"<<
@@ -172,7 +165,4 @@ wordsBottom = \lyricmode {
       \wordsBottom
     }
   >>
-  \layout{
-    indent = 0.0\pt
-  }
 }

@@ -1,16 +1,15 @@
+\version "2.24.0"
+
 \header {
-  enteredby = "Maia McCormick"
   composer = "W.J. Kirkpatrick (1838-1921)"
-  arranger = "arr. David Wilcocks"
+  arranger = "arr. David Willcocks"
   poet = "19th cen. American"
   title = "Away in a Manger"
 }
 
-\version "2.24.0"
 \include "header.ly"
 
 global= {
-  \preamble
   \time 3/4
   \key f \major
   \set Timing.beamExceptions = #'()
@@ -88,7 +87,6 @@ stanzac = \lyricmode {
 
 \score {
   \context ChoirStaff <<
-    \unset ChoirStaff.melismaBusyProperties
     \context Staff ="upper"  { \clef "G" <<
       \global
       \sop

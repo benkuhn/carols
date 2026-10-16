@@ -7,7 +7,6 @@
   arranger = "arr. Ben Kuhn"
 }
 global = {
-  \preamble
   \key f \major
   \time 4/4
   \autoBeamOff
@@ -23,9 +22,6 @@ sopMusic = \transpose c f { \relative c' {
   c2 d | g, g4 g | c2 d4( e) | f2 e4 f |
   g( c) a f | g2 e4 e | d c e( d) | c1 |
 }}
-sopWords = \lyricmode {
-
-}
 
 altoMusic = \transpose c f { \relative c' {
   \partial 4 c4 |
@@ -64,12 +60,6 @@ altoWordsIII = \lyricmode {
 
 verses = \markup { \fill-line {
 }}
-altoWordsIV = \lyricmode {
-}
-altoWordsV = \lyricmode {
-}
-altoWordsVI = \lyricmode {
-}
 tenorMusic = \transpose c f { \relative c {
   \partial 4 e4 |
   e( f) e d | g2 f4 e | e( f) g f | e2. e4 |
@@ -80,9 +70,6 @@ tenorMusic = \transpose c f { \relative c {
   e2 f | b, d4 d | c2 b4( c) | c2 c4 c |
   c2 c4 c | d2 g4 g | f f f2 | e1 |
 }}
-tenorWords = \lyricmode {
-
-}
 
 bassMusic = \transpose c f { \relative c {
   \partial 4 c4 |
@@ -94,9 +81,6 @@ bassMusic = \transpose c f { \relative c {
   c2 a | e b'4 b | c2 g | f e4 d |
   c( e) f a | g2 e4 e | f f g2 | c,1 \bar "|."
 }}
-bassWords = \lyricmode {
-
-}
 
 \score {
   <<
@@ -105,10 +89,6 @@ bassWords = \lyricmode {
       \new Voice = "sopranos" { \voiceOne << \global \sopMusic>> }
       \new Voice = "altos" { \voiceTwo << \global \altoMusic >> }
     >>
-    \new Lyrics \with { alignAboveContext = #"women" } \lyricsto "sopranos" \sopWords
-    \new Lyrics = "altosVI"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsVI
-    \new Lyrics = "altosV"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsV
-    \new Lyrics = "altosIV"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsIV
     \new Lyrics = "altosIII"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsIII
     \new Lyrics = "altosII"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsII
     \new Lyrics = "altos"  \with { alignBelowContext = #"women"  } \lyricsto "sopranos" \altoWords
@@ -117,10 +97,7 @@ bassWords = \lyricmode {
       \new Voice = "tenors" { \voiceOne << \global \tenorMusic >> }
       \new Voice = "basses" { \voiceTwo << \global \bassMusic >> }
     >>
-    \new Lyrics \with { alignAboveContext = #"men" } \lyricsto "tenors" \tenorWords
-    \new Lyrics \with { alignBelowContext = #"men" } \lyricsto "basses" \bassWords
   >>
-%    \new PianoStaff << \new Staff { \new Voice { \pianoRH } } \new Staff { \clef "bass" \pianoLH } >>
   >>
 }
 \verses

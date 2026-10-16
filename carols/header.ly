@@ -12,9 +12,7 @@
   right-margin = 6\mm
 }
 
-preamble = {
-  #(set-global-staff-size 14)
-}
+#(set-global-staff-size 14)
 
 \layout {
   indent = 0.0\pt

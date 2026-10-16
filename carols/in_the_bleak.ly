@@ -1,27 +1,17 @@
-
 \version "2.24.0"
+
 \header {
-  filename = "in_the_bleak.ly"
-  enteredby = "Gordon Gilbert and Ben Kuhn"
   composer = "Gustav Holst"
   poet = "Christina Rossetti"
-  date="1906"
   title = "In the Bleak Midwinter"
-  metre = "Cranham 6.5.6.5.D."
-  meter = \metre
-  copyright = "Public Domain"
-  style = "Hymn"
+  meter = "Cranham 6.5.6.5.D."
   mutopiacomposer = \composer
   mutopiapoet=\poet
-  maintainer = "Gordon Gilbert"
-  maintainerEmail = "gord@angel.eicat.ca"
-  lastupdated = "2012/Dec/23"
 }
 
 \include "header.ly"
 
 global= {
-  \preamble
 
   \time 4/4
   \key f \major
@@ -123,11 +113,6 @@ bass = \context Voice = "bass" \relative c {
   bes2 c4.( f8) |
   f1 \bar "|."
 }
-accomp=\chordmode {
-
-}
-
-
 
 stanzaa = \lyricmode {
   \set ignoreMelismata = ##t
@@ -179,7 +164,6 @@ stanzad = \lyricmode {
 
 \score {
   \context ChoirStaff <<
-    \unset ChoirStaff.melismaBusyProperties
     \context Staff ="upper"  { \clef "G" <<
       \global
       \sop

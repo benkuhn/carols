@@ -1,25 +1,15 @@
 \version "2.24.0"
 \header {
-  filename = "o_come_o_come.ly"
-  enteredby = "Gordon Gilbert and Ben Kuhn"
   composer = "Ancient plainsong"
   arranger = "arr. Thomas Helmore"
   poet = "trans. John M. Neale and Henry Sloane Coffin"
-  date=""
   title = "O Come O Come Emmanuel"
-  metre = "8.8.8.8.8.8. with Refrain"
-  meter = \metre
-  copyright = "Public Domain"
-  style = "Hymn"
+  meter = "8.8.8.8.8.8. with Refrain"
   mutopiacomposer = \composer
   mutopiapoet=\poet
-  maintainer = "Gordon Gilbert"
-  maintainerEmail = "gord@angel.eicat.ca"
-  lastupdated = "2011/Dec/11"
 }
 \include "header.ly"
 global = {
-  \preamble
   \key e \minor
   \time 4/4
   \partial 4
@@ -73,7 +63,7 @@ alto = \context Voice = "alto" {
     d2. b4 |
     d d d g |
     g2. fis4 |
-    g2. |
+    g2.
 
     g4 |
     fis2. g4 |
@@ -103,7 +93,7 @@ tenor = \context Voice = "tenor" {
     fis2. g4 |
     fis fis g d' |
     e2( d4) c |
-    b2. |
+    b2.
 
     b4 |
     a2. e'4 |
@@ -133,7 +123,7 @@ bass = \context Voice = "bass" {
     d2. e4 |
     d b g b |
     c( a b) d |
-    g,2. |
+    g,2.
 
     g'4 |
     d2. e4 |
@@ -185,7 +175,6 @@ stanzad = \lyricmode {
 
 \score {
   \context ChoirStaff <<
-    \unset ChoirStaff.melismaBusyProperties
     \context Staff ="upper"  { \clef "G" <<
       \global
       \sop
@@ -207,9 +196,6 @@ stanzad = \lyricmode {
     \context Lyrics = "stanza-4" \lyricsto "sop" {
       \set stanza = "4."
       \stanzad }
-                                %	\context Lyrics = "stanza-6" \lyricsto "sop" {
-                                %		\set stanza = "6."
-                                %			\stanzaf }
     \context Staff = "lower"  { \clef "F"<<
       \global
       \tenor

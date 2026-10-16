@@ -1,22 +1,13 @@
+\version "2.24.0"
+
 \header {
-  filename = "o_come_all.ly"
-  enteredby = "Gordon Gilbert"
   composer = "John Francis Wade"
-  poet = "John Francis Wade, trans. by Frederick Oakley"
-  date="1751"
+  poet = "John Francis Wade, trans. by Frederick Oakeley"
   title = "O Come All Ye Faithful"
-  metre = "Adeste Fideles"
-  meter = \metre
-  copyright = "Public Domain"
-  style = "Hymn"
+  meter = "Adeste Fideles"
   mutopiacomposer = \composer
   mutopiapoet=\poet
-  maintainer = "Gordon Gilbert"
-  maintainerEmail = "gord@angel.eicat.ca"
-  lastupdated = "2011/Dec/11"
 }
-
-\version "2.24.0"
 
 \include "header.ly"
 
@@ -25,7 +16,6 @@
 \layout { \context { \Lyrics \override LyricSpace.minimum-distance = #0.7 } }
 
 global= {
-  \preamble
   \time 4/4
   \key aes \major
   \partial 4
@@ -71,12 +61,6 @@ bass = \context Voice = "bass"   {
   r1 r2. aes4 aes g aes des ees2 ees4 aes bes aes g f ees( des) c( des)
   ees2 ~ ees4. aes,8 aes,2.
 }
-
-accomp=\chordmode {
-
-}
-
-
 
 stanzaa = \lyricmode {
   O come, all ye faith -- ful, Joy -- ful and tri -- um -- phant,
@@ -138,8 +122,6 @@ latin = \lyricmode {
 \score {
   \transpose aes g
   \context ChoirStaff <<
-    \context ChordNames \accomp
-    \unset ChoirStaff.melismaBusyProperties
     \context Staff ="upper"  { \clef "G" <<
       \global
       \sop
@@ -158,9 +140,6 @@ latin = \lyricmode {
     \context Lyrics = "stanza-5" \lyricsto "sop" {
       \set stanza = "3."
       \stanzae }
-                                %	\context Lyrics = "stanza-6" \lyricsto "sop" {
-                                %		\set stanza = "6."
-                                %			\stanzaf }
     \context Staff = "lower"  { \clef "F"<<
       \global
       \tenor
@@ -168,4 +147,3 @@ latin = \lyricmode {
     >>}
   >>
 }
-

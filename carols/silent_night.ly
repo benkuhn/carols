@@ -1,28 +1,18 @@
+\version "2.24.0"
+
 \header {
-  filename = "SilentNight-Complete.ly"
-  enteredby = "Gordon Gilbert"
   composer = "Franz Gruber, 1818"
   poet = "Rev. Joseph Mohr, 1818"
-  date="trans 1863 by Jane Campbell"
   title = "Silent Night"
-  metre = "Silent Night P.M."
-  meter = \metre
-  copyright = "Public Domain"
-  style = "Hymn"
+  meter = "Silent Night P.M."
   mutopiacomposer = \composer
   mutopiapoet=\poet
-  maintainer = "Gordon Gilbert"
-  maintainerEmail = "gord@angel.eicat.ca"
-  lastupdated = "2005/Dec/08"
 }
-
-\version "2.24.0"
 
 \include "header.ly"
 
 global= {
-  \preamble
-  
+
   \time 6/8
   \key bes \major
 }
@@ -52,7 +42,7 @@ alto=\context Voice = "alto"   {
 tenor = \context Voice = "tenor"   {
   \voiceOne
   bes4 bes8 f4.
-  bes4 bes8 f4. 
+  bes4 bes8 f4.
   a4 a8 c'4. bes4 bes8 bes4.
   bes4 bes8 g8.( a16) bes8 bes8. bes16 bes8 f4.
   bes4 bes8 \slurDashed g8.( a16) \slurSolid bes8 bes8. bes16 bes8 f4.
@@ -66,15 +56,10 @@ bass = \context Voice = "bass"   {
   bes,4 bes,8 bes,4.
   f4 f8 f4. bes,4 bes,8 bes,4.
   ees4 ees8 ees4 ees8 bes,8. bes,16 bes,8 bes,4.
-  ees4 \slurDashed ees8 ees8.( es16) \slurSolid ees8 bes,8. bes,16 bes,8 bes,4.
+  ees4 \slurDashed ees8 ees8.( ees16) \slurSolid ees8 bes,8. bes,16 bes,8 bes,4.
   f4 f8 f8. f16 f8 bes,2.
   f,4 f,8 f,8. f,16 f,8 bes,2.
 }
-accomp=\chordmode {
-  
-}
-
-
 
 stanzaa = \lyricmode {
   Si -- lent night! Ho -- ly night!
@@ -87,9 +72,9 @@ stanzaa = \lyricmode {
 
 stanzab = \lyricmode {
   Si -- lent night! Ho -- ly night!
-  Shep -- herds quake at the sight, 
-  Glo -- ries stream from hea -- ven a -- far, 
-  Heaven -- ly hosts sing al -- le -- lu -- ia; 
+  Shep -- herds quake at the sight,
+  Glo -- ries stream from hea -- ven a -- far,
+  Heaven -- ly hosts sing al -- le -- lu -- ia;
   Christ, the Sa -- vior, is born,
   Christ, the Sa -- vior, is born.
 }
@@ -97,32 +82,20 @@ stanzab = \lyricmode {
 stanzac = \lyricmode {
   Si -- lent night! Ho -- ly night!
   Son of God, love's pure light
-  Ra -- diant beams from thy ho -- ly face, 
-  With the \set ignoreMelismata = ##t dawn of \unset ignoreMelismata  re -- dee -- _ ming grace, 
+  Ra -- diant beams from thy ho -- ly face,
+  With the \set ignoreMelismata = ##t dawn of \unset ignoreMelismata  re -- dee -- _ ming grace,
   Je -- sus, Lord, at thy birth.
   Jes -- us, Lord, at thy birth.
 }
 
-stanzad = \lyricmode {
-  
-}
-stanzae = \lyricmode {
-  
-}
-stanzaf = \lyricmode {
-  
-}
-
 \score {
   \context ChoirStaff <<
-    \context ChordNames \accomp
-    \unset ChoirStaff.melismaBusyProperties 
     \context Staff ="upper"  { \clef "G" <<
       \global
       \sop
       \alto
     >>}
-    
+
     \context Lyrics = "stanza-1" \lyricsto "sop" {
       \set stanza = "1."
       \stanzaa }
@@ -132,15 +105,6 @@ stanzaf = \lyricmode {
     \context Lyrics = "stanza-3" \lyricsto "sop" {
       \set stanza = "3."
       \stanzac }
-                                %	\context Lyrics = "stanza-4" \lyricsto "sop" {
-                                %		\set stanza = "4."
-                                %			\stanzad }
-                                %	\context Lyrics = "stanza-5" \lyricsto "sop" {
-                                %		\set stanza = "5."
-                                %			\stanzae }
-                                %	\context Lyrics = "stanza-6" \lyricsto "sop" {
-                                %		\set stanza = "6."
-                                %			\stanzaf }
     \context Staff = "lower"  { \clef "F"<<
       \global
       \tenor
