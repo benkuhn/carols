@@ -22,7 +22,7 @@
 
 global= {
   \preamble
-  
+
   \time 6/8
   \key bes \major
 }
@@ -52,7 +52,7 @@ alto=\context Voice = "alto"   {
 tenor = \context Voice = "tenor"   {
   \voiceOne
   bes4 bes8 f4.
-  bes4 bes8 f4. 
+  bes4 bes8 f4.
   a4 a8 c'4. bes4 bes8 bes4.
   bes4 bes8 g8.( a16) bes8 bes8. bes16 bes8 f4.
   bes4 bes8 \slurDashed g8.( a16) \slurSolid bes8 bes8. bes16 bes8 f4.
@@ -71,7 +71,7 @@ bass = \context Voice = "bass"   {
   f,4 f,8 f,8. f,16 f,8 bes,2.
 }
 accomp=\chordmode {
-  
+
 }
 
 
@@ -87,9 +87,9 @@ stanzaa = \lyricmode {
 
 stanzab = \lyricmode {
   Si -- lent night! Ho -- ly night!
-  Shep -- herds quake at the sight, 
-  Glo -- ries stream from hea -- ven a -- far, 
-  Heaven -- ly hosts sing al -- le -- lu -- ia; 
+  Shep -- herds quake at the sight,
+  Glo -- ries stream from hea -- ven a -- far,
+  Heaven -- ly hosts sing al -- le -- lu -- ia;
   Christ, the Sa -- vior, is born,
   Christ, the Sa -- vior, is born.
 }
@@ -97,32 +97,32 @@ stanzab = \lyricmode {
 stanzac = \lyricmode {
   Si -- lent night! Ho -- ly night!
   Son of God, love's pure light
-  Ra -- diant beams from thy ho -- ly face, 
-  With the \set ignoreMelismata = ##t dawn of \unset ignoreMelismata  re -- dee -- _ ming grace, 
+  Ra -- diant beams from thy ho -- ly face,
+  With the \set ignoreMelismata = ##t dawn of \unset ignoreMelismata  re -- dee -- _ ming grace,
   Je -- sus, Lord, at thy birth.
   Jes -- us, Lord, at thy birth.
 }
 
 stanzad = \lyricmode {
-  
+
 }
 stanzae = \lyricmode {
-  
+
 }
 stanzaf = \lyricmode {
-  
+
 }
 
 \score {
   \context ChoirStaff <<
     \context ChordNames \accomp
-    \unset ChoirStaff.melismaBusyProperties 
+    \unset ChoirStaff.melismaBusyProperties
     \context Staff ="upper"  { \clef "G" <<
       \global
       \sop
       \alto
     >>}
-    
+
     \context Lyrics = "stanza-1" \lyricsto "sop" {
       \set stanza = "1."
       \stanzaa }
@@ -132,15 +132,15 @@ stanzaf = \lyricmode {
     \context Lyrics = "stanza-3" \lyricsto "sop" {
       \set stanza = "3."
       \stanzac }
-                                %	\context Lyrics = "stanza-4" \lyricsto "sop" {
-                                %		\set stanza = "4."
-                                %			\stanzad }
-                                %	\context Lyrics = "stanza-5" \lyricsto "sop" {
-                                %		\set stanza = "5."
-                                %			\stanzae }
-                                %	\context Lyrics = "stanza-6" \lyricsto "sop" {
-                                %		\set stanza = "6."
-                                %			\stanzaf }
+                                %  \context Lyrics = "stanza-4" \lyricsto "sop" {
+                                %    \set stanza = "4."
+                                %      \stanzad }
+                                %  \context Lyrics = "stanza-5" \lyricsto "sop" {
+                                %    \set stanza = "5."
+                                %      \stanzae }
+                                %  \context Lyrics = "stanza-6" \lyricsto "sop" {
+                                %    \set stanza = "6."
+                                %      \stanzaf }
     \context Staff = "lower"  { \clef "F"<<
       \global
       \tenor

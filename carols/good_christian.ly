@@ -50,7 +50,7 @@ alto=\context Voice = "alto"   {
   f'4 f'2 f'4 f'2 e'4 f'2 f'4 f'2.
   d'2 bes4 d'2 c'4 c'2.( f'2 e'4)
   f'2 f'4 f'2 e'4 f'2. ~ f'2
-}	
+}
 
 tenor = \context Voice = "tenor"   {
   \voiceOne
@@ -78,7 +78,7 @@ bass = \context Voice = "bass"   {
   f2 d4 bes,2 c4 f2.~f2
 }
 accomp=\chordmode {
-  
+
 }
 stanzaa = \lyricmode {
   Good Christ -- ian men, re -- joice,
@@ -87,7 +87,7 @@ stanzaa = \lyricmode {
   News! News!
   Je -- sus Christ is born to -- day
   Ox and ass be -- fore Him bow,
-  And He is in the man -- ger now, 
+  And He is in the man -- ger now,
   Christ is born to -- day!
   Christ is born to -- day!
 }
@@ -113,27 +113,27 @@ stanzac = \lyricmode {
   To gain His ev -- er -- las -- ting hall:
   Christ was born to save,
   Christ was born to save.
-}	
+}
 stanzad = \lyricmode {
-  
-}	
+
+}
 stanzae = \lyricmode {
-  
+
 }
 stanzaf = \lyricmode {
-  
+
 }
 
-\score {	%\transpose d c
+\score {  %\transpose d c
   \context ChoirStaff <<
     \context ChordNames \accomp
-    \unset ChoirStaff.melismaBusyProperties 
+    \unset ChoirStaff.melismaBusyProperties
     \context Staff ="upper"  { \clef "G" <<
       \global
       \sop
       \alto
     >>}
-    
+
     \context Lyrics = "stanza-1" \lyricsto "sop" {
       \set stanza = "1."
       \stanzaa }
@@ -143,15 +143,15 @@ stanzaf = \lyricmode {
     \context Lyrics = "stanza-3" \lyricsto "sop" {
       \set stanza = "3."
       \stanzac }
-                                %	\context Lyrics = "stanza-4" \lyricsto "sop" {
-                                %		\set stanza = "4."
-                                %			\stanzad }
-                                %	\context Lyrics = "stanza-5" \lyricsto "sop" {
-                                %		\set stanza = "5."
-                                %			\stanzae }
-                                %	\context Lyrics = "stanza-6" \lyricsto "sop" {
-                                %		\set stanza = "6."
-                                %			\stanzaf }
+                                %  \context Lyrics = "stanza-4" \lyricsto "sop" {
+                                %    \set stanza = "4."
+                                %      \stanzad }
+                                %  \context Lyrics = "stanza-5" \lyricsto "sop" {
+                                %    \set stanza = "5."
+                                %      \stanzae }
+                                %  \context Lyrics = "stanza-6" \lyricsto "sop" {
+                                %    \set stanza = "6."
+                                %      \stanzaf }
     \context Staff = "lower"  { \clef "F"<<
       \global
       \tenor
@@ -159,4 +159,3 @@ stanzaf = \lyricmode {
     >>}
   >>
 }
-

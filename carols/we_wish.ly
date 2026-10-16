@@ -18,14 +18,14 @@ sopMusic = \relative c' {
   f4 f f |
   bes bes8\noBeam c bes\noBeam aes |
   g4 ees ees |
-  
+
   c' c8\noBeam des c\noBeam bes |
   \slurDotted aes4 f ees8\noBeam( ees) |
   f4 bes g |
   aes2^\markup\italic"Fine" \bar "||" \break
   ees4 |
   aes aes aes |
-  
+
   g2 g4 |
   aes g f |
   ees2 bes'4 |
@@ -35,7 +35,7 @@ sopMusic = \relative c' {
   aes2 \bar "|."
 }
 sopWords = \lyricmode {
-  
+
 }
 
 altoMusic = \relative c' {
@@ -44,14 +44,14 @@ altoMusic = \relative c' {
   des4 des ees |
   d d8\noBeam d d\noBeam d |
   ees4 ees ees |
-  
+
   e e8\noBeam e e\noBeam e |
   \slurDotted f4 c ees8\noBeam( ees) |
   des4 f ees |
   ees2 \bar "||"
   c4 |
   ees4 ees ees |
-  
+
   ees2 ees4 |
   d4 d d |
   ees2 ees4 |
@@ -104,14 +104,14 @@ tenorMusic = \relative c {
   aes4 aes a |
   bes f8\noBeam aes g\noBeam f |
   ees4 g g |
-  
+
   g g8\noBeam g c\noBeam c |
   \slurDotted c4 aes aes8\noBeam( aes) |
   aes4 des des |
   c2_\markup\italic"Fine" \bar "||"
   aes4 |
   c c c |
-  
+
   bes2 bes4 |
   bes bes aes |
   g2 g4 |
@@ -130,14 +130,14 @@ bassMusic = \relative c {
   des4 des c |
   bes bes8\noBeam bes bes\noBeam bes |
   ees4 ees des |
-  
+
   c c8\noBeam c c\noBeam c |
   \slurDotted f4 f c8\noBeam( c) |
   des4 bes ees |
   aes2 \bar "||"
   aes4 |
   aes, aes aes |
-  
+
   bes2 bes4 |
   bes bes bes |
   ees2 ees4 |
@@ -151,10 +151,10 @@ bassWords = \lyricmode {
 }
 
 pianoRH = \relative c' {
-  
+
 }
 pianoLH = \relative c' {
-  
+
 }
 
 \score {

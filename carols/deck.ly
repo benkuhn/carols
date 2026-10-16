@@ -21,24 +21,24 @@ sopMusic = \relative c'' {
   f g a f |
   g8 a bes g a4. g8 |
   f4 e f2 |
-  
+
   c'4. bes8 a4 g |
   f g a f |
   g8 a bes g a4. g8 |
   f4 e f2 |
-  
+
   g4. a8 bes4 g |
   a4. bes8 c4 g |
   a8 b c4 d8 e f4 |
   e d c2 |
-  
+
   c4. bes8 a4 g |
   f g a f |
   d'8 d d d c4. bes8 |
   a4 g f2 \bar "|."
 }
 sopWords = \lyricmode {
-  
+
 }
 
 altoMusic = \relative c' {

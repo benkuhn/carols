@@ -156,7 +156,7 @@ wordsBottom = \lyricmode {
       \alto
     >>}
 
-	\context Lyrics = "top" \with { alignAboveContext = "upper" } \lyricsto "sop" {
+  \context Lyrics = "top" \with { alignAboveContext = "upper" } \lyricsto "sop" {
       \wordsTop }
 
     \context Staff = "lower"  { \clef "F"<<

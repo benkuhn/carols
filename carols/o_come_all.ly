@@ -158,9 +158,9 @@ latin = \lyricmode {
     \context Lyrics = "stanza-5" \lyricsto "sop" {
       \set stanza = "3."
       \stanzae }
-                                %	\context Lyrics = "stanza-6" \lyricsto "sop" {
-                                %		\set stanza = "6."
-                                %			\stanzaf }
+                                %  \context Lyrics = "stanza-6" \lyricsto "sop" {
+                                %    \set stanza = "6."
+                                %      \stanzaf }
     \context Staff = "lower"  { \clef "F"<<
       \global
       \tenor
@@ -168,4 +168,3 @@ latin = \lyricmode {
     >>}
   >>
 }
-

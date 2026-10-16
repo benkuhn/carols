@@ -138,23 +138,23 @@ stanzadmen = \lyricmode {
   And won -- ders of His love.
 }
 stanzae = \lyricmode {
-  
+
 }
 
 stanzaf = \lyricmode {
-  
+
 }
 
 \score {
   \context ChoirStaff <<
     \context ChordNames \accomp
-    \unset ChoirStaff.melismaBusyProperties 
+    \unset ChoirStaff.melismaBusyProperties
     \context Staff ="upper"  { \clef "G" <<
       \global
       \sop
       \alto
     >>}
-    
+
     \context Lyrics = "stanza-1" \lyricsto "sop" {
       \set stanza = "1."
       \stanzaa }
@@ -164,12 +164,12 @@ stanzaf = \lyricmode {
     \context Lyrics = "stanza-3" \lyricsto "sop" {
       \set stanza = "3."
       \stanzad }
-                                %	\context Lyrics = "stanza-5" \lyricsto "sop" {
-                                %		\set stanza = "5."
-                                %			\stanzae }
-                                %	\context Lyrics = "stanza-6" \lyricsto "sop" {
-                                %		\set stanza = "6."
-                                %			\stanzaf }
+                                %  \context Lyrics = "stanza-5" \lyricsto "sop" {
+                                %    \set stanza = "5."
+                                %      \stanzae }
+                                %  \context Lyrics = "stanza-6" \lyricsto "sop" {
+                                %    \set stanza = "6."
+                                %      \stanzaf }
     \context Staff = "lower"  { \clef "F"<<
       \global
       \tenor

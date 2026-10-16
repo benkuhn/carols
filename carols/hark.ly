@@ -36,17 +36,17 @@ sop = \context Voice = "sop"    {
   c''4 c'' c'' f' bes' a' a'( g')
   d'' d'' d'' c'' bes' a' bes'2
   g'4 a'8( bes') c''4. f'8 f'4 g' a'2
-  
+
   d''4. d''8 d''4 c'' bes' a' bes'2
   g'4 a'8( bes') c''4. f'8 f'4 g' f'2\bar "|."
-  
+
 }
 
 alto=\context Voice = "alto"   {
   \voiceTwo
   c'4 c' c'4. c'8 c'4 f' f'( e')
   f' e' d' g' f' e' f'2
-  c'4 c' c'4. c'8 a4 f' f'2 
+  c'4 c' c'4. c'8 a4 f' f'2
   e'4 d' e'4. c'8 c'4 b c'2
   c'4 c' c' f' g' f' f'( e')
   c'4 c' c' f' g' f' f'( e')
@@ -54,7 +54,7 @@ alto=\context Voice = "alto"   {
   e'4 e' f'4. c'8 c'4 e' f'2
   bes'4 bes'bes'a' g' fis' g'2
   c'4 e' f'4. c'8 c'4 e' f'2
-}	
+}
 
 tenor = \context Voice = "tenor"   {
   \voiceOne
@@ -74,7 +74,7 @@ bass = \context Voice = "bass"   {
   \voiceTwo
   f4 f f c a, f, c2
   a,4 a, bes, bes, c c f2
-  f4 f f c d c b,4. g,8 
+  f4 f f c d c b,4. g,8
   a,4 b, c e, f, g, c2
   c'4 c' c' a e f c2
   c'4 c' c' a e f c2
@@ -84,7 +84,7 @@ bass = \context Voice = "bass"   {
   e bes a f c c <f f,>2
 }
 accomp=\chordmode {
-  
+
 }
 
 
@@ -121,27 +121,27 @@ stanzac = \lyricmode {
   Born that man no more may die,
   Born to raise the sons of earth,
   Born to give them sec -- ond birth.
-}	
+}
 stanzad = \lyricmode {
-  
-}	
+
+}
 stanzae = \lyricmode {
-  
+
 }
 stanzaf = \lyricmode {
-  
+
 }
 
 \score {
   \context ChoirStaff <<
     \context ChordNames \accomp
-    \unset ChoirStaff.melismaBusyProperties 
+    \unset ChoirStaff.melismaBusyProperties
     \context Staff ="upper"  { \clef "G" <<
       \global
       \sop
       \alto
     >>}
-    
+
     \context Lyrics = "stanza-1" \lyricsto "sop" {
       \set stanza = "1."
       \stanzaa }
@@ -158,4 +158,3 @@ stanzaf = \lyricmode {
     >>}
   >>
 }
-

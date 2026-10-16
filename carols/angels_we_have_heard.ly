@@ -23,7 +23,7 @@ sopMusic = \relative c'' {
   d4. c8 b2 |
   b4 a b d |
   b4. a8 g2 |
-  
+
   \repeat volta 2 {
     d'2( e8[ d c b] |
     c2 d8[ c b a] |
@@ -45,19 +45,19 @@ altoMusic = \relative c'' {
   a fis g2 |
   g4 fis g g |
   g fis g2 |
-  
+
   g4 g fis fis |
   g a g2 |
   g4 fis g g |
   g fis g2 |
-  
+
   g4( b8[ a] g2~ |
   g4 a8[ g] fis2~ |
   fis4 g8[ fis] e2 |
   d4.) d8 d2 |
   d4 fis g g |
   g2 fis2 |
-  
+
   g2( fis2) | d1 |
 }
 altoWords = {

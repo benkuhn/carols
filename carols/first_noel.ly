@@ -1,4 +1,4 @@
-﻿\version "2.24.0"
+\version "2.24.0"
 \include "header.ly"
 \header {
   title = "The First Noël"
@@ -20,20 +20,20 @@ sopMusic = \relative c' {
   \slurDotted d4( cis) b |
   a2 b8\noBeam( cis) |
   d4( cis) b |
-  
+
   a( b) cis |
   d( a) g |
   fis2 \slurSolid fis8[ e] |
   d4.( e8) \slurDotted fis8\noBeam( g) |
   \slurSolid a2 b8[ cis] |
-  
+
   \slurDotted d4( cis) b |
   a2 b8\noBeam( cis) |
   d4( cis) b |
   a( b) cis |
   \slurSolid d( a) g |
   fis2 \bar "||" \break
-  
+
   fis8[ e] |
   d4.( e8) fis[ g] |
   a2 d8[ cis] |
@@ -45,7 +45,7 @@ sopMusic = \relative c' {
   fis2 \bar "|."
 }
 sopWords = \lyricmode {
-  
+
 }
 
 altoMusic = \relative c' {
@@ -55,20 +55,20 @@ altoMusic = \relative c' {
   \slurDotted a4( a) g |
   fis2 d8\noBeam( e) |
   a4( fis) g |
-  
+
   a( d,) g |
   fis( fis) e |
   d2 cis4 |
   a2 d8\noBeam( d) |
   e2 e4 |
-  
+
   a4( a) g |
   fis2 d8\noBeam( e) |
   a4( fis) g |
   a( g) g |
   fis2 e4 |
   d2
-  
+
   cis4 |
   a2 d4 |
   cis2 fis4 |
@@ -87,10 +87,10 @@ altoWords = {
     an -- gel did say,
     Was to cer -- tain poor shep -- herds in fields as they lay;
     \unset ignoreMelismata
-    
+
     In fields where they lay
     \set ignoreMelismata = ##t
-    
+
     keep -- ing their sheep
     On a cold win -- ter’s night _ that was _ so deep.
     \unset ignoreMelismata
@@ -110,10 +110,10 @@ altoWordsII = \lyricmode {
   saw _ a Star
   Shin -- ing in _ the East _ be -- yond _ them far,
   \unset ignoreMelismata
-  
+
   And to the earth it
   \set ignoreMelismata = ##t
-  
+
   gave _ great light,
   And _ so it con -- tin -- ued both day _ and night.
 }
@@ -123,7 +123,7 @@ altoWordsIII = \lyricmode {
 
   the light of that same Star
   Three wise men came from coun -- try far;
-  To seek 
+  To seek
 \set ignoreMelismata = ##t
   for a King
 \unset ignoreMelismata
@@ -135,17 +135,17 @@ altoWordsIII = \lyricmode {
 }
 altoWordsIV = \lyricmode {
   \set stanza = #"4. "
-  This star drew nigh to 
+  This star drew nigh to
   \set ignoreMelismata = ##t
   the _ North West,
   O’er
 
   _ Beth -- _ le -- hem _ it took _ its rest,
   \unset ignoreMelismata
-  
+
   And there it did both
   \set ignoreMelismata = ##t
-  
+
   stop _ and stay
   Right _ o -- ver the place _ where Je -- _ sus lay.
 }
@@ -156,12 +156,12 @@ altoWordsV = \lyricmode {
   Wise -- _ men three,
   Full _ rev -- _ ’rent -- ly _ on bend -- _ ed knee,
   \unset ignoreMelismata
-  
+
   And of -- fer’d
 
   there in
   \set ignoreMelismata = ##t
-  
+
   His _ pres -- ence,
   Their _ gold _ and myrrh _ and frank -- _ in -- cense.
 }
@@ -183,20 +183,20 @@ tenorMusic = \relative c' {
   \slurDotted a4( a) \slurSolid b8[ cis] |
   d2 \slurDotted b8\noBeam( a) |
   a4( a) cis |
-  
+
   d( b) g |
   a( d) a |
   a2 \slurSolid a8[ g] |
   fis2 \slurDotted d'8\noBeam( d) |
   \slurSolid d4( cis) b |
-  
+
   \slurDotted a( a) \slurSolid b8[ cis] |
   d2 \slurDotted b8\noBeam( a) |
   a4( a) cis |
   d4( d) e |
   \slurSolid a,( d) a |
   a2
-  
+
   a8[ g] |
   fis2 b4 |
   a2 a4 |
@@ -218,20 +218,20 @@ bassMusic = \relative c {
   \slurDotted fis( fis) g |
   d2 g8\noBeam( g) |
   fis4( d) e |
-  
+
   fis( g) e |
   fis8[( g] a4) a |
   d,2 a4 |
   d2 b8\noBeam( b) |
   \slurSolid a4( a') g |
-  
+
   \slurDotted fis( fis) g |
   d2 g8\noBeam( g) |
   fis4( d) e |
   fis( g) e |
   \slurSolid fis8[( g] a4) a, |
   d2
-  
+
   a4 |
   d2 b4 |
   fis'2 d4 |

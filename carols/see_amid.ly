@@ -177,4 +177,3 @@ PartPTwoVoiceTwo =  \relative g, {
     % To create MIDI output, uncomment the following line:
     %  \midi {}
     }
-

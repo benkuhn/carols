@@ -13,11 +13,11 @@ global= {
 
 cantusMusicChorus = \relative a' {
   \time 5/4
-  a4^\markup{\bold Chorus} a g a8 b c4 
+  a4^\markup{\bold Chorus} a g a8 b c4
   \override Staff.TimeSignature.style = #'numbered
   \time 4/4
-  c8 b4 a8 g4 g | 
-  g a b4. a8 
+  c8 b4 a8 g4 g |
+  g a b4. a8
   \time 5/4
   g4 a8 b4 a8 g4 a
   \bar ":|."
@@ -25,23 +25,23 @@ cantusMusicChorus = \relative a' {
 
 altusMusicChorus = \relative c' {
   \time 5/4
-  e4 e e f8 g g4 
+  e4 e e f8 g g4
   \override Staff.TimeSignature.style = #'numbered
   \time 4/4
-  g8 g4 a8 e4 e | e e g4. a8 
+  g8 g4 a8 e4 e | e e g4. a8
   \time 5/4
-  e4 d8 d4 g8 d4 e 
+  e4 d8 d4 g8 d4 e
   \bar ":|."
 }
 
 tenorMusicChorus = \relative c' {
   \time 5/4
-  c4 c b c8 d e4 
+  c4 c b c8 d e4
   \override Staff.TimeSignature.style = #'numbered
   \time 4/4
-  e8 d4 c8 b4 b | b c d4. c8 
+  e8 d4 c8 b4 b | b c d4. c8
   \time 5/4
-  b4 c8 d4 c8 b4 c 
+  b4 c8 d4 c8 b4 c
   \bar ":|."
 }
 
@@ -104,22 +104,22 @@ wordsVerseD = \lyricmode {
 
   \header{
     title = "Gaudete"
-    tagline = "" 
+    tagline = ""
   }
 
   \score {
     <<
       \context ChoirStaff <<
-	\context Staff = treble <<
-	  \context Voice = cantus { \voiceOne << \global \cantusMusicChorus >> }
-	  \context Voice = altus { \voiceTwo << \global \altusMusicChorus >> }
-	>>
-	\context Lyrics = chorusLyrics { s1 }
-	\context Staff = bass <<
-	  \clef bass
-	  \context Voice = tenor { \voiceOne << \global \tenorMusicChorus >> }
-	  \context Voice = bassus { \voiceTwo << \global \bassusMusicChorus >> }
-	>>
+  \context Staff = treble <<
+    \context Voice = cantus { \voiceOne << \global \cantusMusicChorus >> }
+    \context Voice = altus { \voiceTwo << \global \altusMusicChorus >> }
+  >>
+  \context Lyrics = chorusLyrics { s1 }
+  \context Staff = bass <<
+    \clef bass
+    \context Voice = tenor { \voiceOne << \global \tenorMusicChorus >> }
+    \context Voice = bassus { \voiceTwo << \global \bassusMusicChorus >> }
+  >>
 
       >>
 
@@ -136,7 +136,7 @@ wordsVerseD = \lyricmode {
   \score {
     <<
       \context Staff = verseAltusStaff <<
-	\context Voice = verseAltus { << \global \altusMusicVerse >> }
+  \context Voice = verseAltus { << \global \altusMusicVerse >> }
       >>
       \context Lyrics = verseLyricsA { s1 }
       \context Lyrics = verseLyricsC { s1 }
@@ -151,10 +151,10 @@ wordsVerseD = \lyricmode {
   }
 
   \score {
-    << 
+    <<
       \context Staff = verseBassusStaff <<
-	\clef bass
-	\context Voice = verseBassus { << \global \bassusMusicVerse >> }
+  \clef bass
+  \context Voice = verseBassus { << \global \bassusMusicVerse >> }
       >>
       \context Lyrics = verseLyricsB { s1 }
       \context Lyrics = verseLyricsD { s1 }
@@ -167,4 +167,3 @@ wordsVerseD = \lyricmode {
     }
   }
 }
-

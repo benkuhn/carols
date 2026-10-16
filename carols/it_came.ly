@@ -31,53 +31,53 @@ global= {
 sop = \context Voice = "sop"    {
   \voiceOne
   \relative c' {
-	e4 cis'2 gis4 b( a) fis e2 fis4 e2
-	e4 fis( gis) a a( b) cis b2. ~ b2
-	e,4 cis'2 gis4 b( a) fis e2 fis4 e2
-	e4 fis2 fis4 gis( fis) e a2. ~ a2
-	cis4 cis2 cis,4 cis( dis) eis fis2 gis4 a2
-	cis4 b( a) gis fis( gis) fis e2. ~ e2
-	e4 cis'2 gis4 b( a) fis e2 fis4 e2
-	e4 fis2 fis4 gis( fis) e a2. ~ a2 \bar "|."
+  e4 cis'2 gis4 b( a) fis e2 fis4 e2
+  e4 fis( gis) a a( b) cis b2. ~ b2
+  e,4 cis'2 gis4 b( a) fis e2 fis4 e2
+  e4 fis2 fis4 gis( fis) e a2. ~ a2
+  cis4 cis2 cis,4 cis( dis) eis fis2 gis4 a2
+  cis4 b( a) gis fis( gis) fis e2. ~ e2
+  e4 cis'2 gis4 b( a) fis e2 fis4 e2
+  e4 fis2 fis4 gis( fis) e a2. ~ a2 \bar "|."
   }}
 
 alto=\context Voice = "alto"   {
   \voiceTwo
   \relative c' {
-	cis4 cis2 cis4 d2 d4 cis2 d4 cis2
-	cis4 d2 d4 dis2 dis4 e2. ~ e2
-	e4 cis2 cis4 d2 d4 cis2 d4 cis2
-	e4 d2 d4 d2 d4 cis2. ~ cis2
-	cis4 cis2 cis4 cis2 cis4 cis2 cis4 cis2
-	cis4 e2 e4 dis2 dis4 e2. ~ e2
-	d4 cis2 cis4 d2 d4 cis2 d4 cis2
-	e4 d2 d4 d2 d4 cis2. ~ cis2
+  cis4 cis2 cis4 d2 d4 cis2 d4 cis2
+  cis4 d2 d4 dis2 dis4 e2. ~ e2
+  e4 cis2 cis4 d2 d4 cis2 d4 cis2
+  e4 d2 d4 d2 d4 cis2. ~ cis2
+  cis4 cis2 cis4 cis2 cis4 cis2 cis4 cis2
+  cis4 e2 e4 dis2 dis4 e2. ~ e2
+  d4 cis2 cis4 d2 d4 cis2 d4 cis2
+  e4 d2 d4 d2 d4 cis2. ~ cis2
   }}
 
 tenor = \context Voice = "tenor"   {
   \voiceOne
   \relative c' {
-	e,4 e2 eis4 fis2 gis4 a2 e4 e2
-	a4 a2 a4  a2 a4 gis2. ~ gis2
-	e4 e2 eis4 fis2 gis4 a2 e4 e2
-	a4 a2 b4 b( a) gis a2. ~ a2
-	cis,4 cis2 eis4 eis( fis) gis fis2 eis4 fis2
-	fis4 gis( cis) b a( b) a gis2. ~ gis2
-	gis4 a2 eis4 fis2 gis4 a2 e4 e2
-	a4 a2 b4 b( a) gis a2. ~ a2
+  e,4 e2 eis4 fis2 gis4 a2 e4 e2
+  a4 a2 a4  a2 a4 gis2. ~ gis2
+  e4 e2 eis4 fis2 gis4 a2 e4 e2
+  a4 a2 b4 b( a) gis a2. ~ a2
+  cis,4 cis2 eis4 eis( fis) gis fis2 eis4 fis2
+  fis4 gis( cis) b a( b) a gis2. ~ gis2
+  gis4 a2 eis4 fis2 gis4 a2 e4 e2
+  a4 a2 b4 b( a) gis a2. ~ a2
   }}
 
 bass = \context Voice = "bass"   {
   \voiceTwo
   \relative c' {
-	a,4 a2 a4 a2 a4 a2 gis4 a2
-	a4 d( e) fis fis2 b,4 e2. ~ e2
-	e4 a,2 a4 a2 a4 a2 gis4 a2
-	cis4 d2 b4 e2 e4 a,2. ~ a2
-	cis4 cis2 cis4 cis2 b4 a2 cis4 fis2
-	a,4 b2 b4 b2 b4 e2. ~ e2
-	e4 a,2 a4 a2 a4 a2 gis4 a2
-	cis4 d2 b4 e2 e4 a,2. ~ a2
+  a,4 a2 a4 a2 a4 a2 gis4 a2
+  a4 d( e) fis fis2 b,4 e2. ~ e2
+  e4 a,2 a4 a2 a4 a2 gis4 a2
+  cis4 d2 b4 e2 e4 a,2. ~ a2
+  cis4 cis2 cis4 cis2 b4 a2 cis4 fis2
+  a,4 b2 b4 b2 b4 e2. ~ e2
+  e4 a,2 a4 a2 a4 a2 gis4 a2
+  cis4 d2 b4 e2 e4 a,2. ~ a2
   }}
 accomp=\chordmode {
 
@@ -133,7 +133,7 @@ stanzaf = \lyricmode {
 
 }
 
-\score {	\transpose a bes
+\score {  \transpose a bes
   \context ChoirStaff <<
     \context ChordNames \accomp
     \unset ChoirStaff.melismaBusyProperties
@@ -152,15 +152,15 @@ stanzaf = \lyricmode {
     \context Lyrics = "stanza-3" \lyricsto "sop" {
       \set stanza = "3."
       \stanzac }
-                                %	\context Lyrics = "stanza-4" \lyricsto "sop" {
-                                %		\set stanza = "4."
-                                %			\stanzad }
-                                %	\context Lyrics = "stanza-5" \lyricsto "sop" {
-                                %		\set stanza = "5."
-                                %			\stanzae }
-                                %	\context Lyrics = "stanza-6" \lyricsto "sop" {
-                                %		\set stanza = "6."
-                                %			\stanzaf }
+                                %  \context Lyrics = "stanza-4" \lyricsto "sop" {
+                                %    \set stanza = "4."
+                                %      \stanzad }
+                                %  \context Lyrics = "stanza-5" \lyricsto "sop" {
+                                %    \set stanza = "5."
+                                %      \stanzae }
+                                %  \context Lyrics = "stanza-6" \lyricsto "sop" {
+                                %    \set stanza = "6."
+                                %      \stanzaf }
     \context Staff = "lower"  { \clef "F"<<
       \global
       \tenor

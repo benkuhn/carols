@@ -1,4 +1,4 @@
-﻿\version "2.24.0"
+\version "2.24.0"
 \include "header.ly"
 
 \header {
@@ -189,4 +189,3 @@ bassWords = \lyricmode {
     }
   }
 }
-

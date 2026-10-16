@@ -1,4 +1,4 @@
-﻿\version "2.24.0"
+\version "2.24.0"
 \include "header.ly"
 \header {
   title = "Masters in This Hall"
@@ -21,18 +21,18 @@ sopMusic = \relative c' {
   f4.( g) |
   a4 g8 f4 e8 |
   f4( e8 d4 cis8) |
-  
+
   d4 a'8 a4 g8 |
   f4.( g4) g8 |
   a4 g8 f4 e8 |
   d2. \bar"||" \break
-  
+
   \repeat unfold 2 {
     f'4 e8 d4 cis8 |
     d4. a |
     f'4 e8 d4 cis8 |
     d4.a4 c8 |
-    
+
     bes4 g8 a4 e8 |
     f4( d8) f4( g8) |
   }
@@ -48,7 +48,7 @@ sopMusic = \relative c' {
   }
 }
 sopWords = \lyricmode {
-  
+
 }
 
 altoMusic = \relative c' {
@@ -56,18 +56,18 @@ altoMusic = \relative c' {
   d4.( e) |
   f4 e8 d4 cis8 |
   d4( bes8 a4.) |
-  
+
   a4 f'8 e4 e8 |
   d4.( e4) e8 |
   f4 e8 d4 cis8 |
   d2.
-  
+
   \repeat unfold 2 {
     a'4 g8 f4 e8 |
     f4. f |
     a4 g8 f4 e8 |
     f4. d4 d8 |
-    
+
     d4 d8 e4 e8 |
     d4. d |
   }
@@ -91,11 +91,11 @@ altoWords = {
     And ev -- er I you pray,
   }
   \lyricmode{
-    No -- ël! No -- ël! No -- ël! 
+    No -- ël! No -- ël! No -- ël!
     No -- ël sing we clear! Holp -- en are all folk on earth
     Born is God’s Son so dear:
-    
-    No -- ël! No -- ël! No -- ël! 
+
+    No -- ël! No -- ël! No -- ël!
     No -- ël, sing we loud!
     God to -- day hath poor folk rais’d
     And cast a -- down the proud.
@@ -105,7 +105,7 @@ altoWordsII = \lyricmode {
 %\markup\italic
   \set stanza = #"12. "
   This is Christ, the Lord, __
-  Mas -- ters be ye glad! __ 
+  Mas -- ters be ye glad! __
   Christ -- mas is come in, __
   And no folk should be sad!
 }
@@ -167,18 +167,18 @@ tenorMusic = \relative c {
   a4.( c) |
   c4 bes8 a4 a8 |
   a4( g8 a4 g8) |
-  
+
   f4 a8 a4 a8 |
   a4.( c4) c8 |
   c4 bes8 a4 a8 |
   f2.
-  
+
   \repeat unfold 2 {
     a4 a8 a4 a8 |
     a4. d |
     d4 bes8 a4 a8 |
     a4. a4 a8 |
-    
+
     g4 bes8 a4 a8 |
     a4( f8) f4. |
   }
@@ -202,18 +202,18 @@ bassMusic = \relative c{
   d4.( c!) |
   f4 g8 a4 a,8 |
   d4( g8 f4 e8) |
-  
+
   f4 d8 cis4 cis8 |
   d4.( c!4) c8 |
   f4 g8 a4 a,8 |
   d2. |
-  
+
   \repeat unfold 2 {
     d4 a8 a4 a8 |
     d4. d |
     d4 g8 a4 a8 |
     d,4. fis4 fis8 |
-    
+
     g4 g8 cis,4 cis8 |
     d4. bes |
   }

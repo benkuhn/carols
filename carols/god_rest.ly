@@ -25,7 +25,7 @@ global = {
   \preamble
   \time 4/4
   \key e \minor
-  
+
   \partial 4
 }
 
@@ -40,20 +40,20 @@ sop = \context Voice = "sop"    {
     b2.
     %\bar""\break
     e,4 |
-    
+
     e b' b a |
     g( fis) e d |
     e fis g a |
     b2 b4 \rest
     %\bar""\break
     b |
-    
+
     c a b c |
     d( e) b a |
     g e fis g |
     a2
     %\bar "||" \break
-    
+
     \slurSolid
     g4( a) |
     b2 c4 b |
@@ -67,26 +67,26 @@ sop = \context Voice = "sop"    {
 }
 
 alto=\context Voice = "alto"   {
-  \voiceTwo 
+  \voiceTwo
   \relative c' {
     e4 |
     e g fis dis |
     \slurDotted e( d) c b |
     \slurSolid e dis e e |
     dis2. e4 |
-    
+
     e g fis dis |
     \slurDotted e( d) c b |
     \slurSolid
     e dis e e |
     dis2 s4 e |
-    
+
     e d d g |
     \slurDotted f( e) d dis |
     \slurSolid
     e cis d g |
     fis2
-    
+
     g4( d) |
     d2 e4 d |
     g( fis) e dis
@@ -96,7 +96,7 @@ alto=\context Voice = "alto"   {
     g( fis) e dis |
     e2.
   }
-}	
+}
 
 tenor = \context Voice = "tenor"   {
   \voiceOne
@@ -107,19 +107,19 @@ tenor = \context Voice = "tenor"   {
     \slurSolid
     g b b e, |
     fis2. e4 |
-    
+
     g e fis b |
     \slurDotted b( b) g g |
     \slurSolid
     g b b e, |
     fis2 s4 gis |
-    
+
     a a g g |
     \slurDotted g( g) g fis |
     \slurSolid
     g g a d |
     d( c)
-    
+
     b( a) |
     g2 g4 g |
     d'( c) b b |
@@ -140,19 +140,19 @@ bass = \context Voice = "bass"   {
     \slurSolid
     c b e c |
     b2. e4 |
-    
+
     e e dis b |
     \slurDotted e( b) c g |
     \slurSolid
     c b e c |
     b2 d4\rest e |
-    
+
     a fis g e |
     \slurDotted b( c) g b |
     \slurSolid
     e e d b |
     d2
-    
+
     e4( fis) |
     g2 c,4 g' |
     g,( a) b b |
@@ -165,15 +165,15 @@ bass = \context Voice = "bass"   {
 }
 
 accomp=\chordmode {
-  
+
 }
 
 stanzaa = \lyricmode {
   \set ignoreMelismata = ##t
-  God rest ye mer -- ry, gen -- tle -- men, 
+  God rest ye mer -- ry, gen -- tle -- men,
   \unset ignoreMelismata
   Let no -- thing you dis -- may,
-  Re -- mem -- ber Christ our Sav -- iour 
+  Re -- mem -- ber Christ our Sav -- iour
   Was born on Christ -- mas Day;
   \set ignoreMelismata = ##t
   To save us all from Sa -- tan's pow'r
@@ -194,9 +194,9 @@ stanzab = \lyricmode {
 }
 
 stanzac = \lyricmode {
-  From God our heav'n -- ly Fa -- ther 
+  From God our heav'n -- ly Fa -- ther
   A bles -- sed an -- gel came;
-  And un -- to cer -- tain shep -- herds 
+  And un -- to cer -- tain shep -- herds
   Brought ti -- dings of the same;
   \set ignoreMelismata = ##t
   How that in Beth -- le -- hem was born
@@ -217,13 +217,13 @@ stanzad = \lyricmode {
 \score {
   \context ChoirStaff <<
     \context ChordNames \accomp
-    \unset ChoirStaff.melismaBusyProperties 
+    \unset ChoirStaff.melismaBusyProperties
     \context Staff ="upper"  { \clef "G" <<
       \global
       \sop
       \alto
     >>}
-    
+
     \context Lyrics = "stanza-1" \lyricsto "sop" {
       \set stanza = "1."
       \stanzaa }
