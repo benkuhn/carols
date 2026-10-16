@@ -17,17 +17,17 @@ sopMusic = \relative c' {
   d4.( e8) fis[ g] |
   a2 b8[ cis] |
   \slurDotted d4( cis) b |
-  a2 b8\noBeam( cis) |
+  a2 b8( cis) |
   d4( cis) b |
 
   a( b) cis |
   d( a) g |
   fis2 \slurSolid fis8[ e] |
-  d4.( e8) \slurDotted fis8\noBeam( g) |
+  d4.( e8) \slurDotted fis8( g) |
   \slurSolid a2 b8[ cis] |
 
   \slurDotted d4( cis) b |
-  a2 b8\noBeam( cis) |
+  a2 b8( cis) |
   d4( cis) b |
   a( b) cis |
   \slurSolid d( a) g |
@@ -49,17 +49,17 @@ altoMusic = \relative c' {
   a2 d4 |
   e2 e4 |
   \slurDotted a4( a) g |
-  fis2 d8\noBeam( e) |
+  fis2 d8( e) |
   a4( fis) g |
 
   a( d,) g |
   fis( fis) e |
   d2 cis4 |
-  a2 d8\noBeam( d) |
+  a2 d8( d) |
   e2 e4 |
 
   a4( a) g |
-  fis2 d8\noBeam( e) |
+  fis2 d8( e) |
   a4( fis) g |
   a( g) g |
   fis2 e4 |
@@ -177,17 +177,17 @@ tenorMusic = \relative c' {
   fis2 d'4 |
   cis2 b4 |
   \slurDotted a4( a) \slurSolid b8[ cis] |
-  d2 \slurDotted b8\noBeam( a) |
+  d2 \slurDotted b8( a) |
   a4( a) cis |
 
   d( b) g |
   a( d) a |
   a2 \slurSolid a8[ g] |
-  fis2 \slurDotted d'8\noBeam( d) |
+  fis2 \slurDotted d'8( d) |
   \slurSolid d4( cis) b |
 
   \slurDotted a( a) \slurSolid b8[ cis] |
-  d2 \slurDotted b8\noBeam( a) |
+  d2 \slurDotted b8( a) |
   a4( a) cis |
   d4( d) e |
   \slurSolid a,( d) a |
@@ -209,17 +209,17 @@ bassMusic = \relative c {
   d2 b4 |
   a( a') g |
   \slurDotted fis( fis) g |
-  d2 g8\noBeam( g) |
+  d2 g8( g) |
   fis4( d) e |
 
   fis( g) e |
   fis8[( g] a4) a |
   d,2 a4 |
-  d2 b8\noBeam( b) |
+  d2 b8( b) |
   \slurSolid a4( a') g |
 
   \slurDotted fis( fis) g |
-  d2 g8\noBeam( g) |
+  d2 g8( g) |
   fis4( d) e |
   fis( g) e |
   \slurSolid fis8[( g] a4) a, |

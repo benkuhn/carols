@@ -13,13 +13,13 @@ global = {
 
 sopMusic = \relative c' {
   \partial 4 ees4 |
-  aes4 aes8\noBeam bes aes\noBeam g |
+  aes4 aes8 bes aes g |
   f4 f f |
-  bes bes8\noBeam c bes\noBeam aes |
+  bes bes8 c bes aes |
   g4 ees ees |
 
-  c' c8\noBeam des c\noBeam bes |
-  \slurDotted aes4 f ees8\noBeam( ees) |
+  c' c8 des c bes |
+  \slurDotted aes4 f ees8( ees) |
   f4 bes g |
   aes2^\markup\italic"Fine" \bar "||" \break
   ees4 |
@@ -29,20 +29,20 @@ sopMusic = \relative c' {
   aes g f |
   ees2 bes'4 |
   c bes aes |
-  ees' ees, ees8\noBeam ees |
+  ees' ees, ees8 ees |
   f4 bes g |
   aes2 \bar "|."
 }
 
 altoMusic = \relative c' {
   ees4 |
-  c c8\noBeam c c\noBeam c |
+  c c8 c c c |
   des4 des ees |
-  d d8\noBeam d d\noBeam d |
+  d d8 d d d |
   ees4 ees ees |
 
-  e e8\noBeam e e\noBeam e |
-  \slurDotted f4 c ees8\noBeam( ees) |
+  e e8 e e e |
+  \slurDotted f4 c ees8( ees) |
   des4 f ees |
   ees2 \bar "||"
   c4 |
@@ -52,7 +52,7 @@ altoMusic = \relative c' {
   d4 d d |
   ees2 ees4 |
   ees des c |
-  ees ees ees8\noBeam ees |
+  ees ees ees8 ees |
   des4 f ees |
   ees2 \bar "|."
 }
@@ -86,13 +86,13 @@ altoWordsIII = \lyricmode {
 }
 tenorMusic = \relative c {
   ees4 |
-  ees4 ees8\noBeam ees aes\noBeam aes |
+  ees4 ees8 ees aes aes |
   aes4 aes a |
-  bes f8\noBeam aes g\noBeam f |
+  bes f8 aes g f |
   ees4 g g |
 
-  g g8\noBeam g c\noBeam c |
-  \slurDotted c4 aes aes8\noBeam( aes) |
+  g g8 g c c |
+  \slurDotted c4 aes aes8( aes) |
   aes4 des des |
   c2_\markup\italic"Fine" \bar "||"
   aes4 |
@@ -102,20 +102,20 @@ tenorMusic = \relative c {
   bes bes aes |
   g2 g4 |
   aes aes aes |
-  aes aes aes8\noBeam aes |
+  aes aes aes8 aes |
   aes4 des des |
   c2 \bar "|."
 }
 
 bassMusic = \relative c {
   ees4 |
-  aes, aes8\noBeam aes aes\noBeam aes |
+  aes, aes8 aes aes aes |
   des4 des c |
-  bes bes8\noBeam bes bes\noBeam bes |
+  bes bes8 bes bes bes |
   ees4 ees des |
 
-  c c8\noBeam c c\noBeam c |
-  \slurDotted f4 f c8\noBeam( c) |
+  c c8 c c c |
+  \slurDotted f4 f c8( c) |
   des4 bes ees |
   aes2 \bar "||"
   aes4 |
@@ -125,7 +125,7 @@ bassMusic = \relative c {
   bes bes bes |
   ees2 ees4 |
   aes, aes aes |
-  c c c8\noBeam c |
+  c c c8 c |
   des4 bes ees |
   aes2 \bar "|."
 }

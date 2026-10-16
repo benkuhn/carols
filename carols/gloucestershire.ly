@@ -26,11 +26,11 @@ sopMusic = \relative c' {
   a2 c4 |
 
   b8[ a] g[ a] b[ c] |
-  d2 \slurDotted d8\noBeam( c) |
+  d2 \slurDotted d8( c) |
   b4 g b |
-  a2 g8\noBeam a |
+  a2 g8 a |
 
-  b2 a8\noBeam b |
+  b2 a8 b |
   c2 b4 |
   a g fis |
   g2 \bar "|."
@@ -49,11 +49,11 @@ altoMusic = \relative c' {
   fis2 fis4 |
 
   g8[ fis] e[ fis] g4 |
-  fis2 \slurDotted fis8\noBeam( fis) |
+  fis2 \slurDotted fis8( fis) |
   g4 g g |
-  fis2 e8\noBeam fis |
+  fis2 e8 fis |
 
-  g2 fis8\noBeam g |
+  g2 fis8 g |
   g2 g4 |
   fis d4. c8 |
   b2
@@ -124,11 +124,11 @@ tenorMusic = \relative c' {
   d2 d4 |
 
   g, e' d8[ c] |
-  d2 a8\noBeam( a) |
+  d2 a8( a) |
   g8[ d'] b4 d |
-  d2 b8\noBeam d |
+  d2 b8 d |
 
-  g,2 d'8\noBeam g, |
+  g,2 d'8 g, |
   e'2 d4 |
   c b a |
   g2
@@ -147,9 +147,9 @@ bassMusic = \relative c {
   d2 d4 |
 
   g4 b g8[ e] |
-  d2 \slurDotted d8\noBeam( d) |
+  d2 \slurDotted d8( d) |
   g4 g g |
-  d2 e8\noBeam d |
+  d2 e8 d |
 
   g2 d8 g |
   c,2 g'4 |

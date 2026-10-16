@@ -15,11 +15,11 @@ global = {
 sopMusic = \relative c'' {
   \partial 4 g4 |
   \slurDotted c4( c) c4( c8) c8 |
-  b4 c g4 \parenthesize e8\noBeam e |
+  b4 c g4 \parenthesize e8 e |
 
   f4 f a4. f8 |
-  g4. g8 c4 \bar""\break g8\noBeam( g) |
-  c4 c8\noBeam( c) c4 c |
+  g4. g8 c4 \bar""\break g8( g) |
+  c4 c8( c) c4 c |
 
   b c g4. e8 |
   f4 f a4. f8 |
@@ -36,11 +36,11 @@ sopMusic = \relative c'' {
 altoMusic = \relative c' {
   e4 |
   \slurDotted e( e) e4( e8) e8 |
-  g4 g e4 e8\noBeam e |
+  g4 g e4 e8 e |
 
   f4 f f4. c8 |
-  \slurSolid f8[ e] d4 e \slurDotted e8\noBeam( e) |
-  e4 e8\noBeam( e) e4 e |
+  \slurSolid f8[ e] d4 e \slurDotted e8( e) |
+  e4 e8( e) e4 e |
 
   g g e4. e8 |
   f4 f f4. c8 |
@@ -94,11 +94,11 @@ altoWordsIII = \lyricmode {
 tenorMusic = \relative c' {
   c4 |
   \slurDotted g( g) g4( g8) g8 |
-  d'4 e c4 c8\noBeam c |
+  d'4 e c4 c8 c |
 
   c4 c c4. a8 |
-  c4 b c c8\noBeam( c) |
-  g4 g8\noBeam( g) g4 g |
+  c4 b c c8( c) |
+  g4 g8( g) g4 g |
 
   d' e c4. c8 |
   c4 c c4. a8 |
@@ -113,11 +113,11 @@ tenorMusic = \relative c' {
 bassMusic = \relative c {
   c4 |
   \slurDotted c( c) c4( c8) c8 |
-  g'4 c, c4 c'8\noBeam( bes) |
+  g'4 c, c4 c'8( bes) |
 
   a4 \slurSolid a8[ g] f4. f8 |
-  g4 g c, \slurDotted c8\noBeam( c) |
-  c4 c8\noBeam( c) c4 c |
+  g4 g c, \slurDotted c8( c) |
+  c4 c8( c) c4 c |
 
   g' c, c'4 c8[ bes] |
   a4 \slurSolid a8[ g] f4 f |
