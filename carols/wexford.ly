@@ -49,7 +49,7 @@ altoMusic = \relative c' {
   g g fis4 s8 e |
 
   e8 d d( f4) e8 |
-  d c d4 s8 |
+  d c d4 s8
   g |
   g a g( e4) f8 |
 
@@ -146,7 +146,7 @@ tenorMusic = \relative c {
   b g a4 s8 g |
 
   g g g4 c |
-  b8 c b4 s8 |
+  b8 c b4 s8
   g |
   g c b( a4) c8 |
 

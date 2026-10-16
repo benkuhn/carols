@@ -160,18 +160,4 @@ bassMusic = \relative c {
   >>
 
   >>
-  \layout {
-    \context {
-      \Score
-      %\override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/4)
-      %\override SpacingSpanner.common-shortest-duration = #(ly:make-moment 1/4)
-    }
-    \context {
-      % Remove all empty staves
-      % \Staff \RemoveEmptyStaves \override VerticalAxisGroup.remove-first = ##t
-    }
-    \context {
-      \Lyrics
-    }
-  }
 }

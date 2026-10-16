@@ -125,10 +125,6 @@ wordsVerseD = \lyricmode {
 
     >>
 
-    \layout {
-      indent = 0\mm
-      betweensystemspace = 5\mm
-    }
   }
 
   \score {
@@ -142,10 +138,6 @@ wordsVerseD = \lyricmode {
       \context Lyrics = verseLyricsC \lyricsto "verseAltus" \wordsVerseC
     >>
 
-    \layout {
-      indent = 0\mm
-      betweensystemspace = 5\mm
-    }
   }
 
   \score {
@@ -159,9 +151,5 @@ wordsVerseD = \lyricmode {
       \context Lyrics = verseLyricsB \lyricsto "verseBassus" \wordsVerseB
       \context Lyrics = verseLyricsD \lyricsto "verseBassus" \wordsVerseD
     >>
-    \layout {
-      indent = 0\mm
-      betweensystemspace = 5\mm
-    }
   }
 }

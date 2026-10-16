@@ -143,7 +143,6 @@ wordsBottom = \lyricmode {
 
 \score {
   \context ChoirStaff <<
-    \unset ChoirStaff.melismaBusyProperties
     \context Staff ="upper"  { \clef "G" <<
       \global
       \sop
@@ -166,7 +165,4 @@ wordsBottom = \lyricmode {
       \wordsBottom
     }
   >>
-  \layout{
-    indent = 0.0\pt
-  }
 }

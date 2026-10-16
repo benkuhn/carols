@@ -63,7 +63,7 @@ alto = \context Voice = "alto" {
     d2. b4 |
     d d d g |
     g2. fis4 |
-    g2. |
+    g2.
 
     g4 |
     fis2. g4 |
@@ -93,7 +93,7 @@ tenor = \context Voice = "tenor" {
     fis2. g4 |
     fis fis g d' |
     e2( d4) c |
-    b2. |
+    b2.
 
     b4 |
     a2. e'4 |
@@ -123,7 +123,7 @@ bass = \context Voice = "bass" {
     d2. e4 |
     d b g b |
     c( a b) d |
-    g,2. |
+    g,2.
 
     g'4 |
     d2. e4 |
@@ -175,7 +175,6 @@ stanzad = \lyricmode {
 
 \score {
   \context ChoirStaff <<
-    \unset ChoirStaff.melismaBusyProperties
     \context Staff ="upper"  { \clef "G" <<
       \global
       \sop

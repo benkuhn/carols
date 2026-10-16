@@ -49,7 +49,7 @@ altoMusic = \relative c' {
   e4. e8 d4 d |
   e e d2 |
   c4 c c4. d8 |
-  \slurSolid d[ e] f4 e |
+  \slurSolid d[ e] f4 e
 }
 altoWords = {
   \lyricmode {
@@ -107,7 +107,7 @@ tenorMusic = \relative c' {
   g4. g8 g4 g |
   g a \slurSolid c( b) |
   a a a4. a8 |
-  c4 b c |
+  c4 b c
 }
 
 bassMusic = \relative c {
@@ -126,7 +126,7 @@ bassMusic = \relative c {
   c4. c8 g'4 g |
   c, a' g2 |
   a4 a8[ g] f[ e] d4 |
-  g4 g, c |
+  g4 g, c
 }
 
 \score {

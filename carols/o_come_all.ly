@@ -122,7 +122,6 @@ latin = \lyricmode {
 \score {
   \transpose aes g
   \context ChoirStaff <<
-    \unset ChoirStaff.melismaBusyProperties
     \context Staff ="upper"  { \clef "G" <<
       \global
       \sop

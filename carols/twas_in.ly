@@ -193,13 +193,5 @@ staffPiano = \new PianoStaff {
 
     \staffPiano
   >>
-
-  \midi {
-  }
-
-  \layout  {page-count = 2
-  }
 }
 
-\paper {
-}

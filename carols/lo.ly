@@ -96,7 +96,6 @@ stanzac = \lyricmode {
 
 \score {  %\transpose d c
   \context ChoirStaff <<
-    \unset ChoirStaff.melismaBusyProperties
     \context Staff ="upper"  { \clef "G" <<
       \global
       \sop
@@ -120,12 +119,6 @@ stanzac = \lyricmode {
     >>}
   >>
   \layout {
-    indent = 0.0\pt
-    \context {
-      \ChordNames
-      \override ChordName.style = #'american
-      chordChanges = ##t
-    }
     \context {
       \Staff
       \remove Time_signature_engraver

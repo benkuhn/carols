@@ -4,7 +4,6 @@
 #(set-global-staff-size 16.4)
 #(ly:set-option 'point-and-click #f)
 
-ss=\once \set suggestAccidentals = ##t
 mt=#(define-music-function (offset) (number?) ; move lyric text
       #{ \once \override LyricText.X-offset = -$offset #})
 
@@ -384,7 +383,7 @@ pues a se igualar
 con el hombre viniera.
 %}
 
-\score {\transpose c' c'{
+\score {
 \new ChoirStaff<<
 
   \new Staff <<\global
@@ -423,7 +422,6 @@ con el hombre viniera.
 
 >>
 
-  } % transpose
 
 \layout{
   \context {\Lyrics
@@ -434,7 +432,6 @@ con el hombre viniera.
     \override LyricHyphen.minimum-distance = #0.5
   }
   \context {\Score
-    tempoHideNote = ##t
     \override BarNumber.padding = #2
   }
   \context {\Voice

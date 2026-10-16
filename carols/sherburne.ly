@@ -145,7 +145,6 @@ tenorb = {
 
 \score {
   \context ChoirStaff <<
-    \unset ChoirStaff.melismaBusyProperties
     \context Staff ="sopStaff"  { \clef "G" <<
       \global
       \sop
@@ -201,12 +200,4 @@ tenorb = {
     }
 
   >>
-  \layout{
-    indent = 0.0\pt
-    \context {
-      \ChordNames
-      \override ChordName.style = #'american
-      chordChanges = ##t
-    }
-  }
 }

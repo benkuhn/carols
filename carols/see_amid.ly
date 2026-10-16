@@ -164,5 +164,4 @@ PartPTwoVoiceTwo =  \relative g, {
                 >>
             >>
         >>
-    \layout {}
     }
