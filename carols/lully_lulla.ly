@@ -8,41 +8,30 @@
 
 \include "header.ly"
 
-% Form: soprano intro; then refrain + verse three times; then a final
-% refrain (with optional descant) and a short coda. The repeat starts
-% mid-bar and the 1st ending ends mid-bar, so the repeat structure is
-% done by hand rather than with \repeat/\alternative.
+% Form: refrain + verse three times, then a final refrain (with
+% optional descant) and a short coda. The repeat ends mid-bar and the
+% coda starts on a downbeat, so the repeat is done by hand.
 global = {
   \preamble
   \key aes \major
   \time 3/4
-  \partial 4 s4 | s2.*3 | s4
-  \set Score.repeatCommands = #'(start-repeat)
-  s2 | s2.*15 |
-  \set Score.repeatCommands = #'((volta "1.–3."))
+  \partial 2 s2 | s2.*15 |
+  \once \override Score.RehearsalMark.self-alignment-X = #RIGHT
+  \once \override Score.RehearsalMark.break-visibility = #begin-of-line-invisible
+  \mark \markup \small \line { \italic "last time to Coda" \musicglyph #"scripts.coda" }
   s2.*16 | s4
   \set Timing.measurePosition = #ZERO-MOMENT
-  \set Score.repeatCommands = #'((volta #f) end-repeat (volta "4."))
-  s2. |
-  \set Score.repeatCommands = #'((volta #f))
-  s2.*3 \bar "|."
+  \set Score.repeatCommands = #'(end-repeat)
+  \mark \markup \musicglyph #"scripts.coda"
+  s2.*4 \bar "|."
 }
 
 descMusic = \relative c'' {
-  % intro: no staff; clef and key are printed when the descant starts
-  \once \override Staff.Clef.stencil = ##f
-  \once \override Staff.KeySignature.stencil = ##f
-  \once \override Staff.TimeSignature.stencil = ##f
-  \stopStaff s4 s2.*3 s4
-  % refrain
-  \startStaff
-  \set Staff.forceClef = ##t \clef treble \key aes \major
-  c4(^\markup \italic "Descant (4th time, optional)" ees) |
+  c4(^\markup \italic "Descant (last time, optional)" ees) |
   aes2.~ | aes4 g( ees) | c2. |
   r4 c( ees) | aes2.~ | aes4 g( ees) | c2. |
   r4 c( ees) | aes2.~ | aes4 g( ees) | c2. |
   r4 des( c) | aes2 bes4 | g2 aes4 | aes2. |
-  % 1st ending + verse, 2nd ending + coda
   \stopStaff
 }
 descWords = \lyricmode {
@@ -53,46 +42,41 @@ descWords = \lyricmode {
 }
 
 sopMusic = \relative c'' {
-  % intro
-  aes4 | aes2 bes4 | g2 aes4 | aes2 bes4 | g4
   % refrain
   r4 aes4 |
   aes2 bes4 | g2 aes4 | aes4( ees') c | bes2 aes4 |
   aes2 bes4 | g2 aes4 | aes2.~ | aes4 r aes |
   aes2 bes4 | g2 aes4 | g8 aes ees'4 c | bes2 aes4 |
   aes2 bes4 | g2 aes4 | aes2.~ |
-  % 1st ending + verse
+  % verse
   aes2 r4 |
   c4 c c | ees2 c4 | bes2 aes4 | c2 r4 |
   aes4 c des | bes2 aes4 | aes2.~ | aes4 r aes |
   ees'2 c4 | \slurDashed bes( bes) \slurSolid aes | aes( ees') c | f,2 r4 |
   f4 g aes | aes( g) aes | aes2.~ | aes4
-  % 2nd ending + coda
+  % coda
   aes4\repeatTie r aes | aes2 bes4 | g2 aes4 | aes2.
 }
 % words sung by the sopranos only
 sopWords = \lyricmode {
-  Lul -- ly, lul -- la, lul -- ly, lul -- la.
   \repeat unfold 15 { \skip 1 }
   thou lit -- tle ti -- ny Child,
 }
 
 altoMusic = \relative c' {
-  % intro
-  s4 s2.*3 s4
   % refrain
   r4 ees4 |
   f2 f4 | f2 f4 | aes2 aes4 | ees2 c4 |
   f2 f4 | f2 g4 | aes2( g4 | f4) r ees |
   f2 f4 | f( ees) ees | ees( aes) aes | ees2 c4 |
   f2 f4 | f( ees) g | aes2( g4 |
-  % 1st ending + verse
+  % verse
   f2) r4 |
   aes4 g f | g2 g4 | g2 g4 | aes2 r4 |
   f4 f f | g2 g4 | aes2( g4 | f4) r f |
   f2 f4 | \slurDashed g( g) \slurSolid g | ees2 ees4 | f2 r4 |
   f4 f f | g2 g4 | aes2( g4 | f4)
-  % 2nd ending + coda
+  % coda
   f4 r c | f2 f4 | f( ees) des | c2.
 }
 altoWords = \lyricmode {
@@ -132,40 +116,36 @@ altoWordsIII = \lyricmode {
 }
 
 tenorMusic = \relative c' {
-  % intro
-  r4 | R2.*3 | r4
   % refrain
   r4 aes4 |
   aes2 aes4 | bes2 bes4 | c2 c4 | g2 f4 |
   aes2 aes4 | bes2 bes4 | c2( bes4 | aes4) r aes |
   aes( g) aes | bes2 bes4 | c2 c4 | g2 f4 |
   c'( bes) aes | bes2 bes4 | c2( bes4 |
-  % 1st ending + verse
+  % verse
   aes2) r4 |
   c4 bes aes | bes2 bes4 | ees2 ees4 | c2 r4 |
   aes4 aes aes | bes2 bes4 | c2( bes4 | aes4) r aes |
   aes2 aes4 | \slurDashed bes( bes) \slurSolid bes | aes2 aes4 | aes2 r4 |
   aes4 aes aes | bes2 bes4 | c2( bes4 | aes4)
-  % 2nd ending + coda
+  % coda
   aes4 r f | c'( bes) aes | bes2 bes4 | ees,2.
 }
 
 bassMusic = \relative c {
-  % intro
-  r4 | R2.*3 | r4
   % refrain
   r4 c4 |
   des2 des4 | ees2 ees4 | f2 f4 | f2 f4 |
   des2 des4 | ees2 ees4 | f2.~ | f4 r c |
   des2 des4 | ees2 ees4 | f2 f4 | f2 f4 |
   des2 des4 | ees2 ees4 | f2.~ |
-  % 1st ending + verse
+  % verse
   f2 r4 |
   f4 f f | f2 f4 | f2 f4 | f2 r4 |
   des4 des des | ees2 ees4 | f2.~ | f4 r f |
   des2 des4 | \slurDashed ees( ees) \slurSolid ees | c2 c4 | des2 r4 |
   des4 des des | ees2 ees4 | f2.~ | f4
-  % 2nd ending + coda
+  % coda
   f4\repeatTie r f | des2 des4 | ees2 ees4 | aes,2.
 }
 
