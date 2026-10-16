@@ -2,15 +2,12 @@
 
 \include "header.ly"
 
-% automatically converted by musicxml2ly from see_amid.mxl
-% source: https://www.cpdl.org/wiki/index.php/See_amid_the_winter%27s_snow_(John_Goss)
+% Source: https://www.cpdl.org/wiki/index.php/See_amid_the_winter%27s_snow_(John_Goss)
 
 \header {
   composer = "Sir John Goss"
   poet = "Edward Caswall"
   title = "See Amid the Winter's Snow"
-  %metre = "Adeste Fideles"
-  %meter = \metre
   mutopiacomposer = \composer
   mutopiapoet=\poet
 }
@@ -142,7 +139,6 @@ PartPTwoVoiceTwo =  \relative g, {
     d4 d4 g,2 \bar "|."
     }
 
-% The score definition
 \score {
     <<
         \new ChoirStaff <<
@@ -169,6 +165,4 @@ PartPTwoVoiceTwo =  \relative g, {
             >>
         >>
     \layout {}
-    % To create MIDI output, uncomment the following line:
-    %  \midi {}
     }

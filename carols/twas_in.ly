@@ -1,6 +1,5 @@
 \version "2.24.0"
 
-% Created on Tue Nov 24 23:05:52 EST 2009
 
 \header {
   title = "'Twas in the Moon of Wintertime"
@@ -13,8 +12,6 @@
 #(set-global-staff-size 15)
 \paper {
   #(set-paper-size "letter")
-  % ragged-bottom=##f
-  % ragged-last-bottom=##f
 }
 
 verseI= \lyricmode {
@@ -104,7 +101,6 @@ staffSoprano = \new Staff  {
 
     }
 
-% \bar "|."
   }
 
 }

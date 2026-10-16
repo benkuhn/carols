@@ -439,7 +439,6 @@ con el hombre viniera.
   }
   \context {\Voice
     melismaBusyProperties = #'()
-    %autoBeaming = ##f
   }
   \context {\Staff
                 \RemoveEmptyStaves
@@ -451,8 +450,6 @@ con el hombre viniera.
 }
 
 \paper{
-  %system-count=20
-  %page-count = 8
   ragged-last-bottom = ##f
   indent=0\cm
   system-system-spacing =

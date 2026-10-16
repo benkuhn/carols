@@ -67,7 +67,6 @@ altoWords = \lyricmode {
 altoWordsII = {
   \set stanza = "2. "
   \lyricmode {
-                                %\markup\italic
     \set ignoreMelismata = ##t
     Oh, bring us a fig -- gy pud -- ding,
     Oh, bring us a fig -- gy pud -- ding,

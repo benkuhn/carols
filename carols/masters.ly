@@ -98,7 +98,6 @@ altoWords = {
   }
 }
 altoWordsII = \lyricmode {
-%\markup\italic
   \set stanza = #"12. "
   This is Christ, the Lord, __
   Mas -- ters be ye glad! __

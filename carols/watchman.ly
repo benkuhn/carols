@@ -67,7 +67,6 @@ altoWords = \lyricmode {
   Prom -- ised day of Is -- ra -- el.
 }
 altoWordsII = \lyricmode {
-%\markup\italic
   \set stanza = #"2. "
   Watch -- man, tell us of the night;
   High -- er yet that star as -- cends.

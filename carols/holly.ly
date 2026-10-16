@@ -74,7 +74,6 @@ altoWords = {
     \unset ignoreMelismata
   }
   \lyricmode{
-    %\set associatedVoice = "basses"
     The ris -- ing of the sun __
     And the run -- ning of the deer,
     The play -- ing of the mer -- ry or -- gan,

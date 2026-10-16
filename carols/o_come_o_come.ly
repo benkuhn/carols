@@ -197,9 +197,6 @@ stanzad = \lyricmode {
     \context Lyrics = "stanza-4" \lyricsto "sop" {
       \set stanza = "4."
       \stanzad }
-                                %  \context Lyrics = "stanza-6" \lyricsto "sop" {
-                                %    \set stanza = "6."
-                                %      \stanzaf }
     \context Staff = "lower"  { \clef "F"<<
       \global
       \tenor

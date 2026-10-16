@@ -1,14 +1,11 @@
 \version "2.24.0"
 
-% Created on Tue Dec 01 22:21:31 EST 2009
 
 \header {
   title = "What Child is This?"
-  %subtitle = "Greensleeves"
   poet = "William Chatterton Dix (1837 - 1898)"
   composer = "Trad. English Melody"
   meter = "Greensleeves 8.7.8.7 with Refrain"
-  %instrument = "SATB Choral"
 }
 
 \include "header.ly"

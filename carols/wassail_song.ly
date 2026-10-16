@@ -170,6 +170,5 @@ bassMusic = \relative c {
       \new Voice = "basses" { \voiceTwo << \global \bassMusic >> }
     >>
   >>
-%    \new PianoStaff << \new Staff { \new Voice { \pianoRH } } \new Staff { \clef "bass" \pianoLH } >>
   >>
 }

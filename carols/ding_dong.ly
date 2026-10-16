@@ -1,4 +1,5 @@
 \version "2.24.0"
+% Source: The Cambridge Carol Book, 1924
 \include "header.ly"
 
 \header {
@@ -6,7 +7,6 @@
   poet = "George Ratcliffe Woodward (1848–1934)"
   composer = "16th century French melody"
   arranger = "Arranged by Charles Wood (1866–1926)"
-  % tagline = "From 'The Cambridge Carol Book', 1924"
 }
 
 global = {

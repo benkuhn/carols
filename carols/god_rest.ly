@@ -28,21 +28,18 @@ sop = \context Voice = "sop"    {
     g( fis) e d |
     e fis g a |
     b2.
-    %\bar""\break
     e,4 |
 
     e b' b a |
     g( fis) e d |
     e fis g a |
     b2 b4 \rest
-    %\bar""\break
     b |
 
     c a b c |
     d( e) b a |
     g e fis g |
     a2
-    %\bar "||" \break
 
     \slurSolid
     g4( a) |

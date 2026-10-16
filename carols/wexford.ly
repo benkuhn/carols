@@ -1,10 +1,10 @@
 \version "2.24.0"
+% Source: CPDL edition by Benjamin Bloomfield
 \include "header.ly"
 \header {
   title = "The Wexford Carol"
   poet = "Traditional, 16th Century or earlier"
   composer = "Traditional"
-                                %arranger = \markup\oldStyleNum"Edited by Benjamin Bloomfield (1984–)"
 }
 global = {
   \key g \major
@@ -80,7 +80,6 @@ altoWords = \lyricmode {
   \unset ignoreMelismata
 }
 altoWordsII = \lyricmode {
-                                %\markup\italic
   \set stanza = #"2. "
   \set associatedVoice = "tenors"
   The night be -- fore that hap -- py tide,

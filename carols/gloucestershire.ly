@@ -1,10 +1,10 @@
 \version "2.24.0"
+% Source: arrangement by BHB
 \include "header.ly"
 \header {
   title = "Gloucestershire Wassail"
   poet = "18th Century English"
   composer = "18th Century English"
-  %arranger = \markup\oldStyleNum"Arranged by BHB"
 }
 global = {
   \key g \major
@@ -173,7 +173,6 @@ bassMusic = \relative c {
       \new Voice = "basses" { \voiceTwo << \global \bassMusic >> }
     >>
   >>
-%    \new PianoStaff << \new Staff { \new Voice { \pianoRH } } \new Staff { \clef "bass" \pianoLH } >>
   >>
 }
 \verses

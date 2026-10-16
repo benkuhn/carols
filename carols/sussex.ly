@@ -64,7 +64,6 @@ altoWords = \lyricmode {
   News of our mer -- ci -- ful _ King’s birth! _
 }
 altoWordsII = \lyricmode {
-%\markup\italic
   \set stanza = #"2. "
   \set ignoreMelismata = ##t
   Then why should men on earth be so sad,

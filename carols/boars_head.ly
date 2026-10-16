@@ -10,7 +10,6 @@ global = {
   \key c \major
   \time 4/4
   \autoBeamOff
-  %\mergeDifferentlyDottedOn
 }
 
 sopMusic = \relative c'' {
