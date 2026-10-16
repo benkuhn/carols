@@ -20,6 +20,7 @@ cantusMusicChorus = \relative a' {
   g a b4. a8 
   \time 5/4
   g4 a8 b4 a8 g4 a
+  \bar ":|."
 }
 
 altusMusicChorus = \relative c' {
@@ -30,6 +31,7 @@ altusMusicChorus = \relative c' {
   g8 g4 a8 e4 e | e e g4. a8 
   \time 5/4
   e4 d8 d4 g8 d4 e 
+  \bar ":|."
 }
 
 tenorMusicChorus = \relative c' {
@@ -40,6 +42,7 @@ tenorMusicChorus = \relative c' {
   e8 d4 c8 b4 b | b c d4. c8 
   \time 5/4
   b4 c8 d4 c8 b4 c 
+  \bar ":|."
 }
 
 bassusMusicChorus = \relative c {
@@ -50,6 +53,7 @@ bassusMusicChorus = \relative c {
   a8 d4 d8 e4 e | e c g4. g8
   \time 5/4
   e4 g8 g4 g8 e4 a
+  \bar ":|."
 }
 
 altusMusicVerse = \relative a' {
