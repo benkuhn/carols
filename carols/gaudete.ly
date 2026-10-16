@@ -6,14 +6,14 @@
 % this onto fewer lines; widen the gaps between words to restore the layout
 \layout { \context { \Lyrics \override LyricSpace.minimum-distance = #0.7 } }
 
-global= {
+global = {
   \key a \minor
+  \numericTimeSignature
 }
 
 cantusMusicChorus = \relative a' {
   \time 5/4
   a4^\markup{\bold Chorus} a g a8 b c4
-  \override Staff.TimeSignature.style = #'numbered
   \time 4/4
   c8 b4 a8 g4 g |
   g a b4. a8
@@ -25,7 +25,6 @@ cantusMusicChorus = \relative a' {
 altusMusicChorus = \relative c' {
   \time 5/4
   e4 e e f8 g g4
-  \override Staff.TimeSignature.style = #'numbered
   \time 4/4
   g8 g4 a8 e4 e | e e g4. a8
   \time 5/4
@@ -36,7 +35,6 @@ altusMusicChorus = \relative c' {
 tenorMusicChorus = \relative c' {
   \time 5/4
   c4 c b c8 d e4
-  \override Staff.TimeSignature.style = #'numbered
   \time 4/4
   e8 d4 c8 b4 b | b c d4. c8
   \time 5/4
@@ -47,7 +45,6 @@ tenorMusicChorus = \relative c' {
 bassusMusicChorus = \relative c {
   \time 5/4
   a4 a e' e8 d c4
-  \override Staff.TimeSignature.style = #'numbered
   \time 4/4
   a8 d4 d8 e4 e | e c g4. g8
   \time 5/4
@@ -56,7 +53,6 @@ bassusMusicChorus = \relative c {
 }
 
 altusMusicVerse = \relative a' {
-  \override Staff.TimeSignature.style = #'numbered
   \time 4/4
   a8^\markup{Solo} a g a c b a4 | a8 f e f d4 d |
   d8 d f d f g a4 | c8 a b c a4 a
@@ -64,7 +60,6 @@ altusMusicVerse = \relative a' {
 }
 
 bassusMusicVerse = \relative c {
-  \override Staff.TimeSignature.style = #'numbered
   \time 4/4
   a8^\markup{Solo} e' e d c b a4 | b8 c b a g4 e |
   a8 c b c d b g4 | c8 a g b a4 a
