@@ -272,7 +272,7 @@ Dios guar -- dó del lo -- bo,
 del lo -- bo,
 a nues -- tra cor -- de -- ra
 Dios guar -- dó del lo -- bo,
-del -- lo -- bo a _
+del lo -- bo a _
 nues -- tra cor -- de -- ra.
 }
 

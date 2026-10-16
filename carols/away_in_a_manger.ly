@@ -2,7 +2,7 @@
 
 \header {
   composer = "W.J. Kirkpatrick (1838-1921)"
-  arranger = "arr. David Wilcocks"
+  arranger = "arr. David Willcocks"
   poet = "19th cen. American"
   title = "Away in a Manger"
 }

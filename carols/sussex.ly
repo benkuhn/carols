@@ -89,7 +89,7 @@ altoWordsIII = \lyricmode {
   in its place.
 
   An -- gels and men _ with joy _ may sing,
-  All for to see the new -- _ born King!_
+  All for to see the new -- _ born King! _
 }
 altoWordsIV = \lyricmode {
   \set stanza = #"4. "

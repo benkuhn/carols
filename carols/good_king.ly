@@ -1,7 +1,7 @@
 \version "2.24.0"
 
 \header {
-  composer = "Melody from Piae Cantones, 1582"
+  composer = "Melody from Piae Cantiones, 1582"
   poet = "J. M. Neale"
   title = "Good King Wenceslas"
   mutopiacomposer = \composer

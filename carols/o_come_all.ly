@@ -2,7 +2,7 @@
 
 \header {
   composer = "John Francis Wade"
-  poet = "John Francis Wade, trans. by Frederick Oakley"
+  poet = "John Francis Wade, trans. by Frederick Oakeley"
   title = "O Come All Ye Faithful"
   meter = "Adeste Fideles"
   mutopiacomposer = \composer

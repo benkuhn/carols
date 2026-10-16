@@ -86,7 +86,7 @@ stanzab = \lyricmode {
   Their watch of won -- dering love.
   O mor -- ning stars, to -- ge -- ther
   Pro -- claim the ho -- ly birth,
-  An prai -- ses sing to God the King,
+  And prai -- ses sing to God the King,
   And peace to men on earth!
 }
 

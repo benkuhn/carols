@@ -53,7 +53,7 @@ PartPOneVoiceOneLyricsThree =  \lyricmode { "\"Say," ye low -- ly shep --
     \skip4 }
 PartPOneVoiceOneLyricsFive =  \lyricmode { Sa -- cred in -- "fant," all
     di -- "vine," what a ten -- der love was "thine," thus to come from
-    high -- est bliss down to such as world as "this!" \skip4 \skip4
+    high -- est bliss down to such a world as "this!" \skip4 \skip4
     \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4
     \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4
     \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 }
@@ -90,7 +90,7 @@ PartPOneVoiceTwoLyricsFour =  \lyricmode { "\"As" we watched at dead of
     \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4
     \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4
     \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 }
-PartPOneVoiceTwoLyricsSix =  \lyricmode { " Teach," o teach "us," ho --
+PartPOneVoiceTwoLyricsSix =  \lyricmode { "Teach," o teach "us," ho --
     ly "child," by thy face so meek and "mild," teach us to re -- sem --
     ble thee in thy sweet hu -- mi -- li -- "ty." \skip4 \skip4 \skip4
     \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4

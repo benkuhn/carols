@@ -3,7 +3,7 @@
 \header {
   title = "The Coventry Carol"
   poet = "Robert Croo, 1534"
-  composer = "16th Centry English Carol"
+  composer = "16th Century English Carol"
   arranger = "arr. Martin Fallas Shaw (1875-1958)"
 }
 

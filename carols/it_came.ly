@@ -1,7 +1,7 @@
 \version "2.24.0"
 
 \header {
-  composer = "Edward Storrs Willis, 1819-1900"
+  composer = "Richard Storrs Willis, 1819-1900"
   poet = "Edmund Hamilton Sears, 1810-1876"
   title = "It Came Upon the Midnight Clear"
   meter = "Carol 8.6.8.6.D."

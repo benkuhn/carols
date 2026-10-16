@@ -56,7 +56,7 @@ bass = \context Voice = "bass"   {
   bes,4 bes,8 bes,4.
   f4 f8 f4. bes,4 bes,8 bes,4.
   ees4 ees8 ees4 ees8 bes,8. bes,16 bes,8 bes,4.
-  ees4 \slurDashed ees8 ees8.( es16) \slurSolid ees8 bes,8. bes,16 bes,8 bes,4.
+  ees4 \slurDashed ees8 ees8.( ees16) \slurSolid ees8 bes,8. bes,16 bes,8 bes,4.
   f4 f8 f8. f16 f8 bes,2.
   f,4 f,8 f,8. f,16 f,8 bes,2.
 }

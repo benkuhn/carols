@@ -30,7 +30,7 @@ verseII= \lyricmode {
   Be -- fore their light the stars grew dim,
   And won -- dring hun -- ters heard the hymn:
   Je -- sus your King is born, Je -- sus is born
-  In ex -- cel-sis glo -- ri -- a
+  In ex -- cel -- sis glo -- ri -- a
   2. With -- in a lodge of
 
 }
@@ -60,7 +60,7 @@ verseIIIII= \lyricmode {
   O sons of Man -- i -- tou
   The Ho -- ly Child of earth and heav'n
   Is born to -- day for you.
-  Come kneel be -- for the ra -- diant Boy
+  Come kneel be -- fore the ra -- diant Boy
   Who brings you beau -- ty, peace and joy.
 }
 

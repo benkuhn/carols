@@ -4,7 +4,7 @@
   composer = "attributed to G. F. Handel"
   arranger = "Lowell Mason, 1830"
   poet = "Rev Isaac Watts, 1719"
-  title = "Joy To The World"
+  title = "Joy to the World"
   meter = "Antioch C.M. with Refrain"
   mutopiacomposer = \composer
   mutopiapoet=\poet

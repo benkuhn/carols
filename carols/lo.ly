@@ -66,7 +66,7 @@ bass = \context Voice = "bass"   {
   a4 bes c2 c <<f1 f,>>
   }}
 stanzaa = \lyricmode {
-  Lo, how a Rose e'er bloom -- img
+  Lo, how a Rose e'er bloom -- ing
   From ten -- der stem hath sprung!
   Of Jes -- se's lin -- eage com -- ing
   As men of old have sung.

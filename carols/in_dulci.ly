@@ -3,7 +3,7 @@
 \include "header.ly"
 
 \header {
-  title = "In ducli jubilo"
+  title = "In Dulci Jubilo"
   poet = "Heinrich Seuse (1300–1366)"
   composer = "14th Century German Melody"
 }
@@ -115,7 +115,7 @@ tenorMusic = \relative c' {
   c2 bes4 g2 e4 |
   f2. a2 a4 |
   d2 d4 c4.( d8) bes4 |
-  a2( bes4)~ c2. |
+  a2( bes4 c2.) |
 
   a2 a4 g2 g4 |
   a2( bes4 g2.) |
