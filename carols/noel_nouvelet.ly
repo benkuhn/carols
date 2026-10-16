@@ -35,9 +35,6 @@ sopMusic = \relative c'' {
   c8 c16[ d] bes8 a |
   g2 \bar "|."
 }
-sopWords = \lyricmode {
-
-}
 
 altoMusic = \relative c' {
   g'8 d g g |
@@ -92,8 +89,6 @@ altoWordsIII = \lyricmode {
   \markup\italic Chan -- \markup\italic tons \markup\italic No -- \markup\italic ël \markup\italic pour \markup\italic le \markup\italic Roi \markup\italic nou -- \markup\italic ve -- \markup\italic let!
   \markup\italic No -- \markup\italic ël \markup\italic nou -- \markup\italic ve -- \markup\italic let, \markup\italic No -- \markup\italic ël \markup\italic chan -- \markup\italic tons \markup\italic i -- \markup\italic ci!
 }
-altoWordsIV = \lyricmode {
-}
 
 tenorMusic = \relative c' {
   g8 bes c c |
@@ -117,9 +112,6 @@ tenorMusic = \relative c' {
   bes4 d |
   c8 g d' c |
   bes2 \bar "|."
-}
-tenorWords = \lyricmode {
-
 }
 
 bassMusic = \relative c' {
@@ -145,9 +137,6 @@ bassMusic = \relative c' {
   c,8 c d d |
   g,2 \bar "|."
 }
-bassWords = \lyricmode {
-
-}
 
 \score {
   <<
@@ -156,8 +145,6 @@ bassWords = \lyricmode {
       \new Voice = "sopranos" { \voiceOne << \global \sopMusic >> }
       \new Voice = "altos" { \voiceTwo << \global \altoMusic >> }
     >>
-    \new Lyrics \with { alignAboveContext = #"women" } \lyricsto "sopranos" \sopWords
-    \new Lyrics = "altosIV"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsIV
     \new Lyrics = "altosIII"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsIII
     \new Lyrics = "altosII"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsII
     \new Lyrics = "altos"  \with { alignBelowContext = #"women"  } \lyricsto "sopranos" \altoWords
@@ -166,8 +153,6 @@ bassWords = \lyricmode {
       \new Voice = "tenors" { \voiceOne << \global \tenorMusic >> }
       \new Voice = "basses" { \voiceTwo << \global \bassMusic >> }
     >>
-    \new Lyrics \with { alignAboveContext = #"men"  } \lyricsto "tenors" \tenorWords
-    \new Lyrics \with { alignBelowContext = #"men"  } \lyricsto "basses" \bassWords
   >>
   >>
 }

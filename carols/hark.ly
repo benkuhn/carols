@@ -74,9 +74,6 @@ bass = \context Voice = "bass"   {
   bes4 bes bes a g fis g( f)
   e bes a f c c <f f,>2
 }
-accomp=\chordmode {
-
-}
 
 stanzaa = \lyricmode {
   Hark! the her -- ald an -- gels sing,
@@ -111,19 +108,9 @@ stanzac = \lyricmode {
   Born to raise the sons of earth,
   Born to give them sec -- ond birth.
 }
-stanzad = \lyricmode {
-
-}
-stanzae = \lyricmode {
-
-}
-stanzaf = \lyricmode {
-
-}
 
 \score {
   \context ChoirStaff <<
-    \context ChordNames \accomp
     \unset ChoirStaff.melismaBusyProperties
     \context Staff ="upper"  { \clef "G" <<
       \global

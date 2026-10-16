@@ -33,9 +33,6 @@ sopMusic = \relative c'' {
   \time 6/8 bes4 a8 g f g |
   f2.~ | f \bar "|." \break
 }
-sopWords = \lyricmode {
-
-}
 
 altoMusic = \relative c'' {
   \partial 8 c8 |
@@ -125,9 +122,6 @@ tenorMusic = \relative c' {
   d4 c8 c a bes |
   a2.~ | a \bar "|."
 }
-tenorWords = \lyricmode {
-
-}
 
 bassMusic = \relative c {
   \repeat volta 2 {
@@ -147,9 +141,6 @@ bassMusic = \relative c {
   f4 f8 e d c8 |
   <f f,>2.~ | <f f,> \bar "|."
 }
-bassWords = \lyricmode {
-
-}
 
 \score {
   <<
@@ -158,7 +149,6 @@ bassWords = \lyricmode {
       \new Voice = "sopranos" { \voiceOne << \global \sopMusic >> }
       \new Voice = "altos" { \voiceTwo << \global \altoMusic >> }
     >>
-    \new Lyrics \with { alignAboveContext = #"women" \override VerticalAxisGroup.nonstaff-relatedstaff-spacing = #'((basic-distance . 1))} \lyricsto "sopranos" \sopWords
     \new Lyrics = "altosIV"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsIV
     \new Lyrics = "altosIII"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsIII
     \new Lyrics = "altosII"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsII
@@ -168,8 +158,6 @@ bassWords = \lyricmode {
       \new Voice = "tenors" { \voiceOne << \global \tenorMusic >> }
       \new Voice = "basses" { \voiceTwo << \global \bassMusic >> }
     >>
-    \new Lyrics \with { alignAboveContext = #"men" \override VerticalAxisGroup.nonstaff-relatedstaff-spacing = #'((basic-distance . 1)) } \lyricsto "tenors" \tenorWords
-    \new Lyrics \with { alignBelowContext = #"men" \override VerticalAxisGroup.nonstaff-relatedstaff-spacing = #'((basic-distance . 1)) } \lyricsto "basses" \bassWords
   >>
 
   >>

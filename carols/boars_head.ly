@@ -33,9 +33,6 @@ sopMusic = \relative c'' {
     g4. g8 c4
   }
 }
-sopWords = \lyricmode {
-
-}
 
 altoMusic = \relative c' {
   e4 |
@@ -95,12 +92,6 @@ altoWordsIII = \lyricmode {
   Which _ on this __ _ day to_be serv -- ed is,
   \lyricItal In _ Re -- gi -- _ nen -- si a -- tri -- o. \lyricNormal
 }
-altoWordsIV = \lyricmode {
-}
-altoWordsV = \lyricmode {
-}
-altoWordsVI = \lyricmode {
-}
 tenorMusic = \relative c' {
   c4 |
   \slurDotted g( g) g4( g8) g8 |
@@ -118,9 +109,6 @@ tenorMusic = \relative c' {
   g a \slurSolid c( b) |
   a a a4. a8 |
   c4 b c |
-}
-tenorWords = \lyricmode {
-
 }
 
 bassMusic = \relative c {
@@ -141,16 +129,6 @@ bassMusic = \relative c {
   a4 a8[ g] f[ e] d4 |
   g4 g, c |
 }
-bassWords = \lyricmode {
-
-}
-
-pianoRH = \relative c' {
-
-}
-pianoLH = \relative c' {
-
-}
 
 \score {
   <<
@@ -164,16 +142,9 @@ pianoLH = \relative c' {
       \new Voice = "tenors" { \voiceOne << \global \tenorMusic >> }
       \new Voice = "basses" { \voiceTwo << \global \bassMusic >> }
     >>
-    \new Lyrics \with { alignAboveContext = #"women" } \lyricsto "sopranos" \sopWords
-    \new Lyrics = "altosVI"  \with { alignBelowContext = #"women" } \lyricsto "tenors" \altoWordsVI
-    \new Lyrics = "altosV"  \with { alignBelowContext = #"women" } \lyricsto "tenors" \altoWordsV
-    \new Lyrics = "altosIV"  \with { alignBelowContext = #"women" } \lyricsto "tenors" \altoWordsIV
     \new Lyrics = "altosIII"  \with { alignBelowContext = #"women" } \lyricsto "tenors" \altoWordsIII
     \new Lyrics = "altosII"  \with { alignBelowContext = #"women" } \lyricsto "tenors" \altoWordsII
     \new Lyrics = "altos"  \with { alignBelowContext = #"women" } \lyricsto "tenors" \altoWords
-    \new Lyrics \with { alignAboveContext = #"men" } \lyricsto "tenors" \tenorWords
-    \new Lyrics \with { alignBelowContext = #"men" } \lyricsto "basses" \bassWords
   >>
-%    \new PianoStaff << \new Staff { \new Voice { \pianoRH } } \new Staff { \clef "bass" \pianoLH } >>
   >>
 }

@@ -39,9 +39,6 @@ sopMusic = \relative c' {
   a fis e( dis) |
   e2 \bar "|."
 }
-sopWords = \lyricmode {
-
-}
 
 altoMusic = \relative c' {
   \time 6/8
@@ -55,7 +52,6 @@ altoMusic = \relative c' {
   \slurSolid fis4.( dis4) e8 |
   \slurDotted cis4( e8) dis4 e8 |
   dis4. \bar "||"
-
 
   e4 dis |
   e2 e4 fis |
@@ -101,14 +97,6 @@ altoWordsIII = \lyricmode {
   Good Mas -- ter and good Mis -- _ tress, As you sit by the fire, __ _
   Pray think of us poor chil -- dren Who wan -- der in the mire.
 }
-altoWordsIV = \lyricmode {
-}
-altoWordsV = \lyricmode {
-}
-altoWordsVI = \lyricmode {
-}
-altoWordsVII = \lyricmode {
-}
 tenorMusic = \relative c' {
   \time 6/8
   gis8 |
@@ -121,7 +109,6 @@ tenorMusic = \relative c' {
   b4.~ b4 b8 |
   cis4( b8) a4 gis8 |
   fis4. \bar "||"
-
 
   b4 b |
   b2 cis4 dis |
@@ -136,9 +123,6 @@ tenorMusic = \relative c' {
   b2 gis4 b |
   a4 a gis( fis) |
   gis2
-}
-tenorWords = \lyricmode {
-
 }
 
 bassMusic = \relative c {
@@ -168,9 +152,6 @@ bassMusic = \relative c {
   fis4 a, b2 |
   e2
 }
-bassWords = \lyricmode {
-
-}
 
 \score {
   <<
@@ -180,11 +161,6 @@ bassWords = \lyricmode {
      \new Voice = "sopranos" { \voiceOne << \global \sopMusic >> }
       \new Voice = "altos" { \voiceTwo << \global \altoMusic >> }
     >>
-    \new Lyrics \with { alignAboveContext = #"women" } \lyricsto "sopranos" \sopWords
-    \new Lyrics = "altosVII"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsVII
-    \new Lyrics = "altosVI"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsVI
-    \new Lyrics = "altosV"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsV
-    \new Lyrics = "altosIV"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsIV
     \new Lyrics = "altosIII"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsIII
     \new Lyrics = "altosII"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsII
     \new Lyrics = "altos"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWords
@@ -193,8 +169,6 @@ bassWords = \lyricmode {
       \new Voice = "tenors" { \voiceOne << \global \tenorMusic >> }
       \new Voice = "basses" { \voiceTwo << \global \bassMusic >> }
     >>
-    \new Lyrics \with { alignAboveContext = #"men"  } \lyricsto "tenors" \tenorWords
-    \new Lyrics \with { alignBelowContext = #"men"  } \lyricsto "basses" \bassWords
   >>
 %    \new PianoStaff << \new Staff { \new Voice { \pianoRH } } \new Staff { \clef "bass" \pianoLH } >>
   >>

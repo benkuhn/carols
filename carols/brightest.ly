@@ -72,10 +72,6 @@ bass = \context Voice = "bass"   {
   \voiceTwo
 }
 
-accomp=\chordmode {
-
-}
-
 stanzaa = \lyricmode {
   Hail the blest morn! See the great Me -- di -- a -- tor,
   Down from the re -- gions of glo -- ry des -- cend!
@@ -110,16 +106,9 @@ stanzad = \lyricmode {
   Rich -- er by far is the heart's a -- do -- ra -- tion:
   Dear -- er to God are the pray'rs of the poor.
 }
-stanzae = \lyricmode {
-
-}
-stanzaf = \lyricmode {
-
-}
 
 \score {
   \context ChoirStaff <<
-    \context ChordNames \accomp
     \unset ChoirStaff.melismaBusyProperties
     \context Staff ="sopStaff"  { \clef "G" <<
       \global

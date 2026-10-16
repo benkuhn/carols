@@ -69,9 +69,6 @@ bass = \context Voice = "bass"   {
   e4 a,2 a4 a2 a4 a2 gis4 a2
   cis4 d2 b4 e2 e4 a,2. ~ a2
   }}
-accomp=\chordmode {
-
-}
 
 stanzaa = \lyricmode {
   It came up -- on the mid -- night clear,
@@ -116,16 +113,9 @@ stanzad = \lyricmode {
   And the whole world send back the song
   Which now the an -- gels sing!
 }
-stanzae = \lyricmode {
-
-}
-stanzaf = \lyricmode {
-
-}
 
 \score {  \transpose a bes
   \context ChoirStaff <<
-    \context ChordNames \accomp
     \unset ChoirStaff.melismaBusyProperties
     \context Staff ="upper"  { \clef "G" <<
       \global

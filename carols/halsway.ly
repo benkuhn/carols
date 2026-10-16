@@ -33,8 +33,6 @@ sopMusic = \relative a' {
   e4 fis8 g a g fis e |
   fis4 e d2 \bar "|."
 }
-sopWords = \lyricmode {
-}
 
 altoMusic = \relative fis' {
   fis4 d8 d b a b d |
@@ -83,10 +81,6 @@ altoWordsIV = \lyricmode {
   Shine a light up -- on us, as the day goes by,
   Sun -- set -- ting sha -- dows fad -- ing out of sight,
 }
-altoWordsV = \lyricmode {
-}
-altoWordsVI = \lyricmode {
-}
 
 tenorMusic = \relative d' {
   d4 b8 a g fis g a |
@@ -105,8 +99,6 @@ tenorMusic = \relative d' {
   b4 cis8 cis cis4( b8) b |
   a4 a8 b fis fis d d |
   a'4 a8 g fis2 \bar "|."
-}
-tenorWords = \lyricmode {
 }
 
 bassMusic = \relative d {
@@ -127,8 +119,6 @@ bassMusic = \relative d {
   a4 a8 g fis fis b g |
   a4 a d2 \bar "|."
 }
-bassWords = \lyricmode {
-}
 
 \score {
   <<
@@ -137,9 +127,6 @@ bassWords = \lyricmode {
       \new Voice = "sopranos" { \voiceOne << \global \sopMusic >> }
       \new Voice = "altos" { \voiceTwo << \global \altoMusic >> }
     >>
-    \new Lyrics \with { alignAboveContext = #"women" } \lyricsto "sopranos" \sopWords
-    \new Lyrics = "altosVI"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsVI
-    \new Lyrics = "altosV"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsV
     \new Lyrics = "altosIV"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsIV
     \new Lyrics = "altosIII"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsIII
     \new Lyrics = "altosII"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsII
@@ -149,8 +136,6 @@ bassWords = \lyricmode {
       \new Voice = "tenors" { \voiceOne << \global \tenorMusic >> }
       \new Voice = "basses" { \voiceTwo << \global \bassMusic >> }
     >>
-    \new Lyrics \with { alignAboveContext = #"men" } \lyricsto "tenors" \tenorWords
-    \new Lyrics \with { alignBelowContext = #"men" } \lyricsto "basses" \bassWords
   >>
   >>
 }

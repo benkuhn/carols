@@ -62,10 +62,6 @@ bass = \context Voice = "bass"   {
   ees2 ~ ees4. aes,8 aes,2.
 }
 
-accomp=\chordmode {
-
-}
-
 stanzaa = \lyricmode {
   O come, all ye faith -- ful, Joy -- ful and tri -- um -- phant,
   O come ye, O come ye to Beth -- le -- hem;
@@ -126,7 +122,6 @@ latin = \lyricmode {
 \score {
   \transpose aes g
   \context ChoirStaff <<
-    \context ChordNames \accomp
     \unset ChoirStaff.melismaBusyProperties
     \context Staff ="upper"  { \clef "G" <<
       \global

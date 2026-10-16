@@ -67,9 +67,6 @@ bass = \context Voice = "bass"   {
   e8( fis) g4 c' b a g e d
   e a, b,8( e) d4 d g2.
 }
-accomp=\chordmode {
-
-}
 
 stanzaa = \lyricmode {
   O lit -- tle town of Beth -- le -- hem
@@ -114,16 +111,9 @@ stanzad = \lyricmode {
   O come to us, a -- bide with us,
   Our Lord Em -- man -- u -- el.
 }
-stanzae = \lyricmode {
-
-}
-stanzaf = \lyricmode {
-
-}
 
 \score {  \transpose g f
      \context ChoirStaff <<
-         \context ChordNames \accomp
      \unset ChoirStaff.melismaBusyProperties
     \context Staff ="upper"  { \clef "G" <<
       \global

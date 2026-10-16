@@ -68,9 +68,6 @@ bass = \context Voice = "bass"   {
   bes,2 bes,4 bes,2 bes,4 a,2.( a2 g4)
   f2 d4 bes,2 c4 f2.~f2
 }
-accomp=\chordmode {
-
-}
 stanzaa = \lyricmode {
   Good Christ -- ian men, re -- joice,
   With heart and soul and voice,
@@ -105,19 +102,9 @@ stanzac = \lyricmode {
   Christ was born to save,
   Christ was born to save.
 }
-stanzad = \lyricmode {
-
-}
-stanzae = \lyricmode {
-
-}
-stanzaf = \lyricmode {
-
-}
 
 \score {  %\transpose d c
   \context ChoirStaff <<
-    \context ChordNames \accomp
     \unset ChoirStaff.melismaBusyProperties
     \context Staff ="upper"  { \clef "G" <<
       \global

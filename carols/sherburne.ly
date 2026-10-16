@@ -86,10 +86,6 @@ bass = \context Voice = "bass"   {
   }
 }
 
-accomp=\chordmode {
-
-}
-
 stanzaa = \lyricmode {
   While shep -- herds watch'd their flocks by night
   All seat -- ed on the ground,
@@ -149,7 +145,6 @@ tenorb = {
 
 \score {
   \context ChoirStaff <<
-    \context ChordNames \accomp
     \unset ChoirStaff.melismaBusyProperties
     \context Staff ="sopStaff"  { \clef "G" <<
       \global

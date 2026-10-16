@@ -37,9 +37,6 @@ sopMusic = \relative c' {
   c d \slurDotted b8( g4) a8 |
   g g g4. \bar "|."
 }
-sopWords = \lyricmode {
-
-}
 
 altoMusic = \relative c' {
   d8 |
@@ -96,11 +93,6 @@ altoWordsII = \lyricmode {
   As long fore -- told their ref -- uge all
   Was but a hum -- ble ox -- ’s stall.
 }
-altoWordsIII = \lyricmode {
-  \set stanza = #"3. "
-  \set associatedVoice = "tenors"
-
-}
 verses = \markup { \fill-line{
   \hspace #0.1
   \column {
@@ -144,15 +136,6 @@ verses = \markup { \fill-line{
   }
   \hspace #0.1
 }}
-altoWordsIV = \lyricmode {
-}
-altoWordsV = \lyricmode {
-
-}
-altoWordsVI = \lyricmode {
-  \set stanza = #"6. "
-  \set ignoreMelismata = ##t
-}
 tenorMusic = \relative c {
   d8 |
   g a b8.[ c16 d8] d |
@@ -176,9 +159,6 @@ tenorMusic = \relative c {
   b g a4 s8 g |
   g g \slurDotted g8( g4) c8 |
   b c d4.
-}
-tenorWords = \lyricmode {
-
 }
 
 bassMusic = \relative c {
@@ -204,16 +184,6 @@ bassMusic = \relative c {
   c b \slurDotted b( d4) c8 |
   e g g4.
 }
-bassWords = \lyricmode {
-
-}
-
-pianoRH = \relative c' {
-
-}
-pianoLH = \relative c' {
-
-}
 
 \score {
   <<
@@ -222,20 +192,13 @@ pianoLH = \relative c' {
         \new Voice = "sopranos" { \voiceOne << \global \sopMusic >> }
         \new Voice = "altos" { \voiceTwo << \global \altoMusic >> }
       >>
-      \new Lyrics \with { alignAboveContext = #"women" } \lyricsto "sopranos" \sopWords
       \new Staff = men <<
         \clef bass
         \new Voice = "tenors" { \voiceOne << \global \tenorMusic >> }
         \new Voice = "basses" { \voiceTwo << \global \bassMusic >> }
       >>
-      \new Lyrics = "altosVI"  \with { alignBelowContext = #"women" } \lyricsto "altos" \altoWordsVI
-      \new Lyrics = "altosV"  \with { alignBelowContext = #"women" } \lyricsto "altos" \altoWordsV
-      \new Lyrics = "altosIV"  \with { alignBelowContext = #"women" } \lyricsto "altos" \altoWordsIV
-      \new Lyrics = "altosIII"  \with { alignBelowContext = #"women" } \lyricsto "altos" \altoWordsIII
       \new Lyrics = "altosII"  \with { alignBelowContext = #"women" } \lyricsto "altos" \altoWordsII
       \new Lyrics = "altos"  \with { alignBelowContext = #"women" } \lyricsto "altos" \altoWords
-      \new Lyrics \with { alignAboveContext = #"men" } \lyricsto "tenors" \tenorWords
-      \new Lyrics \with { alignBelowContext = #"men" } \lyricsto "basses" \bassWords
     >>
   >>
 }

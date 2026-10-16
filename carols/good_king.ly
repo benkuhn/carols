@@ -116,10 +116,6 @@ bass = \context Voice = "bass"   {
   aes'1 \bar "|."
   }}
 
-accomp=\chordmode {
-
-}
-
 stanzaa = \lyricmode {
   Good King Wen -- ces -- las looked out
   On the feast of Ste -- phen,
@@ -174,13 +170,8 @@ stanzae = \lyricmode {
   Shall your -- selves find bless -- ing.
 }
 
-stanzaf = \lyricmode {
-
-}
-
 \score {
   \context ChoirStaff <<
-    \context ChordNames \accomp
     \unset ChoirStaff.melismaBusyProperties
     \context Staff ="upper"  { \clef "G" <<
       \global

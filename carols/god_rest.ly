@@ -154,10 +154,6 @@ bass = \context Voice = "bass"   {
   }
 }
 
-accomp=\chordmode {
-
-}
-
 stanzaa = \lyricmode {
   \set ignoreMelismata = ##t
   God rest ye mer -- ry, gen -- tle -- men,
@@ -205,7 +201,6 @@ stanzad = \lyricmode {
 
 \score {
   \context ChoirStaff <<
-    \context ChordNames \accomp
     \unset ChoirStaff.melismaBusyProperties
     \context Staff ="upper"  { \clef "G" <<
       \global

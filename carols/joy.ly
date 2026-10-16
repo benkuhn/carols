@@ -57,10 +57,6 @@ bass = \context Voice = "bass"   {
   a,8 a, a, a, a, d4. d8 d4. g,8 a,4 a, d2
 }
 
-accomp=\chordmode {
-
-}
-
 stanzaa = \lyricmode {
   Joy to the world! The Lord is come:
   Let earth re -- ceive her King,
@@ -124,17 +120,9 @@ stanzadmen = \lyricmode {
   And won -- ders of His love,
   And won -- ders of His love.
 }
-stanzae = \lyricmode {
-
-}
-
-stanzaf = \lyricmode {
-
-}
 
 \score {
   \context ChoirStaff <<
-    \context ChordNames \accomp
     \unset ChoirStaff.melismaBusyProperties
     \context Staff ="upper"  { \clef "G" <<
       \global

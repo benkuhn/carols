@@ -35,9 +35,6 @@ sopMusic = \relative c'' {
     { b2( a2) | g1 | }
   }
 }
-sopWords = \lyricmode {
-
-}
 
 altoMusic = \relative c'' {
   g4 g fis fis |
@@ -110,9 +107,6 @@ tenorMusic = \relative c' {
   d2 d2 |
   d2.( c4) | b1 |
 }
-tenorWords = \lyricmode {
-
-}
 
 bassMusic = \relative c' {
   g4 g b b |
@@ -134,9 +128,6 @@ bassMusic = \relative c' {
 
   d1 | g1 |
 }
-bassWords = \lyricmode {
-
-}
 
 \score {
   \transpose g f
@@ -151,13 +142,10 @@ bassWords = \lyricmode {
       \new Voice = "tenors" { \voiceOne << \global \tenorMusic >> }
       \new Voice = "basses" { \voiceTwo << \global \bassMusic >> }
     >>
-    \new Lyrics \with { alignAboveContext = #"women" } \lyricsto "tenors" \sopWords
     \new Lyrics = "altosIV"  \with { alignBelowContext = #"women" } \lyricsto "tenors" \altoWordsIV
     \new Lyrics = "altosIII"  \with { alignBelowContext = #"women" } \lyricsto "tenors" \altoWordsIII
     \new Lyrics = "altosII"  \with { alignBelowContext = #"women" } \lyricsto "tenors" \altoWordsII
     \new Lyrics = "altos"  \with { alignBelowContext = #"women" } \lyricsto "tenors" \altoWords
-    \new Lyrics \with { alignAboveContext = #"men" } \lyricsto "tenors" \tenorWords
-    \new Lyrics \with { alignBelowContext = #"men" } \lyricsto "basses" \bassWords
   >>
   >>
 }

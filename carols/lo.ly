@@ -65,9 +65,6 @@ bass = \context Voice = "bass"   {
   c4 e f bes, f' c2 d g,
   a4 bes c2 c <<f1 f,>>
   }}
-accomp=\chordmode {
-
-}
 stanzaa = \lyricmode {
   Lo, how a Rose e'er bloom -- img
   From ten -- der stem hath sprung!
@@ -96,19 +93,9 @@ stanzac = \lyricmode {
   From sin and death he saves us,
   And light -- ens ev' -- ry load.
 }
-stanzad = \lyricmode {
-
-}
-stanzae = \lyricmode {
-
-}
-stanzaf = \lyricmode {
-
-}
 
 \score {  %\transpose d c
   \context ChoirStaff <<
-    \context ChordNames \accomp
     \unset ChoirStaff.melismaBusyProperties
     \context Staff ="upper"  { \clef "G" <<
       \global

@@ -113,9 +113,6 @@ bass = \context Voice = "bass" \relative c {
   bes2 c4.( f8) |
   f1 \bar "|."
 }
-accomp=\chordmode {
-
-}
 
 stanzaa = \lyricmode {
   \set ignoreMelismata = ##t
