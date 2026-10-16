@@ -1,11 +1,11 @@
-\version "2.18.0"
+\version "2.24.0"
 
 #(set-default-paper-size "a4")
 #(set-global-staff-size 16.4)
 #(ly:set-option 'point-and-click #f)
 
 ss=\once \set suggestAccidentals = ##t
-mt=#(define-music-function (parser location offset) (number?) % move lyric text
+mt=#(define-music-function (offset) (number?) ; move lyric text
       #{ \once \override LyricText.X-offset = -$offset #})
 
 \header {

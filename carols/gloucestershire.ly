@@ -1,4 +1,4 @@
-\version "2.14.2"
+\version "2.24.0"
 \include "header.ly"
 \header {
   title = "Gloucestershire Wassail"
@@ -103,7 +103,7 @@ verses = \markup { \fill-line {
   \line { Pray God send our master a happy New Year, }
   \line { A happy New Year as e’er he did see, }
   \line { With the wassailing bowl we’ll drink unto thee. }
-  \vspace #0.1
+  \combine \null \vspace #0.1
   \line { \bold "5." Come butler, come fill us a bowl of the best, }
   \line { Then we hope that your soul in heaven may rest, }
   \line { But if you do draw us a bowl of the small, }

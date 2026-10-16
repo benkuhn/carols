@@ -1,4 +1,4 @@
-﻿\version "2.14.2"
+﻿\version "2.24.0"
 \include "header.ly"
 
 \header {
@@ -122,13 +122,13 @@ stanzac = \lyricmode {
       \alto
     >>}
 
-    \lyricsto "sop" \context Lyrics = "stanza-1" {
+    \context Lyrics = "stanza-1" \lyricsto "sop" {
       \set stanza = "1."
       \stanzaa }
-    \lyricsto "sop" \context Lyrics = "stanza-2" {
+    \context Lyrics = "stanza-2" \lyricsto "sop" {
       \set stanza = "2."
       \stanzab }
-    \lyricsto "sop" \context Lyrics = "stanza-3" {
+    \context Lyrics = "stanza-3" \lyricsto "sop" {
       \set stanza = "3."
       \stanzac }
 

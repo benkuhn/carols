@@ -14,7 +14,7 @@
   lastupdated = "2015/Dec/05"
 }
 
-\version "2.14.2"
+\version "2.24.0"
 
 \include "header.ly"
 
@@ -68,9 +68,9 @@ tenor = \context Voice = "tenor"   {
     \alternative {
       { a a a2 ~ |
         % make LY happy w/ partial measure
-        \set Timing.measureLength = #(ly:make-moment 3 4)
+        \set Timing.measureLength = #(ly:make-moment 3/4)
         a2.
-        \set Timing.measureLength = #(ly:make-moment 4 4)
+        \set Timing.measureLength = #(ly:make-moment 4/4)
       }
       { a4 a a2 ~ | a1 \bar "|." }
     }
@@ -165,12 +165,12 @@ tenorb = {
       \global
       \sop
     >>}
-    \lyricsto "sop" \context Lyrics = "sop-1" {
+    \context Lyrics = "sop-1" \lyricsto "sop" {
       \set stanza = "1."
       \stanzaa
       \sopa
     }
-    \lyricsto "sop" \context Lyrics = "sop-2" {
+    \context Lyrics = "sop-2" \lyricsto "sop" {
       \filler
       \sopb
     }
@@ -179,11 +179,11 @@ tenorb = {
       \global
       \alto
     >>}
-    \lyricsto "alto" \context Lyrics = "alto-1" {
+    \context Lyrics = "alto-1" \lyricsto "alto" {
       \filler
       \altoa
     }
-    \lyricsto "alto" \context Lyrics = "alto-2" {
+    \context Lyrics = "alto-2" \lyricsto "alto" {
       \filler
       \altob
     }
@@ -192,11 +192,11 @@ tenorb = {
       \global
       \tenor
     >>}
-    \lyricsto "tenor" \context Lyrics = "tenor-1" {
+    \context Lyrics = "tenor-1" \lyricsto "tenor" {
       \filler
       \tenora
     }
-    \lyricsto "tenor" \context Lyrics = "tenor-2" {
+    \context Lyrics = "tenor-2" \lyricsto "tenor" {
       \set stanza = "1."
       \stanzab
       \tenorb
@@ -206,11 +206,11 @@ tenorb = {
       \global
       \bass
     >>}
-    \lyricsto "bass" \context Lyrics = "bass-1" {
+    \context Lyrics = "bass-1" \lyricsto "bass" {
       \filler
       \bassa
     }
-    \lyricsto "bass" \context Lyrics = "bass-2" {
+    \context Lyrics = "bass-2" \lyricsto "bass" {
       \filler
       \bassb
     }
@@ -220,7 +220,7 @@ tenorb = {
     indent = 0.0\pt
     \context {
       \ChordNames
-      \override ChordName  #'style = #'american
+      \override ChordName.style = #'american
       chordChanges = ##t
     }
   }

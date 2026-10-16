@@ -17,7 +17,7 @@
   lastupdated = "2012/Dec/23"
 }
 
-\version "2.14.2"
+\version "2.24.0"
 
 \include "header.ly"
 
@@ -155,19 +155,19 @@ stanzaf = \lyricmode {
       \alto
     >>}
     
-    \lyricsto "sop" \context Lyrics = "stanza-1" {
+    \context Lyrics = "stanza-1" \lyricsto "sop" {
       \set stanza = "1."
       \stanzaa }
-    \lyricsto "sop" \context Lyrics = "stanza-2" {
+    \context Lyrics = "stanza-2" \lyricsto "sop" {
       \set stanza = "2."
       \stanzab }
-    \lyricsto "sop" \context Lyrics = "stanza-3" {
+    \context Lyrics = "stanza-3" \lyricsto "sop" {
       \set stanza = "3."
       \stanzad }
-                                %	\lyricsto "sop" \context Lyrics = "stanza-5" {
+                                %	\context Lyrics = "stanza-5" \lyricsto "sop" {
                                 %		\set stanza = "5."
                                 %			\stanzae }
-                                %	\lyricsto "sop" \context Lyrics = "stanza-6" {
+                                %	\context Lyrics = "stanza-6" \lyricsto "sop" {
                                 %		\set stanza = "6."
                                 %			\stanzaf }
     \context Staff = "lower"  { \clef "F"<<
@@ -175,13 +175,13 @@ stanzaf = \lyricmode {
       \tenor
       \bass
     >>}
-    \lyricsto "bass" \context Lyrics = "stanza-1b" {
+    \context Lyrics = "stanza-1b" \lyricsto "bass" {
       \stanzaamen
     }
-    \lyricsto "bass" \context Lyrics = "stanza-2b" {
+    \context Lyrics = "stanza-2b" \lyricsto "bass" {
       \stanzabmen
     }
-    \lyricsto "bass" \context Lyrics = "stanza-3b" {
+    \context Lyrics = "stanza-3b" \lyricsto "bass" {
       \stanzadmen
     }
   >>
@@ -189,7 +189,7 @@ stanzaf = \lyricmode {
     indent = 0.0\pt
     \context {
       \ChordNames
-      \override ChordName  #'style = #'american
+      \override ChordName.style = #'american
       chordChanges = ##t
     }
   }

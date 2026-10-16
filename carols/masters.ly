@@ -1,4 +1,4 @@
-﻿\version "2.14.2"
+﻿\version "2.24.0"
 \include "header.ly"
 \header {
   title = "Masters in This Hall"
@@ -114,16 +114,16 @@ verses = \markup { \fill-line {
   \column {
     \line { \bold "2." Going o'er the hills, through the milk-white snow, }
     \line { Heard I ewes bleat, while the wind did blow. }
-    \vspace #0.1
+    \combine \null \vspace #0.1
     \line { \bold "3." Shepherds many a one sat among the sheep, }
     \line { No man spake more word than they had been asleep: }
-    \vspace #0.1
+    \combine \null \vspace #0.1
     \line { \bold "4." Quoth I, “Fellows mine, why this guise sit ye? }
     \line { Making but dull cheer, shepherds though ye be? }
-    \vspace #0.1
+    \combine \null \vspace #0.1
     \line { \bold "5." “Shepherds should of right leap and dance and sing, }
     \line { Thus to see ye sit, is a right strange thing”: }
-    \vspace #0.1
+    \combine \null \vspace #0.1
     \line { \bold "6." Quoth these fellows then, “To Bethlem town we go, }
     \line { To see a mighty lord lie in manger low”: }
   }
@@ -131,16 +131,16 @@ verses = \markup { \fill-line {
   \column {
     \line { \bold "7." “How name ye this lord, shepherds?” then said I, }
     \line { “Very God,” they said, “Come from Heaven high”: }
-    \vspace #0.1
+    \combine \null \vspace #0.1
     \line { \bold "8." Then to Bethlem town we went two and two, }
     \line { And in a sorry place heard the oxen low: }
-    \vspace #0.1
+    \combine \null \vspace #0.1
     \line { \bold "9." Therein did we see a sweet and goodly may }
     \line { And a fair old man, upon the straw she lay: }
-    \vspace #0.1
+    \combine \null \vspace #0.1
     \line { \bold "10." And a little child on her arm had she, }
     \line { “Wot ye who this is?” said the hinds to me: }
-    \vspace #0.1
+    \combine \null \vspace #0.1
     \line { \bold "11." Ox and ass him know, kneeling on their knee, }
     \line { Wondrous joy had I this little babe to see: }
   }

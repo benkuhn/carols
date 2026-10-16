@@ -8,7 +8,7 @@
   lastupdated = "2019/Dec/10"
 }
 
-\version "2.14.2"
+\version "2.24.0"
 
 \include "header.ly"
 
@@ -156,7 +156,7 @@ wordsBottom = \lyricmode {
       \alto
     >>}
 
-	\lyricsto "sop" \context Lyrics = "top" \with { alignAboveContext = "upper" } {
+	\context Lyrics = "top" \with { alignAboveContext = "upper" } \lyricsto "sop" {
       \wordsTop }
 
     \context Staff = "lower"  { \clef "F"<<
@@ -165,10 +165,10 @@ wordsBottom = \lyricmode {
       \bass
     >>}
 
-    \lyricsto "tenor" \context Lyrics = "mid" \with { alignAboveContext = "lower" } {
+    \context Lyrics = "mid" \with { alignAboveContext = "lower" } \lyricsto "tenor" {
       \wordsCenter }
 
-    \lyricsto "bass" \context Lyrics = "bottom" {
+    \context Lyrics = "bottom" \lyricsto "bass" {
       \wordsBottom
     }
   >>

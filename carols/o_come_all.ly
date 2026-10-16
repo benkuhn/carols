@@ -16,7 +16,7 @@
   lastupdated = "2011/Dec/11"
 }
 
-\version "2.14.2"
+\version "2.24.0"
 
 \include "header.ly"
 
@@ -142,19 +142,19 @@ latin = \lyricmode {
       \alto
     >>}
 
-    \lyricsto "sop" \context Lyrics = "stanza-l" {
+    \context Lyrics = "stanza-l" \lyricsto "sop" {
       \set stanza = "Latin."
       \latin }
-    \lyricsto "sop" \context Lyrics = "stanza-1" {
+    \context Lyrics = "stanza-1" \lyricsto "sop" {
       \set stanza = "1."
       \stanzaa }
-    \lyricsto "sop" \context Lyrics = "stanza-3" {
+    \context Lyrics = "stanza-3" \lyricsto "sop" {
       \set stanza = "2."
       \stanzac }
-    \lyricsto "sop" \context Lyrics = "stanza-5" {
+    \context Lyrics = "stanza-5" \lyricsto "sop" {
       \set stanza = "3."
       \stanzae }
-                                %	\lyricsto "sop" \context Lyrics = "stanza-6" {
+                                %	\context Lyrics = "stanza-6" \lyricsto "sop" {
                                 %		\set stanza = "6."
                                 %			\stanzaf }
     \context Staff = "lower"  { \clef "F"<<
