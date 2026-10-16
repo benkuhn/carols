@@ -7,7 +7,6 @@
   composer = "18th Century French Carol"
 }
 global = {
-  \preamble
   \key g \major
   \time 4/4
   \autoBeamOff

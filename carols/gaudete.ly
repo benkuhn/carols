@@ -7,7 +7,6 @@
 \layout { \context { \Lyrics \override LyricSpace.minimum-distance = #0.7 } }
 
 global= {
-  \preamble
   \key a \minor
 }
 
@@ -104,7 +103,6 @@ wordsVerseD = \lyricmode {
 
   \header{
     title = "Gaudete"
-    tagline = ""
   }
 
   \score {

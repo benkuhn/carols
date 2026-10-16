@@ -10,7 +10,6 @@
 \include "header.ly"
 
 global = {
-  \preamble
   \key bes \major
   \time 3/4
 }

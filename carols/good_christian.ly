@@ -1,22 +1,13 @@
+\version "2.24.0"
+
 \header {
-  filename = "good_christian.ly"
-  enteredby = "Gordon Gilbert and Ben Kuhn"
   composer = "German melody, 14th cent."
   poet = "Rev. John M. Neale, 1853"
-  date=""
   title = "Good Christian Men Rejoice"
-  metre = "In Dulci Jubilo P.M."
-  meter = \metre
-  copyright = "Public Domain"
-  style = "Hymn"
+  meter = "In Dulci Jubilo P.M."
   mutopiacomposer = \composer
   mutopiapoet=\poet
-  maintainer = "Gordon Gilbert"
-  maintainerEmail = "gord@angel.eicat.ca"
-  lastupdated = "2012/Dec/24"
 }
-
-\version "2.24.0"
 
 \include "header.ly"
 

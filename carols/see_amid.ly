@@ -1,20 +1,16 @@
-
 \version "2.24.0"
+
 \include "header.ly"
 
 % automatically converted by musicxml2ly from see_amid.mxl
 % source: https://www.cpdl.org/wiki/index.php/See_amid_the_winter%27s_snow_(John_Goss)
 
 \header {
-  filename = "see_amid.ly"
-  enteredby = "Andrew Sims"
   composer = "Sir John Goss"
   poet = "Edward Caswall"
-  date = "1871"
   title = "See Amid the Winter's Snow"
   %metre = "Adeste Fideles"
   %meter = \metre
-  style = "Hymn"
   mutopiacomposer = \composer
   mutopiapoet=\poet
 }
@@ -145,7 +141,6 @@ PartPTwoVoiceTwo =  \relative g, {
     b4. b8 c4 a4 | % 16
     d4 d4 g,2 \bar "|."
     }
-
 
 % The score definition
 \score {

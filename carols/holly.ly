@@ -7,7 +7,6 @@
   composer = "English"
 }
 global = {
-  \preamble
   \key g \major
   \time 3/4
   \autoBeamOff

@@ -6,12 +6,10 @@
   poet = "trans. Sabine Baring-Gould (1834-1924)"
   composer = "Basque Carol"
   arranger = "harm. Edgar Pettman"
-  metre = "Gabriel's Message 10.10.12.10"
-  meter = \metre
+  meter = "Gabriel's Message 10.10.12.10"
 }
 
 global = {
-  \preamble
   \key bes \major
   \time 6/4
 }

@@ -7,7 +7,6 @@
 }
 
 global = {
-  \preamble
   \key bes \major
   \time 2/4
   \autoBeamOff

@@ -1,25 +1,15 @@
 \version "2.24.0"
 \header {
-  filename = "o_come_o_come.ly"
-  enteredby = "Gordon Gilbert and Ben Kuhn"
   composer = "Ancient plainsong"
   arranger = "arr. Thomas Helmore"
   poet = "trans. John M. Neale and Henry Sloane Coffin"
-  date=""
   title = "O Come O Come Emmanuel"
-  metre = "8.8.8.8.8.8. with Refrain"
-  meter = \metre
-  copyright = "Public Domain"
-  style = "Hymn"
+  meter = "8.8.8.8.8.8. with Refrain"
   mutopiacomposer = \composer
   mutopiapoet=\poet
-  maintainer = "Gordon Gilbert"
-  maintainerEmail = "gord@angel.eicat.ca"
-  lastupdated = "2011/Dec/11"
 }
 \include "header.ly"
 global = {
-  \preamble
   \key e \minor
   \time 4/4
   \partial 4

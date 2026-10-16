@@ -1,27 +1,17 @@
+\version "2.24.0"
+
 \header {
-  filename = "it_came.ly"
-  enteredby = "Gordon Gilbert and Ben Kuhn"
   composer = "Edward Storrs Willis, 1819-1900"
   poet = "Edmund Hamilton Sears, 1810-1876"
-  date=""
   title = "It Came Upon the Midnight Clear"
-  metre = "Carol 8.6.8.6.D."
-  meter = \metre
-  copyright = "Public Domain"
-  style = "Hymn"
+  meter = "Carol 8.6.8.6.D."
   mutopiacomposer = \composer
   mutopiapoet=\poet
-  maintainer = "Gordon Gilbert"
-  maintainerEmail = "gord@angel.eicat.ca"
-  lastupdated = "2012/Dec/23"
 }
-
-\version "2.24.0"
 
 \include "header.ly"
 
 global= {
-  \preamble
   \time 6/4
   \key a \major
 

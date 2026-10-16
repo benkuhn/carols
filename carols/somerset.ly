@@ -7,7 +7,6 @@
   arranger = "arr. Ben Kuhn"
 }
 global = {
-  \preamble
   \key f \major
   \time 4/4
   \autoBeamOff

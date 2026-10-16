@@ -1,28 +1,18 @@
+\version "2.24.0"
+
 \header {
-  filename = "o_little_town_2.ly"
-  enteredby = "Gordon Gilbert"
   composer = "Trad. English Melody"
     arranger = "arr. Ralph Vaughan Williams"
   poet = "Bishop Phillips Brooks, 1868"
-  date=""
   title = "O Little Town of Bethlehem"
-  metre = "Forest Green 8.6.8.6.7.6.8.6."
-  meter = \metre
-  copyright = "Public Domain"
-  style = "Hymn"
+  meter = "Forest Green 8.6.8.6.7.6.8.6."
   mutopiacomposer = \composer
   mutopiapoet=\poet
-  maintainer = "Gordon Gilbert"
-  maintainerEmail = "gord@angel.eicat.ca"
-  lastupdated = "2007/Dec/21"
 }
-
-\version "2.24.0"
 
 \include "header.ly"
 
 global= {
-  \preamble
   \time 4/4
     \key g \major
 
@@ -80,8 +70,6 @@ bass = \context Voice = "bass"   {
 accomp=\chordmode {
 
 }
-
-
 
 stanzaa = \lyricmode {
   O lit -- tle town of Beth -- le -- hem

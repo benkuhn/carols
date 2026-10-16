@@ -1,5 +1,6 @@
-% Created on Tue Nov 24 23:05:52 EST 2009
 \version "2.24.0"
+
+% Created on Tue Nov 24 23:05:52 EST 2009
 
 \header {
   title = "'Twas in the Moon of Wintertime"
@@ -15,7 +16,6 @@
   % ragged-bottom=##f
   % ragged-last-bottom=##f
 }
-
 
 verseI= \lyricmode {
   \set stanza = "Wendat."
@@ -180,8 +180,6 @@ staffPiano = \new PianoStaff {
     }
   >>
 }
-
-
 
 \score {  \transpose a e,
 

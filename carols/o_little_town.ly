@@ -1,22 +1,13 @@
+\version "2.24.0"
+
 \header {
-  filename = "o_little_town.ly"
-  enteredby = "Gordon Gilbert and Ben Kuhn"
   composer = "Lewis H. Redner, 1868"
   poet = "Bishop Phillips Brooks, 1868"
-  date=""
   title = "O Little Town of Bethlehem"
-  metre = "St. Louis 8.6.8.6.D."
-  meter = \metre
-  copyright = "Public Domain"
-  style = "Hymn"
+  meter = "St. Louis 8.6.8.6.D."
   mutopiacomposer = \composer
   mutopiapoet=\poet
-  maintainer = "Gordon Gilbert"
-  maintainerEmail = "gord@angel.eicat.ca"
-  lastupdated = "2011/Dec/12"
 }
-
-\version "2.24.0"
 
 \include "header.ly"
 global= {
@@ -76,8 +67,6 @@ bass = \context Voice = "bass"   {
 accomp=\chordmode {
 
 }
-
-
 
 stanzaa = \lyricmode {
   O lit -- tle town of Beth-le -- hem

@@ -1,23 +1,14 @@
+\version "2.24.0"
+
 \header {
-  filename = "lo.ly"
-  enteredby = "Gordon Gilbert and Ben Kuhn"
   composer = "14th cent. German Melody"
   arranger = "Michael Praetorius, 1571-1621"
   poet = "St. Germanus, 634-734, tr. Theodore Baker"
-  date=""
   title = "Lo, How a Rose E'er Blooming"
-  metre = "Es Ist Ein Ros' Entsprungen"
-  meter = \metre
-  copyright = "Public Domain"
-  style = "Hymn"
+  meter = "Es Ist Ein Ros' Entsprungen"
   mutopiacomposer = \composer
   mutopiapoet=\poet
-  maintainer = "Gordon Gilbert"
-  maintainerEmail = "gord@angel.eicat.ca"
-  lastupdated = "2011/Dec/12"
 }
-
-\version "2.24.0"
 
 \include "header.ly"
 

@@ -1,23 +1,14 @@
+\version "2.24.0"
+
 \header {
-  filename = "brightest.ly"
-  enteredby = "Ben Kuhn"
   composer = "James P. Harding"
   arranger = ""
   poet = "Reginald Heber, 1811"
-  date ="1830"
   title = "Brightest and Best"
-  metre = "Morning Star 11.10.11.10. with Refrain"
-  meter = \metre
-  copyright = "Public Domain"
-  style = "Hymn"
+  meter = "Morning Star 11.10.11.10. with Refrain"
   mutopiacomposer = \composer
   mutopiapoet=\poet
-  maintainer = "Ben Kuhn"
-  maintainerEmail = "gord@angel.eicat.ca"
-  lastupdated = "2012/Dec/24"
 }
-
-\version "2.24.0"
 
 \include "header.ly"
 
@@ -26,7 +17,6 @@
 \layout { \context { \Lyrics \override LyricSpace.minimum-distance = #0.7 } }
 
 global= {
-  \preamble
   \time 4/4
   \key a \minor
   #(set-global-staff-size 12)
@@ -85,8 +75,6 @@ bass = \context Voice = "bass"   {
 accomp=\chordmode {
 
 }
-
-
 
 stanzaa = \lyricmode {
   Hail the blest morn! See the great Me -- di -- a -- tor,

@@ -7,7 +7,6 @@
   composer = "Traditional (Yorkshire)"
 }
 global = {
-  \preamble
   \key e \major
   \time 6/8
 }

@@ -6,7 +6,6 @@
   composer = "English Folk Song"
 }
 global = {
-  \preamble
   \key aes \major
   \time 3/4
   \autoBeamOff

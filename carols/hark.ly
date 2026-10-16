@@ -1,26 +1,17 @@
+\version "2.24.0"
+
 \header {
-  filename = "HarkTheHerald-Complete.ly"
-  enteredby = "Gordon Gilbert and Ben Kuhn"
   composer = "Felix Mendelssohn, 1840"
   poet = "Rev. Charles Wesley"
-  date=""
   title = "Hark! The Herald Angels Sing"
-  metre = "Mendelssohn 7.7.7.7.D. with refrain"
-  meter = \metre
-  style = "Hymn"
+  meter = "Mendelssohn 7.7.7.7.D. with refrain"
   mutopiacomposer = \composer
   mutopiapoet=\poet
-  maintainer = "Gordon Gilbert"
-  maintainerEmail = "gord@angel.eicat.ca"
-  lastupdated = "2012/Dec/23"
 }
-
-\version "2.24.0"
 
 \include "header.ly"
 
 global= {
-  \preamble
   \time 4/4
   \key f \major
   #(set-global-staff-size 13)
@@ -86,8 +77,6 @@ bass = \context Voice = "bass"   {
 accomp=\chordmode {
 
 }
-
-
 
 stanzaa = \lyricmode {
   Hark! the her -- ald an -- gels sing,

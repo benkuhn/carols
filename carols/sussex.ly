@@ -7,7 +7,6 @@
 }
 
 global = {
-  \preamble
   \key f \major
   \time 6/8
   \slurDotted

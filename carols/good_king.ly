@@ -1,27 +1,16 @@
+\version "2.24.0"
+
 \header {
-  filename = "GoodKingWenceslas.ly"
-  enteredby = "Gordon Gilbert"
   composer = "Melody from Piae Cantones, 1582"
   poet = "J. M. Neale"
-  date=""
   title = "Good King Wenceslas"
-  metre = ""
-  meter = \metre
-  copyright = "Public Domain"
-  style = "Hymn"
   mutopiacomposer = \composer
   mutopiapoet=\poet
-  maintainer = "Gordon Gilbert"
-  maintainerEmail = "gord@angel.eicat.ca"
-  lastupdated = "2011/Dec/13"
 }
-
-\version "2.24.0"
 
 \include "header.ly"
 
 global= {
-  \preamble
   \time 4/4
   \key aes \major
 }
@@ -130,8 +119,6 @@ bass = \context Voice = "bass"   {
 accomp=\chordmode {
 
 }
-
-
 
 stanzaa = \lyricmode {
   Good King Wen -- ces -- las looked out

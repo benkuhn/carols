@@ -1,25 +1,17 @@
+\version "2.24.0"
+
 \header {
-  filename = "sherburne.ly"
-  enteredby = "Ben Kuhn"
   composer = "Daniel Read, 1783"
   arranger = ""
   poet = "Nahum Tate, 1700"
-  date ="1830"
   title = "Sherburne"
-  copyright = "Public Domain"
-  style = "Hymn"
   mutopiacomposer = \composer
   mutopiapoet=\poet
-  maintainer = "Ben Kuhn"
-  lastupdated = "2015/Dec/05"
 }
-
-\version "2.24.0"
 
 \include "header.ly"
 
 global= {
-  \preamble
   \time 4/4
   \key d \major
 }
@@ -97,8 +89,6 @@ bass = \context Voice = "bass"   {
 accomp=\chordmode {
 
 }
-
-
 
 stanzaa = \lyricmode {
   While shep -- herds watch'd their flocks by night

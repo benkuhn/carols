@@ -7,7 +7,6 @@
                                 %arranger = \markup\oldStyleNum"Edited by Benjamin Bloomfield (1984–)"
 }
 global = {
-  \preamble
   \key g \major
   \time 3/4
   \autoBeamOff

@@ -1,14 +1,10 @@
+\version "2.24.0"
+
 \header {
   title = "Adam Lay Ybounden"
   composer = "Boris Ord"
   poet = "Anon. 15th cen."
-  enteredby = "Maia McCormick"
-  maintainer = "Maia McCormick"
-  maintainerEmail = "maia.mcc@gmail.com"
-  lastupdated = "2019/Dec/10"
 }
-
-\version "2.24.0"
 
 \include "header.ly"
 
@@ -21,7 +17,6 @@
 }
 
 global= {
-  \preamble
   \time 3/4
   \key b \minor
   \set Timing.beamExceptions = #'()
@@ -101,7 +96,6 @@ bass = \context Voice = "bass" \relative c' {
     e2) fis4 | << fis2. b, >> \bar "|."
 
 }
-
 
 wordsCenter = \lyricmode {
   A -- dam lay y -- boun -- den,

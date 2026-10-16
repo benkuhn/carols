@@ -5,7 +5,6 @@
   title = "The Boar’s Head Carol"
   poet = "15th Century English"
   composer = "Traditional English"
-  tagline = ""
 }
 global = {
   \key c \major

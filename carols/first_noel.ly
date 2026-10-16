@@ -7,7 +7,6 @@
   arranger = "harm. by John Stainer"
 }
 global = {
-  \preamble
   \key d \major
   \time 3/4
   \autoBeamOff

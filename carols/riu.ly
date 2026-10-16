@@ -12,7 +12,6 @@ mt=#(define-music-function (offset) (number?) ; move lyric text
   title = "Ríu Ríu Chíu"
   composer = "Anon."
   poet = "16th Century Villancico"
-  enteredby = "Nancho Alvarez"
   tagline = "ed. Nancho Alvarez (tomasluisdevictoria.org)"
 }
 

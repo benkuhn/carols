@@ -1,27 +1,17 @@
+\version "2.24.0"
+
 \header {
-  filename = "SilentNight-Complete.ly"
-  enteredby = "Gordon Gilbert"
   composer = "Franz Gruber, 1818"
   poet = "Rev. Joseph Mohr, 1818"
-  date="trans 1863 by Jane Campbell"
   title = "Silent Night"
-  metre = "Silent Night P.M."
-  meter = \metre
-  copyright = "Public Domain"
-  style = "Hymn"
+  meter = "Silent Night P.M."
   mutopiacomposer = \composer
   mutopiapoet=\poet
-  maintainer = "Gordon Gilbert"
-  maintainerEmail = "gord@angel.eicat.ca"
-  lastupdated = "2005/Dec/08"
 }
-
-\version "2.24.0"
 
 \include "header.ly"
 
 global= {
-  \preamble
 
   \time 6/8
   \key bes \major
@@ -73,8 +63,6 @@ bass = \context Voice = "bass"   {
 accomp=\chordmode {
 
 }
-
-
 
 stanzaa = \lyricmode {
   Si -- lent night! Ho -- ly night!

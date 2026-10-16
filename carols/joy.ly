@@ -1,28 +1,18 @@
+\version "2.24.0"
+
 \header {
-  filename = "joy.ly"
-  enteredby = "Gordon Gilbert and Ben Kuhn"
   composer = "attributed to G. F. Handel"
   arranger = "Lowell Mason, 1830"
   poet = "Rev Isaac Watts, 1719"
-  date ="1830"
   title = "Joy To The World"
-  metre = "Antioch C.M. with Refrain"
-  meter = \metre
-  copyright = "Public Domain"
-  style = "Hymn"
+  meter = "Antioch C.M. with Refrain"
   mutopiacomposer = \composer
   mutopiapoet=\poet
-  maintainer = "Gordon Gilbert"
-  maintainerEmail = "gord@angel.eicat.ca"
-  lastupdated = "2012/Dec/23"
 }
-
-\version "2.24.0"
 
 \include "header.ly"
 
 global= {
-  \preamble
   \time 2/4
   \key d \major
 }
@@ -71,8 +61,6 @@ accomp=\chordmode {
 
 }
 
-
-
 stanzaa = \lyricmode {
   Joy to the world! The Lord is come:
   Let earth re -- ceive her King,
@@ -112,7 +100,6 @@ stanzabmen = \lyricmode {
   Re -- peat the sound -- ing joy,
   Re -- peat the sound -- ing joy.
 }
-
 
 stanzac = \lyricmode {
   No more let sin and sor -- row grow,

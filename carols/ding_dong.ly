@@ -10,7 +10,6 @@
 }
 
 global = {
-  \preamble
   \key bes \major
   \time 4/4
 }

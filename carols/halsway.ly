@@ -9,7 +9,6 @@
 }
 
 global = {
-  \preamble
   \key d \major
   \time 4/4
 }

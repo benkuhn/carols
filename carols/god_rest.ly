@@ -1,28 +1,18 @@
+\version "2.24.0"
+
 \header {
-  filename = "god_rest.ly"
-  enteredby = "Gordon Gilbert and Ben Kuhn"
   composer = "London Melody, 18th Cent."
   arranger = "Sir John Stainer"
   poet = "London Carol"
-  date=""
   title = "God Rest Ye Merry, Gentlemen"
-  metre = "God Rest Ye Merry 7 6. 7 6. 7 6. with Refrain"
-  meter = \metre
-  copyright = "Public Domain"
-  style = "Hymn"
+  meter = "God Rest Ye Merry 7 6. 7 6. 7 6. with Refrain"
   mutopiacomposer = \composer
   mutopiapoet=\poet
-  maintainer = "Gordon Gilbert"
-  maintainerEmail = "gord@angel.eicat.ca"
-  lastupdated = "2012/Dec/23"
 }
-
-\version "2.24.0"
 
 \include "header.ly"
 
 global = {
-  \preamble
   \time 4/4
   \key e \minor
 
@@ -212,7 +202,6 @@ stanzad = \lyricmode {
   And went to Beth -- le -- hem strait -- way,
   The Son of God to find.
 }
-
 
 \score {
   \context ChoirStaff <<
