@@ -26,6 +26,10 @@ global = {
   s2.*4 \bar "|."
 }
 
+% rest shared by both voices on a staff, printed once and centred
+% (the lower voice has a spacer at the same point)
+sharedRest = { \oneVoice r4 \voiceOne }
+
 descMusic = \relative c'' {
   c4(^\markup \italic "Descant (last time, optional)" ees) |
   aes2.~ | aes4 g( ees) | c2. |
@@ -43,19 +47,19 @@ descWords = \lyricmode {
 
 sopMusic = \relative c'' {
   % refrain
-  r4 aes4 |
+  \sharedRest aes4 |
   aes2 bes4 | g2 aes4 | aes4( ees') c | bes2 aes4 |
-  aes2 bes4 | g2 aes4 | aes2.~ | aes4 r aes |
+  aes2 bes4 | g2 aes4 | aes2.~ | aes4 \sharedRest aes |
   aes2 bes4 | g2 aes4 | g8 aes ees'4 c | bes2 aes4 |
   aes2 bes4 | g2 aes4 | aes2.~ |
   % verse
-  aes2 r4 |
-  c4 c c | ees2 c4 | bes2 aes4 | c2 r4 |
-  aes4 c des | bes2 aes4 | aes2.~ | aes4 r aes |
-  ees'2 c4 | \slurDashed bes( bes) \slurSolid aes | aes( ees') c | f,2 r4 |
+  aes2 \sharedRest |
+  c4 c c | ees2 c4 | bes2 aes4 | c2 \sharedRest |
+  aes4 c des | bes2 aes4 | aes2.~ | aes4 \sharedRest aes |
+  ees'2 c4 | \slurDashed bes( bes) \slurSolid aes | aes( ees') c | f,2 \sharedRest |
   f4 g aes | aes( g) aes | aes2.~ | aes4
   % coda
-  aes4\repeatTie r aes | aes2 bes4 | g2 aes4 | aes2.
+  aes4\repeatTie \sharedRest aes | aes2 bes4 | g2 aes4 | aes2.
 }
 % words sung by the sopranos only
 sopWords = \lyricmode {
@@ -65,19 +69,19 @@ sopWords = \lyricmode {
 
 altoMusic = \relative c' {
   % refrain
-  r4 ees4 |
+  s4 ees4 |
   f2 f4 | f2 f4 | aes2 aes4 | ees2 c4 |
-  f2 f4 | f2 g4 | aes2( g4 | f4) r ees |
+  f2 f4 | f2 g4 | aes2( g4 | f4) s4 ees |
   f2 f4 | f( ees) ees | ees( aes) aes | ees2 c4 |
   f2 f4 | f( ees) g | aes2( g4 |
   % verse
-  f2) r4 |
-  aes4 g f | g2 g4 | g2 g4 | aes2 r4 |
-  f4 f f | g2 g4 | aes2( g4 | f4) r f |
-  f2 f4 | \slurDashed g( g) \slurSolid g | ees2 ees4 | f2 r4 |
+  f2) s4 |
+  aes4 g f | g2 g4 | g2 g4 | aes2 s4 |
+  f4 f f | g2 g4 | aes2( g4 | f4) s4 f |
+  f2 f4 | \slurDashed g( g) \slurSolid g | ees2 ees4 | f2 s4 |
   f4 f f | g2 g4 | aes2( g4 | f4)
   % coda
-  f4 r c | f2 f4 | f( ees) des | c2.
+  f4 s4 c | f2 f4 | f( ees) des | c2.
 }
 altoWords = \lyricmode {
   Lul -- ly, lul -- la, lul -- ly, lul -- la,
@@ -117,36 +121,36 @@ altoWordsIII = \lyricmode {
 
 tenorMusic = \relative c' {
   % refrain
-  r4 aes4 |
+  \sharedRest aes4 |
   aes2 aes4 | bes2 bes4 | c2 c4 | g2 f4 |
-  aes2 aes4 | bes2 bes4 | c2( bes4 | aes4) r aes |
+  aes2 aes4 | bes2 bes4 | c2( bes4 | aes4) \sharedRest aes |
   aes( g) aes | bes2 bes4 | c2 c4 | g2 f4 |
   c'( bes) aes | bes2 bes4 | c2( bes4 |
   % verse
-  aes2) r4 |
-  c4 bes aes | bes2 bes4 | ees2 ees4 | c2 r4 |
-  aes4 aes aes | bes2 bes4 | c2( bes4 | aes4) r aes |
-  aes2 aes4 | \slurDashed bes( bes) \slurSolid bes | aes2 aes4 | aes2 r4 |
+  aes2) \sharedRest |
+  c4 bes aes | bes2 bes4 | ees2 ees4 | c2 \sharedRest |
+  aes4 aes aes | bes2 bes4 | c2( bes4 | aes4) \sharedRest aes |
+  aes2 aes4 | \slurDashed bes( bes) \slurSolid bes | aes2 aes4 | aes2 \sharedRest |
   aes4 aes aes | bes2 bes4 | c2( bes4 | aes4)
   % coda
-  aes4 r f | c'( bes) aes | bes2 bes4 | ees,2.
+  aes4 \sharedRest f | c'( bes) aes | bes2 bes4 | ees,2.
 }
 
 bassMusic = \relative c {
   % refrain
-  r4 c4 |
+  s4 c4 |
   des2 des4 | ees2 ees4 | f2 f4 | f2 f4 |
-  des2 des4 | ees2 ees4 | f2.~ | f4 r c |
+  des2 des4 | ees2 ees4 | f2.~ | f4 s4 c |
   des2 des4 | ees2 ees4 | f2 f4 | f2 f4 |
   des2 des4 | ees2 ees4 | f2.~ |
   % verse
-  f2 r4 |
-  f4 f f | f2 f4 | f2 f4 | f2 r4 |
-  des4 des des | ees2 ees4 | f2.~ | f4 r f |
-  des2 des4 | \slurDashed ees( ees) \slurSolid ees | c2 c4 | des2 r4 |
+  f2 s4 |
+  f4 f f | f2 f4 | f2 f4 | f2 s4 |
+  des4 des des | ees2 ees4 | f2.~ | f4 s4 f |
+  des2 des4 | \slurDashed ees( ees) \slurSolid ees | c2 c4 | des2 s4 |
   des4 des des | ees2 ees4 | f2.~ | f4
   % coda
-  f4\repeatTie r f | des2 des4 | ees2 ees4 | aes,2.
+  f4\repeatTie s4 f | des2 des4 | ees2 ees4 | aes,2.
 }
 
 \score {
