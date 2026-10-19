@@ -147,13 +147,13 @@ PartPTwoVoiceTwo =  \relative g, {
                 \set Staff.shortInstrumentName = " "
                 \context Staff <<
                     \context Voice = "PartPOneVoiceOne" { \voiceOne \PartPOneVoiceOne }
-                    \new Lyrics \lyricsto "PartPOneVoiceOne" \PartPOneVoiceOneLyricsOne
-                    \new Lyrics \lyricsto "PartPOneVoiceOne" \PartPOneVoiceOneLyricsThree
-                    \new Lyrics \lyricsto "PartPOneVoiceOne" \PartPOneVoiceOneLyricsFive
                     \context Voice = "PartPOneVoiceTwo" { \voiceTwo \PartPOneVoiceTwo }
-                    \new Lyrics \lyricsto "PartPOneVoiceTwo" \PartPOneVoiceTwoLyricsTwo
-                    \new Lyrics \lyricsto "PartPOneVoiceTwo" \PartPOneVoiceTwoLyricsFour
-                    \new Lyrics \lyricsto "PartPOneVoiceTwo" \PartPOneVoiceTwoLyricsSix
+                    \new Lyrics \lyricsto "PartPOneVoiceOne" { \set stanza = #"1. " \PartPOneVoiceOneLyricsOne }
+                    \new Lyrics \lyricsto "PartPOneVoiceTwo" { \set stanza = #"2. " \PartPOneVoiceTwoLyricsTwo }
+                    \new Lyrics \lyricsto "PartPOneVoiceOne" { \set stanza = #"3. " \PartPOneVoiceOneLyricsThree }
+                    \new Lyrics \lyricsto "PartPOneVoiceTwo" { \set stanza = #"4. " \PartPOneVoiceTwoLyricsFour }
+                    \new Lyrics \lyricsto "PartPOneVoiceOne" { \set stanza = #"5. " \PartPOneVoiceOneLyricsFive }
+                    \new Lyrics \lyricsto "PartPOneVoiceTwo" { \set stanza = #"6. " \PartPOneVoiceTwoLyricsSix }
                     >>
                 >>
             \new Staff <<
