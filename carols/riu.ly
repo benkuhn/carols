@@ -1,8 +1,8 @@
 \version "2.24.0"
 
-#(set-default-paper-size "a4")
-#(set-global-staff-size 16.4)
-#(ly:set-option 'point-and-click #f)
+\include "header.ly"
+% smaller than the house staff size (14) so that this fits on one page
+#(set-global-staff-size 13)
 
 mt=#(define-music-function (offset) (number?) ; move lyric text
       #{ \once \override LyricText.X-offset = -$offset #})
@@ -11,7 +11,7 @@ mt=#(define-music-function (offset) (number?) ; move lyric text
   title = "Ríu Ríu Chíu"
   composer = "Anon."
   poet = "16th Century Villancico"
-  tagline = "ed. Nancho Alvarez (tomasluisdevictoria.org)"
+  arranger = "ed. Nancho Alvarez"
 }
 
 
@@ -428,7 +428,6 @@ con el hombre viniera.
     \override VerticalAxisGroup.staff-affinity = #UP
     \override VerticalAxisGroup.nonstaff-relatedstaff-spacing =
       #'((basic-distance . 0) (minimum-distance . 0) (padding . 1))
-    \override LyricText.font-size = #1.2
     \override LyricHyphen.minimum-distance = #0.5
   }
   \context {\Score
@@ -440,20 +439,7 @@ con el hombre viniera.
   \context {\Staff
                 \RemoveEmptyStaves
                 \override VerticalAxisGroup.remove-first = ##t
-    \override VerticalAxisGroup.staff-staff-spacing =
-      #'((basic-distance . 11) (minimum-distance . 0) (padding . 1))
   }
   }
 }
 
-\paper{
-  ragged-last-bottom = ##f
-  indent=0\cm
-  system-system-spacing =
-  #'((basic-distance . 20) (minimum-distance . 0) (padding . 5))
-  top-system-spacing = % header
-  #'((basic-distance . 8) (minimum-distance . 0) (padding . 0))
-  last-bottom-spacing = % footer
-  #'((basic-distance . 15) (minimum-distance . 0) (padding . 0))
-  markup-system-spacing.padding = #2.5
-}
