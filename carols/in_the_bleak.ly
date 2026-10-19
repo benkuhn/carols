@@ -116,11 +116,11 @@ bass = \context Voice = "bass" \relative c {
 stanzaa = \lyricmode {
   \set ignoreMelismata = ##t
   In the bleak mid -- win -- ter,
-  fros -- ty wind made moan,
+  Fros -- ty wind made moan,
   Earth stood hard as i -- _ ron,
-  wa -- ter like a stone, ""
+  Wa -- ter like a stone, ""
   Snow had fal -- len, snow on snow, ""
-  snow __ _ on __ _ snow, ""
+  Snow __ _ on __ _ snow, ""
   In the bleak mid -- win -- ter,
   \set ignoreMelismata = ##f
   Long a -- go.
@@ -146,7 +146,7 @@ stanzac = \lyricmode {
   In her maid -- en bliss ""
   Wor -- shipped the Be -- lov -- ed
   \set ignoreMelismata = ##f
-  with a kiss.
+  With a kiss.
 }
 stanzad = \lyricmode {
   \set ignoreMelismata = ##t

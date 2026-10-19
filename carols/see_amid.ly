@@ -38,21 +38,21 @@ PartPOneVoiceOne =  \relative g' {
     }
 
 PartPOneVoiceOneLyricsOne =  \lyricmode { "See," a -- mid the win --
-    "ter’s" "snow," born for us on earth be -- "low," "see," the ten --
-    der Lamb ap -- "pears," pro -- mised from e -- ter -- nal "years."
+    "ter’s" "snow," Born for us on earth be -- "low," "See," the ten --
+    der Lamb ap -- "pears," Pro -- mised from e -- ter -- nal "years."
     "Hail," thou e -- ver -- bless -- "èd" "morn!" "Hail," re -- demp --
     "tion’s" hap -- py "dawn!" Sing through all Je -- ru -- sa -- "lem:"
     "“Christ" is born in Beth -- le -- "hem!”" }
 PartPOneVoiceOneLyricsThree =  \lyricmode { "“Say," ye low -- ly shep --
-    "herds," "say," what your joy -- ful news to -- "day;" where -- fore
-    have ye left your sheep on the lone -- ly moun -- tain "steep?”"
+    "herds," "say," What your joy -- ful news to -- "day;" Where -- fore
+    have ye left your sheep On the lone -- ly moun -- tain "steep?”"
     \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4
     \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4
     \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4
     \skip4 }
-PartPOneVoiceOneLyricsFive =  \lyricmode { Sa -- cred in -- "fant," all
-    di -- "vine," what a ten -- der love was "Thine," thus to come from
-    high -- est bliss down to such a world as "this!" \skip4 \skip4
+PartPOneVoiceOneLyricsFive =  \lyricmode { Sa -- cred In -- "fant," all
+    di -- "vine," What a ten -- der love was "Thine," Thus to come from
+    high -- est bliss Down to such a world as "this!" \skip4 \skip4
     \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4
     \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4
     \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 }
@@ -79,19 +79,19 @@ PartPOneVoiceTwo =  \relative b {
 
 PartPOneVoiceTwoLyricsTwo =  \lyricmode { "Lo!" with -- in a man -- ger
     lies He who built the star -- ry "skies;" He "who," throned in light
-    sub -- "lime," sits a -- mid the Cher -- u -- "bim!" \skip4 \skip4
+    sub -- "lime," Sits a -- mid the Cher -- u -- "bim!" \skip4 \skip4
     \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4
     \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4
     \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 }
 PartPOneVoiceTwoLyricsFour =  \lyricmode { "“As" we watched at dead of
-    "night," "lo," we saw a won -- drous "light;" an -- gels sing -- ing
-    peace on earth told us of a Sa -- "viour’s" "birth.”" \skip4 \skip4
+    "night," "Lo," we saw a won -- drous "light;" An -- gels sing -- ing
+    peace on earth Told us of a Sa -- "viour’s" "birth.”" \skip4 \skip4
     \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4
     \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4
     \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 }
-PartPOneVoiceTwoLyricsSix =  \lyricmode { "Teach," o teach "us," ho --
-    ly "child," by Thy face so meek and "mild," teach us to re -- sem --
-    ble Thee in Thy sweet hu -- mi -- li -- "ty." \skip4 \skip4 \skip4
+PartPOneVoiceTwoLyricsSix =  \lyricmode { "Teach," O teach "us," Ho --
+    ly "Child," By Thy face so meek and "mild," Teach us to re -- sem --
+    ble Thee In Thy sweet hu -- mi -- li -- "ty." \skip4 \skip4 \skip4
     \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4
     \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4
     \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 }

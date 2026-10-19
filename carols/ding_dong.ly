@@ -110,7 +110,7 @@ stanzab = \lyricmode {
 }
 stanzac = \lyricmode {
   Pray ye du -- ti -- ful -- ly prime your ma -- tin chime, ye ring -- ers;
-  may ye beau -- ti -- ful -- ly rime your eve -- time song, ye sing -- ers.
+  May ye beau -- ti -- ful -- ly rime your eve -- time song, ye sing -- ers.
 }
 
 \score {

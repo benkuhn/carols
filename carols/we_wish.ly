@@ -75,7 +75,7 @@ altoWordsII = {
     Oh, bring us a fig -- gy pud -- ding,
     Oh, bring us a fig -- gy pud -- ding,
     Oh, bring us a fig -- gy pud -- ding,
-    and a cup of good cheer.
+    And a cup of good cheer.
     Good ti -- dings to you wher -- ev -- er you are;
     Good ti -- dings for Christ -- mas and a hap -- py New Year!
   }
@@ -86,7 +86,7 @@ altoWordsIII = \lyricmode {
   We won’t go un -- til we get some,
   We won’t go un -- til we get some,
   We won’t go un -- til we get some,
-  so _ bring it right here.
+  So _ bring it right here.
 }
 tenorMusic = \relative c {
   ees4 |

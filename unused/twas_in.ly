@@ -41,7 +41,7 @@ verseIII= \lyricmode {
   The ten -- der babe was found,
   A rag -- ged robe of rab -- bit skin en -- wrapped His beau -- ty round;
   But as the hun -- ter braves drew nigh
-  the an -- gel song rang loud and high.
+  The an -- gel song rang loud and high.
 }
 
 verseIIII= \lyricmode {
