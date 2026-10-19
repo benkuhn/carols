@@ -105,17 +105,6 @@ verses = \markup { \fill-line{
   \line { According unto Heav’n’s decree, }
   \line { Man’s sweet salvation for to be. }
   \combine \null \vspace #0.1
-  \line { \bold "5." With thankful heart and joyful mind, }
-  \line { The shepherds went the  babe to find, }
-  \line { And as God’s angels had foretold, }
-  \line { They did our Savior Christ behold. }
-  \line { Within a manger He was laid, }
-  \line { And by His side the virgin maid }
-  \line { Attending on the Lord of Life }
-  \line { Who came to earth to end all strife. }
-  }
-  \hspace #0.1
-  \column{
   \line { \bold "4." Near Bethlehem did shepherds keep }
   \line { Their flocks of lambs and feeding sheep; }
   \line { To whom God’s angels did appear, }
@@ -124,6 +113,17 @@ verses = \markup { \fill-line{
   \line { “To Bethlehem. Be not afraid }
   \line { For there you’ll find this happy morn }
   \line { A princely babe sweet Jesus born.” }
+  }
+  \hspace #0.1
+  \column{
+  \line { \bold "5." With thankful heart and joyful mind, }
+  \line { The shepherds went the  babe to find, }
+  \line { And as God’s angels had foretold, }
+  \line { They did our Savior Christ behold. }
+  \line { Within a manger He was laid, }
+  \line { And by His side the virgin maid }
+  \line { Attending on the Lord of Life }
+  \line { Who came to earth to end all strife. }
   \combine \null \vspace #0.1
   \line { \bold "6." See how the Lord of Heav’n and earth, }
   \line { Show’d Himself lowly in His birth; }
