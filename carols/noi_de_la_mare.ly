@@ -7,12 +7,12 @@
   arranger = "arr. Ben Kuhn"
 }
 global = {
-  \key ees \major
+  \key c \major
   \time 3/4
   \autoBeamOff
 }
 
-sopMusic = \transpose c ees \relative c' {
+sopMusic = \relative c' {
   e4. f8 g4 | g4. a8 b4 | c4. b8 a4 | a2 g4 |
   e4. f8 g4 | g4. a8 b4 | c4. b8 a4 | g2.   |
   e4. f8 g4 | g4. f8 e4 | d4. c8 d4 | e2 c4 |
@@ -21,7 +21,7 @@ sopMusic = \transpose c ees \relative c' {
   e4. f8 g4 | g4. f8 e4 | d4. e8 d4 | c2.   \bar "|."
 }
 
-altoMusic = \transpose c ees \relative c' {
+altoMusic = \relative c' {
   c4. d8 e4 | d4. d8 d4 | e4. d8 c4 | c2 b4 |
   c4. d8 e4 | d4. d8 d4 | e4. d8 c4 | b2.   |
   c4. c8 c4 | b4. b8 c4 | c4. c8 b4 | c2 c4 |
@@ -59,7 +59,7 @@ altoWordsIII = \lyricmode {
   ma -- du -- ra -- ran en el di -- a del Ram.
 }
 
-tenorMusic = \transpose c ees \relative c' {
+tenorMusic = \relative c' {
   g4. g8 g4 | g4. g8 g4 | a4. d,8 d4 | d2 g4 |
   g4. g8 g4 | g4. g8 g4 | a4. a8 fis4 | g2.  |
   g4. g8 g4 | g4. g8 g4 | a4. a8 g4 | g2 g4  |
@@ -68,7 +68,7 @@ tenorMusic = \transpose c ees \relative c' {
   g4. c8 c4 | g4. g8 a4 | a4. a8 g f | e2.   |
 }
 
-bassMusic = \transpose c ees \relative c {
+bassMusic = \relative c {
   c4. c8 c4 | b4. b8 b4 | a4. a8 a4 | g2 g4 |
   c4. c8 c4 | b4. b8 b4 | a4. a8 d4 | g,2.   |
   c4. d8 e4 | e4. d8 c4 | f4. d8 g4 | c,2 c4 |
@@ -78,7 +78,7 @@ bassMusic = \transpose c ees \relative c {
 }
 
 \score {
-  <<
+  \transpose c ees <<
    \new ChoirStaff <<
     \new Staff = women <<
       \new Voice = "sopranos" { \voiceOne << \global \sopMusic >> }

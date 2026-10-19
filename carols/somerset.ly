@@ -7,12 +7,12 @@
   arranger = "arr. Ben Kuhn"
 }
 global = {
-  \key f \major
+  \key c \major
   \time 4/4
   \autoBeamOff
 }
 
-sopMusic = \transpose c f { \relative c' {
+sopMusic = \relative c' {
   \partial 4 c4 |
   c( a') g f | e2 d4 c | c( d) e f | g2. c,4 |
   c( a') g f | e2 d4 c | c( d) e f | g2. g4 |
@@ -21,9 +21,9 @@ sopMusic = \transpose c f { \relative c' {
 
   c2 d | g, g4 g | c2 d4( e) | f2 e4 f |
   g( c) a f | g2 e4 e | d c e( d) | c1 |
-}}
+}
 
-altoMusic = \transpose c f { \relative c' {
+altoMusic = \relative c' {
   \partial 4 c4 |
   c2 c4 c | c2 c4 c | c2 c4 c | c2. c4 |
   c2 c4 c | c2 c4 c | c2 c4 c | c2. c4 |
@@ -32,7 +32,7 @@ altoMusic = \transpose c f { \relative c' {
 
   e2 a | g f4 f | e2 g | a g4 a |
   c2 c4 c | b2 g4 g | a a b2 | g1 |
-}}
+}
 altoWords = \lyricmode {
   \set stanza = #"1."
   Was -- sail and was -- sail _ all o -- ver the town,
@@ -60,7 +60,7 @@ altoWordsIII = \lyricmode {
 
 verses = \markup { \fill-line {
 }}
-tenorMusic = \transpose c f { \relative c {
+tenorMusic = \relative c {
   \partial 4 e4 |
   e( f) e d | g2 f4 e | e( f) g f | e2. e4 |
   e( f) e d | g2 g4 a | bes( a) g f | e2. e4 |
@@ -69,9 +69,9 @@ tenorMusic = \transpose c f { \relative c {
 
   e2 f | b, d4 d | c2 b4( c) | c2 c4 c |
   c2 c4 c | d2 g4 g | f f f2 | e1 |
-}}
+}
 
-bassMusic = \transpose c f { \relative c {
+bassMusic = \relative c {
   \partial 4 c4 |
   c2 c4 c | c2 c4 c | c2 c4 c | c2. c4 |
   c2 c4 c | c2 c4 c | c2 c4 c | c2. c4 |
@@ -80,10 +80,10 @@ bassMusic = \transpose c f { \relative c {
 
   c2 a | e b'4 b | c2 g | f e4 d |
   c( e) f a | g2 e4 e | f f g2 | c,1 \bar "|."
-}}
+}
 
 \score {
-  <<
+  \transpose c f <<
    \new ChoirStaff <<
     \new Staff = women <<
       \new Voice = "sopranos" { \voiceOne << \global \sopMusic>> }
