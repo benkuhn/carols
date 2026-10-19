@@ -88,11 +88,11 @@ bass = \context Voice = "bass"   {
 }
 
 stanzaa = \lyricmode {
-  While shep -- herds watch'd their flocks by night
+  While shep -- herds watch’d their flocks by night
   All seat -- ed on the ground,
 }
 filler = \lyricmode {
-  % ugh can't figure out how to skip multiple measures
+  % ugh can’t figure out how to skip multiple measures
   "" "" "" "" "" "" "" "" "" "" "" "" "" ""
 }
 stanzab = \lyricmode {
@@ -101,7 +101,7 @@ stanzab = \lyricmode {
 vaa = \lyricmode { The an -- gel of the Lord came down, }
 vab = \lyricmode { And glo -- ry shone a -- round, }
 vaf = \lyricmode { And glo -- ry shone a -- round. }
-vba = \lyricmode { Good will hence -- forth from heav'n to men }
+vba = \lyricmode { Good will hence -- forth from heav’n to men }
 vbb = \lyricmode { Be -- gin and nev -- er cease }
 vbf = \lyricmode { Be -- gin and nev -- er cease. }
 

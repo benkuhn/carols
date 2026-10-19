@@ -107,7 +107,7 @@ altoWordsII = \lyricmode {
 verses = \markup { \fill-line {
   \hspace #0.1
   \column {
-    \line { \bold "2." Going o'er the hills, through the milk-white snow, }
+    \line { \bold "2." Going o’er the hills, through the milk-white snow, }
     \line { Heard I ewes bleat, while the wind did blow. }
     \combine \null \vspace #0.1
     \line { \bold "3." Shepherds many a one sat among the sheep, }

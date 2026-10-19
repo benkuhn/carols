@@ -125,18 +125,18 @@ stanzaa = \lyricmode {
   Bright -- ly shone the moon that night,
   Though the frost was cru -- el;
   When a poor man came in sight
-  Gath -- 'ring win -- ter fu -- el.
+  Gath -- ’ring win -- ter fu -- el.
 }
 
 stanzab = \lyricmode {
   “Hi -- ther, page, and stand by me,
-  If thou know'st it, tel -- ling,
+  If thou know’st it, tel -- ling,
   Yon -- der pea -- sant, who is he;
   Where and what his dwel -- ling?”
   “Sire, he lives a good league hence,
   Un -- der -- neath the moun -- tain,
   Right a -- gainst the for -- est fence,
-  By Saint Ag -- nes' foun -- tain.”
+  By Saint Ag -- nes’ foun -- tain.”
 }
 
 stanzac = \lyricmode {
@@ -146,7 +146,7 @@ stanzac = \lyricmode {
   When we bear them thi -- ther.”
   Page and mon -- arch, forth they went;
   Forth they went to -- ge -- ther
-  Through the rude wind's wild la -- ment
+  Through the rude wind’s wild la -- ment
   And the bit -- ter wea -- ther.
 }
 
@@ -157,11 +157,11 @@ stanzad = \lyricmode {
   I can go no lon -- ger.”
   “Mark my foot -- steps, good my page,
   Tread thou in them bold -- ly;
-  Thou shalt find the win -- ter's rage
+  Thou shalt find the win -- ter’s rage
   Freeze thy blood less cold -- ly.”
 }
 stanzae = \lyricmode {
-  In his mas -- ter's steps he trod,
+  In his mas -- ter’s steps he trod,
   Where the snow lay din -- ted;
   Heat was in the ve -- ry sod
   Which the saint had prin -- ted.

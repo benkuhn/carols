@@ -5,7 +5,7 @@
 % Source: https://www.cpdl.org/wiki/index.php/See_amid_the_winter%27s_snow_(John_Goss)
 
 \header {
-  title = "See Amid the Winter's Snow"
+  title = "See Amid the Winter’s Snow"
   poet = "Edward Caswall (1814–1878)"
   composer = "John Goss (1800–1880)"
   meter = "Humility 7.7.7.7. with Refrain"
@@ -38,14 +38,14 @@ PartPOneVoiceOne =  \relative g' {
     }
 
 PartPOneVoiceOneLyricsOne =  \lyricmode { "See," a -- mid the win --
-    "ter's" "snow," born for us on earth be -- "low," "see," the ten --
+    "ter’s" "snow," born for us on earth be -- "low," "see," the ten --
     der Lamb ap -- "pears," pro -- mised from e -- ter -- nal "years."
     "Hail," thou e -- ver -- bless -- "èd" "morn!" "Hail," re -- demp --
-    "tion's" hap -- py "dawn!" Sing through all Je -- ru -- sa -- "lem:"
+    "tion’s" hap -- py "dawn!" Sing through all Je -- ru -- sa -- "lem:"
     "“Christ" is born in Beth -- le -- "hem!”" }
-PartPOneVoiceOneLyricsThree =  \lyricmode { "\"Say," ye low -- ly shep --
+PartPOneVoiceOneLyricsThree =  \lyricmode { "“Say," ye low -- ly shep --
     "herds," "say," what your joy -- ful news to -- "day;" where -- fore
-    have ye left your sheep on the lone -- ly moun -- tain "steep?\""
+    have ye left your sheep on the lone -- ly moun -- tain "steep?”"
     \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4
     \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4
     \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4
@@ -83,9 +83,9 @@ PartPOneVoiceTwoLyricsTwo =  \lyricmode { "Lo!" with -- in a man -- ger
     \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4
     \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4
     \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 }
-PartPOneVoiceTwoLyricsFour =  \lyricmode { "\"As" we watched at dead of
+PartPOneVoiceTwoLyricsFour =  \lyricmode { "“As" we watched at dead of
     "night," "lo," we saw a won -- drous "light;" an -- gels sing -- ing
-    peace on earth told us of a Sa -- "viour's" "birth.\"" \skip4 \skip4
+    peace on earth told us of a Sa -- "viour’s" "birth.”" \skip4 \skip4
     \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4
     \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4
     \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 }

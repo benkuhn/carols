@@ -74,7 +74,7 @@ stanzaa = \lyricmode {
 
 stanzab = \lyricmode {
   _ God of _ God, _ Light _ of _ Light, _ _
-  Lo, He ab -- hors not the Vir -- gin's womb;
+  Lo, He ab -- hors not the Vir -- gin’s womb;
   Ve -- ry _  God, Be -- got -- ten, not cre -- a -- ted;
 }
 
@@ -84,7 +84,7 @@ stanzac = \lyricmode {
   \set ignoreMelismata = ##t
   ci -- ti -- zens
   \unset ignoreMelismata
-  of heav'n a -- bove,
+  of heav’n a -- bove,
   Glo -- ry to God, all glo -- ry in the high -- est;
 }
 
@@ -103,7 +103,7 @@ stanzae = \lyricmode {
 stanzaf = \lyricmode {
   _ Lo! star -- led chief -- tains, Ma -- ji, Christ a -- dor -- ing
   _ Of -- fer Him frank-in -- cense and gold and myrrh;
-  We to the Christ Child Bring our hearts' o -- bla -- tions:
+  We to the Christ Child Bring our hearts’ o -- bla -- tions:
 }
 
 latin = \lyricmode {

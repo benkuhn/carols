@@ -93,7 +93,7 @@ stanzab = \lyricmode {
   Christ, by high -- est heaven a -- dored,
   Christ, the e -- ver -- last -- ing Lord
   Late in time be -- hold Him come,
-  Off -- spring of a Vir -- gin's womb.
+  Off -- spring of a Vir -- gin’s womb.
   Veiled in flesh the God -- head see!
   Hail, the-In -- car -- nate De -- i -- ty!
   Pleased as Man with man to dwell,
@@ -103,7 +103,7 @@ stanzac = \lyricmode {
   Hail the heaven born Prince of peace!
   Hail, the Sun of right -- eous -- ness!
   Light and life to all He brings,
-  Ris'n with heal -- ing in His wings.
+  Ris’n with heal -- ing in His wings.
   Mild He lays His glo -- ry by,
   Born that man no more may die,
   Born to raise the sons of earth,

@@ -88,7 +88,7 @@ stanzab = \lyricmode {
 
 stanzac = \lyricmode {
   How si -- lent -- ly, how si -- lent -- ly
-  The won -- drous gift is giv'n!
+  The won -- drous gift is giv’n!
   So God im -- parts to hu -- man hearts
   The bles -- sings of His heaven:
   No ear may hear His com -- ing;

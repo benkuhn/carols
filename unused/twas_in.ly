@@ -2,7 +2,7 @@
 
 
 \header {
-  title = "'Twas in the Moon of Wintertime"
+  title = "’Twas in the Moon of Wintertime"
   subtitle = "IesoȢs Ahatonnia"
   poet = "Jean de Brébeuf (1593–1649)"
   translator = "trans. Jesse Edgar Middleton (1872–1960)"
@@ -18,15 +18,15 @@
 verseI= \lyricmode {
   \set stanza = "Wendat."
   E -- stenn -- ia -- lon de tson -- Ȣ -- e Ie -- soȢs a -- ha -- tonn -- ia
-  On -- na -- Ȣa -- te -- Ȣa d'o -- ki n'on -- Ȣ -- and -- as -- kȢa -- en -- tak
-  En -- non -- chi -- en skȢa -- tri -- ho -- tat -- _  n'on -- Ȣan -- di -- lon -- rach -- a -- tha
+  On -- na -- Ȣa -- te -- Ȣa d’o -- ki n’on -- Ȣ -- and -- as -- kȢa -- en -- tak
+  En -- non -- chi -- en skȢa -- tri -- ho -- tat -- _  n’on -- Ȣan -- di -- lon -- rach -- a -- tha
   Ie -- soȢs a -- ha -- tonn -- ia; a -- ha -- tonn -- ia
   Ie -- soȢs a -- ha -- tonn -- ia.
   }
 
 verseII= \lyricmode {
   \set stanza = "1."
-  'Twas in the moon of win -- ter -- time when all the birds had fled
+  ’Twas in the moon of win -- ter -- time when all the birds had fled
   That migh -- ty Git -- chi Man -- i -- tou sent an -- gel choirs in -- stead;
   Be -- fore their light the stars grew dim,
   And won -- dring hun -- ters heard the hymn:
@@ -58,7 +58,7 @@ verseIIIII= \lyricmode {
   \set stanza = "4."
   O chil -- dren of the for -- est free,
   O sons of Man -- i -- tou
-  The Ho -- ly Child of earth and heav'n
+  The Ho -- ly Child of earth and heav’n
   Is born to -- day for you.
   Come kneel be -- fore the ra -- diant Boy
   Who brings you beau -- ty, peace and joy.

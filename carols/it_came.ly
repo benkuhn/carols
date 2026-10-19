@@ -74,25 +74,25 @@ stanzaa = \lyricmode {
   That glor -- ious song of old,
   From an -- gels bend -- ing near the earth
   To touch their harps of gold:
-  'Peace on the earth, good -- will to men
-  From Heav'n's all -- grac -- ious King!'
+  ‘Peace on the earth, good -- will to men
+  From Heav’n’s all -- grac -- ious King!’
   The world in sol -- emn still -- ness lay
   To hear the an -- gels sing!
 }
 
 stanzab = \lyricmode {
   Still through the clo -- ven skies they come
-  With peace -- ful wings un -- furl'd;
-  And still their heav'n -- ly mu -- sic floats
-  O'er all the wea -- ry world;
+  With peace -- ful wings un -- furl’d;
+  And still their heav’n -- ly mu -- sic floats
+  O’er all the wea -- ry world;
   A -- bove its sad and low -- ly plains
-  They bend on hov'r -- ing wing,
-  And ev -- er o'er its Ba -- bel sounds
+  They bend on hov’r -- ing wing,
+  And ev -- er o’er its Ba -- bel sounds
   The bless -- ed an -- gels sing!
 }
 
 stanzac = \lyricmode {
-  And ye, be -- neath life's crush -- ing load,
+  And ye, be -- neath life’s crush -- ing load,
   Whose forms are bend -- ing low,
   Who toil a -- long the climb -- ing way
   With pain -- ful steps and slow,
@@ -103,7 +103,7 @@ stanzac = \lyricmode {
 }
 
 stanzad = \lyricmode {
-  For lo! the days are has -- t'ning on,
+  For lo! the days are has -- t’ning on,
   By pro -- phet bards fore -- told,
   When with the ev -- er cir -- cling years
   Comes round the age of gold;

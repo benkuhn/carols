@@ -60,9 +60,9 @@ altoWords = \lyricmode {
   Short is the bid -- ing of the fad -- ing light,
   Sing for the com -- ing of the long -- est night.
   A win -- ter day, the sum -- mer grass turned hay,
-  Frost in the field 'til the dawn of May,
-  A sum -- mer's light nev -- er shone as clear or as bright,
-  So dance in the sha -- dows of a win -- ter's night.
+  Frost in the field ’til the dawn of May,
+  A sum -- mer’s light nev -- er shone as clear or as bright,
+  So dance in the sha -- dows of a win -- ter’s night.
 }
 altoWordsII = \lyricmode {
   \set stanza = #"2."
@@ -74,7 +74,7 @@ altoWordsIII = \lyricmode {
   \set stanza = #"3."
   Lo for the tid -- ing of the long night moon,
   May the har -- vest last un -- til the spring -- time bloom,
-  Home is our com -- fort at the win -- ter's height,
+  Home is our com -- fort at the win -- ter’s height,
 }
 altoWordsIV = \lyricmode {
   \set stanza = #"4."

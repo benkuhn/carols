@@ -40,8 +40,8 @@ altoWords = \lyricmode {
   The cup it is made of the good  ash -- en tree,
   And so is the malt of the best  bar -- ley.
 
-  For it's your was -- sail, and it's our was -- sail,
-  And it's joy be to you and a jol -- ly was -- sail!
+  For it’s your was -- sail, and it’s our was -- sail,
+  And it’s joy be to you and a jol -- ly was -- sail!
 }
 altoWordsII =  \lyricmode {
   \set stanza = "2."

@@ -81,7 +81,7 @@ stanzab = \lyricmode {
 
 stanzac = \lyricmode {
   Si -- lent night! Ho -- ly night!
-  Son of God, love's pure light
+  Son of God, love’s pure light
   Ra -- diant beams from thy ho -- ly face,
   With the \set ignoreMelismata = ##t dawn of \unset ignoreMelismata  re -- dee -- _ ming grace,
   Je -- sus, Lord, at thy birth.

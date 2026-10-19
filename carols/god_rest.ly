@@ -158,7 +158,7 @@ stanzaa = \lyricmode {
   Re -- mem -- ber Christ our Sav -- iour
   Was born on Christ -- mas Day;
   \set ignoreMelismata = ##t
-  To save us all from Sa -- tan's pow'r
+  To save us all from Sa -- tan’s pow’r
   When we were gone a -- stray.
   \unset ignoreMelismata
   O ti -- dings of com -- fort and joy,
@@ -176,7 +176,7 @@ stanzab = \lyricmode {
 }
 
 stanzac = \lyricmode {
-  From God our heav'n -- ly Fa -- ther
+  From God our heav’n -- ly Fa -- ther
   A bles -- sed an -- gel came;
   And un -- to cer -- tain shep -- herds
   Brought ti -- dings of the same;

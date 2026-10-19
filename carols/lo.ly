@@ -1,7 +1,7 @@
 \version "2.24.0"
 
 \header {
-  title = "Lo, How a Rose E'er Blooming"
+  title = "Lo, How a Rose E’er Blooming"
   poet = "German, 16th century"
   translator = "trans. Theodore Baker (1851–1934) and Harriet Krauth Spaeth (1845–1925)"
   composer = "German, 16th century"
@@ -66,32 +66,32 @@ bass = \context Voice = "bass"   {
   a4 bes c2 c <<f1 f,>>
   }}
 stanzaa = \lyricmode {
-  Lo, how a Rose e'er bloom -- ing
+  Lo, how a Rose e’er bloom -- ing
   From ten -- der stem hath sprung!
-  Of Jes -- se's lin -- eage com -- ing
+  Of Jes -- se’s lin -- eage com -- ing
   As men of old have sung.
-  It came a flow' -- ret bright,
+  It came a flow’ -- ret bright,
   A -- mid the cold of win -- ter,
   When half -- spent was  the night.
 }
 
 stanzab = \lyricmode {
-  I -- sai -- ah 'twas fore -- told it,
+  I -- sai -- ah ’twas fore -- told it,
   The Rose I have in mind,
   With Ma -- ry we be -- hold it,
   The Vir -- gin Mo -- ther kind.
-  To show God's love a -- right,
+  To show God’s love a -- right,
   She bore to men a Sav -- iour,
   When half -- spent was the night.
 }
 stanzac = \lyricmode {
-  This flow'r, whose frag -- rance ten -- der
+  This flow’r, whose frag -- rance ten -- der
   With sweet -- ness fills the air,
   Dis -- pels with glo -- rious splen -- dour
-  The dark -- ness ev' -- ry -- where;
+  The dark -- ness ev’ -- ry -- where;
   True man, yet ve -- ry God,
   From sin and death he saves us,
-  And light -- ens ev' -- ry load.
+  And light -- ens ev’ -- ry load.
 }
 
 \score {  %\transpose d c

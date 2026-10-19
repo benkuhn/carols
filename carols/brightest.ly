@@ -90,7 +90,7 @@ stanzab = \lyricmode {
 }
 stanzac = \lyricmode {
   Say, shall we yield him, in cost -- ly de -- vo -- tion,
-  O -- dours of E -- den, and of -- f'rings di -- vine,
+  O -- dours of E -- den, and of -- f’rings di -- vine,
   Gems from the moun -- tain, and pearls from the o -- cean,
   Myrrh from the fo -- rest, and gold from the mine?
 
@@ -102,8 +102,8 @@ stanzac = \lyricmode {
 stanzad = \lyricmode {
   Vain -- ly we of -- fer each am -- ple o -- bla -- tion,
   Vain -- ly with gold we his fa -- vour se -- cure;
-  Rich -- er by far is the heart's a -- do -- ra -- tion:
-  Dear -- er to God are the pray'rs of the poor.
+  Rich -- er by far is the heart’s a -- do -- ra -- tion:
+  Dear -- er to God are the pray’rs of the poor.
 }
 
 \score {

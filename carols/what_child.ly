@@ -21,7 +21,7 @@ global = {
 verseI= \lyricmode {
   \set stanza = "1."
   What Child is this, Who, laid to rest,
-  On Ma -- ry's lap is sleep -- ing?
+  On Ma -- ry’s lap is sleep -- ing?
   Whom an -- gels greet with an -- thems sweet,
   While shep -- herds watch are keep -- ing?
                                 %refrain
