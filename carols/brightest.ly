@@ -1,13 +1,10 @@
 \version "2.24.0"
 
 \header {
-  composer = "James P. Harding"
-  arranger = ""
-  poet = "Reginald Heber, 1811"
   title = "Brightest and Best"
-  meter = "Morning Star 11.10.11.10. with Refrain"
-  mutopiacomposer = \composer
-  mutopiapoet=\poet
+  poet = "Reginald Heber (1783–1826) and anonymous"
+  composer = "American, 19th century"
+  meter = "Star in the East 11.10.11.10. with Refrain"
 }
 
 \include "header.ly"

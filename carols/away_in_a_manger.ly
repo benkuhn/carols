@@ -1,10 +1,11 @@
 \version "2.24.0"
 
 \header {
-  composer = "W.J. Kirkpatrick (1838-1921)"
-  arranger = "arr. David Willcocks"
-  poet = "19th cen. American"
   title = "Away in a Manger"
+  poet = "American, 19th century"
+  composer = "William James Kirkpatrick (1838–1921)"
+  arranger = "arr. David Willcocks (1919–2015)"
+  meter = "Cradle Song 11.11.11.11."
 }
 
 \include "header.ly"

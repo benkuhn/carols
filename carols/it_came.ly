@@ -1,12 +1,10 @@
 \version "2.24.0"
 
 \header {
-  composer = "Richard Storrs Willis, 1819-1900"
-  poet = "Edmund Hamilton Sears, 1810-1876"
   title = "It Came Upon the Midnight Clear"
+  poet = "Edmund Hamilton Sears (1810–1876)"
+  composer = "Richard Storrs Willis (1819–1900)"
   meter = "Carol 8.6.8.6.D."
-  mutopiacomposer = \composer
-  mutopiapoet=\poet
 }
 
 \include "header.ly"

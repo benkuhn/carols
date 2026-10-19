@@ -2,8 +2,8 @@
 \include "header.ly"
 \header {
   title = "El Noi de la Mare"
-  poet = "Traditional"
-  composer = "Catalan Melody"
+  poet = "Traditional Catalan"
+  composer = "Traditional Catalan"
   arranger = "arr. Ben Kuhn"
 }
 global = {

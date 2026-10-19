@@ -3,7 +3,8 @@
 
 \header {
   title = "The Sussex Carol"
-  poet = "Traditional English (17th century or earlier)"
+  poet = "Traditional English"
+  composer = "Traditional English"
 }
 
 global = {

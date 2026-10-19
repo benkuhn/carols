@@ -2,9 +2,9 @@
 
 \header {
   title = "The Coventry Carol"
-  poet = "Robert Croo, 1534"
-  composer = "16th Century English Carol"
-  arranger = "arr. Martin Fallas Shaw (1875-1958)"
+  poet = "English, 16th century"
+  composer = "English, 16th century"
+  arranger = "arr. Martin Shaw (1875–1958)"
 }
 
 \include "header.ly"

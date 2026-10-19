@@ -1,12 +1,11 @@
 \version "2.24.0"
 
 \header {
-  composer = "Franz Gruber, 1818"
-  poet = "Rev. Joseph Mohr, 1818"
   title = "Silent Night"
-  meter = "Silent Night P.M."
-  mutopiacomposer = \composer
-  mutopiapoet=\poet
+  poet = "Joseph Mohr (1792–1848)"
+  translator = "trans. John Freeman Young (1820–1885)"
+  composer = "Franz Xaver Gruber (1787–1863)"
+  meter = "Stille Nacht Irregular"
 }
 
 \include "header.ly"

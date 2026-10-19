@@ -2,9 +2,9 @@
 \include "../carols/header.ly"
 \header {
   title = "The Holly and the Ivy"
-  poet = "17th Century English"
+  poet = "Traditional English"
+  composer = "Traditional English"
   arranger = "arr. A.L.R."
-  composer = "English"
 }
 global = {
   \key g \major

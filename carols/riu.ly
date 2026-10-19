@@ -9,9 +9,9 @@ mt=#(define-music-function (offset) (number?) ; move lyric text
 
 \header {
   title = "Ríu Ríu Chíu"
-  composer = "Anon."
-  poet = "16th Century Villancico"
-  arranger = "ed. Nancho Alvarez"
+  poet = "Spanish, 16th century"
+  composer = "Spanish, 16th century"
+  arranger = "ed. Nancho Álvarez"
 }
 
 

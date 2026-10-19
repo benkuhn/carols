@@ -1,12 +1,10 @@
 \version "2.24.0"
 
 \header {
-  composer = "Lewis H. Redner, 1868"
-  poet = "Bishop Phillips Brooks, 1868"
   title = "O Little Town of Bethlehem"
-  meter = "St. Louis 8.6.8.6.D."
-  mutopiacomposer = \composer
-  mutopiapoet=\poet
+  poet = "Phillips Brooks (1835–1893)"
+  composer = "Lewis Henry Redner (1831–1908)"
+  meter = "St. Louis 8.6.8.6.7.6.8.6."
 }
 
 \include "header.ly"

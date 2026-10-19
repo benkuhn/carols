@@ -2,9 +2,10 @@
 \include "header.ly"
 \header {
   title = "Angels We Have Heard on High"
-  meter = "Gloria 7.7.7.7. with refrain"
-  poet = "trans. Bishop James Chadwick (1813–1882)"
-  composer = "18th Century French Carol"
+  poet = "Traditional French"
+  translator = "trans. James Chadwick (1813–1882)"
+  composer = "Traditional French"
+  meter = "Gloria 7.7.7.7. with Refrain"
 }
 global = {
   \key g \major

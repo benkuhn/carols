@@ -99,6 +99,8 @@ wordsVerseD = \lyricmode {
 
   \header{
     title = "Gaudete"
+    poet = "Piae Cantiones (1582)"
+    composer = "Piae Cantiones (1582)"
   }
 
   \score {

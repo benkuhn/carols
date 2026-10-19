@@ -1,13 +1,12 @@
 \version "2.24.0"
 
 \header {
-  composer = "14th cent. German Melody"
-  arranger = "Michael Praetorius, 1571-1621"
-  poet = "St. Germanus, 634-734, tr. Theodore Baker"
   title = "Lo, How a Rose E'er Blooming"
-  meter = "Es Ist Ein Ros' Entsprungen"
-  mutopiacomposer = \composer
-  mutopiapoet=\poet
+  poet = "German, 16th century"
+  translator = "trans. Theodore Baker (1851–1934) and Harriet Krauth Spaeth (1845–1925)"
+  composer = "German, 16th century"
+  arranger = "arr. Michael Praetorius (1571–1621)"
+  meter = "Es ist ein Ros 7.6.7.6.6.7.6."
 }
 
 \include "header.ly"

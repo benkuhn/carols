@@ -2,9 +2,10 @@
 \include "header.ly"
 \header {
   title = "The First Noël"
-  poet = "Traditional"
-  composer = "18th Century French Melody"
-  arranger = "harm. by John Stainer"
+  poet = "Traditional English"
+  composer = "Traditional English"
+  arranger = "arr. John Stainer (1840–1901)"
+  meter = "The First Nowell Irregular with Refrain"
 }
 global = {
   \key d \major

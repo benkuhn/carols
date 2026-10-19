@@ -1,12 +1,10 @@
 \version "2.24.0"
 
 \header {
-  composer = "Gustav Holst"
-  poet = "Christina Rossetti"
   title = "In the Bleak Midwinter"
-  meter = "Cranham 6.5.6.5.D."
-  mutopiacomposer = \composer
-  mutopiapoet=\poet
+  poet = "Christina Rossetti (1830–1894)"
+  composer = "Gustav Holst (1874–1934)"
+  meter = "Cranham Irregular"
 }
 
 \include "header.ly"

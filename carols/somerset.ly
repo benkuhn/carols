@@ -2,8 +2,8 @@
 \include "header.ly"
 \header {
   title = "Somerset Wassail"
-  poet = "18th Century English"
-  composer = "18th Century English"
+  poet = "Traditional English"
+  composer = "Traditional English"
   arranger = "arr. Ben Kuhn"
 }
 global = {

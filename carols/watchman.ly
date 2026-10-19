@@ -2,8 +2,8 @@
 \include "header.ly"
 \header {
   title = "Watchman, Tell Us of the Night"
-  poet = "John Bowring (1792-1872)"
-  composer = "Joseph Parry (1842-1903)"
+  poet = "John Bowring (1792–1872)"
+  composer = "Joseph Parry (1841–1903)"
   meter = "Aberystwyth 7.7.7.7.D."
 }
 global = {

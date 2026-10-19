@@ -4,9 +4,10 @@
 \header {
   title = "'Twas in the Moon of Wintertime"
   subtitle = "IesoȢs Ahatonnia"
-  poet = "St. Jean de Brébeuf (c. 1643)"
-  composer = "Ancient French Carol"
-  arranger = "arr. Healey Willan, 1927 (modified)"
+  poet = "Jean de Brébeuf (1593–1649)"
+  translator = "trans. Jesse Edgar Middleton (1872–1960)"
+  composer = "Traditional French"
+  arranger = "arr. Healey Willan (1880–1968)"
 
 }
 #(set-global-staff-size 15)

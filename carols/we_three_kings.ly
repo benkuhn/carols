@@ -3,8 +3,9 @@
 
 \header {
   title = "We Three Kings of Orient Are"
-  composer = "John H. Hopkins (1820–1891)"
-  poet = "John H. Hopkins (1820–1891)"
+  poet = "John Henry Hopkins Jr. (1820–1891)"
+  composer = "John Henry Hopkins Jr. (1820–1891)"
+  meter = "Kings of Orient 8.8.4.4.6. with Refrain"
 }
 
 global = {

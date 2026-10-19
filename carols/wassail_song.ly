@@ -3,8 +3,8 @@
 
 \header {
   title = "The Wassail Song"
-  poet = "Traditional"
-  composer = "Traditional (Yorkshire)"
+  poet = "Traditional English"
+  composer = "Traditional English"
 }
 global = {
   \autoBeamOff

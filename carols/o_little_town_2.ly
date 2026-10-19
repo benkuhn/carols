@@ -1,13 +1,11 @@
 \version "2.24.0"
 
 \header {
-  composer = "Trad. English Melody"
-    arranger = "arr. Ralph Vaughan Williams"
-  poet = "Bishop Phillips Brooks, 1868"
   title = "O Little Town of Bethlehem"
+  poet = "Phillips Brooks (1835–1893)"
+  composer = "Traditional English"
+  arranger = "arr. Ralph Vaughan Williams (1872–1958)"
   meter = "Forest Green 8.6.8.6.7.6.8.6."
-  mutopiacomposer = \composer
-  mutopiapoet=\poet
 }
 
 \include "header.ly"

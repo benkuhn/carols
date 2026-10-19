@@ -5,8 +5,8 @@
 \header {
   title = "Ding Dong Merrily on High"
   poet = "George Ratcliffe Woodward (1848–1934)"
-  composer = "16th century French melody"
-  arranger = "Arranged by Charles Wood (1866–1926)"
+  composer = "French, 16th century"
+  arranger = "arr. Charles Wood (1866–1926)"
 }
 
 global = {

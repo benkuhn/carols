@@ -5,7 +5,7 @@
   title = "Halsway Carol"
   poet = "Iain Frisk"
   composer = "Nigel Eaton"
-  arranger = "Ben Kuhn"
+  arranger = "arr. Ben Kuhn"
 }
 
 global = {

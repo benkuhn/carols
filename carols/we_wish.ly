@@ -2,8 +2,8 @@
 \include "header.ly"
 \header {
   title = "We Wish You a Merry Christmas"
-  poet = "Traditional"
-  composer = "English Folk Song"
+  poet = "Traditional English"
+  composer = "Traditional English"
 }
 global = {
   \key aes \major

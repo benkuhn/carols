@@ -2,8 +2,9 @@
 \include "header.ly"
 \header {
   title = "Noël Nouvelet"
-  poet = "trans. P.S.B."
-  composer = "15th Century French Carol"
+  poet = "Traditional French"
+  translator = "trans. P.S.B."
+  composer = "Traditional French"
 }
 
 global = {

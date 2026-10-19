@@ -1,12 +1,10 @@
 \version "2.24.0"
 
 \header {
-  composer = "Daniel Read, 1783"
-  arranger = ""
-  poet = "Nahum Tate, 1700"
   title = "Sherburne"
-  mutopiacomposer = \composer
-  mutopiapoet=\poet
+  poet = "Nahum Tate (1652–1715)"
+  composer = "Daniel Read (1757–1836)"
+  meter = "Sherburne 8.6.8.6."
 }
 
 \include "header.ly"

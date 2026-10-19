@@ -1,13 +1,11 @@
 \version "2.24.0"
 
 \header {
-  composer = "London Melody, 18th Cent."
-  arranger = "Sir John Stainer"
-  poet = "London Carol"
   title = "God Rest Ye Merry, Gentlemen"
-  meter = "God Rest Ye Merry 7 6. 7 6. 7 6. with Refrain"
-  mutopiacomposer = \composer
-  mutopiapoet=\poet
+  poet = "Traditional English"
+  composer = "Traditional English"
+  arranger = "arr. John Stainer (1840–1901)"
+  meter = "God Rest You Merry 8.6.8.6.8.6. with Refrain"
 }
 
 \include "header.ly"

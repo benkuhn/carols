@@ -2,8 +2,8 @@
 
 \header {
   title = "Adam Lay Ybounden"
-  composer = "Boris Ord"
-  poet = "Anon. 15th cen."
+  poet = "English, 15th century"
+  composer = "Boris Ord (1897–1961)"
 }
 
 \include "header.ly"

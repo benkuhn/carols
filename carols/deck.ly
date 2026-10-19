@@ -6,8 +6,8 @@
 \layout { \context { \Lyrics \override LyricSpace.minimum-distance = #0.7 } }
 \header {
   title = "Deck the Hall"
-  poet = "Traditional"
-  composer = "16th Century Welsh Tune"
+  poet = "Thomas Oliphant (1799–1880), alt."
+  composer = "Traditional Welsh"
 }
 global = {
   \key f \major

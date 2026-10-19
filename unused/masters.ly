@@ -7,7 +7,6 @@
   poet = "William Morris (1834–1896)"
   composer = "Marin Marais (1656–1728)"
   arranger = "arr. Edmund Sedding (1836–1868)"
-  metre = "Marche pour les Matelots"
 }
 
 global = {

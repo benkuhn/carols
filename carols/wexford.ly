@@ -5,8 +5,8 @@
 #(set-global-staff-size 12)
 \header {
   title = "The Wexford Carol"
-  poet = "Traditional, 16th Century or earlier"
-  composer = "Traditional"
+  poet = "Traditional Irish"
+  composer = "Traditional Irish"
 }
 global = {
   \key g \major

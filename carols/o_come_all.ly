@@ -1,12 +1,11 @@
 \version "2.24.0"
 
 \header {
-  composer = "John Francis Wade"
-  poet = "John Francis Wade, trans. by Frederick Oakeley"
   title = "O Come, All Ye Faithful"
-  meter = "Adeste Fideles"
-  mutopiacomposer = \composer
-  mutopiapoet=\poet
+  poet = "John Francis Wade (1711–1786)"
+  translator = "trans. Frederick Oakeley (1802–1880) and William Thomas Brooke (1848–1917)"
+  composer = "John Francis Wade (1711–1786)"
+  meter = "Adeste Fideles Irregular with Refrain"
 }
 
 \include "header.ly"

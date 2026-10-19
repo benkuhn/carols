@@ -1,12 +1,11 @@
 \version "2.24.0"
 
 \header {
-  composer = "Felix Mendelssohn, 1840"
-  poet = "Rev. Charles Wesley"
   title = "Hark! The Herald Angels Sing"
-  meter = "Mendelssohn 7.7.7.7.D. with refrain"
-  mutopiacomposer = \composer
-  mutopiapoet=\poet
+  poet = "Charles Wesley (1707–1788), alt."
+  composer = "Felix Mendelssohn (1809–1847)"
+  arranger = "arr. William Hayman Cummings (1831–1915)"
+  meter = "Mendelssohn 7.7.7.7.D. with Refrain"
 }
 
 \include "header.ly"

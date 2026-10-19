@@ -3,9 +3,10 @@
 
 \header {
   title = "What Child Is This?"
-  poet = "William Chatterton Dix (1837 - 1898)"
-  composer = "Trad. English Melody"
-  meter = "Greensleeves 8.7.8.7 with Refrain"
+  poet = "William Chatterton Dix (1837–1898)"
+  composer = "Traditional English"
+  arranger = "arr. John Stainer (1840–1901)"
+  meter = "Greensleeves 8.7.8.7. with Refrain"
 }
 
 \include "header.ly"

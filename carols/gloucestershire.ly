@@ -3,8 +3,8 @@
 \include "header.ly"
 \header {
   title = "Gloucestershire Wassail"
-  poet = "18th Century English"
-  composer = "18th Century English"
+  poet = "Traditional English"
+  composer = "Traditional English"
 }
 global = {
   \key g \major
