@@ -1,6 +1,8 @@
 \version "2.24.0"
 % Source: CPDL edition by Benjamin Bloomfield
 \include "header.ly"
+% smaller than the house staff size (14) so that this fits on one page
+#(set-global-staff-size 12)
 \header {
   title = "The Wexford Carol"
   poet = "Traditional, 16th Century or earlier"
@@ -11,7 +13,6 @@ global = {
   \time 3/4
   \autoBeamOff
   \slurSolid
-  #(set-global-staff-size 12)
 }
 
 sopMusic = \relative c' {

@@ -10,6 +10,8 @@
 }
 
 \include "header.ly"
+% smaller than the house staff size (14) so that this fits on one page
+#(set-global-staff-size 10.5)
 
 global= {
   \time 4/4
@@ -139,9 +141,6 @@ tenorb = {
   \vbb
   \vbf
 }
-
-% max size that makes this fit on 1 page
-#(set-global-staff-size 10.5)
 
 \score {
   \context ChoirStaff <<

@@ -11,6 +11,8 @@
 }
 
 \include "header.ly"
+% smaller than the house staff size (14) so that this fits on one page
+#(set-global-staff-size 12)
 
 % LilyPond 2.24 spaces lyrics more tightly than 2.18 did, which squashed
 % this onto fewer lines; widen the gaps between words to restore the layout
@@ -19,7 +21,6 @@
 global= {
   \time 4/4
   \key a \minor
-  #(set-global-staff-size 12)
 }
 
 sop = \context Voice = "sop"    {

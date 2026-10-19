@@ -1,5 +1,7 @@
 \version "2.24.0"
 \include "header.ly"
+% smaller than the house staff size (14) so that this fits on one page
+#(set-global-staff-size 12)
 \header {
   title = "Masters in This Hall"
   poet = "William Morris (1834–1896)"
@@ -12,7 +14,6 @@ global = {
   \key f \major
   \time 6/8
   \autoBeamOff
-  #(set-global-staff-size 12)
 }
 
 sopMusic = \relative c' {

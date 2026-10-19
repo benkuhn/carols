@@ -9,11 +9,12 @@
   mutopiapoet=\poet
 }
 \include "header.ly"
+% smaller than the house staff size (14) so that this fits on one page
+#(set-global-staff-size 13)
 global = {
   \key e \minor
   \time 4/4
   \partial 4
-  #(set-global-staff-size 13)
 }
 
 sop = \context Voice = "sop" {
