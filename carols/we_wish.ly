@@ -21,7 +21,7 @@ sopMusic = \relative c' {
   c' c8 des c bes |
   \slurDotted aes4 f ees8( ees) |
   f4 bes g |
-  aes2^\markup\italic"Fine" \bar "||" \break
+  aes2^\markup\italic"Fine" \bar "|." \break
   ees4 |
   aes aes aes |
 
@@ -31,7 +31,11 @@ sopMusic = \relative c' {
   c bes aes |
   ees' ees, ees8 ees |
   f4 bes g |
-  aes2 \bar "|."
+  aes2
+  \once \override Score.RehearsalMark.break-visibility = #begin-of-line-invisible
+  \once \override Score.RehearsalMark.self-alignment-X = #RIGHT
+  \mark \markup \small \italic "D.C. al Fine"
+  \bar "||"
 }
 
 altoMusic = \relative c' {
@@ -44,7 +48,7 @@ altoMusic = \relative c' {
   e e8 e e e |
   \slurDotted f4 c ees8( ees) |
   des4 f ees |
-  ees2 \bar "||"
+  ees2 \bar "|."
   c4 |
   ees4 ees ees |
 
@@ -54,7 +58,7 @@ altoMusic = \relative c' {
   ees des c |
   ees ees ees8 ees |
   des4 f ees |
-  ees2 \bar "|."
+  ees2 \bar "||"
 }
 altoWords = \lyricmode {
   \set stanza = #"1, 4. "
@@ -94,7 +98,7 @@ tenorMusic = \relative c {
   g g8 g c c |
   \slurDotted c4 aes aes8( aes) |
   aes4 des des |
-  c2_\markup\italic"Fine" \bar "||"
+  c2_\markup\italic"Fine" \bar "|."
   aes4 |
   c c c |
 
@@ -104,7 +108,7 @@ tenorMusic = \relative c {
   aes aes aes |
   aes aes aes8 aes |
   aes4 des des |
-  c2 \bar "|."
+  c2 \bar "||"
 }
 
 bassMusic = \relative c {
@@ -117,7 +121,7 @@ bassMusic = \relative c {
   c c8 c c c |
   \slurDotted f4 f c8( c) |
   des4 bes ees |
-  aes2 \bar "||"
+  aes2 \bar "|."
   aes4 |
   aes, aes aes |
 
@@ -127,7 +131,7 @@ bassMusic = \relative c {
   aes, aes aes |
   c c c8 c |
   des4 bes ees |
-  aes2 \bar "|."
+  aes2 \bar "||"
 }
 
 \score {
