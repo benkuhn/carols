@@ -14,6 +14,7 @@
 #(set-global-staff-size 13)
 
 global= {
+  \autoBeamOff
   \time 4/4
   \key f \major
 }
@@ -27,10 +28,10 @@ sop = \context Voice = "sop"    {
   c''4 c'' c'' f' bes' a' a'( g')
   c''4 c'' c'' f' bes' a' a'( g')
   d'' d'' d'' c'' bes' a' bes'2
-  g'4 a'8( bes') c''4. f'8 f'4 g' a'2
+  g'4 \autoBeamOn a'8( bes') \autoBeamOff c''4. f'8 f'4 g' a'2
 
   d''4. d''8 d''4 c'' bes' a' bes'2
-  g'4 a'8( bes') c''4. f'8 f'4 g' f'2\bar "|."
+  g'4 \autoBeamOn a'8( bes') \autoBeamOff c''4. f'8 f'4 g' f'2\bar "|."
 
 }
 

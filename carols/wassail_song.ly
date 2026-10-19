@@ -7,6 +7,7 @@
   composer = "Traditional (Yorkshire)"
 }
 global = {
+  \autoBeamOff
   \key e \major
   \time 6/8
 }

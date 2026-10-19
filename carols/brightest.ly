@@ -19,6 +19,7 @@
 \layout { \context { \Lyrics \override LyricSpace.minimum-distance = #0.7 } }
 
 global= {
+  \autoBeamOff
   \time 4/4
   \key a \minor
 }

@@ -11,6 +11,7 @@
 
 \include "header.ly"
 global= {
+  \autoBeamOff
   \time 4/4
   \key g \major
   \partial 4

@@ -10,14 +10,14 @@ global = {
   \key f \major
   \time 6/8
   \slurDotted
-  \autoBeamOn
+  \autoBeamOff
 }
 
 sopMusic = \relative c'' {
   \partial 8 c8 |
   \repeat volta 2 {
     c4 a8 bes4 c8 |
-    a( g) f g4 e8 |
+    \autoBeamOn a( g) \autoBeamOff f g4 e8 |
     f4 f8 g a bes |
   }
   \alternative {
@@ -38,7 +38,7 @@ altoMusic = \relative c'' {
   \partial 8 c8 |
   \repeat volta 2 {
     a4 f8 f4 e8 |
-    f( f) f8 c4 c8 |
+    \autoBeamOn f( f) \autoBeamOff f8 c4 c8 |
     d4 d8 c f e |
   }
   \alternative {
@@ -105,7 +105,7 @@ tenorMusic = \relative c' {
   \repeat volta 2 {
     \partial 8 c8 |
     c4 c8 d4 c8 |
-    c( bes) a bes4 bes8 |
+    \autoBeamOn c( bes) \autoBeamOff a bes4 bes8 |
     a4 a8 bes a c |
   }
   \alternative {
@@ -126,7 +126,7 @@ bassMusic = \relative c {
   \repeat volta 2 {
     \partial 8 c8 |
     f4 f8 bes,4 c8 |
-    f( f) f8 e4 c8 |
+    \autoBeamOn f( f) \autoBeamOff f8 e4 c8 |
     d4 d8 e d c |
   }
   \alternative {

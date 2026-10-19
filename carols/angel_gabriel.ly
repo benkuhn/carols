@@ -10,6 +10,7 @@
 }
 
 global = {
+  \autoBeamOff
   \key bes \major
   \time 6/4
 }

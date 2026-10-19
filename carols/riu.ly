@@ -15,7 +15,8 @@ mt=#(define-music-function (offset) (number?) ; move lyric text
 }
 
 
-global={\key c \major \time 2/2  \skip 1*13 \bar "||" \break
+global={
+  \autoBeamOff\key c \major \time 2/2  \skip 1*13 \bar "||" \break
           \skip 1*15 \bar "||" \break
           \skip 1*16 \bar "|."
 }

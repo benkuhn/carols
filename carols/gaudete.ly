@@ -7,6 +7,7 @@
 \layout { \context { \Lyrics \override LyricSpace.minimum-distance = #0.7 } }
 
 global = {
+  \autoBeamOff
   \key a \minor
   \numericTimeSignature
 }
