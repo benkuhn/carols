@@ -1,27 +1,15 @@
-\header {
-  filename = "GoodKingWenceslas.ly"
-  enteredby = "Gordon Gilbert"
-  composer = "Melody from Piae Cantones, 1582"
-  poet = "J. M. Neale"
-  date=""
-  title = "Good King Wenceslas"
-  metre = ""
-  meter = \metre
-  copyright = "Public Domain"
-  style = "Hymn"
-  mutopiacomposer = \composer
-  mutopiapoet=\poet
-  maintainer = "Gordon Gilbert"
-  maintainerEmail = "gord@angel.eicat.ca"
-  lastupdated = "2011/Dec/13"
-}
-
 \version "2.24.0"
+
+\header {
+  title = "Good King Wenceslas"
+  poet = "John Mason Neale (1818–1866)"
+  composer = "Piae Cantiones (1582)"
+  arranger = "arr. John Stainer (1840–1901)"
+}
 
 \include "header.ly"
 
 global= {
-  \preamble
   \time 4/4
   \key aes \major
 }
@@ -127,12 +115,6 @@ bass = \context Voice = "bass"   {
   aes'1 \bar "|."
   }}
 
-accomp=\chordmode {
-
-}
-
-
-
 stanzaa = \lyricmode {
   Good King Wen -- ces -- las looked out
   On the feast of Ste -- phen,
@@ -141,29 +123,29 @@ stanzaa = \lyricmode {
   Bright -- ly shone the moon that night,
   Though the frost was cru -- el;
   When a poor man came in sight
-  Gath -- 'ring win -- ter fu -- el.
+  Gath -- ’ring win -- ter fu -- el.
 }
 
 stanzab = \lyricmode {
-  “Hi -- ther, page, and stand by me,
-  If thou know'st it, tel -- ling,
-  Yon -- der pea -- sant, who is he;
-  Where and what his dwel -- ling?”
+  “Hith -- er, page, and stand by me,
+  If thou know’st it, tell -- ing,
+  Yon -- der peas -- ant, who is he;
+  Where and what his dwell -- ing?”
   “Sire, he lives a good league hence,
   Un -- der -- neath the moun -- tain,
   Right a -- gainst the for -- est fence,
-  By Saint Ag -- nes' foun -- tain.”
+  By Saint Ag -- nes’ foun -- tain.”
 }
 
 stanzac = \lyricmode {
   “Bring me flesh and bring me wine;
-  Bring me pine logs hi -- ther.
+  Bring me pine logs hith -- er.
   Thou and I will see him dine,
-  When we bear them thi -- ther.”
+  When we bear them thith -- er.”
   Page and mon -- arch, forth they went;
-  Forth they went to -- ge -- ther
-  Through the rude wind's wild la -- ment
-  And the bit -- ter wea -- ther.
+  Forth they went to -- geth -- er
+  Through the rude wind’s wild la -- ment
+  And the bit -- ter weath -- er.
 }
 
 stanzad = \lyricmode {
@@ -173,28 +155,22 @@ stanzad = \lyricmode {
   I can go no lon -- ger.”
   “Mark my foot -- steps, good my page,
   Tread thou in them bold -- ly;
-  Thou shalt find the win -- ter's rage
+  Thou shalt find the win -- ter’s rage
   Freeze thy blood less cold -- ly.”
 }
 stanzae = \lyricmode {
-  In his mas -- ter's steps he trod,
-  Where the snow lay din -- ted;
-  Heat was in the ve -- ry sod
-  Which the saint had prin -- ted.
+  In his mas -- ter’s steps he trod,
+  Where the snow lay dint -- ed;
+  Heat was in the ver -- y sod
+  Which the saint had print -- ed.
   There -- fore, Chris -- tian men, be sure,
   Wealth or rank pos -- sess -- ing,
   Ye who now will bless the poor,
   Shall your -- selves find bless -- ing.
 }
 
-stanzaf = \lyricmode {
-
-}
-
 \score {
   \context ChoirStaff <<
-    \context ChordNames \accomp
-    \unset ChoirStaff.melismaBusyProperties
     \context Staff ="upper"  { \clef "G" <<
       \global
       \sop
@@ -202,23 +178,20 @@ stanzaf = \lyricmode {
     >>}
 
     \context Lyrics = "stanza-1" \lyricsto "sop" {
-      \set stanza = "1."
+      \set stanza = #"1. "
       \stanzaa }
     \context Lyrics = "stanza-2" \lyricsto "sop" {
-      \set stanza = "2."
+      \set stanza = #"2. "
       \stanzab }
     \context Lyrics = "stanza-3" \lyricsto "sop" {
-      \set stanza = "3."
+      \set stanza = #"3. "
       \stanzac }
     \context Lyrics = "stanza-4" \lyricsto "sop" {
-      \set stanza = "4."
+      \set stanza = #"4. "
       \stanzad }
     \context Lyrics = "stanza-5" \lyricsto "sop" {
-      \set stanza = "5."
+      \set stanza = #"5. "
       \stanzae }
-                                %	\context Lyrics = "stanza-6" \lyricsto "sop" {
-                                %		\set stanza = "6."
-                                %			\stanzaf }
     \context Staff = "lower"  { \clef "F"<<
       \global
       \tenor
@@ -226,4 +199,3 @@ stanzaf = \lyricmode {
     >>}
   >>
 }
-

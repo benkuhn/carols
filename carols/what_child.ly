@@ -1,50 +1,46 @@
-% Created on Tue Dec 01 22:21:31 EST 2009
 \version "2.24.0"
 
+
 \header {
-  title = "What Child is This?"
-  %subtitle = "Greensleeves"
-  poet = "William Chatterton Dix (1837 - 1898)"
-  composer = "Trad. English Melody"
-  meter = "Greensleeves 8.7.8.7 with Refrain"
-  %instrument = "SATB Choral"
-  copyright = "Public Domain"
+  title = "What Child Is This?"
+  poet = "William Chatterton Dix (1837–1898)"
+  composer = "Traditional English"
+  arranger = "arr. John Stainer (1840–1901)"
 }
 
 \include "header.ly"
 
 global = {
-  \preamble
   \time 6/8
   \key e \minor
   \partial 8
 }
 
 verseI= \lyricmode {
-  \set stanza = "1."	
+  \set stanza = #"1. "
   What Child is this, Who, laid to rest,
-  On Ma -- ry's lap is sleep -- ing?
+  On Ma -- ry’s lap is sleep -- ing?
   Whom an -- gels greet with an -- thems sweet,
   While shep -- herds watch are keep -- ing?
                                 %refrain
-  This, this is Christ the King, 
+  This, this is Christ the King,
   Whom shep -- herds guard and an -- gels sing;
   Haste, haste to bring Him laud
   The Babe, the Son of Ma -- ry.
 }
 
 verseII= \lyricmode {
-  \set stanza = "2."	
-  Why lies He in such mean e -- state
+  \set stanza = #"2. "
+  Why lies He in such mean es -- tate
   Where ox and ass are feed -- ing?
   Good Chris -- tian, fear: for sin -- ners here
   The si -- lent Word is plead -- ing.
 }
 
 verseIII= \lyricmode {
-  \set stanza = "3."	
+  \set stanza = #"3. "
   So bring Him in -- cense, gold, and myrrh,
-  Come pea -- sant, king, to own Him;
+  Come peas -- ant, king, to own Him;
   The King of kings sal -- va -- tion brings,
   Let lov -- ing hearts en -- throne Him.
 }
@@ -53,22 +49,22 @@ sop = \context Voice = "sop" {
   \voiceOne
   \relative c' {
   e8 |
-  g4 a8 b8.( c16) b8
-  a4 fis8 d8.( e16) fis8
-  g4 e8 e8.( dis16) e8
+  g4 a8 b8.[ c16] b8
+  a4 fis8 d8.[ e16] fis8
+  g4 e8 e8.[ dis16] e8
   fis4( dis8) b4 e8
-  g4 a8 b8.( c16) b8
-  a4 fis8 d8.( e16) fis8
-  g8.( fis16) e8 dis8.( cis16) dis8
+  g4 a8 b8.[ c16] b8
+  a4 fis8 d8.[ e16] fis8
+  g8.[ fis16] e8 dis8.[ cis16] dis8
   e4. e
                                 %Refrain
-  d' d8.( cis16) b8
-  a4 fis8 d8.( e16) fis8
-  g4 e8 e8.( dis16) e8
+  d' d8.[ cis16] b8
+  a4 fis8 d8.[ e16] fis8
+  g4 e8 e8.[ dis16] e8
   fis4 dis8 b4.
-  d' d8.( cis16) b8
-  a4 fis8 d8.( e16) fis8
-  g8.( fis16) e8 dis8.( cis16) dis8
+  d' d8.[ cis16] b8
+  a4 fis8 d8.[ e16] fis8
+  g8.[ fis16] e8 dis8.[ cis16] dis8
   e4. e \bar "|."
 }}
 
@@ -143,21 +139,20 @@ bass = \context Voice = "bass" {
 
 \score {
   \context ChoirStaff <<
-    \unset ChoirStaff.melismaBusyProperties 
     \context Staff ="upper"  { \clef "G" <<
       \global
       \sop
       \alto
     >>}
-    
+
     \context Lyrics = "stanza-1" \lyricsto "sop" {
-      \set stanza = "1."
+      \set stanza = #"1. "
       \verseI }
     \context Lyrics = "stanza-2" \lyricsto "sop" {
-      \set stanza = "2."
+      \set stanza = #"2. "
       \verseII }
     \context Lyrics = "stanza-3" \lyricsto "sop" {
-      \set stanza = "3."
+      \set stanza = #"3. "
       \verseIII }
     \context Staff = "lower"  { \clef "F"<<
       \global

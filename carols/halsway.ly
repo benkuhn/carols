@@ -5,11 +5,10 @@
   title = "Halsway Carol"
   poet = "Iain Frisk"
   composer = "Nigel Eaton"
-  arranger = "Ben Kuhn"
+  arranger = "arr. Ben Kuhn"
 }
 
 global = {
-  \preamble
   \key d \major
   \time 4/4
 }
@@ -26,15 +25,13 @@ sopMusic = \relative a' {
   fis4 e d4. d'8 |
 
   cis8 d a4. d8 cis d |
-  g,4 g8( a) fis2 |
-  e4 fis8 g a( g) fis e |
+  g,4 g8[ a] fis2 |
+  e4 fis8 g a[ g] fis e |
   g4 fis e4. d'8 |
   cis8 d a4 a8 b cis d |
   g,4 g8 a fis4. fis8 |
   e4 fis8 g a g fis e |
   fis4 e d2 \bar "|."
-}
-sopWords = \lyricmode {
 }
 
 altoMusic = \relative fis' {
@@ -56,37 +53,33 @@ altoMusic = \relative fis' {
   d4 cis a2 \bar "|."
 }
 altoWords = \lyricmode {
-  \set stanza = #"1."
-  Lo for the ti -- ding of the long night moon,
+  \set stanza = #"1. "
+  Lo for the tid -- ing of the long night moon,
   Let the sun -- rise call a -- bout the morn -- ing soon,
   Short is the bid -- ing of the fad -- ing light,
   Sing for the com -- ing of the long -- est night.
   A win -- ter day, the sum -- mer grass turned hay,
-  Frost in the field 'til the dawn of May,
-  A sum -- mer's light nev -- er shone as clear or as bright,
-  So dance in the sha -- dows of a win -- ter's night.
+  Frost in the field ’til the dawn of May,
+  A sum -- mer’s light nev -- er shone as clear or as bright,
+  So dance in the shad -- ows of a win -- ter’s night.
 }
 altoWordsII = \lyricmode {
-  \set stanza = #"2."
+  \set stanza = #"2. "
   North wind _ tell us what we need to know
   When the stars are shin -- ing on the mid -- night snow,
   All of the branch -- es will be turned to white,
 }
 altoWordsIII = \lyricmode {
-  \set stanza = #"3."
+  \set stanza = #"3. "
   Lo for the tid -- ing of the long night moon,
   May the har -- vest last un -- til the spring -- time bloom,
-  Home is our com -- fort at the win -- ter's height,
+  Home is our com -- fort at the win -- ter’s height,
 }
 altoWordsIV = \lyricmode {
-  \set stanza = #"4."
+  \set stanza = #"4. "
   All of the col -- ours of the sun -- rise sky
   Shine a light up -- on us, as the day goes by,
-  Sun -- set -- ting sha -- dows fad -- ing out of sight,
-}
-altoWordsV = \lyricmode {
-}
-altoWordsVI = \lyricmode {
+  Sun -- set -- ting shad -- ows fad -- ing out of sight,
 }
 
 tenorMusic = \relative d' {
@@ -107,8 +100,6 @@ tenorMusic = \relative d' {
   a4 a8 b fis fis d d |
   a'4 a8 g fis2 \bar "|."
 }
-tenorWords = \lyricmode {
-}
 
 bassMusic = \relative d {
   d4 d8 d d d d d |
@@ -128,8 +119,6 @@ bassMusic = \relative d {
   a4 a8 g fis fis b g |
   a4 a d2 \bar "|."
 }
-bassWords = \lyricmode {
-}
 
 \score {
   <<
@@ -138,9 +127,6 @@ bassWords = \lyricmode {
       \new Voice = "sopranos" { \voiceOne << \global \sopMusic >> }
       \new Voice = "altos" { \voiceTwo << \global \altoMusic >> }
     >>
-    \new Lyrics \with { alignAboveContext = #"women" } \lyricsto "sopranos" \sopWords
-    \new Lyrics = "altosVI"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsVI
-    \new Lyrics = "altosV"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsV
     \new Lyrics = "altosIV"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsIV
     \new Lyrics = "altosIII"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsIII
     \new Lyrics = "altosII"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsII
@@ -150,8 +136,6 @@ bassWords = \lyricmode {
       \new Voice = "tenors" { \voiceOne << \global \tenorMusic >> }
       \new Voice = "basses" { \voiceTwo << \global \bassMusic >> }
     >>
-    \new Lyrics \with { alignAboveContext = #"men" } \lyricsto "tenors" \tenorWords
-    \new Lyrics \with { alignBelowContext = #"men" } \lyricsto "basses" \bassWords
   >>
   >>
 }

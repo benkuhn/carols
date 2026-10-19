@@ -2,18 +2,16 @@
 \include "header.ly"
 \header {
   title = "Somerset Wassail"
-  poet = "18th Century English"
-  composer = "18th Century English"
+  poet = "Traditional English"
+  composer = "Traditional English"
   arranger = "arr. Ben Kuhn"
 }
 global = {
-  \preamble
-  \key f \major
+  \key c \major
   \time 4/4
-  \autoBeamOff
 }
 
-sopMusic = \transpose c f { \relative c' {
+sopMusic = \relative c' {
   \partial 4 c4 |
   c( a') g f | e2 d4 c | c( d) e f | g2. c,4 |
   c( a') g f | e2 d4 c | c( d) e f | g2. g4 |
@@ -22,12 +20,9 @@ sopMusic = \transpose c f { \relative c' {
 
   c2 d | g, g4 g | c2 d4( e) | f2 e4 f |
   g( c) a f | g2 e4 e | d c e( d) | c1 |
-}}
-sopWords = \lyricmode {
-
 }
 
-altoMusic = \transpose c f { \relative c' {
+altoMusic = \relative c' {
   \partial 4 c4 |
   c2 c4 c | c2 c4 c | c2 c4 c | c2. c4 |
   c2 c4 c | c2 c4 c | c2 c4 c | c2. c4 |
@@ -36,41 +31,35 @@ altoMusic = \transpose c f { \relative c' {
 
   e2 a | g f4 f | e2 g | a g4 a |
   c2 c4 c | b2 g4 g | a a b2 | g1 |
-}}
+}
 altoWords = \lyricmode {
-  \set stanza = #"1."
+  \set stanza = #"1. "
   Was -- sail and was -- sail _ all o -- ver the town,
   The bread it is white and the ale it is brown,
   The cup it is made of the good  ash -- en tree,
   And so is the malt of the best  bar -- ley.
 
-  For it's your was -- sail, and it's our was -- sail,
-  And it's joy be to you and a jol -- ly was -- sail!
+  For it’s your was -- sail, and it’s our was -- sail,
+  And it’s joy be to you and a jol -- ly was -- sail!
 }
 altoWordsII =  \lyricmode {
-  \set stanza = "2."
-  Oh ma -- ster and mi -- ssus, are you all with -- in?
+  \set stanza = #"2. "
+  Oh mas -- ter and mis -- sus, are you all with -- in?
   Pray o -- pen the door _ and let us come in!
-  O ma -- ster and mi -- ssus a -- \set ignoreMelismata = ##t sit -- ting by the fire,
+  O mas -- ter and mis -- sus a -- \set ignoreMelismata = ##t sit -- ting by the fire,
   Pray _ think on us poor trav -- elers, a trav -- eling in the mire. \unset ignoreMelismata
 }
 altoWordsIII = \lyricmode {
-  \set stanza = #"3."
+  \set stanza = #"3. "
   Oh where is the maid with the \set ignoreMelismata = ##t sil -- ver \unset ignoreMelismata head -- ed pin
   To o -- pen the door _ and let us come in?
-  Oh ma -- ster and mi -- ssus, it is our de -- sire:
+  Oh mas -- ter and mis -- sus, it is our de -- sire:
   A good loaf and cheese and a toast \set ignoreMelismata = ##t by the \unset ignoreMelismata fire.
 }
 
 verses = \markup { \fill-line {
 }}
-altoWordsIV = \lyricmode {
-}
-altoWordsV = \lyricmode {
-}
-altoWordsVI = \lyricmode {
-}
-tenorMusic = \transpose c f { \relative c {
+tenorMusic = \relative c {
   \partial 4 e4 |
   e( f) e d | g2 f4 e | e( f) g f | e2. e4 |
   e( f) e d | g2 g4 a | bes( a) g f | e2. e4 |
@@ -79,12 +68,9 @@ tenorMusic = \transpose c f { \relative c {
 
   e2 f | b, d4 d | c2 b4( c) | c2 c4 c |
   c2 c4 c | d2 g4 g | f f f2 | e1 |
-}}
-tenorWords = \lyricmode {
-
 }
 
-bassMusic = \transpose c f { \relative c {
+bassMusic = \relative c {
   \partial 4 c4 |
   c2 c4 c | c2 c4 c | c2 c4 c | c2. c4 |
   c2 c4 c | c2 c4 c | c2 c4 c | c2. c4 |
@@ -93,22 +79,15 @@ bassMusic = \transpose c f { \relative c {
 
   c2 a | e b'4 b | c2 g | f e4 d |
   c( e) f a | g2 e4 e | f f g2 | c,1 \bar "|."
-}}
-bassWords = \lyricmode {
-
 }
 
 \score {
-  <<
+  \transpose c f <<
    \new ChoirStaff <<
     \new Staff = women <<
       \new Voice = "sopranos" { \voiceOne << \global \sopMusic>> }
       \new Voice = "altos" { \voiceTwo << \global \altoMusic >> }
     >>
-    \new Lyrics \with { alignAboveContext = #"women" } \lyricsto "sopranos" \sopWords
-    \new Lyrics = "altosVI"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsVI
-    \new Lyrics = "altosV"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsV
-    \new Lyrics = "altosIV"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsIV
     \new Lyrics = "altosIII"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsIII
     \new Lyrics = "altosII"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsII
     \new Lyrics = "altos"  \with { alignBelowContext = #"women"  } \lyricsto "sopranos" \altoWords
@@ -117,10 +96,7 @@ bassWords = \lyricmode {
       \new Voice = "tenors" { \voiceOne << \global \tenorMusic >> }
       \new Voice = "basses" { \voiceTwo << \global \bassMusic >> }
     >>
-    \new Lyrics \with { alignAboveContext = #"men" } \lyricsto "tenors" \tenorWords
-    \new Lyrics \with { alignBelowContext = #"men" } \lyricsto "basses" \bassWords
   >>
-%    \new PianoStaff << \new Staff { \new Voice { \pianoRH } } \new Staff { \clef "bass" \pianoLH } >>
   >>
 }
 \verses

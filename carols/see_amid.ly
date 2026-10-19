@@ -1,29 +1,15 @@
-
 \version "2.24.0"
+
 \include "header.ly"
 
-% automatically converted by musicxml2ly from see_amid.mxl
-% source: https://www.cpdl.org/wiki/index.php/See_amid_the_winter%27s_snow_(John_Goss)
+% Source: https://www.cpdl.org/wiki/index.php/See_amid_the_winter%27s_snow_(John_Goss)
 
 \header {
-  filename = "see_amid.ly"
-  enteredby = "Andrew Sims"
-  composer = "Sir John Goss"
-  poet = "Edward Caswall"
-  date = "1871"
-  title = "See Amid the Winter's Snow"
-  %metre = "Adeste Fideles"
-  %meter = \metre
-  style = "Hymn"
-  mutopiacomposer = \composer
-  mutopiapoet=\poet
+  title = "See Amid the Winter’s Snow"
+  poet = "Edward Caswall (1814–1878)"
+  composer = "John Goss (1800–1880)"
 }
 
-\layout {
-    \context { \Score
-        autoBeaming = ##f
-        }
-    }
 PartPOneVoiceOne =  \relative g' {
     \clef "treble" \key g \major \numericTimeSignature\time 4/4 | % 1
     g4. a8 g4 fis4 | % 2
@@ -46,21 +32,21 @@ PartPOneVoiceOne =  \relative g' {
     }
 
 PartPOneVoiceOneLyricsOne =  \lyricmode { "See," a -- mid the win --
-    "ter's" "snow," born for us on earth be -- "low," "see," the ten --
-    der Lamb ap -- "pears," pro -- mised from e -- ter -- nal "years."
+    "ter’s" "snow," Born for us on earth be -- "low," "See," the ten --
+    der Lamb ap -- "pears," Prom -- ised from e -- ter -- nal "years."
     "Hail," thou e -- ver -- bless -- "èd" "morn!" "Hail," re -- demp --
-    "tion's" hap -- py "dawn!" Sing through all Je -- ru -- sa -- "lem:"
+    "tion’s" hap -- py "dawn!" Sing through all Je -- ru -- sa -- "lem:"
     "“Christ" is born in Beth -- le -- "hem!”" }
-PartPOneVoiceOneLyricsThree =  \lyricmode { "\"Say," ye low -- ly shep --
-    "herds," "say," what your joy -- ful news to -- "day;" where -- fore
-    have ye left your sheep on the lone -- ly moun -- tain "steep?\""
+PartPOneVoiceOneLyricsThree =  \lyricmode { "“Say," ye low -- ly shep --
+    "herds," "say," What your joy -- ful news to -- "day;" Where -- fore
+    have ye left your sheep On the lone -- ly moun -- tain "steep?”"
     \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4
     \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4
     \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4
     \skip4 }
-PartPOneVoiceOneLyricsFive =  \lyricmode { Sa -- cred in -- "fant," all
-    di -- "vine," what a ten -- der love was "thine," thus to come from
-    high -- est bliss down to such as world as "this!" \skip4 \skip4
+PartPOneVoiceOneLyricsFive =  \lyricmode { Sa -- cred In -- "fant," all
+    di -- "vine," What a ten -- der love was "Thine," Thus to come from
+    high -- est bliss Down to such a world as "this!" \skip4 \skip4
     \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4
     \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4
     \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 }
@@ -86,20 +72,20 @@ PartPOneVoiceTwo =  \relative b {
     }
 
 PartPOneVoiceTwoLyricsTwo =  \lyricmode { "Lo!" with -- in a man -- ger
-    lies he who built the star -- ry "skies;" he "who," throned in light
-    sub -- "lime," sits a -- mid the Cher -- u -- "bim!" \skip4 \skip4
+    lies He who built the star -- ry "skies;" He "who," throned in light
+    sub -- "lime," Sits a -- mid the Cher -- u -- "bim!" \skip4 \skip4
     \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4
     \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4
     \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 }
-PartPOneVoiceTwoLyricsFour =  \lyricmode { "\"As" we watched at dead of
-    "night," "lo," we saw a won -- drous "light;" an -- gels sing -- ing
-    peace on earth told us of a Sa -- "viour's" "birth.\"" \skip4 \skip4
+PartPOneVoiceTwoLyricsFour =  \lyricmode { "“As" we watched at dead of
+    "night," "Lo," we saw a won -- drous "light;" An -- gels sing -- ing
+    peace on earth Told us of a Sav -- "iour’s" "birth.”" \skip4 \skip4
     \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4
     \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4
     \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 }
-PartPOneVoiceTwoLyricsSix =  \lyricmode { " Teach," o teach "us," ho --
-    ly "child," by thy face so meek and "mild," teach us to re -- sem --
-    ble thee in thy sweet hu -- mi -- li -- "ty." \skip4 \skip4 \skip4
+PartPOneVoiceTwoLyricsSix =  \lyricmode { "Teach," O teach "us," Ho --
+    ly "Child," By Thy face so meek and "mild," Teach us to re -- sem --
+    ble Thee In Thy sweet hu -- mi -- li -- "ty." \skip4 \skip4 \skip4
     \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4
     \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4
     \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 }
@@ -119,7 +105,7 @@ PartPTwoVoiceOne =  \relative g {
     g4. g8 e'4 d4 | % 12
     c4 b4 a2 | % 13
     g4. g8 e4 d4 | % 13
-    b'4 a8 ( [ g8 ) ] fis2
+    b'4 a8   g8   fis2
     | % 15
     g4. g8 g4 e'4 | % 16
     d4 c4 b2 \bar "|."
@@ -146,8 +132,6 @@ PartPTwoVoiceTwo =  \relative g, {
     d4 d4 g,2 \bar "|."
     }
 
-
-% The score definition
 \score {
     <<
         \new ChoirStaff <<
@@ -156,13 +140,13 @@ PartPTwoVoiceTwo =  \relative g, {
                 \set Staff.shortInstrumentName = " "
                 \context Staff <<
                     \context Voice = "PartPOneVoiceOne" { \voiceOne \PartPOneVoiceOne }
-                    \new Lyrics \lyricsto "PartPOneVoiceOne" \PartPOneVoiceOneLyricsOne
-                    \new Lyrics \lyricsto "PartPOneVoiceOne" \PartPOneVoiceOneLyricsThree
-                    \new Lyrics \lyricsto "PartPOneVoiceOne" \PartPOneVoiceOneLyricsFive
                     \context Voice = "PartPOneVoiceTwo" { \voiceTwo \PartPOneVoiceTwo }
-                    \new Lyrics \lyricsto "PartPOneVoiceTwo" \PartPOneVoiceTwoLyricsTwo
-                    \new Lyrics \lyricsto "PartPOneVoiceTwo" \PartPOneVoiceTwoLyricsFour
-                    \new Lyrics \lyricsto "PartPOneVoiceTwo" \PartPOneVoiceTwoLyricsSix
+                    \new Lyrics \lyricsto "PartPOneVoiceOne" { \set stanza = #"1. " \PartPOneVoiceOneLyricsOne }
+                    \new Lyrics \lyricsto "PartPOneVoiceTwo" { \set stanza = #"2. " \PartPOneVoiceTwoLyricsTwo }
+                    \new Lyrics \lyricsto "PartPOneVoiceOne" { \set stanza = #"3. " \PartPOneVoiceOneLyricsThree }
+                    \new Lyrics \lyricsto "PartPOneVoiceTwo" { \set stanza = #"4. " \PartPOneVoiceTwoLyricsFour }
+                    \new Lyrics \lyricsto "PartPOneVoiceOne" { \set stanza = #"5. " \PartPOneVoiceOneLyricsFive }
+                    \new Lyrics \lyricsto "PartPOneVoiceTwo" { \set stanza = #"6. " \PartPOneVoiceTwoLyricsSix }
                     >>
                 >>
             \new Staff <<
@@ -173,8 +157,4 @@ PartPTwoVoiceTwo =  \relative g, {
                 >>
             >>
         >>
-    \layout {}
-    % To create MIDI output, uncomment the following line:
-    %  \midi {}
     }
-

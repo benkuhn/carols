@@ -1,17 +1,16 @@
-﻿\version "2.24.0"
+\version "2.24.0"
 \include "header.ly"
 
 \header {
   title = "The Sussex Carol"
-  poet = "Traditional English (17th century or earlier)"
+  poet = "Traditional English"
+  composer = "Traditional English"
 }
 
 global = {
-  \preamble
   \key f \major
   \time 6/8
-  \slurDotted
-  \autoBeamOn
+  \slurDashed
 }
 
 sopMusic = \relative c'' {
@@ -33,9 +32,6 @@ sopMusic = \relative c'' {
   \time 9/8 c4. d c |
   \time 6/8 bes4 a8 g f g |
   f2.~ | f \bar "|." \break
-}
-sopWords = \lyricmode {
-
 }
 
 altoMusic = \relative c'' {
@@ -68,7 +64,6 @@ altoWords = \lyricmode {
   News of our mer -- ci -- ful _ King’s birth! _
 }
 altoWordsII = \lyricmode {
-%\markup\italic
   \set stanza = #"2. "
   \set ignoreMelismata = ##t
   Then why should men on earth be so sad,
@@ -78,14 +73,6 @@ altoWordsII = \lyricmode {
 
   When from our sin _ He set _ us free,
   All for to gain our lib -- _ er -- ty. _
-
-  \set stanza = #"4. "
-  All out of dark -- ness we have light,
-  Which made the an -- gels sing this night,
-  sing this night:
-
-  “Glo -- ry to God and peace to men,
-  Now and for ev -- er -- more, A -- men.”
 }
 altoWordsIII = \lyricmode {
   \set stanza = #"3. "
@@ -94,7 +81,7 @@ altoWordsIII = \lyricmode {
   in its place.
 
   An -- gels and men _ with joy _ may sing,
-  All for to see the new -- _ born King!_
+  All for to see the new -- _ born King! _
 }
 altoWordsIV = \lyricmode {
   \set stanza = #"4. "
@@ -126,9 +113,6 @@ tenorMusic = \relative c' {
   d4 c8 c a bes |
   a2.~ | a \bar "|."
 }
-tenorWords = \lyricmode {
-
-}
 
 bassMusic = \relative c {
   \repeat volta 2 {
@@ -148,9 +132,6 @@ bassMusic = \relative c {
   f4 f8 e d c8 |
   <f f,>2.~ | <f f,> \bar "|."
 }
-bassWords = \lyricmode {
-
-}
 
 \score {
   <<
@@ -159,7 +140,6 @@ bassWords = \lyricmode {
       \new Voice = "sopranos" { \voiceOne << \global \sopMusic >> }
       \new Voice = "altos" { \voiceTwo << \global \altoMusic >> }
     >>
-    \new Lyrics \with { alignAboveContext = #"women" \override VerticalAxisGroup.nonstaff-relatedstaff-spacing = #'((basic-distance . 1))} \lyricsto "sopranos" \sopWords
     \new Lyrics = "altosIV"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsIV
     \new Lyrics = "altosIII"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsIII
     \new Lyrics = "altosII"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsII
@@ -169,24 +149,7 @@ bassWords = \lyricmode {
       \new Voice = "tenors" { \voiceOne << \global \tenorMusic >> }
       \new Voice = "basses" { \voiceTwo << \global \bassMusic >> }
     >>
-    \new Lyrics \with { alignAboveContext = #"men" \override VerticalAxisGroup.nonstaff-relatedstaff-spacing = #'((basic-distance . 1)) } \lyricsto "tenors" \tenorWords
-    \new Lyrics \with { alignBelowContext = #"men" \override VerticalAxisGroup.nonstaff-relatedstaff-spacing = #'((basic-distance . 1)) } \lyricsto "basses" \bassWords
   >>
 
   >>
-  \layout {
-    \context {
-      \Score
-      %\override SpacingSpanner.base-shortest-duration = #(ly:make-moment 1/4)
-      %\override SpacingSpanner.common-shortest-duration = #(ly:make-moment 1/4)
-    }
-    \context {
-      % Remove all empty staves
-      % \Staff \RemoveEmptyStaves \override VerticalAxisGroup.remove-first = ##t
-    }
-    \context {
-      \Lyrics
-    }
-  }
 }
-

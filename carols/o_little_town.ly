@@ -1,22 +1,10 @@
-\header {
-  filename = "o_little_town.ly"
-  enteredby = "Gordon Gilbert and Ben Kuhn"
-  composer = "Lewis H. Redner, 1868"
-  poet = "Bishop Phillips Brooks, 1868"
-  date=""
-  title = "O Little Town of Bethlehem"
-  metre = "St. Louis 8.6.8.6.D."
-  meter = \metre
-  copyright = "Public Domain"
-  style = "Hymn"
-  mutopiacomposer = \composer
-  mutopiapoet=\poet
-  maintainer = "Gordon Gilbert"
-  maintainerEmail = "gord@angel.eicat.ca"
-  lastupdated = "2011/Dec/12"
-}
-
 \version "2.24.0"
+
+\header {
+  title = "O Little Town of Bethlehem"
+  poet = "Phillips Brooks (1835–1893)"
+  composer = "Lewis Henry Redner (1831–1908)"
+}
 
 \include "header.ly"
 global= {
@@ -27,7 +15,7 @@ global= {
 
 sop = \context Voice = "sop"    {
   \voiceOne
-  b'4 b' b' ais' b' d''( c'') e'
+  b'4 b' b' ais' b' d'' c'' e'
   a' g' fis'8 \melisma g' \melismaEnd a'4 d' b'2.
   b'4 b' b' e'' d'' d'' c'' e'
   a' g' fis'8 \melisma g' \melismaEnd b'4 a' g'2.
@@ -35,20 +23,20 @@ sop = \context Voice = "sop"    {
   fis'4 e' fis' g' a' b'2.
   b'4 b' b' ais' b' d'' c'' e'
   e'' d'' g' b'4. a'8 g'2. \bar "|."
-  
+
 }
 
 alto=\context Voice = "alto"   {
   \voiceTwo
   d'4 d' d' cis' d' f' e' c'
   e' d' d' d' d' d'2.
-  d'4 d' g' gis' gis' a' e' c' 
+  d'4 d' g' gis' gis' a' e' c'
   e' d' d' fis' fis' g'2.
   g'4 g' g' fis' e' dis'2 dis'4
   dis' e' fis' g' e' fis'2.
-  g'4 d' d' cis' d' e' e' c' 
+  g'4 d' d' cis' d' e' e' c'
   e'8 fis' g'4 cis' d'4. c'8 b2.
-}	
+}
 
 tenor = \context Voice = "tenor"   {
   \voiceOne
@@ -73,39 +61,34 @@ bass = \context Voice = "bass"   {
   g4 g g g g c c c
   c d e d4. d8 g,2.
 }
-accomp=\chordmode {
-  
-}
-
-
 
 stanzaa = \lyricmode {
-  O lit -- tle town of Beth-le -- hem
+  O lit -- tle town of Beth -- le -- hem
   How still we see thee lie;
   A -- bove thy deep and dream -- less sleep
   The si -- lent stars go by:
   Yet in thy dark streets shin -- eth
-  The e -- ver -- las -- ting Light;
+  The ev -- er -- last -- ing Light;
   The hopes and fears of all the years
   Are met in thee to -- night.
 }
 
 stanzab = \lyricmode {
-  For Christ is born of Ma --  ry;
-  And ga -- thered all a -- bove,
+  For Christ is born of Ma -- _ ry;
+  And gath -- ered all a -- bove,
   While mor -- tals sleep, the an -- gels keep
-  Their watch of won -- dering love.
-  O mor -- ning stars, to -- ge -- ther
+  Their watch of won -- d’ring love.
+  O morn -- ing stars, to -- geth -- er
   Pro -- claim the ho -- ly birth,
-  An prai -- ses sing to God the King,
+  And prais -- es sing to God the King,
   And peace to men on earth!
 }
 
 stanzac = \lyricmode {
-  How si -- lent -- ly, how si-lent -- ly
-  The won -- drous gift is giv'n!
+  How si -- lent -- ly, how si -- lent -- ly
+  The won -- drous gift is giv’n!
   So God im -- parts to hu -- man hearts
-  The bles -- sings of His heaven:
+  The bless -- ings of His heav’n:
   No ear may hear His com -- ing;
   But in this world of sin,
   Where meek souls will re -- ceive Him, still
@@ -113,51 +96,37 @@ stanzac = \lyricmode {
 }
 
 stanzad = \lyricmode {
-  O Ho -- ly Child of Beth-le -- hem,
-  Des -- cend to us we pray;
+  O Ho -- ly Child of Beth -- le -- hem,
+  De -- scend to us we pray;
   Cast out our sin, and en -- ter in;
   Be born in us to -- day.
-  We hear the heaven -- ly an -- gels
-  The great glad ti -- dings tell:
+  We hear the heav’n -- ly an -- gels
+  The great glad tid -- ings tell:
   O come to us, a -- bide with us,
   Our Lord Em -- man -- u -- el.
-}
-stanzae = \lyricmode {
-  
-}
-stanzaf = \lyricmode {
-  
 }
 
 \score {
   \transpose g f
   \context ChoirStaff <<
-    \context ChordNames \accomp
-    \unset ChoirStaff.melismaBusyProperties 
     \context Staff ="upper"  { \clef "G" <<
       \global
       \sop
       \alto
     >>}
-    
+
     \context Lyrics = "stanza-1" \lyricsto "sop" {
-      \set stanza = "1."
+      \set stanza = #"1. "
       \stanzaa }
     \context Lyrics = "stanza-2" \lyricsto "sop" {
-      \set stanza = "2."
+      \set stanza = #"2. "
       \stanzab }
     \context Lyrics = "stanza-3" \lyricsto "sop" {
-      \set stanza = "3."
+      \set stanza = #"3. "
       \stanzac }
     \context Lyrics = "stanza-4" \lyricsto "sop" {
-      \set stanza = "4."
+      \set stanza = #"4. "
       \stanzad }
-                                %	\context Lyrics = "stanza-5" \lyricsto "sop" {
-                                %		\set stanza = "5."
-                                %			\stanzae }
-                                %	\context Lyrics = "stanza-6" \lyricsto "sop" {
-                                %		\set stanza = "6."
-                                %			\stanzaf }
     \context Staff = "lower"  { \clef "F"<<
       \global
       \tenor
@@ -165,4 +134,3 @@ stanzaf = \lyricmode {
     >>}
   >>
 }
-

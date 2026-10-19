@@ -6,14 +6,12 @@
 \layout { \context { \Lyrics \override LyricSpace.minimum-distance = #0.7 } }
 \header {
   title = "Deck the Hall"
-  poet = "Traditional"
-  composer = "16th Century Welsh Tune"
+  poet = "Thomas Oliphant (1799–1880), alt."
+  composer = "Traditional Welsh"
 }
 global = {
-  \preamble
   \key f \major
   \time 4/4
-  \autoBeamOff
 }
 
 sopMusic = \relative c'' {
@@ -21,24 +19,21 @@ sopMusic = \relative c'' {
   f g a f |
   g8 a bes g a4. g8 |
   f4 e f2 |
-  
+
   c'4. bes8 a4 g |
   f g a f |
   g8 a bes g a4. g8 |
   f4 e f2 |
-  
+
   g4. a8 bes4 g |
   a4. bes8 c4 g |
   a8 b c4 d8 e f4 |
   e d c2 |
-  
+
   c4. bes8 a4 g |
   f g a f |
   d'8 d d d c4. bes8 |
   a4 g f2 \bar "|."
-}
-sopWords = \lyricmode {
-  
 }
 
 altoMusic = \relative c' {
@@ -84,8 +79,6 @@ altoWordsIII = \lyricmode {
   Heed -- less of the wind and weath -- er, Fa la la la la, la la la la.
 
 }
-altoWordsIV = \lyricmode {
-}
 
 tenorMusic = \relative c' {
   c4. c8 c4 bes |
@@ -107,9 +100,6 @@ tenorMusic = \relative c' {
   a c c a |
   bes8 bes bes bes c4. d8 |
   c4 bes a2 \bar "|."
-}
-tenorWords = \lyricmode {
-
 }
 
 bassMusic = \relative c {
@@ -133,9 +123,6 @@ bassMusic = \relative c {
   bes8 bes bes bes a4. bes8 |
   c4 c, f2 \bar "|."
 }
-bassWords = \lyricmode {
-
-}
 
 \score {
   <<
@@ -144,8 +131,6 @@ bassWords = \lyricmode {
         \new Voice = "sopranos" { \voiceOne << \global \sopMusic >> }
         \new Voice = "altos" { \voiceTwo << \global \altoMusic >> }
       >>
-      \new Lyrics \with { alignAboveContext = #"women" } \lyricsto "sopranos" \sopWords
-      \new Lyrics = "altosIV"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsIV
       \new Lyrics = "altosIII"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsIII
       \new Lyrics = "altosII"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsII
       \new Lyrics = "altos"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWords
@@ -154,8 +139,6 @@ bassWords = \lyricmode {
         \new Voice = "tenors" { \voiceOne << \global \tenorMusic >> }
         \new Voice = "basses" { \voiceTwo << \global \bassMusic >> }
       >>
-      \new Lyrics \with { alignAboveContext = #"men" } \lyricsto "tenors" \tenorWords
-      \new Lyrics \with { alignBelowContext = #"men" } \lyricsto "basses" \bassWords
     >>
   >>
 }

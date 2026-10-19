@@ -1,27 +1,14 @@
-
 \version "2.24.0"
+
 \header {
-  filename = "in_the_bleak.ly"
-  enteredby = "Gordon Gilbert and Ben Kuhn"
-  composer = "Gustav Holst"
-  poet = "Christina Rossetti"
-  date="1906"
   title = "In the Bleak Midwinter"
-  metre = "Cranham 6.5.6.5.D."
-  meter = \metre
-  copyright = "Public Domain"
-  style = "Hymn"
-  mutopiacomposer = \composer
-  mutopiapoet=\poet
-  maintainer = "Gordon Gilbert"
-  maintainerEmail = "gord@angel.eicat.ca"
-  lastupdated = "2012/Dec/23"
+  poet = "Christina Rossetti (1830–1894)"
+  composer = "Gustav Holst (1874–1934)"
 }
 
 \include "header.ly"
 
 global= {
-  \preamble
 
   \time 4/4
   \key f \major
@@ -29,7 +16,7 @@ global= {
 
 sop = \context Voice = "sop" \relative c''   {
   \voiceOne
-  \slurDotted
+  \slurDashed
   a4.( bes8) c4 a |
   g2 f |
   g4.( a8) g4 d |
@@ -54,7 +41,7 @@ sop = \context Voice = "sop" \relative c''   {
 
 alto=\context Voice = "alto" \relative c'  {
   \voiceTwo
-  \slurDotted f4.( f8) f4 c |
+  \slurDashed f4.( f8) f4 c |
   d2 d |
   d4.( d8) d4 c |
   bes1 |
@@ -78,12 +65,12 @@ alto=\context Voice = "alto" \relative c'  {
 
 tenor = \context Voice = "tenor" \relative c' {
   \voiceOne
-  \slurDotted c4.( c8) c4 f, |
+  \slurDashed c4.( c8) c4 f, |
   a2 a |
   g4.( d8) d4 f |
   \slurSolid f2( e) |
 
-  \slurDotted f4. c'8 c4 f, |
+  \slurDashed f4. c'8 c4 f, |
   a4.( a8) a2 |
   d4( d) bes4. a8 |
   a2. a4 |
@@ -102,12 +89,12 @@ tenor = \context Voice = "tenor" \relative c' {
 
 bass = \context Voice = "bass" \relative c {
   \voiceTwo
-  \slurDotted f4.( g8) a4 f |
+  \slurDashed f4.( g8) a4 f |
   d2 d |
   bes4.( c8) bes4 a |
   \slurSolid g2( c) |
 
-  \slurDotted f4.( g8) a4 f |
+  \slurDashed f4.( g8) a4 f |
   d4. d8 d2 |
   bes4( bes) c4. f8 |
   f2. f4 |
@@ -123,20 +110,15 @@ bass = \context Voice = "bass" \relative c {
   bes2 c4.( f8) |
   f1 \bar "|."
 }
-accomp=\chordmode {
-
-}
-
-
 
 stanzaa = \lyricmode {
   \set ignoreMelismata = ##t
   In the bleak mid -- win -- ter,
-  fros -- ty wind made moan,
+  Frost -- y wind made moan,
   Earth stood hard as i -- _ ron,
-  wa -- ter like a stone, ""
-  Snow had fal -- len, snow on snow, ""
-  snow __ _ on __ _ snow, ""
+  Wa -- ter like a stone, ""
+  Snow had fall -- en, snow on snow, ""
+  Snow __ _ on __ _ snow, ""
   In the bleak mid -- win -- ter,
   \set ignoreMelismata = ##f
   Long a -- go.
@@ -144,25 +126,25 @@ stanzaa = \lyricmode {
 
 stanzab = \lyricmode {
   \set ignoreMelismata = ##t
-  Hea -- ven can -- not hold Him
+  Heav -- en can -- not hold Him
   Nor __ _ earth sus -- tain;
   Heav’n and earth shall flee a -- way
   When He comes to reign; ""
   In the bleak mid -- win -- _ ter a sta -- ble place suf -- ficed
-  The Lord __ _ God Al -- migh -- ty,
+  The Lord __ _ God Al -- might -- y,
   \set ignoreMelismata = ##f
   Je -- sus Christ.
 }
 stanzac = \lyricmode {
   \set ignoreMelismata = ##t
-  An -- gels and arch -- an -- gels May have ga -- thered there
+  An -- gels and arch -- an -- gels May have gath -- ered there
   Cher -- u -- bim and Ser -- a -- phim
   Throng -- _ ed the air
   But on -- ly His __ _ mo -- _ ther ""
   In her maid -- en bliss ""
   Wor -- shipped the Be -- lov -- ed
   \set ignoreMelismata = ##f
-  with a kiss.
+  With a kiss.
 }
 stanzad = \lyricmode {
   \set ignoreMelismata = ##t
@@ -179,7 +161,6 @@ stanzad = \lyricmode {
 
 \score {
   \context ChoirStaff <<
-    \unset ChoirStaff.melismaBusyProperties
     \context Staff ="upper"  { \clef "G" <<
       \global
       \sop
@@ -187,16 +168,16 @@ stanzad = \lyricmode {
     >>}
 
     \context Lyrics = "stanza-1" \lyricsto "sop" {
-      \set stanza = "1."
+      \set stanza = #"1. "
       \stanzaa }
     \context Lyrics = "stanza-2" \lyricsto "sop" {
-      \set stanza = "2."
+      \set stanza = #"2. "
       \stanzab }
     \context Lyrics = "stanza-3" \lyricsto "sop" {
-      \set stanza = "3."
+      \set stanza = #"3. "
       \stanzac }
     \context Lyrics = "stanza-4" \lyricsto "sop" {
-      \set stanza = "4."
+      \set stanza = #"4. "
       \stanzad }
     \context Staff = "lower"  { \clef "F"<<
       \global

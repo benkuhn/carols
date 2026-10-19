@@ -1,16 +1,15 @@
-﻿\version "2.24.0"
+\version "2.24.0"
+% Source: The Cambridge Carol Book, 1924
 \include "header.ly"
 
 \header {
   title = "Ding Dong Merrily on High"
   poet = "George Ratcliffe Woodward (1848–1934)"
-  composer = "16th century French melody"
-  arranger = "Arranged by Charles Wood (1866–1926)"
-  % tagline = "From 'The Cambridge Carol Book', 1924"
+  composer = "French, 16th century"
+  arranger = "arr. Charles Wood (1866–1926)"
 }
 
 global = {
-  \preamble
   \key bes \major
   \time 4/4
 }
@@ -24,12 +23,12 @@ sop = \context Voice = "sop" \relative c'' {
     bes2 bes
   } \break
   \repeat volta 2 {
-    f'4.( ees8 d ees f d |
-    ees4. d8 c d ees c |
-    d4. c8 bes c d bes |
-    c4. bes8 a bes c a |
+    f'4.( ees8 d[ ees f d] |
+    ees4. d8 c[ d ees c] |
+    d4. c8 bes[ c d bes] |
+    c4. bes8 a[ bes c a] |
 
-    bes4. a8 g a bes g |
+    bes4. a8 g[ a bes g] |
     a4.) g8 f4 f |
     g bes bes a |
     bes2 bes 2
@@ -46,12 +45,12 @@ alto=\context Voice = "alto" \relative c' {
   }
   \repeat volta 2 {
     r4 f2( bes4 |
-    bes8 a g f g f ees4) |
-    r4  f8( ees d4 g |
-    g8 f ees d ees d c4) |
+    bes8[ a g f] g[ f] ees4) |
+    r4  f8[( ees] d4 g |
+    g8[ f ees d] ees[ d] c4) |
 
-    r4 d8( c bes4 ees |
-    c8 d ees) d c4 f |
+    r4 d8[( c] bes4 ees |
+    c8[ d ees]) d c4 f |
     f ees c f |
     f2 f
   }
@@ -88,9 +87,9 @@ bass = \context Voice = "bass" \relative c {
   }
   \repeat volta 2 {
     s4 a'4( bes d, |
-    c d ees8 d c4) |
+    c d ees8[ d] c4) |
     s4 f( g bes, |
-    a bes c8 bes a4) |
+    a bes c8[ bes] a4) |
 
     s4 d( ees g |
     f) g a bes |
@@ -101,7 +100,7 @@ bass = \context Voice = "bass" \relative c {
 
 stanzaa = \lyricmode {
   Ding dong! mer -- ri -- ly on high in heav’n the bells are ring -- ing:
-  Ding dong!  Ve -- ri -- ly the sky is riv’n with an -- gel sing -- ing.
+  Ding dong!  Ver -- i -- ly the sky is riv’n with an -- gel sing -- ing.
   \markup\italic Glo -- \markup\italic ri -- \markup\italic a, \markup\italic ho -- \markup\italic san -- \markup\italic na \markup\italic in \markup\italic ex -- \markup\italic cel -- \markup\italic sis!
 }
 stanzab = \lyricmode {
@@ -110,12 +109,11 @@ stanzab = \lyricmode {
 }
 stanzac = \lyricmode {
   Pray ye du -- ti -- ful -- ly prime your ma -- tin chime, ye ring -- ers;
-  may ye beau -- ti -- ful -- ly rime your eve -- time song, ye sing -- ers.
+  May ye beau -- ti -- ful -- ly rime your eve -- time song, ye sing -- ers.
 }
 
 \score {
   \context ChoirStaff <<
-    \unset ChoirStaff.melismaBusyProperties
     \context Staff ="upper"  { \clef "G" <<
       \global
       \sop
@@ -123,13 +121,13 @@ stanzac = \lyricmode {
     >>}
 
     \context Lyrics = "stanza-1" \lyricsto "sop" {
-      \set stanza = "1."
+      \set stanza = #"1. "
       \stanzaa }
     \context Lyrics = "stanza-2" \lyricsto "sop" {
-      \set stanza = "2."
+      \set stanza = #"2. "
       \stanzab }
     \context Lyrics = "stanza-3" \lyricsto "sop" {
-      \set stanza = "3."
+      \set stanza = #"3. "
       \stanzac }
 
     \context Staff = "lower"  { \clef "F"<<
@@ -139,4 +137,3 @@ stanzac = \lyricmode {
     >>}
   >>
 }
-

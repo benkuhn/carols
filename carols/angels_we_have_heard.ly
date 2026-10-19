@@ -2,15 +2,13 @@
 \include "header.ly"
 \header {
   title = "Angels We Have Heard on High"
-  meter = "Gloria 7.7.7.7. with refrain"
-  poet = "trans. Bishop James Chadwick (1813–1882)"
-  composer = "18th Century French Carol"
+  poet = "Traditional French"
+  translator = "trans. James Chadwick (1813–1882)"
+  composer = "Traditional French"
 }
 global = {
-  \preamble
   \key g \major
   \time 4/4
-  \autoBeamOff
 }
 
 sopMusic = \relative c'' {
@@ -23,7 +21,7 @@ sopMusic = \relative c'' {
   d4. c8 b2 |
   b4 a b d |
   b4. a8 g2 |
-  
+
   \repeat volta 2 {
     d'2( e8[ d c b] |
     c2 d8[ c b a] |
@@ -36,28 +34,25 @@ sopMusic = \relative c'' {
     { b2( a2) | g1 | }
   }
 }
-sopWords = \lyricmode {
-
-}
 
 altoMusic = \relative c'' {
   g4 g fis fis |
   a fis g2 |
   g4 fis g g |
   g fis g2 |
-  
+
   g4 g fis fis |
   g a g2 |
   g4 fis g g |
   g fis g2 |
-  
+
   g4( b8[ a] g2~ |
   g4 a8[ g] fis2~ |
   fis4 g8[ fis] e2 |
   d4.) d8 d2 |
   d4 fis g g |
   g2 fis2 |
-  
+
   g2( fis2) | d1 |
 }
 altoWords = {
@@ -74,7 +69,7 @@ altoWordsII = \lyricmode {
   \set stanza = #"2. "
   Shep -- herds, why this ju -- bi -- lee?
   Why your joy -- ous songs pro -- long?
-  What the glad -- some ti -- dings be
+  What the glad -- some tid -- ings be
   Which in -- spire your heav’n -- ly song?
 }
 altoWordsIII = \lyricmode {
@@ -111,9 +106,6 @@ tenorMusic = \relative c' {
   d2 d2 |
   d2.( c4) | b1 |
 }
-tenorWords = \lyricmode {
-
-}
 
 bassMusic = \relative c' {
   g4 g b b |
@@ -135,9 +127,6 @@ bassMusic = \relative c' {
 
   d1 | g1 |
 }
-bassWords = \lyricmode {
-
-}
 
 \score {
   \transpose g f
@@ -152,13 +141,10 @@ bassWords = \lyricmode {
       \new Voice = "tenors" { \voiceOne << \global \tenorMusic >> }
       \new Voice = "basses" { \voiceTwo << \global \bassMusic >> }
     >>
-    \new Lyrics \with { alignAboveContext = #"women" } \lyricsto "tenors" \sopWords
     \new Lyrics = "altosIV"  \with { alignBelowContext = #"women" } \lyricsto "tenors" \altoWordsIV
     \new Lyrics = "altosIII"  \with { alignBelowContext = #"women" } \lyricsto "tenors" \altoWordsIII
     \new Lyrics = "altosII"  \with { alignBelowContext = #"women" } \lyricsto "tenors" \altoWordsII
     \new Lyrics = "altos"  \with { alignBelowContext = #"women" } \lyricsto "tenors" \altoWords
-    \new Lyrics \with { alignAboveContext = #"men" } \lyricsto "tenors" \tenorWords
-    \new Lyrics \with { alignBelowContext = #"men" } \lyricsto "basses" \bassWords
   >>
   >>
 }

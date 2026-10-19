@@ -1,19 +1,18 @@
-﻿\version "2.24.0"
-\include "header.ly"
+\version "2.24.0"
+\include "../carols/header.ly"
+% smaller than the house staff size (14) so that this fits on one page
+#(set-global-staff-size 12)
 \header {
   title = "Masters in This Hall"
   poet = "William Morris (1834–1896)"
   composer = "Marin Marais (1656–1728)"
   arranger = "arr. Edmund Sedding (1836–1868)"
-  metre = "Marche pour les Matelots"
 }
 
 global = {
-  \preamble
   \key f \major
   \time 6/8
   \autoBeamOff
-  #(set-global-staff-size 12)
 }
 
 sopMusic = \relative c' {
@@ -21,18 +20,18 @@ sopMusic = \relative c' {
   f4.( g) |
   a4 g8 f4 e8 |
   f4( e8 d4 cis8) |
-  
+
   d4 a'8 a4 g8 |
   f4.( g4) g8 |
   a4 g8 f4 e8 |
   d2. \bar"||" \break
-  
+
   \repeat unfold 2 {
     f'4 e8 d4 cis8 |
     d4. a |
     f'4 e8 d4 cis8 |
     d4.a4 c8 |
-    
+
     bes4 g8 a4 e8 |
     f4( d8) f4( g8) |
   }
@@ -47,27 +46,24 @@ sopMusic = \relative c' {
     }
   }
 }
-sopWords = \lyricmode {
-  
-}
 
 altoMusic = \relative c' {
   a4 f'8 e4 e8 |
   d4.( e) |
   f4 e8 d4 cis8 |
   d4( bes8 a4.) |
-  
+
   a4 f'8 e4 e8 |
   d4.( e4) e8 |
   f4 e8 d4 cis8 |
   d2.
-  
+
   \repeat unfold 2 {
     a'4 g8 f4 e8 |
     f4. f |
     a4 g8 f4 e8 |
     f4. d4 d8 |
-    
+
     d4 d8 e4 e8 |
     d4. d |
   }
@@ -91,28 +87,27 @@ altoWords = {
     And ev -- er I you pray,
   }
   \lyricmode{
-    No -- ël! No -- ël! No -- ël! 
+    No -- ël! No -- ël! No -- ël!
     No -- ël sing we clear! Holp -- en are all folk on earth
     Born is God’s Son so dear:
-    
-    No -- ël! No -- ël! No -- ël! 
+
+    No -- ël! No -- ël! No -- ël!
     No -- ël, sing we loud!
     God to -- day hath poor folk rais’d
     And cast a -- down the proud.
   }
 }
 altoWordsII = \lyricmode {
-%\markup\italic
   \set stanza = #"12. "
   This is Christ, the Lord, __
-  Mas -- ters be ye glad! __ 
+  Mas -- ters be ye glad! __
   Christ -- mas is come in, __
   And no folk should be sad!
 }
 verses = \markup { \fill-line {
   \hspace #0.1
   \column {
-    \line { \bold "2." Going o'er the hills, through the milk-white snow, }
+    \line { \bold "2." Going o’er the hills, through the milk-white snow, }
     \line { Heard I ewes bleat, while the wind did blow. }
     \combine \null \vspace #0.1
     \line { \bold "3." Shepherds many a one sat among the sheep, }
@@ -141,44 +136,28 @@ verses = \markup { \fill-line {
     \line { \bold "10." And a little child on her arm had she, }
     \line { “Wot ye who this is?” said the hinds to me: }
     \combine \null \vspace #0.1
-    \line { \bold "11." Ox and ass him know, kneeling on their knee, }
+    \line { \bold "11." Ox and ass Him know, kneeling on their knee, }
     \line { Wondrous joy had I this little babe to see: }
   }
   \hspace #0.1
 }}
-altoWordsIII = \lyricmode {
-  \set stanza = #"3. "
-  \set ignoreMelismata = ##t
-}
-altoWordsIV = \lyricmode {
-  \set stanza = #"4. "
-  \set ignoreMelismata = ##t
-}
-altoWordsV = \lyricmode {
-  \set stanza = #"5. "
-  \set ignoreMelismata = ##t
-}
-altoWordsVI = \lyricmode {
-  \set stanza = #"6. "
-  \set ignoreMelismata = ##t
-}
 tenorMusic = \relative c {
   f4 a8 a4 a8 |
   a4.( c) |
   c4 bes8 a4 a8 |
   a4( g8 a4 g8) |
-  
+
   f4 a8 a4 a8 |
   a4.( c4) c8 |
   c4 bes8 a4 a8 |
   f2.
-  
+
   \repeat unfold 2 {
     a4 a8 a4 a8 |
     a4. d |
     d4 bes8 a4 a8 |
     a4. a4 a8 |
-    
+
     g4 bes8 a4 a8 |
     a4( f8) f4. |
   }
@@ -193,27 +172,24 @@ tenorMusic = \relative c {
     }
   }
 }
-tenorWords = \lyricmode {
-
-}
 
 bassMusic = \relative c{
   d4 d8 cis4 cis8 |
   d4.( c!) |
   f4 g8 a4 a,8 |
   d4( g8 f4 e8) |
-  
+
   f4 d8 cis4 cis8 |
   d4.( c!4) c8 |
   f4 g8 a4 a,8 |
   d2. |
-  
+
   \repeat unfold 2 {
     d4 a8 a4 a8 |
     d4. d |
     d4 g8 a4 a8 |
     d,4. fis4 fis8 |
-    
+
     g4 g8 cis,4 cis8 |
     d4. bes |
   }
@@ -236,11 +212,6 @@ bassMusic = \relative c{
       \new Voice = "sopranos" { \voiceOne << \global \sopMusic >> }
       \new Voice = "altos" { \voiceTwo << \global \altoMusic >> }
     >>
-    \new Lyrics \with { alignAboveContext = #"women" } \lyricsto "sopranos" \sopWords
-     \new Lyrics = "altosVI"  \with { alignBelowContext = #"women" } \lyricsto "altos" \altoWordsVI
-    \new Lyrics = "altosV"  \with { alignBelowContext = #"women" } \lyricsto "altos" \altoWordsV
-    \new Lyrics = "altosIV"  \with { alignBelowContext = #"women" } \lyricsto "altos" \altoWordsIV
-    \new Lyrics = "altosIII"  \with { alignBelowContext = #"women" } \lyricsto "altos" \altoWordsIII
     \new Lyrics = "altosII"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsII
     \new Lyrics = "altos"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWords
    \new Staff = men <<
@@ -248,7 +219,6 @@ bassMusic = \relative c{
       \new Voice = "tenors" { \voiceOne << \global \tenorMusic >> }
       \new Voice = "basses" { \voiceTwo << \global \bassMusic >> }
     >>
-    \new Lyrics \with { alignAboveContext = #"men"  } \lyricsto "tenors" \tenorWords
   >>
   >>
 }

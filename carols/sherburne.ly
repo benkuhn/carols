@@ -1,25 +1,16 @@
-\header {
-  filename = "sherburne.ly"
-  enteredby = "Ben Kuhn"
-  composer = "Daniel Read, 1783"
-  arranger = ""
-  poet = "Nahum Tate, 1700"
-  date ="1830"
-  title = "Sherburne"
-  copyright = "Public Domain"
-  style = "Hymn"
-  mutopiacomposer = \composer
-  mutopiapoet=\poet
-  maintainer = "Ben Kuhn"
-  lastupdated = "2015/Dec/05"
-}
-
 \version "2.24.0"
 
+\header {
+  title = "Sherburne"
+  poet = "Nahum Tate (1652–1715)"
+  composer = "Daniel Read (1757–1836)"
+}
+
 \include "header.ly"
+% smaller than the house staff size (14) so that this fits on one page
+#(set-global-staff-size 10.5)
 
 global= {
-  \preamble
   \time 4/4
   \key d \major
 }
@@ -27,10 +18,10 @@ global= {
 sop = \context Voice = "sop"    {
   \sacredHarpHeads
   \relative c'' {
-    a2 a4 fis4 | g8( a) b( cis) d4 d | d2. d4 | cis a b a | a2.
+    a2 a4 fis4 | g8[ a] b[ cis] d4 d | d2. d4 | cis a b a | a2.
     \repeat volta 2 {
       r4 |
-      r1 | r1 | r2. a4 | d d fis d | b b b a | b2. b4 | b b b a8( g) | a2. a4 | fis fis fis2 |
+      r1 | r1 | r2. a4 | d d fis d | b b b a | b2. b4 | b b b a8[ g] | a2. a4 | fis fis fis2 |
       r2. fis4 | a a a a | b b b d | e2. cis4 |
     }
     \alternative {
@@ -47,19 +38,19 @@ alto=\context Voice = "alto"   {
     \repeat volta 2 {
       r4 |
       r1 | r2. a,4 | d d fis d | b b b a | d2. fis4 | e e e e | e1 ~ | e2. e4 | d d d2 |
-      fis fis4 fis | fis fis fis d | e e e fis8( g) | a2. g4 |
+      fis fis4 fis | fis fis fis d | e e e fis8[ g] | a2. g4 |
     }
     \alternative {
       { fis1 ~ | fis2. }
       { fis1 ~ | fis1 }
     }
   }
-}	
+}
 
 tenor = \context Voice = "tenor"   {
   \sacredHarpHeads
   \relative c'' {
-    a2 fis4 d | b'4 b b a | b2. d4 | a8.( fis16) d4 g fis | e2.
+    a2 fis4 d | b'4 b b a | b2. d4 | a8.[ fis16] d4 g fis | e2.
     \repeat volta 2 {
       \bar ";" r4 |
       r2. a4 | d d fis d | b b b a | d2. a4 | fis fis fis a | b2. g4 | e e e2 | r2.
@@ -80,8 +71,8 @@ tenor = \context Voice = "tenor"   {
 bass = \context Voice = "bass"   {
   \sacredHarpHeads
   \relative c {
-    
-    d2 d4 d | g g g d | b2. b4 | fis' fis e d | a2. 
+
+    d2 d4 d | g g g d | b2. b4 | fis' fis e d | a2.
     \repeat volta 2 {
       a4 |
       d d fis d | b b b a | d1 ~ | d2. fis4 | b, b b d | e1 ~ | e2. e4 | a a a2 |
@@ -94,19 +85,13 @@ bass = \context Voice = "bass"   {
   }
 }
 
-accomp=\chordmode {
-  
-}
-
-
-
 stanzaa = \lyricmode {
-  While shep -- herds watch'd their flocks by night
+  While shep -- herds watch’d their flocks by night
   All seat -- ed on the ground,
 }
 filler = \lyricmode {
-  % ugh can't figure out how to skip multiple measures
-  "" "" "" "" "" "" "" "" "" "" "" "" "" "" 
+  % ugh can’t figure out how to skip multiple measures
+  "" "" "" "" "" "" "" "" "" "" "" "" "" ""
 }
 stanzab = \lyricmode {
   All glo -- ry be to God on high, And to the earth be peace
@@ -114,7 +99,7 @@ stanzab = \lyricmode {
 vaa = \lyricmode { The an -- gel of the Lord came down, }
 vab = \lyricmode { And glo -- ry shone a -- round, }
 vaf = \lyricmode { And glo -- ry shone a -- round. }
-vba = \lyricmode { Good will hence -- forth from heav'n to men }
+vba = \lyricmode { Good will hence -- forth from heav’n to men }
 vbb = \lyricmode { Be -- gin and nev -- er cease }
 vbf = \lyricmode { Be -- gin and nev -- er cease. }
 
@@ -154,19 +139,14 @@ tenorb = {
   \vbf
 }
 
-% max size that makes this fit on 1 page
-#(set-global-staff-size 10.5)
-
 \score {
   \context ChoirStaff <<
-    \context ChordNames \accomp
-    \unset ChoirStaff.melismaBusyProperties 
     \context Staff ="sopStaff"  { \clef "G" <<
       \global
       \sop
     >>}
     \context Lyrics = "sop-1" \lyricsto "sop" {
-      \set stanza = "1."
+      \set stanza = #"1. "
       \stanzaa
       \sopa
     }
@@ -174,7 +154,7 @@ tenorb = {
       \filler
       \sopb
     }
-    
+
     \context Staff ="altoStaff"  { \clef "G" <<
       \global
       \alto
@@ -197,7 +177,7 @@ tenorb = {
       \tenora
     }
     \context Lyrics = "tenor-2" \lyricsto "tenor" {
-      \set stanza = "1."
+      \set stanza = #"2. "
       \stanzab
       \tenorb
     }
@@ -214,14 +194,6 @@ tenorb = {
       \filler
       \bassb
     }
-    
+
   >>
-  \layout{
-    indent = 0.0\pt
-    \context {
-      \ChordNames
-      \override ChordName.style = #'american
-      chordChanges = ##t
-    }
-  }
 }

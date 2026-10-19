@@ -1,22 +1,11 @@
-\header {
-  filename = "o_come_all.ly"
-  enteredby = "Gordon Gilbert"
-  composer = "John Francis Wade"
-  poet = "John Francis Wade, trans. by Frederick Oakley"
-  date="1751"
-  title = "O Come All Ye Faithful"
-  metre = "Adeste Fideles"
-  meter = \metre
-  copyright = "Public Domain"
-  style = "Hymn"
-  mutopiacomposer = \composer
-  mutopiapoet=\poet
-  maintainer = "Gordon Gilbert"
-  maintainerEmail = "gord@angel.eicat.ca"
-  lastupdated = "2011/Dec/11"
-}
-
 \version "2.24.0"
+
+\header {
+  title = "O Come, All Ye Faithful"
+  poet = "John Francis Wade (1711–1786)"
+  translator = "trans. Frederick Oakeley (1802–1880) and William Thomas Brooke (1848–1917)"
+  composer = "John Francis Wade (1711–1786)"
+}
 
 \include "header.ly"
 
@@ -25,7 +14,6 @@
 \layout { \context { \Lyrics \override LyricSpace.minimum-distance = #0.7 } }
 
 global= {
-  \preamble
   \time 4/4
   \key aes \major
   \partial 4
@@ -72,12 +60,6 @@ bass = \context Voice = "bass"   {
   ees2 ~ ees4. aes,8 aes,2.
 }
 
-accomp=\chordmode {
-
-}
-
-
-
 stanzaa = \lyricmode {
   O come, all ye faith -- ful, Joy -- ful and tri -- um -- phant,
   O come ye, O come ye to Beth -- le -- hem;
@@ -90,8 +72,8 @@ stanzaa = \lyricmode {
 
 stanzab = \lyricmode {
   _ God of _ God, _ Light _ of _ Light, _ _
-  Lo, He ab -- hors not the Vir -- gin's womb;
-  Ve -- ry _  God, Be -- got -- ten, not cre -- a -- ted;
+  Lo, He ab -- hors not the Vir -- gin’s womb;
+  Ver -- y _  God, Be -- got -- ten, not cre -- at -- ed;
 }
 
 stanzac = \lyricmode {
@@ -100,26 +82,26 @@ stanzac = \lyricmode {
   \set ignoreMelismata = ##t
   ci -- ti -- zens
   \unset ignoreMelismata
-  of heav'n a -- bove,
+  of heav’n a -- bove,
   Glo -- ry to God, all glo -- ry in the high -- est;
 }
 
 stanzad = \lyricmode {
   _ See how the Shep -- herds, sum -- moned to His cra -- dle,
-  _ Lea -- ving their flocks-draw nigh with low -- ly fear;
-  We too will thi -- ther Bend our joy -- ful foot -- steps;
+  _ Leav -- ing their flocks-draw nigh with low -- ly fear;
+  We too will thith -- er Bend our joy -- ful foot -- steps;
 }
 
 stanzae = \lyricmode {
-  _ Yea, Lord, we greet Thee, Born this hap -- py mor -- ning,
-  _ Je -- su, to Thee be _ glo -- ry given;
+  _ Yea, Lord, we greet Thee, Born this hap -- py morn -- ing,
+  _ Je -- su, to Thee be _ glo -- ry giv’n;
   Word of the Fa -- ther, Now in flesh ap -- pear -- ing;
 }
 
 stanzaf = \lyricmode {
   _ Lo! star -- led chief -- tains, Ma -- ji, Christ a -- dor -- ing
   _ Of -- fer Him frank-in -- cense and gold and myrrh;
-  We to the Christ Child Bring our hearts' o -- bla -- tions:
+  We to the Christ Child Bring our hearts’ o -- bla -- tions:
 }
 
 latin = \lyricmode {
@@ -138,8 +120,6 @@ latin = \lyricmode {
 \score {
   \transpose aes g
   \context ChoirStaff <<
-    \context ChordNames \accomp
-    \unset ChoirStaff.melismaBusyProperties
     \context Staff ="upper"  { \clef "G" <<
       \global
       \sop
@@ -147,20 +127,17 @@ latin = \lyricmode {
     >>}
 
     \context Lyrics = "stanza-l" \lyricsto "sop" {
-      \set stanza = "Latin."
+      \set stanza = #"Latin. "
       \latin }
     \context Lyrics = "stanza-1" \lyricsto "sop" {
-      \set stanza = "1."
+      \set stanza = #"1. "
       \stanzaa }
     \context Lyrics = "stanza-3" \lyricsto "sop" {
-      \set stanza = "2."
+      \set stanza = #"2. "
       \stanzac }
     \context Lyrics = "stanza-5" \lyricsto "sop" {
-      \set stanza = "3."
+      \set stanza = #"3. "
       \stanzae }
-                                %	\context Lyrics = "stanza-6" \lyricsto "sop" {
-                                %		\set stanza = "6."
-                                %			\stanzaf }
     \context Staff = "lower"  { \clef "F"<<
       \global
       \tenor
@@ -168,4 +145,3 @@ latin = \lyricmode {
     >>}
   >>
 }
-

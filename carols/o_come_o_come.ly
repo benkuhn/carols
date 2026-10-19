@@ -1,29 +1,18 @@
 \version "2.24.0"
 \header {
-  filename = "o_come_o_come.ly"
-  enteredby = "Gordon Gilbert and Ben Kuhn"
-  composer = "Ancient plainsong"
-  arranger = "arr. Thomas Helmore"
-  poet = "trans. John M. Neale and Henry Sloane Coffin"
-  date=""
-  title = "O Come O Come Emmanuel"
-  metre = "8.8.8.8.8.8. with Refrain"
-  meter = \metre
-  copyright = "Public Domain"
-  style = "Hymn"
-  mutopiacomposer = \composer
-  mutopiapoet=\poet
-  maintainer = "Gordon Gilbert"
-  maintainerEmail = "gord@angel.eicat.ca"
-  lastupdated = "2011/Dec/11"
+  title = "O Come, O Come, Emmanuel"
+  poet = "Latin, 18th century"
+  translator = "trans. John Mason Neale (1818–1866) and Henry Sloane Coffin (1877–1954)"
+  composer = "French, 15th century"
+  arranger = "arr. Thomas Helmore (1811–1890)"
 }
 \include "header.ly"
+% smaller than the house staff size (14) so that this fits on one page
+#(set-global-staff-size 13)
 global = {
-  \preamble
   \key e \minor
   \time 4/4
   \partial 4
-  #(set-global-staff-size 13)
 }
 
 sop = \context Voice = "sop" {
@@ -73,7 +62,7 @@ alto = \context Voice = "alto" {
     d2. b4 |
     d d d g |
     g2. fis4 |
-    g2. |
+    g2.
 
     g4 |
     fis2. g4 |
@@ -103,7 +92,7 @@ tenor = \context Voice = "tenor" {
     fis2. g4 |
     fis fis g d' |
     e2( d4) c |
-    b2. |
+    b2.
 
     b4 |
     a2. e'4 |
@@ -133,7 +122,7 @@ bass = \context Voice = "bass" {
     d2. e4 |
     d b g b |
     c( a b) d |
-    g,2. |
+    g,2.
 
     g'4 |
     d2. e4 |
@@ -166,7 +155,7 @@ stanzaa = \lyricmode {
 }
 stanzab = \lyricmode {
   O come, Thou Wis -- dom from on high,
-  Who ord -- 'rest all things migh -- ti -- ly;
+  Who ord -- ’rest all things might -- i -- ly;
   To us the path of knowl -- edge show,
   And teach us in her ways to go.
 }
@@ -174,7 +163,7 @@ stanzac = \lyricmode {
   O come, Thou Day -- spring from on high,
   And cheer us by Thy draw -- ing nigh;
   Dis -- perse the gloom -- y clouds of night,
-  And death's dark sha -- dow put to flight.
+  And death’s dark shad -- ow put to flight.
 }
 stanzad = \lyricmode {
   O come, De -- sire of na -- tions, bind
@@ -185,7 +174,6 @@ stanzad = \lyricmode {
 
 \score {
   \context ChoirStaff <<
-    \unset ChoirStaff.melismaBusyProperties
     \context Staff ="upper"  { \clef "G" <<
       \global
       \sop
@@ -193,23 +181,20 @@ stanzad = \lyricmode {
     >>}
 
     \context Lyrics = "stanza-l" \lyricsto "sop" {
-      \set stanza = "Latin."
+      \set stanza = #"Latin. "
       \latin }
     \context Lyrics = "stanza-1" \lyricsto "sop" {
-      \set stanza = "1."
+      \set stanza = #"1. "
       \stanzaa }
     \context Lyrics = "stanza-2" \lyricsto "sop" {
-      \set stanza = "2."
+      \set stanza = #"2. "
       \stanzab }
     \context Lyrics = "stanza-3" \lyricsto "sop" {
-      \set stanza = "3."
+      \set stanza = #"3. "
       \stanzac }
     \context Lyrics = "stanza-4" \lyricsto "sop" {
-      \set stanza = "4."
+      \set stanza = #"4. "
       \stanzad }
-                                %	\context Lyrics = "stanza-6" \lyricsto "sop" {
-                                %		\set stanza = "6."
-                                %			\stanzaf }
     \context Staff = "lower"  { \clef "F"<<
       \global
       \tenor

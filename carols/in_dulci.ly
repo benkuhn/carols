@@ -3,13 +3,13 @@
 \include "header.ly"
 
 \header {
-  title = "In ducli jubilo"
-  poet = "Heinrich Seuse (1300–1366)"
-  composer = "14th Century German Melody"
+  title = "In Dulci Jubilo"
+  poet = "German, 14th century"
+  translator = "trans. Percy Dearmer (1867–1936)"
+  composer = "German, 14th century"
 }
 
 global = {
-  \preamble
   \key f \major
   \time 6/4
 }
@@ -35,9 +35,6 @@ sopMusic = \relative c' {
   f2.( c'2.) |
   a2 a4 g2 g4 |
   \partial 4*5 f2. b2\rest \bar "|."
-}
-sopWords = \lyricmode {
-
 }
 
 altoMusic = \relative c' {
@@ -75,7 +72,7 @@ __
 altoWordsII = \lyricmode {
   \set stanza = #"2. "
   \markup\italic O \markup\italic Je -- \markup\italic su, \markup\italic par -- \markup\italic vu -- \markup\italic le, __
-  For thee I long al -- way; __
+  For Thee I long al -- way; __
   Com -- fort my heart’s blind -- ness
   \markup\italic O \markup\italic Pu -- \markup\italic er \markup\italic op -- \markup\italic ti -- \markup\italic me, __
   With all Thy lov -- ing kind -- ness,
@@ -119,15 +116,12 @@ tenorMusic = \relative c' {
   c2 bes4 g2 e4 |
   f2. a2 a4 |
   d2 d4 c4.( d8) bes4 |
-  a2( bes4)~ c2. |
+  a2( bes4 c2.) |
 
   a2 a4 g2 g4 |
   a2( bes4 g2.) |
   f2 bes4 d2 c4 |
   a2. s2 \bar "|."
-}
-tenorWords = \lyricmode {
-
 }
 
 bassMusic = \relative c {
@@ -153,9 +147,6 @@ bassMusic = \relative c {
   <<f2. f,>> d'2\rest \bar "|."
 
 }
-bassWords = \lyricmode {
-
-}
 
 \score {
   <<
@@ -164,7 +155,6 @@ bassWords = \lyricmode {
       \new Voice = "sopranos" { \voiceOne << \global \sopMusic >> }
       \new Voice = "altos" { \voiceTwo << \global \altoMusic >> }
     >>
-    \new Lyrics \with { alignAboveContext = #"women" } \lyricsto "sopranos" \sopWords
     \new Lyrics = "altosIV"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsIV
     \new Lyrics = "altosIII"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsIII
     \new Lyrics = "altosII"  \with { alignBelowContext = #"women" } \lyricsto "sopranos" \altoWordsII
@@ -174,8 +164,6 @@ bassWords = \lyricmode {
       \new Voice = "tenors" { \voiceOne << \global \tenorMusic >> }
       \new Voice = "basses" { \voiceTwo << \global \bassMusic >> }
     >>
-    \new Lyrics \with { alignAboveContext = #"men"  } \lyricsto "tenors" \tenorWords
-    \new Lyrics \with { alignBelowContext = #"men"  } \lyricsto "basses" \bassWords
   >>
   >>
 }
