@@ -76,8 +76,8 @@ altoWordsII = {
     Oh, bring us a fig -- gy pud -- ding,
     Oh, bring us a fig -- gy pud -- ding,
     And a cup of good cheer.
-    Good ti -- dings to you wher -- ev -- er you are;
-    Good ti -- dings for Christ -- mas and a hap -- py New Year!
+    Good tid -- ings to you wher -- ev -- er you are;
+    Good tid -- ings for Christ -- mas and a hap -- py New Year!
   }
 }
 altoWordsIII = \lyricmode {

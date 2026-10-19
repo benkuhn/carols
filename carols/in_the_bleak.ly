@@ -116,10 +116,10 @@ bass = \context Voice = "bass" \relative c {
 stanzaa = \lyricmode {
   \set ignoreMelismata = ##t
   In the bleak mid -- win -- ter,
-  Fros -- ty wind made moan,
+  Frost -- y wind made moan,
   Earth stood hard as i -- _ ron,
   Wa -- ter like a stone, ""
-  Snow had fal -- len, snow on snow, ""
+  Snow had fall -- en, snow on snow, ""
   Snow __ _ on __ _ snow, ""
   In the bleak mid -- win -- ter,
   \set ignoreMelismata = ##f
@@ -128,18 +128,18 @@ stanzaa = \lyricmode {
 
 stanzab = \lyricmode {
   \set ignoreMelismata = ##t
-  Hea -- ven can -- not hold Him
+  Heav -- en can -- not hold Him
   Nor __ _ earth sus -- tain;
   Heav’n and earth shall flee a -- way
   When He comes to reign; ""
   In the bleak mid -- win -- _ ter a sta -- ble place suf -- ficed
-  The Lord __ _ God Al -- migh -- ty,
+  The Lord __ _ God Al -- might -- y,
   \set ignoreMelismata = ##f
   Je -- sus Christ.
 }
 stanzac = \lyricmode {
   \set ignoreMelismata = ##t
-  An -- gels and arch -- an -- gels May have ga -- thered there
+  An -- gels and arch -- an -- gels May have gath -- ered there
   Cher -- u -- bim and Ser -- a -- phim
   Throng -- _ ed the air
   But on -- ly His __ _ mo -- _ ther ""

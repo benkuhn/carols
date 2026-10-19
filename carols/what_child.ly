@@ -33,7 +33,7 @@ verseI= \lyricmode {
 
 verseII= \lyricmode {
   \set stanza = #"2. "
-  Why lies He in such mean e -- state
+  Why lies He in such mean es -- tate
   Where ox and ass are feed -- ing?
   Good Chris -- tian, fear: for sin -- ners here
   The si -- lent Word is plead -- ing.
@@ -42,7 +42,7 @@ verseII= \lyricmode {
 verseIII= \lyricmode {
   \set stanza = #"3. "
   So bring Him in -- cense, gold, and myrrh,
-  Come pea -- sant, king, to own Him;
+  Come peas -- ant, king, to own Him;
   The King of kings sal -- va -- tion brings,
   Let lov -- ing hearts en -- throne Him.
 }

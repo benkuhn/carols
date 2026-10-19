@@ -71,11 +71,11 @@ bass = \context Voice = "bass"   {
 
 stanzaa = \lyricmode {
   It came up -- on the mid -- night clear,
-  That glor -- ious song of old,
+  That glo -- rious song of old,
   From an -- gels bend -- ing near the earth
   To touch their harps of gold:
   ‘Peace on the earth, good -- will to men
-  From Heav’n’s all -- grac -- ious King!’
+  From Heav’n’s all -- gra -- cious King!’
   The world in sol -- emn still -- ness lay
   To hear the an -- gels sing!
 }
@@ -104,7 +104,7 @@ stanzac = \lyricmode {
 
 stanzad = \lyricmode {
   For lo! the days are has -- t’ning on,
-  By pro -- phet bards fore -- told,
+  By proph -- et bards fore -- told,
   When with the ev -- er cir -- cling years
   Comes round the age of gold;
   When peace shall o -- ver all the earth

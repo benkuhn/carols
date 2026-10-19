@@ -157,7 +157,7 @@ stanzaa = \lyricmode {
 }
 stanzab = \lyricmode {
   O come, Thou Wis -- dom from on high,
-  Who ord -- ’rest all things migh -- ti -- ly;
+  Who ord -- ’rest all things might -- i -- ly;
   To us the path of knowl -- edge show,
   And teach us in her ways to go.
 }
@@ -165,7 +165,7 @@ stanzac = \lyricmode {
   O come, Thou Day -- spring from on high,
   And cheer us by Thy draw -- ing nigh;
   Dis -- perse the gloom -- y clouds of night,
-  And death’s dark sha -- dow put to flight.
+  And death’s dark shad -- ow put to flight.
 }
 stanzad = \lyricmode {
   O come, De -- sire of na -- tions, bind

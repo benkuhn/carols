@@ -81,9 +81,9 @@ stanzac = \lyricmode {
   I ask Thee to stay
   Close by me for ev -- er,
   and love me, I pray.
-  Bless all the dear child -- ren
+  Bless all the dear chil -- dren
   in Thy ten -- der care,
-  and fit us for hea -- ven,
+  and fit us for heav -- en,
   to live with Thee there.
 }
 

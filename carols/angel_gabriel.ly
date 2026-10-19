@@ -50,14 +50,14 @@ altoMusic = \relative c' {
 altoWords = \lyricmode {
   \set stanza = #"1. "
   The an -- gel Ga -- bri -- el from heav -- en came,
-  His wings as drif -- ted snow, his eyes as flame;
+  His wings as drift -- ed snow, his eyes as flame;
   “All hail,” said he, “thou low -- ly maid -- en Ma -- ry,
   Most high -- ly fa -- vored la -- dy,” Glo -- ri -- a!
 }
 altoWordsII = \lyricmode {
   \set stanza = #"2. "
-  “For known a bles -- sed Mo -- ther thou shalt be,
-  All ge -- ne -- ra -- tions laud and hon -- or thee,
+  “For known a bless -- ed Moth -- er thou shalt be,
+  All gen -- er -- a -- tions laud and hon -- or thee,
   Thy Son shall be Em -- man -- u -- el, by
   \set ignoreMelismata = ##t
   seers fore --
@@ -69,7 +69,7 @@ altoWordsII = \lyricmode {
 altoWordsIII = \lyricmode {
   \set stanza = #"3. "
   Then gen -- tle Ma -- ry meek -- ly bowed her head,
-  “To me be as it plea -- seth God,” she said,
+  “To me be as it pleas -- eth God,” she said,
   “My soul shall laud and mag -- ni -- fy His
   \set ignoreMelismata = ##t
   ho -- ly

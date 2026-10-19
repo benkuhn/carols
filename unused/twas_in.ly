@@ -27,7 +27,7 @@ verseI= \lyricmode {
 verseII= \lyricmode {
   \set stanza = #"1. "
   ’Twas in the moon of win -- ter -- time when all the birds had fled
-  That migh -- ty Git -- chi Man -- i -- tou sent an -- gel choirs in -- stead;
+  That might -- y Git -- chi Man -- i -- tou sent an -- gel choirs in -- stead;
   Be -- fore their light the stars grew dim,
   And won -- dring hun -- ters heard the hymn:
   Je -- sus your King is born, Je -- sus is born

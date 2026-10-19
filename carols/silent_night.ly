@@ -64,19 +64,19 @@ bass = \context Voice = "bass"   {
 stanzaa = \lyricmode {
   Si -- lent night! Ho -- ly night!
   All is calm, all is bright
-  Round yon Vir -- gin Mo -- ther and Child,
+  Round yon Vir -- gin Moth -- er and Child,
   Ho -- ly \set ignoreMelismata = ##t In -- fant \unset ignoreMelismata so ten -- der and mild.
-  Sleep in hea -- ven -- ly peace,
-  Sleep in hea -- ven -- ly peace.
+  Sleep in heav -- en -- ly peace,
+  Sleep in heav -- en -- ly peace.
 }
 
 stanzab = \lyricmode {
   Si -- lent night! Ho -- ly night!
   Shep -- herds quake at the sight,
-  Glo -- ries stream from hea -- ven a -- far,
+  Glo -- ries stream from heav -- en a -- far,
   Heav’n -- ly hosts sing al -- le -- lu -- ia;
-  Christ, the Sa -- vior, is born,
-  Christ, the Sa -- vior, is born.
+  Christ, the Sav -- ior, is born,
+  Christ, the Sav -- ior, is born.
 }
 
 stanzac = \lyricmode {
@@ -85,7 +85,7 @@ stanzac = \lyricmode {
   Ra -- diant beams from Thy ho -- ly face,
   With the \set ignoreMelismata = ##t dawn of \unset ignoreMelismata  re -- dee -- _ ming grace,
   Je -- sus, Lord, at Thy birth.
-  Jes -- us, Lord, at Thy birth.
+  Je -- sus, Lord, at Thy birth.
 }
 
 \score {

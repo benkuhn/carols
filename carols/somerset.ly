@@ -45,16 +45,16 @@ altoWords = \lyricmode {
 }
 altoWordsII =  \lyricmode {
   \set stanza = #"2. "
-  Oh ma -- ster and mi -- ssus, are you all with -- in?
+  Oh mas -- ter and mis -- sus, are you all with -- in?
   Pray o -- pen the door _ and let us come in!
-  O ma -- ster and mi -- ssus a -- \set ignoreMelismata = ##t sit -- ting by the fire,
+  O mas -- ter and mis -- sus a -- \set ignoreMelismata = ##t sit -- ting by the fire,
   Pray _ think on us poor trav -- elers, a trav -- eling in the mire. \unset ignoreMelismata
 }
 altoWordsIII = \lyricmode {
   \set stanza = #"3. "
   Oh where is the maid with the \set ignoreMelismata = ##t sil -- ver \unset ignoreMelismata head -- ed pin
   To o -- pen the door _ and let us come in?
-  Oh ma -- ster and mi -- ssus, it is our de -- sire:
+  Oh mas -- ter and mis -- sus, it is our de -- sire:
   A good loaf and cheese and a toast \set ignoreMelismata = ##t by the \unset ignoreMelismata fire.
 }
 

@@ -129,10 +129,10 @@ stanzaa = \lyricmode {
 }
 
 stanzab = \lyricmode {
-  “Hi -- ther, page, and stand by me,
-  If thou know’st it, tel -- ling,
-  Yon -- der pea -- sant, who is he;
-  Where and what his dwel -- ling?”
+  “Hith -- er, page, and stand by me,
+  If thou know’st it, tell -- ing,
+  Yon -- der peas -- ant, who is he;
+  Where and what his dwell -- ing?”
   “Sire, he lives a good league hence,
   Un -- der -- neath the moun -- tain,
   Right a -- gainst the for -- est fence,
@@ -141,13 +141,13 @@ stanzab = \lyricmode {
 
 stanzac = \lyricmode {
   “Bring me flesh and bring me wine;
-  Bring me pine logs hi -- ther.
+  Bring me pine logs hith -- er.
   Thou and I will see him dine,
-  When we bear them thi -- ther.”
+  When we bear them thith -- er.”
   Page and mon -- arch, forth they went;
-  Forth they went to -- ge -- ther
+  Forth they went to -- geth -- er
   Through the rude wind’s wild la -- ment
-  And the bit -- ter wea -- ther.
+  And the bit -- ter weath -- er.
 }
 
 stanzad = \lyricmode {
@@ -162,9 +162,9 @@ stanzad = \lyricmode {
 }
 stanzae = \lyricmode {
   In his mas -- ter’s steps he trod,
-  Where the snow lay din -- ted;
-  Heat was in the ve -- ry sod
-  Which the saint had prin -- ted.
+  Where the snow lay dint -- ed;
+  Heat was in the ver -- y sod
+  Which the saint had print -- ed.
   There -- fore, Chris -- tian men, be sure,
   Wealth or rank pos -- sess -- ing,
   Ye who now will bless the poor,

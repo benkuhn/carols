@@ -39,7 +39,7 @@ PartPOneVoiceOne =  \relative g' {
 
 PartPOneVoiceOneLyricsOne =  \lyricmode { "See," a -- mid the win --
     "ter’s" "snow," Born for us on earth be -- "low," "See," the ten --
-    der Lamb ap -- "pears," Pro -- mised from e -- ter -- nal "years."
+    der Lamb ap -- "pears," Prom -- ised from e -- ter -- nal "years."
     "Hail," thou e -- ver -- bless -- "èd" "morn!" "Hail," re -- demp --
     "tion’s" hap -- py "dawn!" Sing through all Je -- ru -- sa -- "lem:"
     "“Christ" is born in Beth -- le -- "hem!”" }
@@ -85,7 +85,7 @@ PartPOneVoiceTwoLyricsTwo =  \lyricmode { "Lo!" with -- in a man -- ger
     \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 }
 PartPOneVoiceTwoLyricsFour =  \lyricmode { "“As" we watched at dead of
     "night," "Lo," we saw a won -- drous "light;" An -- gels sing -- ing
-    peace on earth Told us of a Sa -- "viour’s" "birth.”" \skip4 \skip4
+    peace on earth Told us of a Sav -- "iour’s" "birth.”" \skip4 \skip4
     \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4
     \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4
     \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 \skip4 }

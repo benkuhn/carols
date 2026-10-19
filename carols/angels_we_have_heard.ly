@@ -71,7 +71,7 @@ altoWordsII = \lyricmode {
   \set stanza = #"2. "
   Shep -- herds, why this ju -- bi -- lee?
   Why your joy -- ous songs pro -- long?
-  What the glad -- some ti -- dings be
+  What the glad -- some tid -- ings be
   Which in -- spire your heav’n -- ly song?
 }
 altoWordsIII = \lyricmode {

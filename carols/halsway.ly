@@ -55,14 +55,14 @@ altoMusic = \relative fis' {
 }
 altoWords = \lyricmode {
   \set stanza = #"1. "
-  Lo for the ti -- ding of the long night moon,
+  Lo for the tid -- ing of the long night moon,
   Let the sun -- rise call a -- bout the morn -- ing soon,
   Short is the bid -- ing of the fad -- ing light,
   Sing for the com -- ing of the long -- est night.
   A win -- ter day, the sum -- mer grass turned hay,
   Frost in the field ’til the dawn of May,
   A sum -- mer’s light nev -- er shone as clear or as bright,
-  So dance in the sha -- dows of a win -- ter’s night.
+  So dance in the shad -- ows of a win -- ter’s night.
 }
 altoWordsII = \lyricmode {
   \set stanza = #"2. "
@@ -80,7 +80,7 @@ altoWordsIV = \lyricmode {
   \set stanza = #"4. "
   All of the col -- ours of the sun -- rise sky
   Shine a light up -- on us, as the day goes by,
-  Sun -- set -- ting sha -- dows fad -- ing out of sight,
+  Sun -- set -- ting shad -- ows fad -- ing out of sight,
 }
 
 tenorMusic = \relative d' {

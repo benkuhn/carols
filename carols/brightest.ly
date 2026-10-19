@@ -73,31 +73,31 @@ bass = \context Voice = "bass"   {
 
 stanzaa = \lyricmode {
   Hail the blest morn! See the great Me -- di -- a -- tor,
-  Down from the re -- gions of glo -- ry des -- cend!
+  Down from the re -- gions of glo -- ry de -- scend!
   Shep -- herds, go wor -- ship the babe in the man -- ger,
   Lo, for His guard the bright an -- gels at -- tend.
 
   Bright -- est and best of the sons of the morn -- ing!
   Dawn on our dark -- ness, and lend us thine aid;
   Star in the east, the ho -- ri -- zon a -- dorn -- ing,
-  Guide where our in -- fant Re -- dee -- mer was laid.
+  Guide where our in -- fant Re -- deem -- er was laid.
 }
 stanzab = \lyricmode {
-  Cold on His crad -- le the dew -- drops are shin -- ing;
+  Cold on His cra -- dle the dew -- drops are shin -- ing;
   Low lies His bed, with the beasts of the stall;
-  An -- gels a -- dore Him, in slum -- bers rec -- lin -- ing,
+  An -- gels a -- dore Him, in slum -- bers re -- clin -- ing,
   Wise men and shep -- herds be -- fore Him do fall.
 }
 stanzac = \lyricmode {
   Say, shall we yield Him, in cost -- ly de -- vo -- tion,
   O -- dours of E -- den, and of -- f’rings di -- vine,
   Gems from the moun -- tain, and pearls from the o -- cean,
-  Myrrh from the fo -- rest, and gold from the mine?
+  Myrrh from the for -- est, and gold from the mine?
 
   Bright -- est and best of the sons of the morn -- ing!
   Dawn on our dark -- ness, and lend us thine aid;
   Star in the east, the ho -- ri -- zon a -- dorn -- ing,
-  Guide where our in -- fant Re -- dee -- mer was laid.
+  Guide where our in -- fant Re -- deem -- er was laid.
 }
 stanzad = \lyricmode {
   Vain -- ly we of -- fer each am -- ple o -- bla -- tion,

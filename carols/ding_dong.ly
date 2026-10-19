@@ -101,7 +101,7 @@ bass = \context Voice = "bass" \relative c {
 
 stanzaa = \lyricmode {
   Ding dong! mer -- ri -- ly on high in heav’n the bells are ring -- ing:
-  Ding dong!  Ve -- ri -- ly the sky is riv’n with an -- gel sing -- ing.
+  Ding dong!  Ver -- i -- ly the sky is riv’n with an -- gel sing -- ing.
   \markup\italic Glo -- \markup\italic ri -- \markup\italic a, \markup\italic ho -- \markup\italic san -- \markup\italic na \markup\italic in \markup\italic ex -- \markup\italic cel -- \markup\italic sis!
 }
 stanzab = \lyricmode {

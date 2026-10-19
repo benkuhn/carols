@@ -99,7 +99,7 @@ bass = \context Voice = "bass" \relative c' {
 }
 
 wordsCenter = \lyricmode {
-  A -- dam lay y -- boun -- den,
+  A -- dam lay y -- bound -- en,
   Bound -- en in a bond;
   Four thou -- sand win -- ter
   Thought he not too long.
@@ -112,7 +112,7 @@ wordsCenter = \lyricmode {
   Ne had the ap -- ple tak -- en been,
   The ap -- ple tak -- en been,
   Ne had nev -- er our la -- dy
-  A -- been hea -- ven -- é queen.
+  A -- been heav -- en -- é queen.
 
   Bless -- ed be the time
   That ap -- ple tak -- en was,

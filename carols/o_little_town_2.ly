@@ -73,19 +73,19 @@ stanzaa = \lyricmode {
   A -- bove thy deep and dream -- less sleep
   The si -- lent stars go by:
   Yet in thy dark streets shin -- eth
-  The e -- ver -- las -- ting Light;
+  The ev -- er -- last -- ing Light;
   The hopes and fears of all the years
   Are met in thee to -- night.
 }
 
 stanzab = \lyricmode {
   For Christ is born of Ma -- _ ry;
-  And ga -- thered all a -- bove,
+  And gath -- ered all a -- bove,
   While mor -- tals sleep, the an -- gels keep
   Their watch of won -- d’ring love.
-  O mor -- ning stars, to -- ge -- ther
+  O morn -- ing stars, to -- geth -- er
   Pro -- claim the ho -- ly birth,
-  And prai -- ses sing to God the King,
+  And prais -- es sing to God the King,
   And peace to men on earth!
 }
 
@@ -93,7 +93,7 @@ stanzac = \lyricmode {
   How si -- lent -- ly, how si -- lent -- ly
   The won -- drous gift is giv’n!
   So God im -- parts to hu -- man hearts
-  The bles -- sings of His heav’n:
+  The bless -- ings of His heav’n:
   No ear may hear His com -- ing;
   But in this world of sin,
   Where meek souls will re -- ceive Him, still
@@ -102,11 +102,11 @@ stanzac = \lyricmode {
 
 stanzad = \lyricmode {
   O Ho -- ly Child of Beth -- le -- hem,
-  Des -- cend to us we pray;
+  De -- scend to us we pray;
   Cast out our sin, and en -- ter in;
   Be born in us to -- day.
   We hear the heav’n -- ly an -- gels
-  The great glad ti -- dings tell:
+  The great glad tid -- ings tell:
   O come to us, a -- bide with us,
   Our Lord Em -- man -- u -- el.
 }

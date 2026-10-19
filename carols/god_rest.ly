@@ -154,16 +154,16 @@ stanzaa = \lyricmode {
   \set ignoreMelismata = ##t
   God rest ye mer -- ry, gen -- tle -- men,
   \unset ignoreMelismata
-  Let no -- thing you dis -- may,
+  Let noth -- ing you dis -- may,
   Re -- mem -- ber Christ our Sav -- iour
   Was born on Christ -- mas Day;
   \set ignoreMelismata = ##t
   To save us all from Sa -- tan’s pow’r
   When we were gone a -- stray.
   \unset ignoreMelismata
-  O ti -- dings of com -- fort and joy,
+  O tid -- ings of com -- fort and joy,
   Com -- fort and joy;
-  O ti -- dings of com -- fort and joy!
+  O tid -- ings of com -- fort and joy!
 }
 
 stanzab = \lyricmode {
@@ -177,16 +177,16 @@ stanzab = \lyricmode {
 
 stanzac = \lyricmode {
   From God our heav’n -- ly Fa -- ther
-  A bles -- sed an -- gel came;
+  A bless -- ed an -- gel came;
   And un -- to cer -- tain shep -- herds
-  Brought ti -- dings of the same;
+  Brought tid -- ings of the same;
   \set ignoreMelismata = ##t
   How that in Beth -- le -- hem was born
   The Son of God by name.
 }
 
 stanzad = \lyricmode {
-  The shep -- herds at those ti -- dings,
+  The shep -- herds at those tid -- ings,
   Re -- joic -- ed much in mind,
   And left their flocks a -- feed -- ing,
   In tem -- pest, storm, and wind,

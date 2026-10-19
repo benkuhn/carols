@@ -79,17 +79,17 @@ stanzab = \lyricmode {
   I -- sai -- ah ’twas fore -- told it,
   The Rose I have in mind,
   With Ma -- ry we be -- hold it,
-  The Vir -- gin Mo -- ther kind.
+  The Vir -- gin Moth -- er kind.
   To show God’s love a -- right,
   She bore to men a Sav -- iour,
   When half -- spent was the night.
 }
 stanzac = \lyricmode {
-  This flow’r, whose frag -- rance ten -- der
+  This flow’r, whose fra -- grance ten -- der
   With sweet -- ness fills the air,
   Dis -- pels with glo -- rious splen -- dour
   The dark -- ness ev -- ery -- where;
-  True man, yet ve -- ry God,
+  True man, yet ver -- y God,
   From sin and death He saves us,
   And light -- ens ev -- ery load.
 }

@@ -80,7 +80,7 @@ stanzaa = \lyricmode {
   Hark! the her -- ald an -- gels sing,
   Glo -- ry to the new born King,
   Peace on earth, and mer -- cy mild,
-  God and sin -- ners re -- con -- ciled.
+  God and sin -- ners rec -- on -- ciled.
   Joy -- ful all ye na -- tions, rise,
   Join the tri -- umph of the skies;
   With the-an -- gel -- ic host pro -- claim
@@ -91,7 +91,7 @@ stanzaa = \lyricmode {
 
 stanzab = \lyricmode {
   Christ, by high -- est heav’n a -- dored,
-  Christ, the e -- ver -- last -- ing Lord
+  Christ, the ev -- er -- last -- ing Lord
   Late in time be -- hold Him come,
   Off -- spring of a Vir -- gin’s womb.
   Veiled in flesh the God -- head see!

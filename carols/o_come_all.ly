@@ -75,7 +75,7 @@ stanzaa = \lyricmode {
 stanzab = \lyricmode {
   _ God of _ God, _ Light _ of _ Light, _ _
   Lo, He ab -- hors not the Vir -- gin’s womb;
-  Ve -- ry _  God, Be -- got -- ten, not cre -- a -- ted;
+  Ver -- y _  God, Be -- got -- ten, not cre -- at -- ed;
 }
 
 stanzac = \lyricmode {
@@ -90,12 +90,12 @@ stanzac = \lyricmode {
 
 stanzad = \lyricmode {
   _ See how the Shep -- herds, sum -- moned to His cra -- dle,
-  _ Lea -- ving their flocks-draw nigh with low -- ly fear;
-  We too will thi -- ther Bend our joy -- ful foot -- steps;
+  _ Leav -- ing their flocks-draw nigh with low -- ly fear;
+  We too will thith -- er Bend our joy -- ful foot -- steps;
 }
 
 stanzae = \lyricmode {
-  _ Yea, Lord, we greet Thee, Born this hap -- py mor -- ning,
+  _ Yea, Lord, we greet Thee, Born this hap -- py morn -- ing,
   _ Je -- su, to Thee be _ glo -- ry giv’n;
   Word of the Fa -- ther, Now in flesh ap -- pear -- ing;
 }
