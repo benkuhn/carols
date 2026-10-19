@@ -74,7 +74,7 @@ bassMusic = \relative c {
   c4. d8 e4 | e4. d8 c4 | f4. d8 g4 | c,2 c4 |
   c4. d8 e4 | a,4. a8 f'4 | f4. d8 e4 | a,2. |
   g4. g8 g4 | e4. e8 a4 | f4. d8 g f | e2 a4 |
-  g4. g8 g4 | e4. e8 a4 | f4. d8 g4 | << g2 c,2. >>  |
+  g4. g8 g4 | e4. e8 a4 | f4. d8 g4 | <g c,>2. |
 }
 
 \score {
