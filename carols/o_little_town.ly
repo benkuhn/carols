@@ -18,7 +18,7 @@ global= {
 
 sop = \context Voice = "sop"    {
   \voiceOne
-  b'4 b' b' ais' b' d''( c'') e'
+  b'4 b' b' ais' b' d'' c'' e'
   a' g' fis'8 \melisma g' \melismaEnd a'4 d' b'2.
   b'4 b' b' e'' d'' d'' c'' e'
   a' g' fis'8 \melisma g' \melismaEnd b'4 a' g'2.
@@ -66,7 +66,7 @@ bass = \context Voice = "bass"   {
 }
 
 stanzaa = \lyricmode {
-  O lit -- tle town of Beth-le -- hem
+  O lit -- tle town of Beth -- le -- hem
   How still we see thee lie;
   A -- bove thy deep and dream -- less sleep
   The si -- lent stars go by:
@@ -77,7 +77,7 @@ stanzaa = \lyricmode {
 }
 
 stanzab = \lyricmode {
-  For Christ is born of Ma --  ry;
+  For Christ is born of Ma -- _ ry;
   And ga -- thered all a -- bove,
   While mor -- tals sleep, the an -- gels keep
   Their watch of won -- dering love.
@@ -88,7 +88,7 @@ stanzab = \lyricmode {
 }
 
 stanzac = \lyricmode {
-  How si -- lent -- ly, how si-lent -- ly
+  How si -- lent -- ly, how si -- lent -- ly
   The won -- drous gift is giv'n!
   So God im -- parts to hu -- man hearts
   The bles -- sings of His heaven:
@@ -99,7 +99,7 @@ stanzac = \lyricmode {
 }
 
 stanzad = \lyricmode {
-  O Ho -- ly Child of Beth-le -- hem,
+  O Ho -- ly Child of Beth -- le -- hem,
   Des -- cend to us we pray;
   Cast out our sin, and en -- ter in;
   Be born in us to -- day.

@@ -80,7 +80,7 @@ stanzaa = \lyricmode {
 }
 
 stanzab = \lyricmode {
-  For Christ is born of Ma -- \skip4 ry;
+  For Christ is born of Ma -- _ ry;
   And ga -- thered all a -- bove,
   While mor -- tals sleep, the an -- gels keep
   Their watch of won -- dering love.
