@@ -1,5 +1,5 @@
 \version "2.24.0"
-\include "header.ly"
+\include "../carols/header.ly"
 % smaller than the house staff size (14) so that this fits on one page
 #(set-global-staff-size 12)
 \header {

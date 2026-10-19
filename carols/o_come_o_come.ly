@@ -3,7 +3,7 @@
   composer = "Ancient plainsong"
   arranger = "arr. Thomas Helmore"
   poet = "trans. John M. Neale and Henry Sloane Coffin"
-  title = "O Come O Come Emmanuel"
+  title = "O Come, O Come, Emmanuel"
   meter = "8.8.8.8.8.8. with Refrain"
   mutopiacomposer = \composer
   mutopiapoet=\poet

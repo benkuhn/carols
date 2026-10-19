@@ -2,7 +2,7 @@
 
 
 \header {
-  title = "What Child is This?"
+  title = "What Child Is This?"
   poet = "William Chatterton Dix (1837 - 1898)"
   composer = "Trad. English Melody"
   meter = "Greensleeves 8.7.8.7 with Refrain"

@@ -29,17 +29,10 @@ for FILE in carols/*.ly; do
     INFILE=carols/$BASE.ly
     OUTFILE_LY=build/$BASE
     OUTFILE=$OUTFILE_LY.pdf
-    # Check whether file needs to be rebuilt; it may be cached. If it
-    # is cached, we continue.
-    if [ -f $OUTFILE ]; then
-        LATEST=$(ls -1t $INFILE $OUTFILE | head -n 1)
-        if [ "$LATEST" == $OUTFILE ]; then
-            echo $FILE up-to-date
-            continue
-        elif [ "$LATEST" != $INFILE ]; then
-            echo Unknown value of LATEST: $LATEST
-            continue
-        fi
+    # Skip the file if its PDF is newer than both it and header.ly
+    if [ -f $OUTFILE ] && [ $OUTFILE -nt $INFILE ] && [ $OUTFILE -nt carols/header.ly ]; then
+        echo $FILE up-to-date
+        continue
     fi
     $DOCKER lilypond -drelative-includes -o $OUTFILE_LY $INFILE
 done

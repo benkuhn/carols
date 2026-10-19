@@ -1,5 +1,5 @@
 \version "2.24.0"
-\include "header.ly"
+\include "../carols/header.ly"
 \header {
   title = "The Holly and the Ivy"
   poet = "17th Century English"

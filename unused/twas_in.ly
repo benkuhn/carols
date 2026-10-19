@@ -31,7 +31,6 @@ verseII= \lyricmode {
   And won -- dring hun -- ters heard the hymn:
   Je -- sus your King is born, Je -- sus is born
   In ex -- cel -- sis glo -- ri -- a
-  2. With -- in a lodge of
 
 }
 
