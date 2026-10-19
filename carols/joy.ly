@@ -5,7 +5,6 @@
   poet = "Isaac Watts (1674–1748)"
   composer = "after George Frideric Handel (1685–1759)"
   arranger = "arr. Lowell Mason (1792–1872)"
-  meter = "Antioch 8.6.8.6. with Repeats"
 }
 
 \include "header.ly"

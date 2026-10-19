@@ -7,7 +7,6 @@
   translator = "trans. Sabine Baring-Gould (1834–1924)"
   composer = "Traditional Basque"
   arranger = "arr. Edgar Pettman (1866–1943)"
-  meter = "Gabriel’s Message 10.10.12.10."
 }
 
 global = {

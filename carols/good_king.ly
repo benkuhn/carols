@@ -5,7 +5,6 @@
   poet = "John Mason Neale (1818–1866)"
   composer = "Piae Cantiones (1582)"
   arranger = "arr. John Stainer (1840–1901)"
-  meter = "Tempus Adest Floridum 7.6.7.6.D."
 }
 
 \include "header.ly"

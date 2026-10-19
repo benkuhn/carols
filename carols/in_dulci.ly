@@ -7,7 +7,6 @@
   poet = "German, 14th century"
   translator = "trans. Percy Dearmer (1867–1936)"
   composer = "German, 14th century"
-  meter = "In Dulci Jubilo Irregular"
 }
 
 global = {

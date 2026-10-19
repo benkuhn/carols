@@ -6,7 +6,6 @@
   translator = "trans. Theodore Baker (1851–1934) and Harriet Krauth Spaeth (1845–1925)"
   composer = "German, 16th century"
   arranger = "arr. Michael Praetorius (1571–1621)"
-  meter = "Es ist ein Ros 7.6.7.6.6.7.6."
 }
 
 \include "header.ly"

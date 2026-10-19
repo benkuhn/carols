@@ -4,7 +4,6 @@
   title = "It Came Upon the Midnight Clear"
   poet = "Edmund Hamilton Sears (1810–1876)"
   composer = "Richard Storrs Willis (1819–1900)"
-  meter = "Carol 8.6.8.6.D."
 }
 
 \include "header.ly"

@@ -8,7 +8,6 @@
   title = "See Amid the Winter’s Snow"
   poet = "Edward Caswall (1814–1878)"
   composer = "John Goss (1800–1880)"
-  meter = "Humility 7.7.7.7. with Refrain"
 }
 
 \layout {

@@ -4,7 +4,6 @@
   title = "In the Bleak Midwinter"
   poet = "Christina Rossetti (1830–1894)"
   composer = "Gustav Holst (1874–1934)"
-  meter = "Cranham Irregular"
 }
 
 \include "header.ly"

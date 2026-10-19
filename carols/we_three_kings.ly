@@ -5,7 +5,6 @@
   title = "We Three Kings of Orient Are"
   poet = "John Henry Hopkins Jr. (1820–1891)"
   composer = "John Henry Hopkins Jr. (1820–1891)"
-  meter = "Kings of Orient 8.8.4.4.6. with Refrain"
 }
 
 global = {

@@ -5,7 +5,6 @@
   poet = "Traditional English"
   composer = "Traditional English"
   arranger = "arr. John Stainer (1840–1901)"
-  meter = "The First Nowell Irregular with Refrain"
 }
 global = {
   \key d \major

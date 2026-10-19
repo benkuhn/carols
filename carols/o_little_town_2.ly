@@ -5,7 +5,6 @@
   poet = "Phillips Brooks (1835–1893)"
   composer = "Traditional English"
   arranger = "arr. Ralph Vaughan Williams (1872–1958)"
-  meter = "Forest Green 8.6.8.6.7.6.8.6."
 }
 
 \include "header.ly"

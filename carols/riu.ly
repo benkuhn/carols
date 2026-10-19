@@ -57,7 +57,7 @@ cantus={
   d'2 d'
         \once \override Score.RehearsalMark.break-visibility = #'#(#t #t #f)
         \override Score.RehearsalMark.self-alignment-X=#right
-        \mark \markup{"Fin"}
+        \mark \markup{"Fine"}
   R1*4/4 |
 %30
   R1*4/4 |

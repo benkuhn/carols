@@ -98,7 +98,7 @@ tenorMusic = \relative c {
   g g8 g c c |
   \slurDotted c4 aes aes8( aes) |
   aes4 des des |
-  c2_\markup\italic"Fine" \bar "|."
+  c2 \bar "|."
   aes4 |
   c c c |
 

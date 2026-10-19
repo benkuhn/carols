@@ -4,7 +4,6 @@
   title = "O Little Town of Bethlehem"
   poet = "Phillips Brooks (1835–1893)"
   composer = "Lewis Henry Redner (1831–1908)"
-  meter = "St. Louis 8.6.8.6.7.6.8.6."
 }
 
 \include "header.ly"

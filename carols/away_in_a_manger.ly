@@ -5,7 +5,6 @@
   poet = "American, 19th century"
   composer = "William James Kirkpatrick (1838–1921)"
   arranger = "arr. David Willcocks (1919–2015)"
-  meter = "Cradle Song 11.11.11.11."
 }
 
 \include "header.ly"

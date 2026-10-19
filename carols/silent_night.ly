@@ -5,7 +5,6 @@
   poet = "Joseph Mohr (1792–1848)"
   translator = "trans. John Freeman Young (1820–1885)"
   composer = "Franz Xaver Gruber (1787–1863)"
-  meter = "Stille Nacht Irregular"
 }
 
 \include "header.ly"

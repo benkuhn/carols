@@ -4,7 +4,6 @@
   title = "Brightest and Best"
   poet = "Reginald Heber (1783–1826) and anonymous"
   composer = "American, 19th century"
-  meter = "Star in the East 11.10.11.10. with Refrain"
 }
 
 \include "header.ly"

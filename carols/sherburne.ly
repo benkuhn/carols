@@ -4,7 +4,6 @@
   title = "Sherburne"
   poet = "Nahum Tate (1652–1715)"
   composer = "Daniel Read (1757–1836)"
-  meter = "Sherburne 8.6.8.6."
 }
 
 \include "header.ly"

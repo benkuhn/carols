@@ -5,7 +5,6 @@
   translator = "trans. John Mason Neale (1818–1866) and Henry Sloane Coffin (1877–1954)"
   composer = "French, 15th century"
   arranger = "arr. Thomas Helmore (1811–1890)"
-  meter = "Veni Emmanuel 8.8.8.8. with Refrain"
 }
 \include "header.ly"
 % smaller than the house staff size (14) so that this fits on one page

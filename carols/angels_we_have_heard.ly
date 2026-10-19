@@ -5,7 +5,6 @@
   poet = "Traditional French"
   translator = "trans. James Chadwick (1813–1882)"
   composer = "Traditional French"
-  meter = "Gloria 7.7.7.7. with Refrain"
 }
 global = {
   \key g \major
