@@ -62,7 +62,7 @@ stanzaa = \lyricmode {
   Let ev -- ery heart pre -- pare Him room,
   And heaven and na -- ture sing,
   And heaven and na -- ture sing,
-  And heaven, and heaven, and na -- ture sing.
+  And heav’n, and heav’n, and na -- ture sing.
 }
 skips = {
   \skip 1 \skip 1 \skip 1

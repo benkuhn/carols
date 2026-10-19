@@ -90,7 +90,7 @@ stanzaa = \lyricmode {
 }
 
 stanzab = \lyricmode {
-  Christ, by high -- est heaven a -- dored,
+  Christ, by high -- est heav’n a -- dored,
   Christ, the e -- ver -- last -- ing Lord
   Late in time be -- hold Him come,
   Off -- spring of a Vir -- gin’s womb.
@@ -100,7 +100,7 @@ stanzab = \lyricmode {
   Je -- sus, our Em -- man -- u -- el.
 }
 stanzac = \lyricmode {
-  Hail the heaven born Prince of peace!
+  Hail the heav’n -- born Prince of peace!
   Hail, the Sun of right -- eous -- ness!
   Light and life to all He brings,
   Ris’n with heal -- ing in His wings.
