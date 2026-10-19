@@ -9,7 +9,6 @@
 \include "header.ly"
 
 global= {
-  \autoBeamOff
 
   \time 4/4
   \key f \major
@@ -17,7 +16,7 @@ global= {
 
 sop = \context Voice = "sop" \relative c''   {
   \voiceOne
-  \slurDotted
+  \slurDashed
   a4.( bes8) c4 a |
   g2 f |
   g4.( a8) g4 d |
@@ -42,7 +41,7 @@ sop = \context Voice = "sop" \relative c''   {
 
 alto=\context Voice = "alto" \relative c'  {
   \voiceTwo
-  \slurDotted f4.( f8) f4 c |
+  \slurDashed f4.( f8) f4 c |
   d2 d |
   d4.( d8) d4 c |
   bes1 |
@@ -66,12 +65,12 @@ alto=\context Voice = "alto" \relative c'  {
 
 tenor = \context Voice = "tenor" \relative c' {
   \voiceOne
-  \slurDotted c4.( c8) c4 f, |
+  \slurDashed c4.( c8) c4 f, |
   a2 a |
   g4.( d8) d4 f |
   \slurSolid f2( e) |
 
-  \slurDotted f4. c'8 c4 f, |
+  \slurDashed f4. c'8 c4 f, |
   a4.( a8) a2 |
   d4( d) bes4. a8 |
   a2. a4 |
@@ -90,12 +89,12 @@ tenor = \context Voice = "tenor" \relative c' {
 
 bass = \context Voice = "bass" \relative c {
   \voiceTwo
-  \slurDotted f4.( g8) a4 f |
+  \slurDashed f4.( g8) a4 f |
   d2 d |
   bes4.( c8) bes4 a |
   \slurSolid g2( c) |
 
-  \slurDotted f4.( g8) a4 f |
+  \slurDashed f4.( g8) a4 f |
   d4. d8 d2 |
   bes4( bes) c4. f8 |
   f2. f4 |

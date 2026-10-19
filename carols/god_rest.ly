@@ -10,7 +10,6 @@
 \include "header.ly"
 
 global = {
-  \autoBeamOff
   \time 4/4
   \key e \minor
 
@@ -20,7 +19,7 @@ global = {
 sop = \context Voice = "sop"    {
   \voiceOne
   \relative c' {
-    \slurDotted
+    \slurDashed
     e4 |
     e b' b a |
     g( fis) e d |
@@ -56,18 +55,18 @@ alto=\context Voice = "alto"   {
   \relative c' {
     e4 |
     e g fis dis |
-    \slurDotted e( d) c b |
+    \slurDashed e( d) c b |
     \slurSolid e dis e e |
     dis2. e4 |
 
     e g fis dis |
-    \slurDotted e( d) c b |
+    \slurDashed e( d) c b |
     \slurSolid
     e dis e e |
     dis2 s4 e |
 
     e d d g |
-    \slurDotted f( e) d dis |
+    \slurDashed f( e) d dis |
     \slurSolid
     e cis d g |
     fis2
@@ -88,19 +87,19 @@ tenor = \context Voice = "tenor"   {
   \relative c' {
     e,4 |
     g e fis b |
-    \slurDotted b( b) g g |
+    \slurDashed b( b) g g |
     \slurSolid
     g b b e, |
     fis2. e4 |
 
     g e fis b |
-    \slurDotted b( b) g g |
+    \slurDashed b( b) g g |
     \slurSolid
     g b b e, |
     fis2 s4 gis |
 
     a a g g |
-    \slurDotted g( g) g fis |
+    \slurDashed g( g) g fis |
     \slurSolid
     g g a d |
     d( c)
@@ -121,19 +120,19 @@ bass = \context Voice = "bass"   {
   \relative c' {
     e,4 |
     e e dis b |
-    \slurDotted e( b) c g |
+    \slurDashed e( b) c g |
     \slurSolid
     c b e c |
     b2. e4 |
 
     e e dis b |
-    \slurDotted e( b) c g |
+    \slurDashed e( b) c g |
     \slurSolid
     c b e c |
     b2 d4\rest e |
 
     a fis g e |
-    \slurDotted b( c) g b |
+    \slurDashed b( c) g b |
     \slurSolid
     e e d b |
     d2

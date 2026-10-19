@@ -8,7 +8,6 @@
 global = {
   \key d \minor
   \time 4/4
-  \autoBeamOff
 }
 
 sopMusic = \relative c' {

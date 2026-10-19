@@ -15,14 +15,14 @@ global = {
 sopMusic = \relative c'' {
   \partial 4 g4 |
   g8 g8 g4 e' |
-  \slurDotted d4( b4.) g8 |
+  \slurDashed d4( b4.) g8 |
   g( g) g( g) e'( e) |
   d2 \bar"" \break
 
   \slurSolid d8[ c] |
-  b8 a g4 \slurDotted b8( b) |
+  b8 a g4 \slurDashed b8( b) |
   e, e d4 \slurSolid g8[ a] |
-  b c b4 \slurDotted a8( a) |
+  b c b4 \slurDashed a8( a) |
   g2 b8\rest \bar""\break
 
   g8 |
@@ -41,14 +41,14 @@ sopMusic = \relative c'' {
 altoMusic = \relative c' {
   e4 |
   d8 d e4 fis |
-  \slurDotted g( g4.) e8 |
+  \slurDashed g( g4.) e8 |
   d8( d) e( e) g( g) |
   \slurSolid g4( fis)
 
   g8[ a] |
-  g8 fis g4 \slurDotted fis8( fis) |
+  g8 fis g4 \slurDashed fis8( fis) |
   e8 e d4 \slurSolid e8[ g] |
-  g8 g g4 \slurDotted fis8( fis) |
+  g8 g g4 \slurDashed fis8( fis) |
   g2 s8
 
   e8 |
@@ -111,14 +111,14 @@ altoWordsV = \lyricmode {
 tenorMusic = \relative c' {
   c4 |
   b8 b c4 a |
-  \slurDotted b4( d4.) b8 |
+  \slurDashed b4( d4.) b8 |
   b( b) b( b) c( c) |
   a2
 
   \slurSolid b8[ d] |
-  d8 d d4 \slurDotted d8( d) |
+  d8 d d4 \slurDashed d8( d) |
   c c b4 \slurSolid c8[ e] |
-  d e d4 \slurDotted d8( c) |
+  d e d4 \slurDashed d8( c) |
   b2 s8
 
   c8 |
@@ -136,14 +136,14 @@ tenorMusic = \relative c' {
 bassMusic = \relative c' {
   g4 |
   g8 g g4 g |
-  \slurDotted g4( g4.) g8 |
+  \slurDashed g4( g4.) g8 |
   g8( g) e( e) c( c) |
   d2
 
   \slurSolid e8[ fis] |
-  g8 a b4 \slurDotted b8( b) |
+  g8 a b4 \slurDashed b8( b) |
   c8 c b4 \slurSolid c8[ c,] |
-  d d d4 \slurDotted d8( d) |
+  d d d4 \slurDashed d8( d) |
   g2 d8\rest
 
   g8 |

@@ -10,11 +10,6 @@
   composer = "John Goss (1800–1880)"
 }
 
-\layout {
-    \context { \Score
-        autoBeaming = ##f
-        }
-    }
 PartPOneVoiceOne =  \relative g' {
     \clef "treble" \key g \major \numericTimeSignature\time 4/4 | % 1
     g4. a8 g4 fis4 | % 2
@@ -110,7 +105,7 @@ PartPTwoVoiceOne =  \relative g {
     g4. g8 e'4 d4 | % 12
     c4 b4 a2 | % 13
     g4. g8 e4 d4 | % 13
-    b'4 a8 ( [ g8 ) ] fis2
+    b'4 a8   g8   fis2
     | % 15
     g4. g8 g4 e'4 | % 16
     d4 c4 b2 \bar "|."

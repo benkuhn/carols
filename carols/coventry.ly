@@ -10,7 +10,6 @@
 \include "header.ly"
 
 global = {
-  \autoBeamOff
   \key bes \major
   \time 3/4
 }

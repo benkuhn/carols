@@ -11,7 +11,6 @@
 \include "header.ly"
 
 global = {
-  \autoBeamOff
   \time 6/8
   \key e \minor
   \partial 8
@@ -50,22 +49,22 @@ sop = \context Voice = "sop" {
   \voiceOne
   \relative c' {
   e8 |
-  g4 a8 \autoBeamOn b8.( c16) \autoBeamOff b8
-  a4 fis8 \autoBeamOn d8.( e16) \autoBeamOff fis8
-  g4 e8 \autoBeamOn e8.( dis16) \autoBeamOff e8
+  g4 a8 b8.[ c16] b8
+  a4 fis8 d8.[ e16] fis8
+  g4 e8 e8.[ dis16] e8
   fis4( dis8) b4 e8
-  g4 a8 \autoBeamOn b8.( c16) \autoBeamOff b8
-  a4 fis8 \autoBeamOn d8.( e16) \autoBeamOff fis8
-  \autoBeamOn g8.( fis16) \autoBeamOff e8 \autoBeamOn dis8.( cis16) \autoBeamOff dis8
+  g4 a8 b8.[ c16] b8
+  a4 fis8 d8.[ e16] fis8
+  g8.[ fis16] e8 dis8.[ cis16] dis8
   e4. e
                                 %Refrain
-  d' \autoBeamOn d8.( cis16) \autoBeamOff b8
-  a4 fis8 \autoBeamOn d8.( e16) \autoBeamOff fis8
-  g4 e8 \autoBeamOn e8.( dis16) \autoBeamOff e8
+  d' d8.[ cis16] b8
+  a4 fis8 d8.[ e16] fis8
+  g4 e8 e8.[ dis16] e8
   fis4 dis8 b4.
-  d' \autoBeamOn d8.( cis16) \autoBeamOff b8
-  a4 fis8 \autoBeamOn d8.( e16) \autoBeamOff fis8
-  \autoBeamOn g8.( fis16) \autoBeamOff e8 \autoBeamOn dis8.( cis16) \autoBeamOff dis8
+  d' d8.[ cis16] b8
+  a4 fis8 d8.[ e16] fis8
+  g8.[ fis16] e8 dis8.[ cis16] dis8
   e4. e \bar "|."
 }}
 

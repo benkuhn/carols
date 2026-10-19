@@ -51,6 +51,8 @@
 
 \layout {
   indent = 0.0\pt
+  % hymnal style: beam only notes sung to one syllable (beamed by hand)
+  \context { \Voice autoBeaming = ##f }
 }
 
 lyricItal = {

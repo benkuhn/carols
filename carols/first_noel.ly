@@ -9,24 +9,23 @@
 global = {
   \key d \major
   \time 3/4
-  \autoBeamOff
 }
 
 sopMusic = \relative c' {
   \partial 4 fis8[^\mf e] |
   d4.( e8) fis[ g] |
   a2 b8[ cis] |
-  \slurDotted d4( cis) b |
+  \slurDashed d4( cis) b |
   a2 b8( cis) |
   d4( cis) b |
 
   a( b) cis |
   d( a) g |
   fis2 \slurSolid fis8[ e] |
-  d4.( e8) \slurDotted fis8( g) |
+  d4.( e8) \slurDashed fis8( g) |
   \slurSolid a2 b8[ cis] |
 
-  \slurDotted d4( cis) b |
+  \slurDashed d4( cis) b |
   a2 b8( cis) |
   d4( cis) b |
   a( b) cis |
@@ -48,7 +47,7 @@ altoMusic = \relative c' {
   d4 |
   a2 d4 |
   e2 e4 |
-  \slurDotted a4( a) g |
+  \slurDashed a4( a) g |
   fis2 d8( e) |
   a4( fis) g |
 
@@ -176,18 +175,18 @@ tenorMusic = \relative c' {
   a8[ g] |
   fis2 d'4 |
   cis2 b4 |
-  \slurDotted a4( a) \slurSolid b8[ cis] |
-  d2 \slurDotted b8( a) |
+  \slurDashed a4( a) \slurSolid b8[ cis] |
+  d2 \slurDashed b8( a) |
   a4( a) cis |
 
   d( b) g |
   a( d) a |
   a2 \slurSolid a8[ g] |
-  fis2 \slurDotted d'8( d) |
+  fis2 \slurDashed d'8( d) |
   \slurSolid d4( cis) b |
 
-  \slurDotted a( a) \slurSolid b8[ cis] |
-  d2 \slurDotted b8( a) |
+  \slurDashed a( a) \slurSolid b8[ cis] |
+  d2 \slurDashed b8( a) |
   a4( a) cis |
   d4( d) e |
   \slurSolid a,( d) a |
@@ -208,7 +207,7 @@ bassMusic = \relative c {
   d4 |
   d2 b4 |
   a( a') g |
-  \slurDotted fis( fis) g |
+  \slurDashed fis( fis) g |
   d2 g8( g) |
   fis4( d) e |
 
@@ -218,7 +217,7 @@ bassMusic = \relative c {
   d2 b8( b) |
   \slurSolid a4( a') g |
 
-  \slurDotted fis( fis) g |
+  \slurDashed fis( fis) g |
   d2 g8( g) |
   fis4( d) e |
   fis( g) e |

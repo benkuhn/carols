@@ -10,7 +10,6 @@
 \include "header.ly"
 
 global= {
-  \autoBeamOff
   \time 2/4
   \key d \major
 }
@@ -19,11 +18,11 @@ sop = \context Voice = "sop"    {
   \voiceOne
   d''4 cis''8. b'16 a'4. g'8 fis'4 e' d'4.
   a'8 b'4. b'8 cis''4. cis''8 d''4._"(watch out it's short!)"
-  d''8 \autoBeamOn d''( cis'') \autoBeamOff \autoBeamOn b'( a') \autoBeamOff \autoBeamOn a'8.( g'16 fis'8) \autoBeamOff
-  d'' \autoBeamOn d''( cis'') \autoBeamOff \autoBeamOn b'( a') \autoBeamOff \autoBeamOn a'8.( g'16 fis'8) \autoBeamOff
-  fis' fis' fis' fis' \autoBeamOn fis'16( g') \autoBeamOff a'4.
-  \autoBeamOn g'16( fis') \autoBeamOff e'8 e' e' \autoBeamOn e'16( fis') \autoBeamOff g'4.
-  \autoBeamOn fis'16( e') \autoBeamOff d'8( d''4) b'8 \autoBeamOn a'8.( g'16 fis'8) \autoBeamOff g' fis'4 e' d'2 \bar "|."
+  d''8 d''[ cis''] b'[ a'] a'8.[( g'16] fis'8)
+  d'' d''[ cis''] b'[ a'] a'8.[( g'16] fis'8)
+  fis' fis' fis' fis' fis'16[ g'] a'4.
+  g'16[ fis'] e'8 e' e' e'16[ fis'] g'4.
+  fis'16[ e'] d'8( d''4) b'8 a'8.[( g'16] fis'8) g' fis'4 e' d'2 \bar "|."
 }
 
 alto=\context Voice = "alto"   {
@@ -43,7 +42,7 @@ tenor = \context Voice = "tenor"   {
   d'8 d'4. d'8 a4. a8 a4.
   a8 a4 d' d'( a8) a a4 d' d'( a8) d8 \rest
   d4 \rest d8 \rest a8 a a a a a2 ~ a4.
-  a8 fis( a4) d'8 d'4. b8 a4 \autoBeamOn a8( g) \autoBeamOff fis2
+  a8 fis( a4) d'8 d'4. b8 a4 a8[ g] fis2
 }
 
 bass = \context Voice = "bass"   {

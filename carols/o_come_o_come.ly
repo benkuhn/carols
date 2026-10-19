@@ -10,7 +10,6 @@
 % smaller than the house staff size (14) so that this fits on one page
 #(set-global-staff-size 13)
 global = {
-  \autoBeamOff
   \key e \minor
   \time 4/4
   \partial 4

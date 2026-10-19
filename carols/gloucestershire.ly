@@ -9,24 +9,23 @@
 global = {
   \key g \major
   \time 3/4
-  \autoBeamOff
 }
 
 sopMusic = \relative c' {
   \tempo"Allegro"
   \partial 4 d4 |
-  \slurDotted g4( g) g |
+  \slurDashed g4( g) g |
   g( a) b |
   c b a |
   \slurSolid b8( d4.) d4 |
 
   c4 a a |
-  \slurDotted a( b) c |
+  \slurDashed a( b) c |
   \slurSolid b8[ a] g[ a] b4 |
   a2 c4 |
 
   b8[ a] g[ a] b[ c] |
-  d2 \slurDotted d8( c) |
+  d2 \slurDashed d8( c) |
   b4 g b |
   a2 g8 a |
 
@@ -38,7 +37,7 @@ sopMusic = \relative c' {
 
 altoMusic = \relative c' {
   d4 |
-  \slurDotted d( d) e|
+  \slurDashed d( d) e|
   d( fis) g|
   g g fis |
   g2 g4 |
@@ -49,7 +48,7 @@ altoMusic = \relative c' {
   fis2 fis4 |
 
   g8[ fis] e[ fis] g4 |
-  fis2 \slurDotted fis8( fis) |
+  fis2 \slurDashed fis8( fis) |
   g4 g g |
   fis2 e8 fis |
 
@@ -112,12 +111,12 @@ verses = \markup { \fill-line {
 }
 tenorMusic = \relative c' {
   b4 |
-  \slurDotted b( b) c |
+  \slurDashed b( b) c |
   b( c) d |
   e d c |
   \slurSolid d8( b4.) b4 |
 
-  \slurDotted
+  \slurDashed
   e4 d c |
   d( g,) a |
   g e' d |
@@ -136,7 +135,7 @@ tenorMusic = \relative c' {
 
 bassMusic = \relative c {
   g'4 |
-  \slurDotted g4( g) c, |
+  \slurDashed g4( g) c, |
   g'( d) g |
   c, g' d |
   g2 g4 |
@@ -147,7 +146,7 @@ bassMusic = \relative c {
   d2 d4 |
 
   g4 b g8[ e] |
-  d2 \slurDotted d8( d) |
+  d2 \slurDashed d8( d) |
   g4 g g |
   d2 e8 d |
 

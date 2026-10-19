@@ -10,7 +10,6 @@
 }
 
 global = {
-  \autoBeamOff
   \key bes \major
   \time 6/4
 }
@@ -24,7 +23,7 @@ sopMusic = \relative c' {
   \time 6/4 g4.~ g4 f8 g4.~ g4 \bar"" bes8 |
 
   bes4 c8 bes4 a8 bes4 c8 d4 d8 |
-  \slurDotted c4.( bes) \slurSolid a4.~ a4 \bar"" bes8 |
+  \slurDashed c4.( bes) \slurSolid a4.~ a4 \bar"" bes8 |
 
   c4 bes8 a4 g8 a4. d, |
   g4.( bes8[ a bes] g4.~ g4) f8 |
@@ -40,7 +39,7 @@ altoMusic = \relative c' {
   d4. d4. d4.~ d4 d8 |
 
   d4 ees8 d4 ees8 f4 ees8 d4 d8 |
-  \slurDotted g4.( g) \slurSolid g4.( f4) f8 |
+  \slurDashed g4.( g) \slurSolid g4.( f4) f8 |
 
   c4 c8 c4 c8 c4. c4. |
   bes4.( ees d) d4. |
@@ -99,7 +98,7 @@ tenorMusic = \relative c {
   bes4. a4. bes4.~ bes4 bes8 |
 
   bes4 f8 f4 c'8 bes4 a8 bes4 bes8 |
-  \slurDotted g4.( c) \slurSolid c~ c4 bes8 |
+  \slurDashed g4.( c) \slurSolid c~ c4 bes8 |
 
   g4 g8 g4 g8 g4. fis |
   g2.( bes4.) a |
@@ -115,7 +114,7 @@ bassMusic = \relative c {
   bes4. d g ~ g4 bes,8 |
 
   bes4 a8 bes4 c8 d4 c8 bes4 bes8 |
-  \slurDotted ees4.( e) \slurSolid f4.~ f4 d8 |
+  \slurDashed ees4.( e) \slurSolid f4.~ f4 d8 |
 
   ees4 ees8 ees4 ees8 d4. d |
   ees( c bes) d |

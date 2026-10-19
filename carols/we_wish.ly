@@ -8,7 +8,6 @@
 global = {
   \key aes \major
   \time 3/4
-  \autoBeamOff
 }
 
 sopMusic = \relative c' {
@@ -19,7 +18,7 @@ sopMusic = \relative c' {
   g4 ees ees |
 
   c' c8 des c bes |
-  \slurDotted aes4 f ees8( ees) |
+  \slurDashed aes4 f ees8( ees) |
   f4 bes g |
   aes2^\markup\italic"Fine" \bar "|." \break
   ees4 |
@@ -46,7 +45,7 @@ altoMusic = \relative c' {
   ees4 ees ees |
 
   e e8 e e e |
-  \slurDotted f4 c ees8( ees) |
+  \slurDashed f4 c ees8( ees) |
   des4 f ees |
   ees2 \bar "|."
   c4 |
@@ -96,7 +95,7 @@ tenorMusic = \relative c {
   ees4 g g |
 
   g g8 g c c |
-  \slurDotted c4 aes aes8( aes) |
+  \slurDashed c4 aes aes8( aes) |
   aes4 des des |
   c2 \bar "|."
   aes4 |
@@ -119,7 +118,7 @@ bassMusic = \relative c {
   ees4 ees des |
 
   c c8 c c c |
-  \slurDotted f4 f c8( c) |
+  \slurDashed f4 f c8( c) |
   des4 bes ees |
   aes2 \bar "|."
   aes4 |

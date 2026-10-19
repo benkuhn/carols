@@ -9,7 +9,6 @@
 global = {
   \key c \major
   \time 3/4
-  \autoBeamOff
 }
 
 sopMusic = \relative c' {

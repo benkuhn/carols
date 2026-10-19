@@ -9,7 +9,6 @@
 }
 
 global = {
-  \autoBeamOff
   \key d \major
   \time 4/4
 }
@@ -26,8 +25,8 @@ sopMusic = \relative a' {
   fis4 e d4. d'8 |
 
   cis8 d a4. d8 cis d |
-  g,4 \autoBeamOn g8( a) \autoBeamOff fis2 |
-  e4 fis8 g \autoBeamOn a( g) \autoBeamOff fis e |
+  g,4 g8[ a] fis2 |
+  e4 fis8 g a[ g] fis e |
   g4 fis e4. d'8 |
   cis8 d a4 a8 b cis d |
   g,4 g8 a fis4. fis8 |

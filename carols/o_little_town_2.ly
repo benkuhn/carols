@@ -10,7 +10,6 @@
 \include "header.ly"
 
 global= {
-  \autoBeamOff
   \time 4/4
     \key g \major
 
@@ -19,39 +18,39 @@ global= {
 
 sop = \context Voice = "sop"    {
   \voiceOne
-  d'4 g' g' g' a' \autoBeamOn b'8( a') \autoBeamOff \autoBeamOn b'( c'') \autoBeamOff d''4
-  b' c'' \autoBeamOn b'8( g') \autoBeamOff a'4 a' g'2.
-  d'4 g' g' g' a' \autoBeamOn b'8( a') \autoBeamOff \autoBeamOn b'( c'') \autoBeamOff d''4
-  b' c'' \autoBeamOn b'8( g') \autoBeamOff a'4 a' g'2.
-  \autoBeamOn g'8( b') \autoBeamOff d''4. e''8 \autoBeamOn d''( c'') \autoBeamOff \autoBeamOn b'( a') \autoBeamOff \autoBeamOn g'( a' b' c'') \autoBeamOff d''4
+  d'4 g' g' g' a' b'8[ a'] b'[ c''] d''4
+  b' c'' b'8[ g'] a'4 a' g'2.
+  d'4 g' g' g' a' b'8[ a'] b'[ c''] d''4
+  b' c'' b'8[ g'] a'4 a' g'2.
+  g'8[ b'] d''4. e''8 d''[ c''] b'[ a'] g'[ a' b' c''] d''4
   d'4 g' b' a' g' d'2.
-  d'4 g' g' g' a' \autoBeamOn b'8( a') \autoBeamOff \autoBeamOn b'( c'') \autoBeamOff d''4
-  b'4 c'' \autoBeamOn b'8( g') \autoBeamOff a'4 a' g'2. \bar "|."
+  d'4 g' g' g' a' b'8[ a'] b'[ c''] d''4
+  b'4 c'' b'8[ g'] a'4 a' g'2. \bar "|."
 
 }
 
 alto=\context Voice = "alto"   {
   \voiceTwo
-  d'4 d' e' d' \autoBeamOn e'8( fis') \autoBeamOff g'4 g' fis'
+  d'4 d' e' d' e'8[ fis'] g'4 g' fis'
   e' e' g' g' fis' g'2.
-  d'4 d' e' d' \autoBeamOn e'8( fis') \autoBeamOff g'4 g' fis'
+  d'4 d' e' d' e'8[ fis'] g'4 g' fis'
   e' e' g' g' fis' g'2.
   g'4 fis'4. e'8 fis'4 d' d'( g') fis'
-  d'4 d' d' c' \autoBeamOn b8( c') \autoBeamOff d'2.
-  d'4 d' e' d' \autoBeamOn e'8( fis') \autoBeamOff g'4 g' fis'
+  d'4 d' d' c' b8[ c'] d'2.
+  d'4 d' e' d' e'8[ fis'] g'4 g' fis'
   e' e' g' g' fis' g'2.
 }
 
 tenor = \context Voice = "tenor"   {
   \voiceOne
   a4 b c' d' c' d' g a
-  g c' d' e' \autoBeamOn d'8( c') \autoBeamOff b2.
+  g c' d' e' d'8[ c'] b2.
   a4 b c' d' c' d' g a
-  g c' d' e' \autoBeamOn d'8( c') \autoBeamOff b2.
-  b4 b4. g8 d'4 \autoBeamOn d'8( c') \autoBeamOff b4( g) a
-  fis4 g g \autoBeamOn e8( fis) \autoBeamOff g4 fis2.
-  \autoBeamOn g8( a) \autoBeamOff b4 c' d' c' d' g a
-  g4 c' \autoBeamOn d'8( b) \autoBeamOff d'4 \autoBeamOn d'8( c') \autoBeamOff b2.
+  g c' d' e' d'8[ c'] b2.
+  b4 b4. g8 d'4 d'8[ c'] b4( g) a
+  fis4 g g e8[ fis] g4 fis2.
+  g8[ a] b4 c' d' c' d' g a
+  g4 c' d'8[ b] d'4 d'8[ c'] b2.
 }
 
 bass = \context Voice = "bass"   {
@@ -60,10 +59,10 @@ bass = \context Voice = "bass"   {
   e a, b, c d g2.
   fis4 g c' b a g e d
   e a, b, c d g2.
-  e4 b,4. c8 d4 \autoBeamOn e8( fis) \autoBeamOff g4( e) d
-  \autoBeamOn d8( c) \autoBeamOff b,4 g, c e d2.
-  \autoBeamOn e8( fis) \autoBeamOff g4 c' b a g e d
-  e a, \autoBeamOn b,8( e) \autoBeamOff d4 d g2.
+  e4 b,4. c8 d4 e8[ fis] g4( e) d
+  d8[ c] b,4 g, c e d2.
+  e8[ fis] g4 c' b a g e d
+  e a, b,8[ e] d4 d g2.
 }
 
 stanzaa = \lyricmode {

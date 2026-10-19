@@ -10,7 +10,6 @@
 \include "header.ly"
 
 global= {
-  \autoBeamOff
   \time 3/4
   \key f \major
   \set Timing.beamExceptions = #'()
@@ -20,37 +19,37 @@ global= {
 sop = \context Voice = "sop" \relative c' {
   \voiceOne
   \partial 4 c4 |
-  f f \autoBeamOn g8( a) \autoBeamOff | f4 f \autoBeamOn a8( bes) \autoBeamOff | c4 c d | bes2 \autoBeamOn g8( a) \autoBeamOff |
-  bes4 bes c | a a \autoBeamOn f8( a) \autoBeamOff | g4 d f | e2 c4 |
-  f f \autoBeamOn g8( a) \autoBeamOff | f4 f \autoBeamOn a8( bes) \autoBeamOff | c4 c d | bes2 \autoBeamOn g8( a) \autoBeamOff |
-  bes4 bes c | a a \autoBeamOn f8( a) \autoBeamOff | g4 d e | f2 \bar "|."
+  f f g8[ a] | f4 f a8[ bes] | c4 c d | bes2 g8[ a] |
+  bes4 bes c | a a f8[ a] | g4 d f | e2 c4 |
+  f f g8[ a] | f4 f a8[ bes] | c4 c d | bes2 g8[ a] |
+  bes4 bes c | a a f8[ a] | g4 d e | f2 \bar "|."
 }
 
 alto=\context Voice = "alto" \relative c' {
   \voiceTwo
   \partial 4 c4 |
-  c c \autoBeamOn d8( e) \autoBeamOff | f4 c \autoBeamOn f8( g) \autoBeamOff | a4 a a | g2 d4 |
-  \autoBeamOn g8( a) \autoBeamOff \autoBeamOn g( f) \autoBeamOff g4 | f c f | d4. c8 d4 | c2 c4 |
-  c4. c8 \autoBeamOn d( e) \autoBeamOff | \autoBeamOn f( d) \autoBeamOff c4 \autoBeamOn f8( g) \autoBeamOff | \autoBeamOn a( bes) \autoBeamOff \autoBeamOn a( g) \autoBeamOff \autoBeamOn f( e) \autoBeamOff | d2 d4 |
-  \autoBeamOn g8( f) \autoBeamOff \autoBeamOn g( e) \autoBeamOff \autoBeamOn f( g) \autoBeamOff | \autoBeamOn a( g) \autoBeamOff \autoBeamOn f( e) \autoBeamOff d4 | \autoBeamOn d8( c) \autoBeamOff d4 \autoBeamOn c8( bes) \autoBeamOff | a2 \bar "|."
+  c c d8[ e] | f4 c f8[ g] | a4 a a | g2 d4 |
+  g8[ a] g[ f] g4 | f c f | d4. c8 d4 | c2 c4 |
+  c4. c8 d[ e] | f[ d] c4 f8[ g] | a[ bes] a[ g] f[ e] | d2 d4 |
+  g8[ f] g[ e] f[ g] | a[ g] f[ e] d4 | d8[ c] d4 c8[ bes] | a2 \bar "|."
 }
 
 tenor = \context Voice = "tenor" \relative c' {
   \voiceOne
-  \partial 4 \autoBeamOn c8( bes) \autoBeamOff |
-  a4 a \autoBeamOn bes8( c) \autoBeamOff | a4 a c | f4. g8 e4 | d( c) \autoBeamOn bes8( a) \autoBeamOff |
+  \partial 4 c8[ bes] |
+  a4 a bes8[ c] | a4 a c | f4. g8 e4 | d( c) bes8[ a] |
   g4 c g | c c d | b a b | c2 c4 |
-  \autoBeamOn c8( bes) \autoBeamOff a4 \autoBeamOn bes8( c) \autoBeamOff | \autoBeamOn a( bes) \autoBeamOff \autoBeamOn c( d) \autoBeamOff \autoBeamOn e( d) \autoBeamOff | c4 \autoBeamOn f,8( g) \autoBeamOff a4 | \autoBeamOn bes8[( c d c)] \autoBeamOff \autoBeamOn bes( a) \autoBeamOff |
-  g4 c g | c c a | d \autoBeamOn c8( bes) \autoBeamOff \autoBeamOn a( g) \autoBeamOff | f2 \bar "|."
+  c8[ bes] a4 bes8[ c] | a[ bes] c[ d] e[ d] | c4 f,8[ g] a4 | bes8[[ c d c]] bes[ a] |
+  g4 c g | c c a | d c8[ bes] a[ g] | f2 \bar "|."
 }
 
 bass = \context Voice = "bass" \relative c' {
   \voiceTwo
-  \partial 4 \autoBeamOn a8( g) \autoBeamOff |
+  \partial 4 a8[ g] |
   f4 f f | f f f | f f f | f2 f4 |
-  e e e | f e d | g g g | c,2 \autoBeamOn c'8( bes) \autoBeamOff |
-  \autoBeamOn a( g) \autoBeamOff \autoBeamOn f( e) \autoBeamOff \autoBeamOn d( c) \autoBeamOff | \autoBeamOn f( g) \autoBeamOff \autoBeamOn a( bes) \autoBeamOff \autoBeamOn c( bes) \autoBeamOff | \autoBeamOn a( g) \autoBeamOff \autoBeamOn f( e) \autoBeamOff \autoBeamOn d( f) \autoBeamOff | \autoBeamOn g[( a bes a)] \autoBeamOff \autoBeamOn g( f) \autoBeamOff |
-  \autoBeamOn e( d) \autoBeamOff \autoBeamOn e( c) \autoBeamOff \autoBeamOn d( e) \autoBeamOff | \autoBeamOn f( g) \autoBeamOff a4 \autoBeamOn d,8( c) \autoBeamOff | bes4 g c | f,2 \bar "|."
+  e e e | f e d | g g g | c,2 c'8[ bes] |
+  a[ g] f[ e] d[ c] | f[ g] a[ bes] c[ bes] | a[ g] f[ e] d[ f] | g[[ a bes a]] g[ f] |
+  e[ d] e[ c] d[ e] | f[ g] a4 d,8[ c] | bes4 g c | f,2 \bar "|."
 }
 
 stanzaa = \lyricmode {

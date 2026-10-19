@@ -10,7 +10,6 @@
 }
 
 global = {
-  \autoBeamOff
   \key bes \major
   \time 4/4
 }
@@ -24,12 +23,12 @@ sop = \context Voice = "sop" \relative c'' {
     bes2 bes
   } \break
   \repeat volta 2 {
-    f'4.( \autoBeamOn ees8 d ees f d \autoBeamOff |
-    ees4. \autoBeamOn d8 c d ees c \autoBeamOff |
-    d4. \autoBeamOn c8 bes c d bes \autoBeamOff |
-    c4. \autoBeamOn bes8 a bes c a \autoBeamOff |
+    f'4.( ees8 d[ ees f d] |
+    ees4. d8 c[ d ees c] |
+    d4. c8 bes[ c d bes] |
+    c4. bes8 a[ bes c a] |
 
-    bes4. \autoBeamOn a8 g a bes g \autoBeamOff |
+    bes4. a8 g[ a bes g] |
     a4.) g8 f4 f |
     g bes bes a |
     bes2 bes 2
@@ -46,12 +45,12 @@ alto=\context Voice = "alto" \relative c' {
   }
   \repeat volta 2 {
     r4 f2( bes4 |
-    \autoBeamOn bes8 a g f g f \autoBeamOff ees4) |
-    r4  \autoBeamOn f8( ees \autoBeamOff d4 g |
-    \autoBeamOn g8 f ees d ees d \autoBeamOff c4) |
+    bes8[ a g f] g[ f] ees4) |
+    r4  f8[( ees] d4 g |
+    g8[ f ees d] ees[ d] c4) |
 
-    r4 \autoBeamOn d8( c \autoBeamOff bes4 ees |
-    \autoBeamOn c8 d ees) \autoBeamOff d c4 f |
+    r4 d8[( c] bes4 ees |
+    c8[ d ees]) d c4 f |
     f ees c f |
     f2 f
   }
@@ -88,9 +87,9 @@ bass = \context Voice = "bass" \relative c {
   }
   \repeat volta 2 {
     s4 a'4( bes d, |
-    c d \autoBeamOn ees8 d \autoBeamOff c4) |
+    c d ees8[ d] c4) |
     s4 f( g bes, |
-    a bes \autoBeamOn c8 bes \autoBeamOff a4) |
+    a bes c8[ bes] a4) |
 
     s4 d( ees g |
     f) g a bes |

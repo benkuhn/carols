@@ -9,7 +9,6 @@
 \include "header.ly"
 
 global= {
-  \autoBeamOff
   \time 6/4
   \key a \major
 

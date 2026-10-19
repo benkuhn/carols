@@ -11,7 +11,6 @@
 #(set-global-staff-size 10.5)
 
 global= {
-  \autoBeamOff
   \time 4/4
   \key d \major
 }
@@ -19,10 +18,10 @@ global= {
 sop = \context Voice = "sop"    {
   \sacredHarpHeads
   \relative c'' {
-    a2 a4 fis4 | \autoBeamOn g8( a) \autoBeamOff \autoBeamOn b( cis) \autoBeamOff d4 d | d2. d4 | cis a b a | a2.
+    a2 a4 fis4 | g8[ a] b[ cis] d4 d | d2. d4 | cis a b a | a2.
     \repeat volta 2 {
       r4 |
-      r1 | r1 | r2. a4 | d d fis d | b b b a | b2. b4 | b b b \autoBeamOn a8( g) \autoBeamOff | a2. a4 | fis fis fis2 |
+      r1 | r1 | r2. a4 | d d fis d | b b b a | b2. b4 | b b b a8[ g] | a2. a4 | fis fis fis2 |
       r2. fis4 | a a a a | b b b d | e2. cis4 |
     }
     \alternative {
@@ -39,7 +38,7 @@ alto=\context Voice = "alto"   {
     \repeat volta 2 {
       r4 |
       r1 | r2. a,4 | d d fis d | b b b a | d2. fis4 | e e e e | e1 ~ | e2. e4 | d d d2 |
-      fis fis4 fis | fis fis fis d | e e e \autoBeamOn fis8( g) \autoBeamOff | a2. g4 |
+      fis fis4 fis | fis fis fis d | e e e fis8[ g] | a2. g4 |
     }
     \alternative {
       { fis1 ~ | fis2. }
@@ -51,7 +50,7 @@ alto=\context Voice = "alto"   {
 tenor = \context Voice = "tenor"   {
   \sacredHarpHeads
   \relative c'' {
-    a2 fis4 d | b'4 b b a | b2. d4 | \autoBeamOn a8.( fis16) \autoBeamOff d4 g fis | e2.
+    a2 fis4 d | b'4 b b a | b2. d4 | a8.[ fis16] d4 g fis | e2.
     \repeat volta 2 {
       \bar ";" r4 |
       r2. a4 | d d fis d | b b b a | d2. a4 | fis fis fis a | b2. g4 | e e e2 | r2.

@@ -9,12 +9,11 @@
 global = {
   \key c \major
   \time 4/4
-  \autoBeamOff
 }
 
 sopMusic = \relative c'' {
   \partial 4 g4 |
-  \slurDotted c4( c) c4( c8) c8 |
+  \slurDashed c4( c) c4( c8) c8 |
   b4 c g4 \parenthesize e8 e |
 
   f4 f a4. f8 |
@@ -35,11 +34,11 @@ sopMusic = \relative c'' {
 
 altoMusic = \relative c' {
   e4 |
-  \slurDotted e( e) e4( e8) e8 |
+  \slurDashed e( e) e4( e8) e8 |
   g4 g e4 e8 e |
 
   f4 f f4. c8 |
-  \slurSolid f8[ e] d4 e \slurDotted e8( e) |
+  \slurSolid f8[ e] d4 e \slurDashed e8( e) |
   e4 e8( e) e4 e |
 
   g g e4. e8 |
@@ -93,7 +92,7 @@ altoWordsIII = \lyricmode {
 }
 tenorMusic = \relative c' {
   c4 |
-  \slurDotted g( g) g4( g8) g8 |
+  \slurDashed g( g) g4( g8) g8 |
   d'4 e c4 c8 c |
 
   c4 c c4. a8 |
@@ -112,11 +111,11 @@ tenorMusic = \relative c' {
 
 bassMusic = \relative c {
   c4 |
-  \slurDotted c( c) c4( c8) c8 |
+  \slurDashed c( c) c4( c8) c8 |
   g'4 c, c4 c'8( bes) |
 
   a4 \slurSolid a8[ g] f4. f8 |
-  g4 g c, \slurDotted c8( c) |
+  g4 g c, \slurDashed c8( c) |
   c4 c8( c) c4 c |
 
   g' c, c'4 c8[ bes] |

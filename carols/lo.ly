@@ -11,7 +11,6 @@
 \include "header.ly"
 
 global= {
-  \autoBeamOff
   \time 10/4
   \key f \major
 }
@@ -36,7 +35,7 @@ alto=\context Voice = "alto"   {
   c4 c d4.( a8 c4) c c2
   a'2 a4 f f f e2 d d
   c4 c d4.( a8 c4) c c2
-  s4 f d c c b \autoBeamOn c8( d \autoBeamOff e4) s
+  s4 f d c c b c8[( d] e4) s
   e4 g f f f e2 d d
   f4 d e( f g) c, c1
   }}
