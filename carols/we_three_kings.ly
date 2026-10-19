@@ -49,11 +49,11 @@ altoMusic = \relative c'' {
   e4 dis8 |
   e4. |
 
-  d4. | d4 d8 d4 b8 b4 e8 d4 s8 |
+  d4.\fermata | d4 d8 d4 b8 b4 e8 d4 s8 |
   d4 d8 d4 b8 b4 e8 d4 s8 |
 
   e4 e8 fis4 g8 g4 g8 fis4 g8 d4 d8 b4 d8 |
-  e4 c8 | d4. \bar "|."
+  e4 c8 | d4.\fermata \bar "|."
 }
 altoWords = {
   \lyricmode {
