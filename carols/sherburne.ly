@@ -180,7 +180,7 @@ tenorb = {
       \tenora
     }
     \context Lyrics = "tenor-2" \lyricsto "tenor" {
-      \set stanza = "1."
+      \set stanza = "2."
       \stanzab
       \tenorb
     }
