@@ -60,8 +60,8 @@ stanzaa = \lyricmode {
   Joy to the world! The Lord is come:
   Let earth re -- ceive her King,
   Let ev -- ery heart pre -- pare Him room,
-  And heaven and na -- ture sing,
-  And heaven and na -- ture sing,
+  And heav’n and na -- ture sing,
+  And heav’n and na -- ture sing,
   And heav’n, and heav’n, and na -- ture sing.
 }
 skips = {
@@ -76,9 +76,9 @@ skips = {
 }
 stanzaamen = \lyricmode {
   \skips
-  And heaven and na -- ture sing,
-  And heaven and na -- ture sing,
-  And heaven and na -- ture sing.
+  And heav’n and na -- ture sing,
+  And heav’n and na -- ture sing,
+  And heav’n and na -- ture sing.
 }
 
 stanzab = \lyricmode {

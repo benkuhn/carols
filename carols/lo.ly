@@ -88,10 +88,10 @@ stanzac = \lyricmode {
   This flow’r, whose frag -- rance ten -- der
   With sweet -- ness fills the air,
   Dis -- pels with glo -- rious splen -- dour
-  The dark -- ness ev’ -- ry -- where;
+  The dark -- ness ev -- ery -- where;
   True man, yet ve -- ry God,
   From sin and death he saves us,
-  And light -- ens ev’ -- ry load.
+  And light -- ens ev -- ery load.
 }
 
 \score {  %\transpose d c

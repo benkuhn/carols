@@ -79,7 +79,7 @@ stanzab = \lyricmode {
   For Christ is born of Ma -- _ ry;
   And ga -- thered all a -- bove,
   While mor -- tals sleep, the an -- gels keep
-  Their watch of won -- dering love.
+  Their watch of won -- d’ring love.
   O mor -- ning stars, to -- ge -- ther
   Pro -- claim the ho -- ly birth,
   And prai -- ses sing to God the King,
@@ -90,7 +90,7 @@ stanzac = \lyricmode {
   How si -- lent -- ly, how si -- lent -- ly
   The won -- drous gift is giv’n!
   So God im -- parts to hu -- man hearts
-  The bles -- sings of His heaven:
+  The bles -- sings of His heav’n:
   No ear may hear His com -- ing;
   But in this world of sin,
   Where meek souls will re -- ceive Him, still
@@ -102,7 +102,7 @@ stanzad = \lyricmode {
   Des -- cend to us we pray;
   Cast out our sin, and en -- ter in;
   Be born in us to -- day.
-  We hear the heaven -- ly an -- gels
+  We hear the heav’n -- ly an -- gels
   The great glad ti -- dings tell:
   O come to us, a -- bide with us,
   Our Lord Em -- man -- u -- el.

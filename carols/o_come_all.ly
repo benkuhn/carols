@@ -96,7 +96,7 @@ stanzad = \lyricmode {
 
 stanzae = \lyricmode {
   _ Yea, Lord, we greet Thee, Born this hap -- py mor -- ning,
-  _ Je -- su, to Thee be _ glo -- ry given;
+  _ Je -- su, to Thee be _ glo -- ry giv’n;
   Word of the Fa -- ther, Now in flesh ap -- pear -- ing;
 }
 

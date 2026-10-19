@@ -74,7 +74,7 @@ stanzab = \lyricmode {
   Si -- lent night! Ho -- ly night!
   Shep -- herds quake at the sight,
   Glo -- ries stream from hea -- ven a -- far,
-  Heaven -- ly hosts sing al -- le -- lu -- ia;
+  Heav’n -- ly hosts sing al -- le -- lu -- ia;
   Christ, the Sa -- vior, is born,
   Christ, the Sa -- vior, is born.
 }
