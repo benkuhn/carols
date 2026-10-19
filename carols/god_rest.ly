@@ -171,7 +171,7 @@ stanzab = \lyricmode {
   This bless -- ed Babe was born,
   And laid with -- in a man -- ger
   Up -- on this bless -- ed morn;
-  The which his moth -- er Ma -- ry
+  The which His moth -- er Ma -- ry
   Did noth -- ing take in scorn.
 }
 

@@ -75,7 +75,7 @@ stanzaa = \lyricmode {
   Hail the blest morn! See the great Me -- di -- a -- tor,
   Down from the re -- gions of glo -- ry des -- cend!
   Shep -- herds, go wor -- ship the babe in the man -- ger,
-  Lo, for his guard the bright an -- gels at -- tend.
+  Lo, for His guard the bright an -- gels at -- tend.
 
   Bright -- est and best of the sons of the morn -- ing!
   Dawn on our dark -- ness, and lend us thine aid;
@@ -83,13 +83,13 @@ stanzaa = \lyricmode {
   Guide where our in -- fant Re -- dee -- mer was laid.
 }
 stanzab = \lyricmode {
-  Cold on his crad -- le the dew -- drops are shin -- ing;
-  Low lies his bed, with the beasts of the stall;
-  An -- gels a -- dore him, in slum -- bers rec -- lin -- ing,
-  Wise men and shep -- herds be -- fore him do fall.
+  Cold on His crad -- le the dew -- drops are shin -- ing;
+  Low lies His bed, with the beasts of the stall;
+  An -- gels a -- dore Him, in slum -- bers rec -- lin -- ing,
+  Wise men and shep -- herds be -- fore Him do fall.
 }
 stanzac = \lyricmode {
-  Say, shall we yield him, in cost -- ly de -- vo -- tion,
+  Say, shall we yield Him, in cost -- ly de -- vo -- tion,
   O -- dours of E -- den, and of -- f’rings di -- vine,
   Gems from the moun -- tain, and pearls from the o -- cean,
   Myrrh from the fo -- rest, and gold from the mine?
@@ -101,7 +101,7 @@ stanzac = \lyricmode {
 }
 stanzad = \lyricmode {
   Vain -- ly we of -- fer each am -- ple o -- bla -- tion,
-  Vain -- ly with gold we his fa -- vour se -- cure;
+  Vain -- ly with gold we His fa -- vour se -- cure;
   Rich -- er by far is the heart’s a -- do -- ra -- tion:
   Dear -- er to God are the pray’rs of the poor.
 }

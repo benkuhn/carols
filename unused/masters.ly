@@ -136,7 +136,7 @@ verses = \markup { \fill-line {
     \line { \bold "10." And a little child on her arm had she, }
     \line { “Wot ye who this is?” said the hinds to me: }
     \combine \null \vspace #0.1
-    \line { \bold "11." Ox and ass him know, kneeling on their knee, }
+    \line { \bold "11." Ox and ass Him know, kneeling on their knee, }
     \line { Wondrous joy had I this little babe to see: }
   }
   \hspace #0.1

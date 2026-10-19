@@ -74,7 +74,7 @@ __
 altoWordsII = \lyricmode {
   \set stanza = #"2. "
   \markup\italic O \markup\italic Je -- \markup\italic su, \markup\italic par -- \markup\italic vu -- \markup\italic le, __
-  For thee I long al -- way; __
+  For Thee I long al -- way; __
   Com -- fort my heart’s blind -- ness
   \markup\italic O \markup\italic Pu -- \markup\italic er \markup\italic op -- \markup\italic ti -- \markup\italic me, __
   With all Thy lov -- ing kind -- ness,

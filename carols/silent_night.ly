@@ -82,10 +82,10 @@ stanzab = \lyricmode {
 stanzac = \lyricmode {
   Si -- lent night! Ho -- ly night!
   Son of God, love’s pure light
-  Ra -- diant beams from thy ho -- ly face,
+  Ra -- diant beams from Thy ho -- ly face,
   With the \set ignoreMelismata = ##t dawn of \unset ignoreMelismata  re -- dee -- _ ming grace,
-  Je -- sus, Lord, at thy birth.
-  Jes -- us, Lord, at thy birth.
+  Je -- sus, Lord, at Thy birth.
+  Jes -- us, Lord, at Thy birth.
 }
 
 \score {

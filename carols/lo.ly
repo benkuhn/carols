@@ -90,7 +90,7 @@ stanzac = \lyricmode {
   Dis -- pels with glo -- rious splen -- dour
   The dark -- ness ev -- ery -- where;
   True man, yet ve -- ry God,
-  From sin and death he saves us,
+  From sin and death He saves us,
   And light -- ens ev -- ery load.
 }
 

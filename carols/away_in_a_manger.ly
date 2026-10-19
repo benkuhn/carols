@@ -58,9 +58,9 @@ stanzaa = \lyricmode {
   A -- way in a man -- ger,
   no crib for a bed,
   The lit -- tle Lord Je -- sus
-  laid down his sweet head;
+  laid down His sweet head;
   The stars in the bright sky looked
-  down where he lay,
+  down where He lay,
   The lit -- tle Lord Je -- sus
   a -- sleep on the hay.
 }
@@ -69,8 +69,8 @@ stanzab = \lyricmode {
   The cat -- tle are low -- ing,
   the ba -- by a -- wakes,
   But lit -- tle Lord Je -- sus
-  no cry -- ing he makes.
-  I love thee, Lord Je -- sus!
+  no cry -- ing He makes.
+  I love Thee, Lord Je -- sus!
   Look down from the sky,
   and stay by my side un -- til
   morn -- ing is nigh.
@@ -78,13 +78,13 @@ stanzab = \lyricmode {
 
 stanzac = \lyricmode {
   Be near me, Lord Je -- sus;
-  I ask thee to stay
+  I ask Thee to stay
   Close by me for ev -- er,
   and love me, I pray.
   Bless all the dear child -- ren
-  in thy ten -- der care,
+  in Thy ten -- der care,
   and fit us for hea -- ven,
-  to live with thee there.
+  to live with Thee there.
 }
 
 \score {
