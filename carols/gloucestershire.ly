@@ -59,7 +59,7 @@ altoMusic = \relative c' {
   b2
 }
 altoWords = \lyricmode {
-  \set stanza = #"1."
+  \set stanza = #"1. "
   \set ignoreMelismata = ##t
   Was -- sail, __ _ was -- sail __ _ all o -- ver the town, _
   Our toast it is white and our ale _ it __ _ is brown;
@@ -67,10 +67,10 @@ altoWords = \lyricmode {
   With the was -- sail -- ing bowl we’ll drink un -- to thee.
   \unset ignoreMelismata
 
-  \set stanza = #"  4."
+  \set stanza = #"4. "
 }
 altoWordsII = {
-  \set stanza = "2."
+  \set stanza = #"2. "
   \lyricmode {
     \set ignoreMelismata = ##t
     So here is to Cher -- ry and to his right cheek, _
@@ -80,14 +80,14 @@ altoWordsII = {
   }
 }
 altoWordsIII = \lyricmode {
-  \set stanza = #"3."
+  \set stanza = #"3. "
   \set ignoreMelismata = ##t
   And here is to Dob -- bin and to his right eye, __ _
   Pray God send our mas -- ter a good _ Christ -- _ mas pie,
   A good _ Christ -- _ mas _ pie that _ may we all see,
   With the was -- sail -- ing bowl we’ll drink un -- to thee.
 
-  \set stanza = #"  6."
+  \set stanza = #"6. "
   \set ignoreMelismata = ##t
 }
 

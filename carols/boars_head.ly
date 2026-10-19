@@ -53,7 +53,7 @@ altoMusic = \relative c' {
 }
 altoWords = {
   \lyricmode {
-    \set stanza = #"1."
+    \set stanza = #"1. "
     \set ignoreMelismata = ##t
     The boar’s _ head _ in hand bear I "" Be -- decked with bays and rose -- ma -- ry;
     \set associatedVoice = "basses"
@@ -72,7 +72,7 @@ altoWords = {
   }
 }
 altoWordsII = {
-  \set stanza = "2."
+  \set stanza = #"2. "
   \lyricmode {
     \set ignoreMelismata = ##t
     The boar’s _ head as I un -- der -- stand Is the rar -- est dish in all this land,
@@ -83,7 +83,7 @@ altoWordsII = {
   }
 }
 altoWordsIII = \lyricmode {
-  \set stanza = #"3."
+  \set stanza = #"3. "
   \set ignoreMelismata = ##t
   Our stew -- ard hath _ pro -- vid -- ed this
   "" In hon -- or of the King of bliss,

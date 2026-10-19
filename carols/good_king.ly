@@ -180,19 +180,19 @@ stanzae = \lyricmode {
     >>}
 
     \context Lyrics = "stanza-1" \lyricsto "sop" {
-      \set stanza = "1."
+      \set stanza = #"1. "
       \stanzaa }
     \context Lyrics = "stanza-2" \lyricsto "sop" {
-      \set stanza = "2."
+      \set stanza = #"2. "
       \stanzab }
     \context Lyrics = "stanza-3" \lyricsto "sop" {
-      \set stanza = "3."
+      \set stanza = #"3. "
       \stanzac }
     \context Lyrics = "stanza-4" \lyricsto "sop" {
-      \set stanza = "4."
+      \set stanza = #"4. "
       \stanzad }
     \context Lyrics = "stanza-5" \lyricsto "sop" {
-      \set stanza = "5."
+      \set stanza = #"5. "
       \stanzae }
     \context Staff = "lower"  { \clef "F"<<
       \global

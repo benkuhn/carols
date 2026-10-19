@@ -77,7 +77,7 @@ altoWords = {
   }
 }
 altoWordsII = {
-  \set stanza = "2."
+  \set stanza = #"2. "
   \lyricmode {
     \set ignoreMelismata = ##t
     We are not dai -- ly beg -- _ gars That beg from door to door, _

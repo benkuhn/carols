@@ -61,7 +61,7 @@ altoMusic = \relative c' {
   d2 \bar "|."
 }
 altoWords = \lyricmode {
-  \set stanza = "1. "
+  \set stanza = #"1. "
   \markup\italic “No -- \markup\italic ël \markup\italic nou -- \markup\italic ve -- \markup\italic let,”
   come let us sing \markup\italic “no -- \markup\italic ël;”
   \set ignoreMelismata = ##t
@@ -75,7 +75,7 @@ altoWords = \lyricmode {
   come let us sing \markup\italic “no -- \markup\italic ël.”
 }
 altoWordsII = \lyricmode {
-  \set stanza = "2. "
+  \set stanza = #"2. "
   Prais -- es to our Lord, our Sav -- ior Je -- sus Christ,
   \set ignoreMelismata = ##t
   Come to earth as man,

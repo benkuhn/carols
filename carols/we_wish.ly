@@ -69,7 +69,7 @@ altoWords = \lyricmode {
   And a hap -- py New Year!
 }
 altoWordsII = {
-  \set stanza = "2. "
+  \set stanza = #"2. "
   \lyricmode {
     \set ignoreMelismata = ##t
     Oh, bring us a fig -- gy pud -- ding,

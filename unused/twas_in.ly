@@ -16,7 +16,7 @@
 }
 
 verseI= \lyricmode {
-  \set stanza = "Wendat."
+  \set stanza = #"Wendat. "
   E -- stenn -- ia -- lon de tson -- Ȣ -- e Ie -- soȢs a -- ha -- tonn -- ia
   On -- na -- Ȣa -- te -- Ȣa d’o -- ki n’on -- Ȣ -- and -- as -- kȢa -- en -- tak
   En -- non -- chi -- en skȢa -- tri -- ho -- tat -- _  n’on -- Ȣan -- di -- lon -- rach -- a -- tha
@@ -25,7 +25,7 @@ verseI= \lyricmode {
   }
 
 verseII= \lyricmode {
-  \set stanza = "1."
+  \set stanza = #"1. "
   ’Twas in the moon of win -- ter -- time when all the birds had fled
   That migh -- ty Git -- chi Man -- i -- tou sent an -- gel choirs in -- stead;
   Be -- fore their light the stars grew dim,
@@ -36,7 +36,7 @@ verseII= \lyricmode {
 }
 
 verseIII= \lyricmode {
-  \set stanza = "2."
+  \set stanza = #"2. "
   With -- in a lodge of bro -- ken bark
   The ten -- der babe was found,
   A rag -- ged robe of rab -- bit skin en -- wrapped His beau -- ty round;
@@ -45,7 +45,7 @@ verseIII= \lyricmode {
 }
 
 verseIIII= \lyricmode {
-  \set stanza = "3."
+  \set stanza = #"3. "
   The ear -- liest moon of win -- ter time
   Is not so round and fair
   As was the ring of glo -- ry  on
@@ -55,7 +55,7 @@ verseIIII= \lyricmode {
 
 }
 verseIIIII= \lyricmode {
-  \set stanza = "4."
+  \set stanza = #"4. "
   O chil -- dren of the for -- est free,
   O sons of Man -- i -- tou
   The Ho -- ly Child of earth and heav’n

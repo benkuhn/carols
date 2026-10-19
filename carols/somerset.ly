@@ -34,7 +34,7 @@ altoMusic = \relative c' {
   c2 c4 c | b2 g4 g | a a b2 | g1 |
 }
 altoWords = \lyricmode {
-  \set stanza = #"1."
+  \set stanza = #"1. "
   Was -- sail and was -- sail _ all o -- ver the town,
   The bread it is white and the ale it is brown,
   The cup it is made of the good  ash -- en tree,
@@ -44,14 +44,14 @@ altoWords = \lyricmode {
   And it’s joy be to you and a jol -- ly was -- sail!
 }
 altoWordsII =  \lyricmode {
-  \set stanza = "2."
+  \set stanza = #"2. "
   Oh ma -- ster and mi -- ssus, are you all with -- in?
   Pray o -- pen the door _ and let us come in!
   O ma -- ster and mi -- ssus a -- \set ignoreMelismata = ##t sit -- ting by the fire,
   Pray _ think on us poor trav -- elers, a trav -- eling in the mire. \unset ignoreMelismata
 }
 altoWordsIII = \lyricmode {
-  \set stanza = #"3."
+  \set stanza = #"3. "
   Oh where is the maid with the \set ignoreMelismata = ##t sil -- ver \unset ignoreMelismata head -- ed pin
   To o -- pen the door _ and let us come in?
   Oh ma -- ster and mi -- ssus, it is our de -- sire:

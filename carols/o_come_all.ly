@@ -129,16 +129,16 @@ latin = \lyricmode {
     >>}
 
     \context Lyrics = "stanza-l" \lyricsto "sop" {
-      \set stanza = "Latin."
+      \set stanza = #"Latin. "
       \latin }
     \context Lyrics = "stanza-1" \lyricsto "sop" {
-      \set stanza = "1."
+      \set stanza = #"1. "
       \stanzaa }
     \context Lyrics = "stanza-3" \lyricsto "sop" {
-      \set stanza = "2."
+      \set stanza = #"2. "
       \stanzac }
     \context Lyrics = "stanza-5" \lyricsto "sop" {
-      \set stanza = "3."
+      \set stanza = #"3. "
       \stanzae }
     \context Staff = "lower"  { \clef "F"<<
       \global

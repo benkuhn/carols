@@ -54,7 +54,7 @@ altoMusic = \relative fis' {
   d4 cis a2 \bar "|."
 }
 altoWords = \lyricmode {
-  \set stanza = #"1."
+  \set stanza = #"1. "
   Lo for the ti -- ding of the long night moon,
   Let the sun -- rise call a -- bout the morn -- ing soon,
   Short is the bid -- ing of the fad -- ing light,
@@ -65,19 +65,19 @@ altoWords = \lyricmode {
   So dance in the sha -- dows of a win -- ter’s night.
 }
 altoWordsII = \lyricmode {
-  \set stanza = #"2."
+  \set stanza = #"2. "
   North wind _ tell us what we need to know
   When the stars are shin -- ing on the mid -- night snow,
   All of the branch -- es will be turned to white,
 }
 altoWordsIII = \lyricmode {
-  \set stanza = #"3."
+  \set stanza = #"3. "
   Lo for the tid -- ing of the long night moon,
   May the har -- vest last un -- til the spring -- time bloom,
   Home is our com -- fort at the win -- ter’s height,
 }
 altoWordsIV = \lyricmode {
-  \set stanza = #"4."
+  \set stanza = #"4. "
   All of the col -- ours of the sun -- rise sky
   Shine a light up -- on us, as the day goes by,
   Sun -- set -- ting sha -- dows fad -- ing out of sight,

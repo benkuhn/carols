@@ -64,7 +64,7 @@ altoMusic = \relative c' {
 }
 altoWords = {
   \lyricmode {
-    \set stanza = #"1."
+    \set stanza = #"1. "
     \set ignoreMelismata = ##t
     The hol -- ly and the i -- vy,
     When they are both _ full __ _ grown,
@@ -81,14 +81,14 @@ altoWords = {
   }
 }
 altoWordsII = \lyricmode {
-  \set stanza = #"2."
+  \set stanza = #"2. "
   \set ignoreMelismata = ##t
   The hol -- ly bears a blos -- som,
   As white __ _ as the lil -- y flow’r,
   And _ Ma -- ry bore sweet _ Je -- sus Christ, To __ _ be our sweet Sav -- _ ior:
 }
 altoWordsIII = {
-  \set stanza = "3."
+  \set stanza = #"3. "
   \lyricmode {
     \set ignoreMelismata = ##t
     The hol -- ly bears a ber -- ry,
@@ -97,13 +97,13 @@ altoWordsIII = {
   }
 }
 altoWordsIV = \lyricmode {
-  \set stanza = #"4."
+  \set stanza = #"4. "
   \set ignoreMelismata = ##t
   The hol -- ly bears a prick -- le, As sharp as an -- _ y __ _ thorn,
   And _ Ma -- ry bore sweet _ Je -- sus Christ, On _ Christ -- mas day in the morn:
 }
 altoWordsV = \lyricmode {
-  \set stanza = #"5."
+  \set stanza = #"5. "
   \set ignoreMelismata = ##t
   The hol -- ly bears a bark, __ _ As bit -- ter as __ _ an -- y gall,
   And _ Ma -- ry bore sweet _ Je -- sus Christ, For _ to re -- deem us __ _ all:

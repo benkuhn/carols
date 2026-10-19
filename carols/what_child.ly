@@ -19,7 +19,7 @@ global = {
 }
 
 verseI= \lyricmode {
-  \set stanza = "1."
+  \set stanza = #"1. "
   What Child is this, Who, laid to rest,
   On Ma -- ry’s lap is sleep -- ing?
   Whom an -- gels greet with an -- thems sweet,
@@ -32,7 +32,7 @@ verseI= \lyricmode {
 }
 
 verseII= \lyricmode {
-  \set stanza = "2."
+  \set stanza = #"2. "
   Why lies He in such mean e -- state
   Where ox and ass are feed -- ing?
   Good Chris -- tian, fear: for sin -- ners here
@@ -40,7 +40,7 @@ verseII= \lyricmode {
 }
 
 verseIII= \lyricmode {
-  \set stanza = "3."
+  \set stanza = #"3. "
   So bring Him in -- cense, gold, and myrrh,
   Come pea -- sant, king, to own Him;
   The King of kings sal -- va -- tion brings,
@@ -148,13 +148,13 @@ bass = \context Voice = "bass" {
     >>}
 
     \context Lyrics = "stanza-1" \lyricsto "sop" {
-      \set stanza = "1."
+      \set stanza = #"1. "
       \verseI }
     \context Lyrics = "stanza-2" \lyricsto "sop" {
-      \set stanza = "2."
+      \set stanza = #"2. "
       \verseII }
     \context Lyrics = "stanza-3" \lyricsto "sop" {
-      \set stanza = "3."
+      \set stanza = #"3. "
       \verseIII }
     \context Staff = "lower"  { \clef "F"<<
       \global

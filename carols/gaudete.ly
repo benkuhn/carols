@@ -72,25 +72,25 @@ wordsChorus = \lyricmode {
 }
 
 wordsVerseA = \lyricmode {
-  \set stanza = "1."
+  \set stanza = #"1. "
   Tem -- pus ad -- est gra -- ti -- ae, Hoc quod op -- ta -- ba -- mus
   Car -- mi -- na lae -- ti -- ti -- ae De -- vo -- te red -- da -- mus.
 }
 
 wordsVerseB = \lyricmode {
-  \set stanza = "2."
+  \set stanza = #"2. "
   De -- us ho -- mo fac -- tus est, na -- tu -- ra mi -- ran -- te
   Mun -- dus re -- no -- va -- tus est a Chri -- sto reg -- nan -- te.
 }
 
 wordsVerseC = \lyricmode {
-  \set stanza = "3."
+  \set stanza = #"3. "
   Eze -- chi -- e -- lis por -- \skip 8 ta clau -- sa per -- tran -- si -- tur
   Un -- de lux est or -- \skip 8 ta Sa -- lus in -- ve -- ni -- tur.
 }
 
 wordsVerseD = \lyricmode {
-  \set stanza = "4."
+  \set stanza = #"4. "
   Er -- go nos -- tra con -- ci -- o Psal -- lat iam in lus -- tro
   Be -- ne -- di -- cat Do -- mi -- no Sa -- lus Re -- gi nos -- tro.
 }

@@ -148,7 +148,7 @@ tenorb = {
       \sop
     >>}
     \context Lyrics = "sop-1" \lyricsto "sop" {
-      \set stanza = "1."
+      \set stanza = #"1. "
       \stanzaa
       \sopa
     }
@@ -179,7 +179,7 @@ tenorb = {
       \tenora
     }
     \context Lyrics = "tenor-2" \lyricsto "tenor" {
-      \set stanza = "2."
+      \set stanza = #"2. "
       \stanzab
       \tenorb
     }
